@@ -1,0 +1,6 @@
+{
+  "title": "tron-0xf (ZX Spectrum 48K)",
+  "machine": "zx48",
+  "slots": { "rom": "48.rom", "tape": "tron.tap" },
+  "notes": "48.rom is Amstrad-permission ROM (shippable-with-notice; fetch from a STECCY/zxs source or use your own); tron.tap from upstream releases. Boot to (c) screen, then LOAD."
+}

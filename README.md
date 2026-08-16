@@ -23,6 +23,14 @@ scripts, fetched **only when a user asks for them**.
   download — the user's click is the distribution event, and what is
   distributed is this repo's honestly-licensed content.
 
+## The manifest is executable
+
+bw-board ships `runMediaBundle(manifest, files)` — one call from a
+project's `brickwright-media.json` + fetched files to a running
+machine (config realized, documented preload writes applied, slots
+loaded, entry set). The Bad Apple and tron manifests below are
+verified against it in bw-board's own suite.
+
 ## Proven combinations
 
 | Project | Machine | Status |
