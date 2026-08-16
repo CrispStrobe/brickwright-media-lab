@@ -1,0 +1,16 @@
+{
+  "title": "Bad Apple (Ben Eater 6502)",
+  "machine": "eater6502",
+  "machineConfig": {
+    "clockHz": 5000000,
+    "regions": [{"kind": "ram", "start": 0, "end": 16383}, {"kind": "rom", "start": 32768, "end": 65535}],
+    "chips": [
+      {"kind": "via", "name": "via1", "at": 24576},
+      {"kind": "sdcard", "name": "sd1", "via": "via1", "pins": {"cs": 5, "sck": "ca2", "mosi": 3, "port": "b", "miso": 0, "misoPort": "a"}},
+      {"kind": "framebuffer", "name": "vga", "at": 8192, "size": 8192}
+    ]
+  },
+  "preload": {"writes": [{"addr": 24578, "value": 255, "why": "DDRB: bench precondition, see README"}]},
+  "slots": {"rom": "player.hex", "sd-image": "sd-image.bin"},
+  "entry": 6144
+}
