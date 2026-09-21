@@ -1,17 +1,21 @@
-# BrickWright GPL Lab
+# BrickWright Media Lab
 
-Copyleft-licensed software and media for BrickWright's simulated
-machines — kept OUT of the MPL/MIT application tree on purpose, and
-delivered the way copyleft intends: with sources, licenses, and build
-scripts, fetched **only when a user asks for them**.
+Free/libre software and media for BrickWright's simulated machines —
+whole operating systems, compilers and programs under GPL, BSD, MIT,
+MPL, Apache, zlib or public-domain terms — kept OUT of the MPL/MIT
+application tree on purpose, and delivered the honest way: with sources,
+licenses and build scripts, fetched **only when a user asks for them**.
+The strictest case (GPL) sets the rule the whole repo follows; permissive
+projects simply carry their own lighter terms.
 
 ## How this works
 
-- The BrickWright app itself contains no GPL code or data. Its media
-  system (`describeMedia`/`applyMedia`) loads ROMs, SD images, tapes
-  and snapshots the user provides.
+- The BrickWright app itself contains none of this code or data. Its
+  media system (`describeMedia`/`applyMedia`) loads ROMs, SD images,
+  tapes, floppies and snapshots the user provides.
 - Each project here is a directory carrying **its own upstream
-  license** (GPL-2.0, GPL-3.0, …), a `README.md` with provenance, a
+  license** (GPL-2.0, GPL-3.0, BSD, MIT, …), a `README.md` with
+  provenance, a
   `fetch.sh` that downloads artifacts from the upstream source, and a
   `brickwright-media.json` manifest mapping files to media slots —
   drop the resulting bundle onto the app's media panel and the machine
