@@ -1,0 +1,27 @@
+{
+  "title": "MS-DOS (MIT) — Microsoft Multitasking MS-DOS boot floppy",
+  "machine": "i80386",
+  "machineConfig": "PCAT80386_EXPERIMENTAL_4M_HDD_FREEDOS_VGA",
+  "firmware": {
+    "bios": { "path": "roms/free-at-bios/BIOS-bochs-legacy", "license": "LGPL-2.1" },
+    "vgaBios": { "path": "roms/free-at-bios/vgabios-lgpl.bin", "license": "LGPL-3.0" }
+  },
+  "freeBios": true,
+  "proprietaryRomUsed": false,
+  "slots": { "floppy": "msdos-mt-boot.img" },
+  "floppy": {
+    "geometry": { "cylinders": 40, "heads": 2, "sectors": 9, "bytesPerSector": 512 },
+    "cmos": { "0x10": "0x10", "0x3d": "0x01" },
+    "quirks": []
+  },
+  "boot": true,
+  "steps": 30000000,
+  "expect": [
+    "MS-DOS version 4.00",
+    "Copyright 1981,82,83,84 Microsoft Corp."
+  ],
+  "reachesPrompt": false,
+  "blocker": "Multitasking-beta DOS core halts at 'Internal Error 4560 / HardErr: no handler' before COMMAND.COM's prompt on the emulated AT (reproduces with CONFIG.SYS/AUTOEXEC.BAT removed).",
+  "license": "MIT",
+  "notes": "Genuinely-libre MIT bytes: Microsoft's Multitasking MS-DOS boot disk (microsoft/MS-DOS v4.0-ozzie). Raw FAT12 360KB image with IBMBIO.COM/IBMDOS.COM/COMMAND.COM. Boots on the free-386 to the authentic 'MS-DOS version 4.00 Copyright ... Microsoft Corp.' banner, then the multitasking beta core faults at Internal Error 4560 before a prompt -- honestly pinned, not a claimed prompt. A clean A:\\> prompt needs mainstream MS-DOS 4.00 built from v4.0/src (a DOS+MASM source build, not a fetch). Fetched, never re-hosted."
+}

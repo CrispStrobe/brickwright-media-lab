@@ -55,6 +55,9 @@ for now.
 |---|---|---|---|
 | elks | 8086 | `elks-shell.mjs` (interactive) / `elks-media-proof.mjs` | ✅ floppy slot → boot + steer |
 | minix-1.7 | 8086 | `run-i8086` floppy boot (to the monitor) | ✅ floppy slot (boot monitor) |
+| minix-2.0 | 386 free-BIOS | `run-i80386-free-bios-freedos.mjs` (adapted to insert the Minix floppy) → boots to `login:`, `root` → shell | ⏳ CLI-only (386 GUI wiring pending) |
+| ms-dos | 386 free-BIOS | `run-i80386-free-bios-freedos.mjs` (adapted, 40/2/9 floppy) → MS-DOS 4.00 banner, halts at Internal Error 4560 | ⏳ CLI-only |
+| opengem | 386 + DOS + VGA/mouse | fetch + install on a DOS host; graphical — no text-console proof | ⏳ needs framebuffer + mouse |
 | f83 / volksforth | 8086 DOS | `run-dos.mjs f83.com` | ✅ DOS program |
 | small-c | 8086 DOS | `run-dos.mjs cc.exe` | ✅ DOS program |
 | ack | 8086 DOS | `run-dos.mjs sieve.com` (compiled output) | ✅ DOS program |

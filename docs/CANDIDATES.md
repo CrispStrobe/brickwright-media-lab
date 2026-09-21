@@ -7,10 +7,13 @@ verified from the upstream LICENSE/COPYING unless marked *informal*.
 
 The dividing line across the whole table is the **BIOS**: the **8086/XT** tier
 uses our own clean-room free BIOS (`buildBios`), so anything there runs with no
-external firmware. The **286/386** tier runs *real* AT firmware — today the
-proprietary IBM 5170 ROM (user-supplied), because bw-board's 386 is a *bounded*
-executor qualified against exactly that ROM's instruction stream. A free BIOS
-exists (see Firmware) but needs CPU-coverage work first.
+external firmware. The **286/386** tier can now also run on **fully-free
+firmware**: the experimental `i80386` AT machine boots the **LGPL Bochs legacy
+BIOS + LGPL VGABios** (vendored at bw-board `roms/free-at-bios/`) with **no
+proprietary ROM** — that is the harness `scripts/run-i80386-free-bios-freedos.mjs`
+uses, and the `minix-2.0` and `ms-dos` projects below run on it. (The proprietary
+IBM 5170 ROM remains an *optional* maintainer-only fidelity oracle; SeaBIOS is
+still blocked — see Firmware.)
 
 ## Operating systems
 
@@ -18,11 +21,11 @@ exists (see Firmware) but needs CPU-coverage work first.
 |---|---|---|---|
 | **ELKS** 0.9.2 | GPL-2.0 | 8086 | ✅ **Packaged, interactive Unix** — boots to a shell, steered by keyboard, runs ELKS BASIC (MIT) in-OS |
 | **Minix 1.7.5** | BSD-3 | 8086 | ✅ **Packaged** — boots to the boot monitor; kernel panics "RAM disk too big" (>640 K) before a shell. Ships ACK (C/Pascal/Modula-2) |
-| **Minix 2.0.4** | BSD-3 | 286 | ⛔ needs the 286/AT ROM (absent here); would reach a shell → ACK |
+| **Minix 2.0.4** | BSD-3 | 286/386 | ✅ **Packaged, interactive Unix** — on the **fully-free 386** (LGPL Bochs BIOS, no proprietary ROM) it boots in 16-bit protected mode to a multiuser `login:`, logs in `root`, runs a shell. The 286/AT-ROM blocker is lifted by the free-386 |
 | **FreeDOS** 1.4 | mixed-free (GPL-2 kernel+FreeCOM) | 8086/386 | already the 386 DOS host; FloppyEdition fetchable. Not re-packaged (mixed aggregate) |
-| **MS-DOS** 1.25/2.0/4.0 | **MIT** (covers the committed binaries too) | 8086 | 🔨 buildable-libre — a bootable floppy must be *assembled* (v4.0 cleanest); not a fetch |
+| **MS-DOS** 1.25/2.0/4.0 | **MIT** (covers the committed binaries too) | 8086/386 | 📦 **Packaged (boots to banner)** — the committed `v4.0-ozzie` Multitasking MS-DOS boot floppy is genuinely-MIT and boots to the real "MS-DOS version 4.00 … Microsoft Corp." banner on the free-386, but the beta core halts at Internal Error 4560 before a prompt. A clean prompt needs mainstream 4.00 **built** from `v4.0/src` (`v2.0/bin` has no `IO.SYS`, so 2.0 must be built too) |
 | **PDOS/86** | CC0 / public domain | 8086 | 🔨 build the `pdos16.img`; `src/bootsec.asm` + `pload.com` provenance caveats |
-| **OpenGEM / FreeGEM** (from DR GEM/ViewMAX-3) | GPL-2.0 | 8086 | 📦 ready graphical DOS desktop (OPENGEM7-RC3) — the mouse+video demo. Not yet packaged |
+| **OpenGEM / FreeGEM** (from DR GEM/ViewMAX-3) | GPL-2.0-or-later | 8086/386 | ✅ **Packaged** — OpenGEM 7 RC3 graphical DOS desktop, fetchable + GPL-licensed. Runs on a DOS host with a VGA framebuffer + mouse; not verifiable on the text-scrape harness (graphics plane), so run-proof is pinned to a framebuffer/mouse surface |
 | **CP/M-86** | *informal* DR grant (not OSI) | 8086 | ⚠️ license judgment call; fetchable disk images |
 | **COHERENT** 3.2 | *informal* free-distribution grant | 286 | ⚠️ real Unix; informal license + needs the 286 ROM |
 | **os8088** | MIT | 8086 | ⚠️ GUI OS — renders nothing on our text plane (graphics mode); repo bundles unlicensed MS Word source |
@@ -65,6 +68,7 @@ exists (see Firmware) but needs CPU-coverage work first.
 | Firmware | License | Role |
 |---|---|---|
 | **buildBios** (ours) | project (free) | ✅ the 8086/XT system BIOS — clean-room, no external ROM |
+| **Bochs legacy BIOS** | LGPL-2.1 | ✅ the **fully-free 386 system BIOS** — vendored `roms/free-at-bios/BIOS-bochs-legacy` (Bochs 2.7). Boots FreeDOS, Minix 2.0.4 and MIT MS-DOS on the `i80386` AT with no proprietary ROM |
 | **SeaBIOS** | LGPL-2.1/3 | the free 386 system BIOS (QEMU/v86 default). On this box, but **blocked**: bw-board's *bounded* 386 executor throws on SeaBIOS's instructions (LOCK…). "Fully-free 386" = extend the 386 CPU coverage + widen the ROM window + add an fw_cfg/CMOS shim (in progress) |
 | **SeaVGABIOS** | LGPL-3 | ✅ the 386 VGA BIOS we already boot |
 | **bochs-emu/VGABIOS** | LGPL-2.1 | alternative free VGA BIOS (prebuilt `vgabios-0.9d`) |

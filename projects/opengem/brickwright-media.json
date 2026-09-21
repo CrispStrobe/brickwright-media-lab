@@ -1,0 +1,16 @@
+{
+  "title": "OpenGEM 7 RC3 (FreeGEM graphical DOS desktop)",
+  "machine": "i80386",
+  "run": {
+    "host": "dos",
+    "install": "SETUP.BAT",
+    "cmd": "GEM.BAT",
+    "needs": ["EGA/VGA framebuffer (graphics mode)", "mouse", "DOS host (free-386 FreeDOS or 8086 DOS)"]
+  },
+  "components": [
+    { "name": "OpenGEM 7 RC3", "license": "GPL-2.0-or-later", "role": "graphical DOS desktop (FreeGEM/GEM AES + apps + fonts)", "files": ["OPENGEM/GEM.BAT", "OPENGEM/GEMAPPS/"] }
+  ],
+  "boot": false,
+  "expect": [],
+  "notes": "GPL-2.0-or-later graphical DOS desktop (a FreeGEM distribution, descended from DR GEM / ViewMAX; Copyright 2001-2017 Shane Coughlan). Distributed as a DOS application set: install with SETUP.BAT onto a DOS disk, launch with GEM.BAT. It draws in an EGA/VGA GRAPHICS framebuffer and is mouse-driven, so it is NOT verifiable on a text-mode (0xB8000) console scrape -- the packaging harness reads text video, not the graphics plane. Packaged as a fetchable, honestly-licensed graphical desktop; a full run-proof needs a framebuffer + mouse surface (the app's video/mouse widget path), not this repo's text tooling. Fetched, never re-hosted."
+}
