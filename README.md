@@ -62,6 +62,15 @@ preset, and its `expect` strings are what the program prints.
 | volksforth | i8086 DOS layer | **Runs** — BSD-2 Forth-83; prints its banner and the Forth `ok` (bw-board `run-dos.mjs`) |
 | freedoom-fastdoom | i80386 + FreeDOS + VGA | **Fully-libre Doom** — GPL-2 FastDoom engine + BSD-3 Freedoom data (no proprietary IWAD); runs on the 386 tier with the user's AT/VGA BIOS ROMs |
 
+## Candidates & roadmap
+
+[`docs/CANDIDATES.md`](docs/CANDIDATES.md) is the full ledger — every free OS,
+language and firmware evaluated, with its license, CPU tier, and honest status
+(runs here / packaged / build-required / cross-only / blocked). The dividing
+line is the BIOS: the 8086/XT tier is fully free (`buildBios`), while the
+286/386 tier runs real AT firmware today (a free-BIOS path via SeaBIOS is
+tracked there).
+
 ## Adding a project
 
 One directory: upstream LICENSE copied verbatim, README with source
