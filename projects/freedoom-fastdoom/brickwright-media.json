@@ -1,0 +1,10 @@
+{
+  "title": "Freedoom + FastDoom (fully-libre Doom, 386)",
+  "machine": "i80386",
+  "components": [
+    { "name": "Freedoom 0.13.0", "license": "BSD-3-Clause", "role": "game data (WAD)", "files": ["freedoom1.wad", "freedoom2.wad"] },
+    { "name": "FastDoom 1.3.0", "license": "GPL-2.0", "role": "engine (DOS 386 exe)", "files": ["FDOOM.EXE"] }
+  ],
+  "run": { "host": "freedos", "cmd": "FDOOM.EXE -iwad FREEDOOM1.WAD", "needs": ["386 protected mode", "VGA", "user-supplied AT+VGA BIOS ROMs"] },
+  "notes": "Fully-libre Doom end-to-end: GPL-2 engine + BSD-3 data, no proprietary IWAD. Runs on the i80386 tier (same machine that boots FreeDOS/Win3.0/commercial Doom here). Not executed in packaging (the proprietary AT/VGA BIOS ROMs every 386 boot needs are the user's to supply, never vendored). Engine and data are separately licensed; fetched, never re-hosted."
+}
