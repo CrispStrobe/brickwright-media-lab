@@ -63,6 +63,15 @@ preset, and its `expect` strings are what the program prints.
 | freedoom-fastdoom | i80386 + FreeDOS + VGA | **Fully-libre Doom** — GPL-2 FastDoom engine + BSD-3 Freedoom data (no proprietary IWAD); runs on the 386 tier with the user's AT/VGA BIOS ROMs |
 | ack | i8086 DOS layer | **Runs** — BSD-3 Amsterdam Compiler Kit cross-compiles Pascal / C / Modula-2 → 8086 `.COM`; the compiled programs print correct output on the machine (bw-board `run-dos.mjs`). Libre Pascal for our 8086 |
 
+## Running the machines
+
+[`docs/RUNNING.md`](docs/RUNNING.md) is the how-to for actually running these —
+on the command line (bw-board's `elks-shell.mjs` / `run-dos.mjs` /
+`run-i80386-free-bios-freedos.mjs`) and in the browser (lite's debug panel:
+load a floppy OS into the i8086 machine's Floppy slot and steer it live).
+**CLI reaches everything, including the fully-free 386; the GUI reaches the
+8086 tier today, with the 386 tier CLI-only until a pin bump + 386 wiring land.**
+
 ## Candidates & roadmap
 
 [`docs/CANDIDATES.md`](docs/CANDIDATES.md) is the full ledger — every free OS,
