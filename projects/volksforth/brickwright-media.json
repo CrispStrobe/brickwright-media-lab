@@ -1,0 +1,8 @@
+{
+  "title": "VolksForth-83 (8086 DOS)",
+  "machine": "i8086",
+  "program": { "kind": "dos", "tool": "run-dos", "preset": "xt", "max": 4000000 },
+  "slots": { "com": "volks4th.com" },
+  "expect": ["volksFORTH-83", "ok"],
+  "notes": "BSD-2 Forth-83; upstream 8086/msdos tree names 8086/186/286. Loads on the 8086 DOS service layer (bw-board run-dos.mjs). Proven: prints banner + Forth 'ok'."
+}
