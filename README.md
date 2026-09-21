@@ -57,11 +57,15 @@ preset, and its `expect` strings are what the program prints.
 | steamboat-willie | eater6502 (same rig as Bad Apple) | Encoded data is GPL over a public-domain 1928 film — the cleanest demo of the set |
 | elks | i8086 / PCXT8086 (BIOS + µPD765 + 8237 + 8259) | **Interactive Unix** — boots to a shell; steered by keyboard (`scripts/elks-shell.mjs`), programmed in-OS via bundled ELKS BASIC (MIT). Boot verified by `scripts/elks-media-proof.mjs` |
 | minix-1.7 | i8086 / PCXT8086 | **Boots** — BSD-3 combo floppy reaches the Minix boot monitor; ships ACK (native C/Pascal/Modula-2) once the kernel starts |
+| minix-2.0 | i80386 free-BIOS (LGPL Bochs BIOS, no proprietary ROM) | **Interactive Unix** — BSD-3 Minix 2.0.4 boots in 16-bit protected mode to a multiuser `login:`, logs in `root`, runs shell commands (the 386 tier the 8086 could not reach) |
+| ms-dos | i80386 free-BIOS | **Boots to banner** — genuinely-MIT Microsoft Multitasking MS-DOS; prints the real "MS-DOS version 4.00 … Microsoft Corp." banner, then the beta core halts at Internal Error 4560 before a prompt (full prompt = build v4.0 from source) |
+| opengem | i80386 + DOS + VGA/mouse | **Fetchable GPL desktop** — OpenGEM 7 RC3 (FreeGEM, GPL-2+): the graphical DOS GUI; delivered fetchable + licensed, full run-proof needs a framebuffer + mouse (not the text-scrape harness) |
 | f83 | i8086 DOS layer | **Runs** — public-domain Forth-83; prints its banner and enters the interpreter (bw-board `run-dos.mjs`) |
 | small-c | i8086 DOS layer | **Runs** — public-domain K&R C compiler; `cc.exe` compiles and emits 8086 assembly on the machine (bw-board `run-dos.mjs`) |
 | volksforth | i8086 DOS layer | **Runs** — BSD-2 Forth-83; prints its banner and the Forth `ok` (bw-board `run-dos.mjs`) |
 | freedoom-fastdoom | i80386 + FreeDOS + VGA | **Fully-libre Doom** — GPL-2 FastDoom engine + BSD-3 Freedoom data (no proprietary IWAD); runs on the 386 tier with the user's AT/VGA BIOS ROMs |
 | ack | i8086 DOS layer | **Runs** — BSD-3 Amsterdam Compiler Kit cross-compiles Pascal / C / Modula-2 → 8086 `.COM`; the compiled programs print correct output on the machine (bw-board `run-dos.mjs`). Libre Pascal for our 8086 |
+| alice-pascal | i80386 free-BIOS + FreeDOS | **Runs** — Artistic-1.0 ALICE: The Personal Pascal (1985); on booted FreeDOS it reaches its main menu / editor (needs a real DOS for the PSP `.suf`-overlay path, which `run-dos` lacks) |
 
 ## Machine Manager (design)
 

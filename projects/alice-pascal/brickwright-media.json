@@ -1,0 +1,26 @@
+{
+  "title": "ALICE: The Personal Pascal (1985)",
+  "machine": "i80386",
+  "machineConfig": "PCAT80386_EXPERIMENTAL_4M_HDD_FREEDOS_VGA",
+  "firmware": {
+    "bios": { "path": "roms/free-at-bios/BIOS-bochs-legacy", "license": "LGPL-2.1" },
+    "vgaBios": { "path": "roms/free-at-bios/vgabios-lgpl.bin", "license": "LGPL-3.0" }
+  },
+  "freeBios": true,
+  "proprietaryRomUsed": false,
+  "run": {
+    "host": "freedos",
+    "place": "all files in ONE directory on a booted DOS (e.g. a mounted C:)",
+    "cmd": "alice",
+    "needs": ["booted DOS (DOS 3.0+ PSP program path, for .suf self-location)", "VGA/text video"]
+  },
+  "files": ["alice.exe", "apin.exe", "ap.ini", "apbuilt.suf", "aptempla.suf", "nlbegin.suf", "helpfile.huf"],
+  "boot": false,
+  "expect": [
+    "ALICE: The Personal Pascal",
+    "Welcome to ALICE Pascal",
+    "Edit a New Program"
+  ],
+  "license": "Artistic-1.0",
+  "notes": "ALICE Pascal (1985, Looking Glass Software; freeware under the Perl Artistic Licence by author Brad Templeton). Native 8086 Pascal IDE. It self-locates its .suf overlay/template files via the DOS 3.0+ PSP program path, so it needs a BOOTED DOS -- bw-board's minimal run-dos service lacks that path. Proven machine-side: on the fully-free 386 (LGPL Bochs BIOS, no proprietary ROM) booting FreeDOS 1.4, with the ALICE files on a mounted FAT16 C:, 'alice' reaches the ALICE main menu ('Welcome to ALICE Pascal / A Edit a New Program ...'). Fetched, never re-hosted."
+}
