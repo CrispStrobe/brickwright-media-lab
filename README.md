@@ -31,6 +31,12 @@ machine (config realized, documented preload writes applied, slots
 loaded, entry set). The Bad Apple and tron manifests below are
 verified against it in bw-board's own suite.
 
+Bootable-OS floppies (the `i8086` machine) run through the sibling
+`runI8086FloppyBundle(manifest, files, {romBytes})` — same manifest
+shape, plus a floppy geometry and per-OS hardware quirks — so a real
+kernel boots from its release image. ELKS below is verified against it
+(`scripts/elks-media-proof.mjs`).
+
 ## Proven combinations
 
 | Project | Machine | Status |
@@ -39,6 +45,7 @@ verified against it in bw-board's own suite.
 | tron-0xf | zx48 | **Plays** — the 48K acceptance title |
 | blinkenrocket-firmware | attiny88 + 788AS matrix | **Boots** — pixel-identical boot glyph under emulation |
 | steamboat-willie | eater6502 (same rig as Bad Apple) | Encoded data is GPL over a public-domain 1928 film — the cleanest demo of the set |
+| elks | i8086 / PCXT8086 (BIOS + µPD765 + 8237 + 8259) | **Boots** — official v0.9.2 floppy reaches "Mounted root device", verified machine-side (bw-board `scripts/elks-media-proof.mjs`) |
 
 ## Adding a project
 

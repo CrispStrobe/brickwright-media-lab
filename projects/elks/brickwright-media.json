@@ -1,0 +1,18 @@
+{
+  "title": "ELKS 0.9.2 (Embeddable Linux Kernel Subset)",
+  "machine": "i8086",
+  "machineConfig": "PCXT8086",
+  "slots": { "floppy": "fd1440-fat.img" },
+  "floppy": {
+    "geometry": { "cylinders": 80, "heads": 2, "sectors": 18, "bytesPerSector": 512 },
+    "quirks": ["at-floppy-drive-type"]
+  },
+  "boot": true,
+  "steps": 4000000,
+  "expect": [
+    "ELKS 0.9.2",
+    "80 cylinders, 2 heads, and 18 sectors",
+    "Mounted root device"
+  ],
+  "notes": "Official v0.9.2 release floppy, run unmodified. Needs a PC/AT BIOS ROM (pass romBytes) plus the at-floppy-drive-type quirk: ELKS reads the floppy drive type from INT 13h AH=08h BL, which a bare XT BIOS never sets. Run via bw-board runI8086FloppyBundle; verified by scripts/elks-media-proof.mjs. GPL-2 kernel; fetched, never re-hosted."
+}
