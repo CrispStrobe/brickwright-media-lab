@@ -49,7 +49,7 @@ kernel boots from its release image. ELKS below is verified against it
 | tron-0xf | zx48 | **Plays** — the 48K acceptance title |
 | blinkenrocket-firmware | attiny88 + 788AS matrix | **Boots** — pixel-identical boot glyph under emulation |
 | steamboat-willie | eater6502 (same rig as Bad Apple) | Encoded data is GPL over a public-domain 1928 film — the cleanest demo of the set |
-| elks | i8086 / PCXT8086 (BIOS + µPD765 + 8237 + 8259) | **Boots** — official v0.9.2 floppy reaches "Mounted root device", verified machine-side (bw-board `scripts/elks-media-proof.mjs`) |
+| elks | i8086 / PCXT8086 (BIOS + µPD765 + 8237 + 8259) | **Interactive Unix** — boots to a shell; steered by keyboard (`scripts/elks-shell.mjs`), programmed in-OS via bundled ELKS BASIC (MIT). Boot verified by `scripts/elks-media-proof.mjs` |
 
 ## Adding a project
 
