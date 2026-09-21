@@ -1,0 +1,14 @@
+{
+  "title": "Minix 1.7.5 (classic Tanenbaum Unix)",
+  "machine": "i8086",
+  "machineConfig": "PCXT8086",
+  "slots": { "floppy": "minix17.img" },
+  "floppy": {
+    "geometry": { "cylinders": 80, "heads": 2, "sectors": 18, "bytesPerSector": 512 },
+    "quirks": []
+  },
+  "boot": true,
+  "steps": 8000000,
+  "expect": ["Minix boot monitor"],
+  "notes": "BSD-3 combo floppy, run unmodified. Boots to the Minix boot monitor on PCXT8086 (needs a PC/AT BIOS ROM via romBytes). The monitor then waits for '=' to launch the kernel; driving that keystroke (8255 port 60h scancode + IRQ1) is a tracked follow-up, so this manifest pins the monitor. Use 1.7, not 2.0.4 (2.0.4 wants a 286 — that's the 286 tier)."
+}
