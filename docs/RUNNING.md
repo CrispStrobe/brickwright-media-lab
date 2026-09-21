@@ -31,11 +31,16 @@ Notes:
 
 ## Browser (brickwright-lite debug panel)
 
-**8086 floppy-boot OSes — reachable now.** In the debug panel, load a bootable
-`.img` (ELKS, Minix 1.7) into the **i8086 machine's "Floppy" media slot**. It
-boots on the PC-XT machine (BIOS + µPD765 + 8237 + 8259 + CGA); the panel's
-**video** is the CGA screen and the **keyboard** steers it — so you can log into
-ELKS *in the browser* and type at it. (This is what lite PR #253 wired.)
+**8086 floppy-boot OSes — reachable now.** Load a bootable `.img` (ELKS, Minix
+1.7) into the **i8086 machine's "Floppy" media slot**. It boots on the PC-XT
+machine (BIOS + µPD765 + 8237 + 8259 + CGA). The machine's **screen** renders in
+the **Widgets pane** — a `simplevga`/`terminal` display widget is the front panel
+that shows the CGA output — and input widgets (or the debug keyboard path) steer
+it, so you can log into ELKS *in the browser* and type at it. (This is what lite
+PR #253 wired.) The **Debug** pane is the developer instrument beside it (serial
+console + stepping + the TMS9918A VDP screen), *not* where the PC framebuffer
+renders. See `docs/MACHINE-MANAGER-DESIGN.md` §4 for how each machine surface
+maps.
 
 **DOS programs / languages (F83, Small-C, VolksForth, ACK output).** These run
 on the DOS service layer; the GUI's assembled-DOS path already runs `.com`/`.exe`
