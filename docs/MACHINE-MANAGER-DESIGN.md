@@ -39,11 +39,35 @@ event"). So a 300-machine library is 300 tiny JSONs, not 300 floppy images.
   },
   "quirks": ["at-floppy-drive-type"],
   "bootOrder": ["floppy", "hdd"],
+  // Panel widgets this machine declares (§4.2). A `source:"video"` widget is the
+  // machine's SCREEN — created on activate and fed each frame from runner.video()
+  // via the panel's setVgaFrame, so the framebuffer renders in the Widgets pane.
+  // A manifest with no screen widget is headless/serial-only (video → Debug only).
+  "widgets": [
+    { "name": "screen", "type": "simplevga",
+      "config": { "width": 640, "height": 200 },
+      "layout": { "x": 0, "y": 0, "w": 24, "h": 14 },
+      "source": "video" }
+  ],
   // wired-only (§3):
   "circuit": { "ref": "circuit-id-or-url", "cpuPart": "part-id" },
   "provenance": { "source": "media-lab:freedoom-fastdoom", "license": "…" }
 }
 ```
+
+**The manifest declares its own screen (§4.2 made concrete).** A machine's video
+does not reach a widget by magic: the manifest names a `simplevga` (or other
+display) widget and marks it `source:"video"`. On activate, the host creates that
+widget on the ControllerPanel and starts a mirror that polls `runner.video()`
+(`{width,height,rgba,frame?}`, produced by every CPU's video card) and paints it
+with `setVgaFrame` — bw-board's method whose own docstring is *"Mirror a machine
+video card frame into a VGA widget."* Both ends already ship in bw-board; the only
+new piece is the pump between them. `config.width/height` are an initial size —
+the real frame's dimensions override them. A machine with no display card, or one
+you only want to drive over serial, declares no video widget and shows its output
+in the Debug instrument instead. (Input widgets — a `keyboard`/`keypad` bound to
+the machine — are the steering counterpart; declare one only once its key→keyIn
+path is wired, so a control is never dead.)
 
 Rules:
 - **One schema, shared by GUI and CLI.** The manifest the "…" dialog emits is the

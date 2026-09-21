@@ -8,6 +8,15 @@
     "quirks": ["at-floppy-drive-type"]
   },
   "boot": true,
+  "widgets": [
+    {
+      "name": "screen",
+      "type": "simplevga",
+      "config": { "width": 640, "height": 200 },
+      "layout": { "x": 0, "y": 0, "w": 24, "h": 14 },
+      "source": "video"
+    }
+  ],
   "steps": 4000000,
   "expect": [
     "ELKS 0.9.2",
