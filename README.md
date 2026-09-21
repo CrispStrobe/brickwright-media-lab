@@ -63,6 +63,10 @@ preset, and its `expect` strings are what the program prints.
 | freedoom-fastdoom | i80386 + FreeDOS + VGA | **Fully-libre Doom** — GPL-2 FastDoom engine + BSD-3 Freedoom data (no proprietary IWAD); runs on the 386 tier with the user's AT/VGA BIOS ROMs |
 | ack | i8086 DOS layer | **Runs** — BSD-3 Amsterdam Compiler Kit cross-compiles Pascal / C / Modula-2 → 8086 `.COM`; the compiled programs print correct output on the machine (bw-board `run-dos.mjs`). Libre Pascal for our 8086 |
 
+## Machine Manager (design)
+
+[`docs/MACHINE-MANAGER-DESIGN.md`](docs/MACHINE-MANAGER-DESIGN.md) — the config-driven machine model (a machine is a manifest), the wired-vs-functional axis, the three surfaces (quick-picker / manager / “…” editor), config-vs-image storage for hundreds of machines, importers, and how the code-tab languages + media bundles bind to a configurable machine.
+
 ## Running the machines
 
 [`docs/RUNNING.md`](docs/RUNNING.md) is the how-to for actually running these —
