@@ -58,6 +58,7 @@ for now.
 | minix-2.0 | 386 free-BIOS | `run-i80386-free-bios-freedos.mjs` (adapted to insert the Minix floppy) → boots to `login:`, `root` → shell | ⏳ CLI-only (386 GUI wiring pending) |
 | ms-dos | 386 free-BIOS | `run-i80386-free-bios-freedos.mjs` (adapted, 40/2/9 floppy) → MS-DOS 4.00 banner, halts at Internal Error 4560 | ⏳ CLI-only |
 | opengem | 386 + DOS + VGA/mouse | fetch + install on a DOS host; graphical — no text-console proof | ⏳ needs framebuffer + mouse |
+| alice-pascal | 386 free-BIOS + FreeDOS | boot FreeDOS, put the ALICE files on a mounted C:, run `alice` → main menu | ⏳ CLI-only (needs booted DOS, not `run-dos`) |
 | f83 / volksforth | 8086 DOS | `run-dos.mjs f83.com` | ✅ DOS program |
 | small-c | 8086 DOS | `run-dos.mjs cc.exe` | ✅ DOS program |
 | ack | 8086 DOS | `run-dos.mjs sieve.com` (compiled output) | ✅ DOS program |

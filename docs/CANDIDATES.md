@@ -43,7 +43,7 @@ still blocked — see Firmware.)
 | **VolksForth** | BSD-2 | 8086 | ✅ **Packaged, runs here** — Forth-83 |
 | **Small-C** 2.5 | public domain | 8086 | ✅ **Packaged** — `cc.exe` compiles + emits 8086 asm here (full cc→asm→link needs a persistent-FS DOS) |
 | **ELKS BASIC** | MIT | 8086 | ✅ **runs here** (inside booted ELKS) |
-| **ALICE Pascal** | Artistic-1.0 (*informal*, README) | 8086 | 📦 native Pascal, `alice.exe` fetchable — but self-locates its `.suf` files via the DOS 3.0+ PSP path, which our minimal DOS service lacks → needs booted DOS |
+| **ALICE Pascal** | Artistic-1.0 (Perl Artistic, per README) | 8086/386 | ✅ **Packaged, runs here** — on **booted FreeDOS** (the free-386) `alice` reaches its main menu / editor; it self-locates its `.suf` overlays via the DOS 3.0+ PSP path, which the minimal `run-dos` service lacks but a real DOS provides |
 | **Berkeley Logo** `BL.EXE` | GPL-2.0 | 8086 | 📦 native Logo — but ships as an installer (`blogo.exe`→`INSTALLU.EXE`), so it needs unpacking on a DOS |
 | **GW-BASIC** | MIT (source) | 8086 | 🔨 runnable-libre only via the **tkchia** MIT fork built with JWasm/JWlink (serial stubbed); MS upstream is source-only-in-practice |
 | **ACK** | BSD-3 | 8086/286 | native C/Pascal/Modula-2/Basic — but only *inside booted Minix* (cross on a modern host). Rides in via the Minix project; not yet reachable (Minix shell) |
