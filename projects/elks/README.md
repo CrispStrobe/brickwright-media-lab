@@ -53,6 +53,38 @@ set to `i8086` / `PCXT8086`. Verified machine-side by bw-board
 fetched image and asserts the banner, the sized geometry and the root
 mount.
 
+## ELKS as a programming VM (interactive)
+
+The release image is a **complete interactive Unix**, not just a boot: it
+reaches a `login:` prompt (~40M instructions), and bw-board's
+`scripts/elks-shell.mjs` logs in as `root` **over the emulated XT
+keyboard** (`machine.keyIn` → 8255 port A + IRQ1, wrapped by
+`src/interactive-console.js`) and runs commands — the headless form of
+what the app's keyboard widget does live.
+
+Proven: authoring and running a program *inside* ELKS in its bundled
+**ELKS BASIC** (MIT — a distinct component from the GPL-2 kernel):
+
+```sh
+echo -e 'basic\n10 PRINT "HELLO FROM ELKS"\n20 PRINT 6*7\nRUN' \
+  | node scripts/elks-shell.mjs --stdin
+# … login: root
+# # basic
+# ELKS BASIC   10240 bytes free
+# RUN
+# HELLO FROM ELKS
+# 42
+# Ok
+```
+
+`/bin` is rich: a Nano-X windowing system (`nxterm`, `nxtetris`,
+`paint`, `nxcalc`), games, audio (`play`), `vi`/`sed`/`tar`, and
+`/bin/basic`. So ELKS is the lab's first fully **steerable** OS — the
+same `keyIn`/framebuffer/audio surfaces a video+audio+keyboard widget
+binds. (Component licences vary — the kernel is GPL-2, ELKS BASIC is MIT;
+some optional tools carry their own terms and must be checked before use,
+e.g. a bundled C compiler is not assumed free.)
+
 ## The image is fetched, never re-hosted
 
 ELKS is GPL-2; we run it as a black-box workload, which the licence
