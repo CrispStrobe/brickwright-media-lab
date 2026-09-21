@@ -38,8 +38,14 @@ verified against it in bw-board's own suite.
 Bootable-OS floppies (the `i8086` machine) run through the sibling
 `runI8086FloppyBundle(manifest, files, {romBytes})` — same manifest
 shape, plus a floppy geometry and per-OS hardware quirks — so a real
-kernel boots from its release image. ELKS below is verified against it
-(`scripts/elks-media-proof.mjs`).
+kernel boots from its release image. ELKS and Minix below are verified
+against it (`scripts/elks-media-proof.mjs`).
+
+DOS *programs* (a `.com`/`.exe` compiler, interpreter or game — the F83
+and Small-C projects) are not boot floppies: they load on the 8086 DOS
+service layer via bw-board `scripts/run-dos.mjs`, which streams their
+output. Each such manifest carries a `program` block naming the tool and
+preset, and its `expect` strings are what the program prints.
 
 ## Proven combinations
 
@@ -50,6 +56,9 @@ kernel boots from its release image. ELKS below is verified against it
 | blinkenrocket-firmware | attiny88 + 788AS matrix | **Boots** — pixel-identical boot glyph under emulation |
 | steamboat-willie | eater6502 (same rig as Bad Apple) | Encoded data is GPL over a public-domain 1928 film — the cleanest demo of the set |
 | elks | i8086 / PCXT8086 (BIOS + µPD765 + 8237 + 8259) | **Boots** — official v0.9.2 floppy reaches "Mounted root device", verified machine-side (bw-board `scripts/elks-media-proof.mjs`) |
+| minix-1.7 | i8086 / PCXT8086 | **Boots** — BSD-3 combo floppy reaches the Minix boot monitor; ships ACK (native C/Pascal/Modula-2) once the kernel starts |
+| f83 | i8086 DOS layer | **Runs** — public-domain Forth-83; prints its banner and enters the interpreter (bw-board `run-dos.mjs`) |
+| small-c | i8086 DOS layer | **Runs** — public-domain K&R C compiler; `cc.exe` compiles and emits 8086 assembly on the machine (bw-board `run-dos.mjs`) |
 
 ## Adding a project
 

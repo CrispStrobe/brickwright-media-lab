@@ -1,0 +1,8 @@
+{
+  "title": "F83 — Forth-83 (8086 DOS)",
+  "machine": "i8086",
+  "program": { "kind": "dos", "tool": "run-dos", "preset": "xt", "max": 5000000 },
+  "slots": { "com": "f83.com" },
+  "expect": ["8086 Forth 83 Model", "Version 2.1.0"],
+  "notes": "Public-domain Forth-83. Loads at 0x100 on the 8086 DOS service layer (bw-board run-dos.mjs). Proven: prints its banner and enters the interactive Forth interpreter. Not a boot floppy — it is a DOS program."
+}
