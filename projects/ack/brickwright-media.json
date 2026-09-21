@@ -1,0 +1,38 @@
+{
+  "title": "ACK — Pascal / C / Modula-2 cross-compiled to 8086 DOS",
+  "machine": "i8086",
+  "program": { "kind": "dos", "tool": "run-dos", "preset": "xt", "max": 6000000 },
+  "slots": { "com": "sieve.com" },
+  "expect": ["Primes up to 50:", "2   3   5   7  11  13", "done."],
+  "programs": [
+    {
+      "language": "pascal",
+      "source": "samples/sieve.p",
+      "slots": { "com": "sieve.com" },
+      "program": { "kind": "dos", "tool": "run-dos", "preset": "xt", "max": 6000000 },
+      "expect": ["Primes up to 50:", "2   3   5   7  11  13  17  19  23  29  31  37  41  43  47", "done."]
+    },
+    {
+      "language": "c",
+      "source": "samples/fact.c",
+      "slots": { "com": "fact.com" },
+      "program": { "kind": "dos", "tool": "run-dos", "preset": "xt", "max": 6000000 },
+      "expect": ["Factorials, compiled by ACK, running on the 8086:", "1! = 1", "8! = 40320"]
+    },
+    {
+      "language": "modula2",
+      "source": "samples/sieve.mod",
+      "slots": { "com": "sievemod.com" },
+      "program": { "kind": "dos", "tool": "run-dos", "preset": "xt", "max": 6000000 },
+      "expect": ["Primes up to 50, from Modula-2:", "2   3   5   7  11  13  17  19  23  29  31  37  41  43  47", "done."]
+    }
+  ],
+  "toolchain": {
+    "compiler": "ack (Amsterdam Compiler Kit)",
+    "upstream": "github.com/davidgiven/ack",
+    "commit": "7afa32a0a0f13e865fa2e8104e442689005cd627",
+    "target": "msdos86 (i86 MS-DOS .COM)",
+    "invocation": "ack -mmsdos86 -O -o PROG.com SRC.{p,c,mod}"
+  },
+  "notes": "ACK is a BSD-3 cross-compiler that runs on a modern host and EMITS 8086 DOS .COM programs. The three .com files here were compiled by ACK (pinned commit above) from the sources in samples/, and each RUNS on the bw-board 8086 DOS service layer (scripts/run-dos.mjs --preset xt), printing the strings in its expect[]. This is a libre Pascal (and C, Modula-2) whose OUTPUT runs natively on our 8086 — the compiler itself is a host tool, not an 8086 program (contrast Small-C, whose compiler runs on the 8086). Pascal's runtime prints a cosmetic 'file OUTPUT: close error' after its correct output because the DOS service layer does not implement the file-close call ACK's Pascal library makes at exit; C and Modula-2 exit clean."
+}
