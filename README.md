@@ -60,6 +60,15 @@ preset, and its `expect` strings are what the program prints.
 | f83 | i8086 DOS layer | **Runs** — public-domain Forth-83; prints its banner and enters the interpreter (bw-board `run-dos.mjs`) |
 | small-c | i8086 DOS layer | **Runs** — public-domain K&R C compiler; `cc.exe` compiles and emits 8086 assembly on the machine (bw-board `run-dos.mjs`) |
 
+## Candidates & roadmap
+
+[`docs/CANDIDATES.md`](docs/CANDIDATES.md) is the full ledger — every free OS,
+language and firmware evaluated, with its license, CPU tier, and honest status
+(runs here / packaged / build-required / cross-only / blocked). The dividing
+line is the BIOS: the 8086/XT tier is fully free (`buildBios`), while the
+286/386 tier runs real AT firmware today (a free-BIOS path via SeaBIOS is
+tracked there).
+
 ## Adding a project
 
 One directory: upstream LICENSE copied verbatim, README with source
