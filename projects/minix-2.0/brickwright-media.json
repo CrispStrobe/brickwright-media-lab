@@ -3,22 +3,46 @@
   "machine": "i80386",
   "machineConfig": "PCAT80386_EXPERIMENTAL_4M_HDD_FREEDOS_VGA",
   "firmware": {
-    "bios": { "path": "roms/free-at-bios/BIOS-bochs-legacy", "license": "LGPL-2.1", "id": "Bochs 2.7 legacy BIOS" },
-    "vgaBios": { "path": "roms/free-at-bios/vgabios-lgpl.bin", "license": "LGPL-3.0", "id": "LGPL VGABios" }
+    "bios": {
+      "path": "roms/free-at-bios/BIOS-bochs-legacy",
+      "license": "LGPL-2.1",
+      "id": "Bochs 2.7 legacy BIOS"
+    },
+    "vgaBios": {
+      "path": "roms/free-at-bios/vgabios-lgpl.bin",
+      "license": "LGPL-3.0",
+      "id": "LGPL VGABios"
+    }
   },
   "freeBios": true,
   "proprietaryRomUsed": false,
-  "slots": { "floppy": "minix204.img" },
+  "slots": {
+    "floppy": "minix204.img"
+  },
   "floppy": {
-    "geometry": { "cylinders": 80, "heads": 2, "sectors": 18, "bytesPerSector": 512 },
-    "cmos": { "0x10": "0x40", "0x3d": "0x01" },
+    "geometry": {
+      "cylinders": 80,
+      "heads": 2,
+      "sectors": 18,
+      "bytesPerSector": 512
+    },
+    "cmos": {
+      "0x10": "0x40",
+      "0x3d": "0x01"
+    },
     "quirks": []
   },
   "boot": true,
   "steps": 120000000,
   "keyboard": [
-    { "when": "Minix boot monitor", "send": "=" },
-    { "when": "login:", "send": "root\r" }
+    {
+      "when": "Minix boot monitor",
+      "send": "="
+    },
+    {
+      "when": "login:",
+      "send": "root\r"
+    }
   ],
   "expect": [
     "Minix boot monitor",
@@ -34,5 +58,37 @@
     "shellPrompt": "# ",
     "steer": "keyboard (machine.keyIn -> 8042 + IRQ1) -- the free-386 injects scancodes, so '=' starts the kernel and 'root' logs in (the 8086 tier could not)."
   },
-  "notes": "BSD-3 Minix 2.0.4 'QD edition' combo floppy (davidgiven/minix2), run unmodified. Must boot on the FULLY-FREE 386 AT machine (LGPL Bochs BIOS + LGPL VGABios, no proprietary ROM), NOT the 8086: the 2.0.4 i86 kernel runs in 16-bit protected mode and wants ~2MB, which the 386 AT provides and the 8086/XT tier cannot. Set CMOS floppy type 0 = 1.44MB (0x10=0x40) and boot-from-floppy (0x3d=0x01). Injecting '=' at the boot monitor launches the kernel; it reaches a multiuser 'login:'. Verified via bw-board scripts/run-i80386-free-bios-freedos.mjs adapted to insert this floppy. Fetched, never re-hosted."
+  "notes": "BSD-3 Minix 2.0.4 'QD edition' combo floppy (davidgiven/minix2), run unmodified. Must boot on the FULLY-FREE 386 AT machine (LGPL Bochs BIOS + LGPL VGABios, no proprietary ROM), NOT the 8086: the 2.0.4 i86 kernel runs in 16-bit protected mode and wants ~2MB, which the 386 AT provides and the 8086/XT tier cannot. Set CMOS floppy type 0 = 1.44MB (0x10=0x40) and boot-from-floppy (0x3d=0x01). Injecting '=' at the boot monitor launches the kernel; it reaches a multiuser 'login:'. Verified via bw-board scripts/run-i80386-free-bios-freedos.mjs adapted to insert this floppy. Fetched, never re-hosted.",
+  "widgets": [
+    {
+      "name": "screen",
+      "type": "simplevga",
+      "config": {
+        "width": 640,
+        "height": 200
+      },
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "w": 24,
+        "h": 14
+      },
+      "source": "video"
+    },
+    {
+      "name": "keyboard",
+      "type": "keyboard",
+      "config": {},
+      "layout": {
+        "x": 0,
+        "y": 15,
+        "w": 24,
+        "h": 3
+      },
+      "source": "keyIn"
+    }
+  ],
+  "bios": {
+    "kind": "bochs-lgpl"
+  }
 }
