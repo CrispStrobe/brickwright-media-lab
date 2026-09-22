@@ -1,0 +1,37 @@
+{
+  "title": "uBASIC — libre line-numbered BASIC that RUNS on the 8086 (DOS)",
+  "machine": "i8086",
+  "program": { "kind": "dos", "tool": "run-dos", "preset": "xt", "variant": "80186", "max": 12000000 },
+  "slots": { "exe": "UBASIC.EXE" },
+  "mount": { "PROG.BAS": "samples/answer.bas" },
+  "expect": ["42"],
+  "programs": [
+    {
+      "language": "basic",
+      "source": "samples/answer.bas",
+      "slots": { "exe": "UBASIC.EXE" },
+      "mount": { "PROG.BAS": "samples/answer.bas" },
+      "program": { "kind": "dos", "tool": "run-dos", "preset": "xt", "variant": "80186", "max": 12000000 },
+      "expect": ["42"]
+    },
+    {
+      "language": "basic",
+      "source": "samples/demo.bas",
+      "slots": { "exe": "UBASIC.EXE" },
+      "mount": { "PROG.BAS": "samples/demo.bas" },
+      "program": { "kind": "dos", "tool": "run-dos", "preset": "xt", "variant": "80186", "max": 20000000 },
+      "expect": ["counting:", "1", "2", "3", "4", "5", "42", "the answer"]
+    }
+  ],
+  "toolchain": {
+    "interpreter": "uBASIC (Adam Dunkels; Danyil Bohdan fork)",
+    "upstream": "github.com/adamdunkels/ubasic",
+    "commit": "cc07193c231e21ecb418335aba5b199a08d4685c",
+    "buildTool": "ia16-elf-gcc (tkchia GCC port for 16-bit x86)",
+    "target": "msdos (16-bit MZ .EXE, newlib + libi86)",
+    "invocation": "ia16-elf-gcc -mcmodel=small -march=any_186 -O2 dosmain.c ubasic.c tokenizer.c -o UBASIC.EXE",
+    "binarySha256": "d468484b3e122c0f79ba80822868459932b31c8c5f4a4c83bb54590911c88deb"
+  },
+  "license": "BSD-3-Clause",
+  "notes": "uBASIC is a tiny line-numbered BASIC interpreter in portable C, BSD-3-Clause (Copyright (c) 2006 Adam Dunkels; 2013 Danyil Bohdan). UNLIKE ACK (a host cross-compiler whose OUTPUT runs on the 8086), UBASIC.EXE is ITSELF a 16-bit MS-DOS program: it runs on the bw-board 8086 DOS service layer, reads a BASIC program from PROG.BAS via INT 21h file I/O (open/read), and prints via the C library (INT 21h/INT 10h). It is the DOS-NATIVE complement to Small-C -- a libre BASIC that runs ON the machine, not merely one whose output does. Two small changes over upstream (see fetch.sh + dosmain.c): VARIABLE_TYPE widened char->int (16-bit ints), and a PROG.BAS-reading DOS front-end replacing upstream's hardcoded-program use-ubasic.c. Built with ia16-elf-gcc; the GPL of that GCC port is a BUILD-time tool only (the shipped binary links newlib + libi86, both permissive). Proven on the bench: `10 print 6*7` -> `42`, and demo.bas exercises GOSUB/FOR-NEXT/LET/IF-THEN. Verified in brickwright-lite's test/dos-compile.test.mjs, which runs UBASIC.EXE on the real DOS bench (createDos8086 loadExe + INT 21h) with PROG.BAS mounted and asserts 42. In lite it is wired as runDosToolchain('ubasic', source) and the code tab's 'BASIC (uBASIC on DOS)' profile. The run-dos CLI mounts the program via `--file PROG.BAS=samples/answer.bas --variant 80186` (note: the CLI can drop piped stdout on process.exit; the bench harness / lite test is the authoritative capture)."
+}
