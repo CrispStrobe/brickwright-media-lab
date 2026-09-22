@@ -86,8 +86,16 @@ output then shows only in the Debug instrument). The CLI ignores the field. See
 on the command line (bw-board's `elks-shell.mjs` / `run-dos.mjs` /
 `run-i80386-free-bios-freedos.mjs`) and in the browser (lite's debug panel:
 load a floppy OS into the i8086 machine's Floppy slot and steer it live).
-**CLI reaches everything, including the fully-free 386; the GUI reaches the
-8086 tier today, with the 386 tier CLI-only until a pin bump + 386 wiring land.**
+**CLI reaches everything; the GUI now reaches the 8086 tier (boot + steer),
+the 386 tier (boots on the free LGPL BIOS, renders to the Widgets pane — drop
+a fetched 386 image into the slot for a live OS prompt), and the Z80 CP/M tier
+(interactive `.COM`s).**
+
+## The matrix
+
+[`docs/MATRIX.md`](docs/MATRIX.md) is the one-page overview — every emulated CPU
+× the OSs that boot on it × the compilers that target it, plus the two planned
+axes (an emulated RISC-V core, and a soft RISC-V SoC on the real Tang Nano 20K).
 
 ## Candidates & roadmap
 
