@@ -47,12 +47,24 @@ on the DOS service layer; the GUI's assembled-DOS path already runs `.com`/`.exe
 programs. Dropping a fetched `.com` in as a DOS program runs it with its output
 on the CGA screen + console.
 
-**The fully-free 386 (FreeDOS, FastDoom+Freedoom) — CLI-only today.** The free-386
-capability is on bw-board `master`, but the browser build pins an older bw-board
-and the debug panel has no 386-free-BIOS boot path yet. Reaching it in the GUI
-needs (a) a bw-board **pin bump** into lite and (b) a small 386 `bootMedia`
-wiring in the debug runner — both tracked, neither done. Use the CLI runner above
-for now.
+**The fully-free 386 — now boots in the GUI.** The i80386 machine boots on the
+**vendored LGPL Bochs BIOS + VGABios alone** (no proprietary ROM): the CPU runs,
+the VGABios banner renders, `video()` returns a 720×400 framebuffer that shows in
+the **Widgets pane**, and it takes keyboard input. (The bw-board pin bump + the
+386 `bootMedia` path in the debug runner both landed.) A **live OS prompt**
+(FreeDOS/Doom) still needs the fetched GPL disk image inserted — the runner
+supports floppy→A: and hard-disk→C: (type-47 CMOS); once you drop a bootable 386
+image into the machine's slot it boots the way the 8086 floppy OSes do.
+
+**Machine output reaches the Widgets pane.** A machine's screen (a `simplevga`
+display widget), keyboard (an input widget → `runner.keyIn`) and **sound** (its
+`audio()` voices → the browser speakers) all surface in the Widgets pane — a
+manifest declares its screen/keyboard widgets and they render on boot. New
+code-tab languages ride the same machines: **uBASIC** (a libre DOS BASIC, "BASIC
+(uBASIC on DOS)"), the **compile-on-DOS** engine (a real DOS `.EXE` compiler runs
+in the browser and its output is read back), and libre **Pascal/C via ACK** — on
+the 8086 (hosted endpoint) and on **Z80 via CP/M** (a new CP/M-80 machine runs a
+real ACK-compiled Z80 CP/M `.COM`).
 
 ## Per-project quick reference
 
@@ -60,19 +72,26 @@ for now.
 |---|---|---|---|
 | elks | 8086 | `elks-shell.mjs` (interactive) / `elks-media-proof.mjs` | ✅ floppy slot → boot + steer |
 | minix-1.7 | 8086 | `run-i8086` floppy boot (to the monitor) | ✅ floppy slot (boot monitor) |
-| minix-2.0 | 386 free-BIOS | `run-i80386-free-bios-freedos.mjs` (adapted to insert the Minix floppy) → boots to `login:`, `root` → shell | ⏳ CLI-only (386 GUI wiring pending) |
-| ms-dos | 386 free-BIOS | `run-i80386-free-bios-freedos.mjs` (adapted, 40/2/9 floppy) → MS-DOS 4.00 banner, halts at Internal Error 4560 | ⏳ CLI-only |
+| minix-2.0 | 386 free-BIOS | `run-i80386-free-bios-freedos.mjs` (adapted to insert the Minix floppy) → boots to `login:`, `root` → shell | 🟡 386 boots in GUI on free BIOS; drop the Minix floppy into the 386 slot to reach `login:` |
+| ms-dos | 386 free-BIOS | `run-i80386-free-bios-freedos.mjs` (adapted, 40/2/9 floppy) → MS-DOS 4.00 banner, halts at Internal Error 4560 | 🟡 386 boots in GUI on free BIOS; drop the MS-DOS floppy into the 386 slot |
 | opengem | 386 + DOS + VGA/mouse | fetch + install on a DOS host; graphical — no text-console proof | ⏳ needs framebuffer + mouse |
 | alice-pascal | 386 free-BIOS + FreeDOS | boot FreeDOS, put the ALICE files on a mounted C:, run `alice` → main menu | ⏳ CLI-only (needs booted DOS, not `run-dos`) |
 | f83 / volksforth | 8086 DOS | `run-dos.mjs f83.com` | ✅ DOS program |
 | small-c | 8086 DOS | `run-dos.mjs cc.exe` | ✅ DOS program |
 | ack | 8086 DOS | `run-dos.mjs sieve.com` (compiled output) | ✅ DOS program |
-| freedoom-fastdoom | 386 | `run-i80386-free-bios-freedos.mjs` + the WAD/engine | ⏳ CLI-only (386 GUI wiring pending) |
+| freedoom-fastdoom | 386 | `run-i80386-free-bios-freedos.mjs` + the WAD/engine | 🟡 386 boots in GUI on free BIOS; drop the FreeDOS+FastDoom image into the 386 slot |
 
 ## Summary
 
 - **CLI: fully reachable** — every project runs from bw-board's scripts on
   `master`, including the fully-free 386.
 - **GUI: 8086 tier reachable** (boot + steer ELKS/Minix, run DOS programs in the
-  browser); the **386 tier is CLI-only** until the pin bump + 386 `bootMedia`
-  wiring land.
+  browser; uBASIC + compile-on-DOS + Pascal/C-via-ACK in the Code tab).
+- **GUI: 386 tier boots** — the pin bump + 386 `bootMedia` path landed, so the
+  i80386 machine runs on the vendored LGPL BIOS and renders to the Widgets pane.
+  A **live 386 OS prompt** (FreeDOS/MS-DOS/Minix/Doom) still needs the fetched
+  GPL disk image dropped into the 386 machine's slot — the runner boots it the
+  moment it's inserted.
+- **GUI: CP/M-80 (Z80) tier reachable** — a CP/M-80 machine runs real ACK/SDCC
+  `.COM` programs, so Pascal/C compiled for Z80/CP/M run in the browser.
+- **Widgets pane** carries every machine's screen, keyboard **and sound**.
