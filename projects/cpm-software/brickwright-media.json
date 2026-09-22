@@ -1,0 +1,13 @@
+{
+  "title": "CP/M-80 software — libre demos (Z80)",
+  "machine": "z80",
+  "program": { "kind": "cpm", "tool": "debug-runner CP/M shim / cpm-smoke.mjs" },
+  "slots": { "com": "sieve.com" },
+  "expect": ["Primes below 50", "2 3 5 7 11 13 17 19 23 29 31 37 41 43 47"],
+  "license": "BSD-2-Clause",
+  "components": [
+    { "file": "sieve.com", "license": "BSD-2-Clause", "source": "src/sieve.c + src/crt0.s (SDCC)" },
+    { "file": "hello.com", "license": "BSD-2-Clause", "source": "src/hello.asm (pasmo)" }
+  ],
+  "notes": "Libre CP/M 2.2 programs written for BrickWright. A .COM loads at 0x0100 on the Z80 machine's CP/M layer and runs interactively (BDOS behind CALL 5) — the same path lite boots BBC BASIC on. `sieve.com` is the flagship: a real SDCC-compiled C program that prints the primes below 50 via BDOS function 2. `hello.com` is a minimal pasmo-assembled greeting via BDOS function 9. To run a different program, put its .COM in the `com` slot. Rebuild both from source with build.sh (pasmo + sdcc). These are CP/M 2.2 programs: they also run on the real CCP+BDOS boot (bw-board scripts/cpm-smoke.mjs, DRI's redistributable CP/M 2.2)."
+}
