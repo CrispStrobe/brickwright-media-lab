@@ -73,6 +73,7 @@ output then shows only in the Debug instrument). The CLI ignores the field. See
 | volksforth | i8086 DOS layer | **Runs** — BSD-2 Forth-83; prints its banner and the Forth `ok` (bw-board `run-dos.mjs`) |
 | freedoom-fastdoom | i80386 + FreeDOS + VGA | **Fully-libre Doom** — GPL-2 FastDoom engine + BSD-3 Freedoom data (no proprietary IWAD); runs on the 386 tier with the user's AT/VGA BIOS ROMs |
 | ack | i8086 DOS layer | **Runs** — BSD-3 Amsterdam Compiler Kit cross-compiles Pascal / C / Modula-2 → 8086 `.COM`; the compiled programs print correct output on the machine (bw-board `run-dos.mjs`). Libre Pascal for our 8086 |
+| cpm-software | z80 CP/M layer | **Runs** — BSD-2 libre CP/M 2.2 programs written for BrickWright: `sieve.com` (a real SDCC-compiled C program, primes < 50) and `hello.com` (pasmo asm). A `.COM` in the `com` slot runs interactively on the CP/M layer (the path lite boots BBC BASIC on); `build.sh` rebuilds both from source byte-for-byte. Also runs on the real CP/M 2.2 boot (`scripts/cpm-smoke.mjs`) |
 | alice-pascal | i80386 free-BIOS + FreeDOS | **Runs** — Artistic-1.0 ALICE: The Personal Pascal (1985); on booted FreeDOS it reaches its main menu / editor (needs a real DOS for the PSP `.suf`-overlay path, which `run-dos` lacks) |
 
 ## Machine Manager (design)
