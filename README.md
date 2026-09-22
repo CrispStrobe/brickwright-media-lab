@@ -47,6 +47,14 @@ service layer via bw-board `scripts/run-dos.mjs`, which streams their
 output. Each such manifest carries a `program` block naming the tool and
 preset, and its `expect` strings are what the program prints.
 
+A manifest may also declare its **screen**: an optional `widgets` array with
+a `simplevga` display marked `"source": "video"`. In the GUI the machine's
+framebuffer (`runner.video()`) is mirrored into that widget in the **Widgets
+pane** — a machine's screen is a widget, exactly as an LED on a wired board is.
+The ELKS manifest declares one; a machine with no display card omits it (its
+output then shows only in the Debug instrument). The CLI ignores the field. See
+[`docs/MACHINE-MANAGER-DESIGN.md`](docs/MACHINE-MANAGER-DESIGN.md) §4.2.
+
 ## Proven combinations
 
 | Project | Machine | Status |

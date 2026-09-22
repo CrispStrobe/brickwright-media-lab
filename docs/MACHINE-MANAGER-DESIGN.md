@@ -39,11 +39,35 @@ event"). So a 300-machine library is 300 tiny JSONs, not 300 floppy images.
   },
   "quirks": ["at-floppy-drive-type"],
   "bootOrder": ["floppy", "hdd"],
+  // Panel widgets this machine declares (§4.2). A `source:"video"` widget is the
+  // machine's SCREEN — created on activate and fed each frame from runner.video()
+  // via the panel's setVgaFrame, so the framebuffer renders in the Widgets pane.
+  // A manifest with no screen widget is headless/serial-only (video → Debug only).
+  "widgets": [
+    { "name": "screen", "type": "simplevga",
+      "config": { "width": 640, "height": 200 },
+      "layout": { "x": 0, "y": 0, "w": 24, "h": 14 },
+      "source": "video" }
+  ],
   // wired-only (§3):
   "circuit": { "ref": "circuit-id-or-url", "cpuPart": "part-id" },
   "provenance": { "source": "media-lab:freedoom-fastdoom", "license": "…" }
 }
 ```
+
+**The manifest declares its own screen (§4.2 made concrete).** A machine's video
+does not reach a widget by magic: the manifest names a `simplevga` (or other
+display) widget and marks it `source:"video"`. On activate, the host creates that
+widget on the ControllerPanel and starts a mirror that polls `runner.video()`
+(`{width,height,rgba,frame?}`, produced by every CPU's video card) and paints it
+with `setVgaFrame` — bw-board's method whose own docstring is *"Mirror a machine
+video card frame into a VGA widget."* Both ends already ship in bw-board; the only
+new piece is the pump between them. `config.width/height` are an initial size —
+the real frame's dimensions override them. A machine with no display card, or one
+you only want to drive over serial, declares no video widget and shows its output
+in the Debug instrument instead. (Input widgets — a `keyboard`/`keypad` bound to
+the machine — are the steering counterpart; declare one only once its key→keyIn
+path is wired, so a control is never dead.)
 
 Rules:
 - **One schema, shared by GUI and CLI.** The manifest the "…" dialog emits is the
@@ -78,11 +102,92 @@ manager must show the mode so no one tries to boot FreeDOS on a wired breadboard
 Two authoring flows feed the manager: the **"…" config dialog** (functional) and
 the **circuit designer** (wired; its config carries a `circuit` reference).
 
-## 4. Three surfaces, three scales
+## 4. Where a machine appears — the real lite surfaces (grounded in code)
+
+The manager adds **no new pane**. A machine is *managed* by a picker + a modal +
+the "…" editor, and it *appears* through surfaces lite already has. This section
+is written against the actual code (`gui.jsx`, `controller-panel-view.jsx`,
+`debug-panel.jsx`, `fpga-tab.jsx`) — not an idealized layout — because the
+uniform principle only becomes obvious once you read them:
+
+> **The Widgets pane is the universal output surface / front panel.** *Every*
+> execution surface — a functional machine, a wired circuit, an FPGA fabric —
+> renders its **user-facing** output through widgets. Debug is a developer
+> *instrument*, not the machine's screen.
+
+### 4.1 The right pane is a composable dock
+
+The right pane switches modes via `dockMode` + `bw-debug-dock` +
+`bw-stage-circuit` (localStorage), so the user *composes* what sits beside their
+Code/Blocks on the left:
+
+- **Scratch stage** — `TargetPane`, the default mode.
+- **Widgets** — `dockMode==='controller'` → `ControllerPanelView` (the front
+  panel; §4.2).
+- **Debug** — `bw-debug-dock` (`'top'`/`'right'`): the debugger instrument (§4.3).
+- **microbit / arcade** — device panes for those kinds.
+- **Circuit blended in** — `bw-stage-circuit` lets the Circuit render *in the
+  right pane*, so a user can have **Code on the left and the Circuit beside it**.
+
+### 4.2 Widgets pane = the machine's screen and front panel
+
+`controller-panel-view.jsx` carries real **display widgets** that render machine
+output directly — this is where a PC's video actually reaches the user:
+
+- **`simplevga`** — a `<canvas>` fed an RGBA **framebuffer** via `putImageData`
+  (labelled "VGA"). This is the machine's screen.
+- **`lcd` / `mono_lcd` / `oled` / `terminal`** — character/graphics displays; a
+  `terminal` face shows a growing bound buffer (a scrolling console).
+- **matrix / seven-seg / LEDs / gauges / bargraph** — smaller readouts.
+
+Input widgets (keypad / keyboard / joystick / D-pad / buttons) bound to the
+machine steer it (keyboard, mouse). The clincher that this is the *universal*
+surface: the **FPGA tab mirrors its output pins into this same view**
+(`gui.jsx`: *"Mirror the FPGA design's OUTPUT pins into the Controller/Widgets
+view"*, `bw-fpga-leds` / `bw-fpga-output`). So a functional machine's screen is a
+`simplevga`/`lcd`/`terminal` **widget** — its front panel — exactly as an LED on a
+wired board is a widget.
+
+### 4.3 Debug pane = a developer instrument, not the screen
+
+`debug-panel.jsx` is **not** the general framebuffer surface. It is:
+
+- a **Serial console** — RS232-like text I/O (AVR USART / 8051 UART / BBC serial):
+  output, plus an optional line-send box (`sendSerial`);
+- a **VdpScreen** that appears **only for a TMS9918A VDP** machine
+  (`runner.video()` polled per frame);
+- stepping / breakpoints / frames / trace.
+
+So a machine's **serial / monitor** I/O and its debugging live here; its **real
+screen** does not. (This corrects the earlier RUNNING.md claim that "the debug
+panel's video is the CGA screen" — the CGA/VGA framebuffer belongs in a Widgets
+display widget; Debug's `video()` path is the VDP instrument.)
+
+### 4.4 Tab row (left / main authoring) — including FPGA
+
+Blocks · **Code** · **Circuit** · **FPGA**. Circuit is the wired
+authoring/watch surface (a **wired machine ≡ a circuit**); **FPGA** is a real
+fourth surface — build-time `BW_ENABLE_FPGA`, runtime opt-in via **Settings ▸
+FPGA lab** (`gui.jsx`) — the HDL/fabric surface, whose output mirrors into
+Widgets (§4.2).
+
+### 4.5 How a machine binds to these surfaces
+
+| A machine's… | reaches the user in… |
+|---|---|
+| **screen / video** (VGA/CGA framebuffer, LCD, VDU text) | a **Widgets** display widget (`simplevga`/`lcd`/`terminal`) — its front panel |
+| **keyboard / mouse** steering | **Widgets** input widgets bound to it, or Debug `keyIn`/serial-send |
+| **serial / monitor** console + stepping | the **Debug** instrument |
+| **wiring** (a wired machine ≡ a circuit) | the **Circuit** surface (tab, or blended beside Code) |
+| **HDL / fabric** (an FPGA machine) | the **FPGA** tab (output mirrored to Widgets) |
+
+### 4.6 Managing machines (three management surfaces, three scales)
+
+These *manage* the config; they don't render the machine (that's §4.1–4.5):
 
 1. **Quick-picker (the existing dropdown)** — switch fast among *a few*. Recent +
    favorites + a "Manage machines…" entry. Shows each machine's mode badge.
-2. **Machine Manager (new surface)** — the *library* at scale: a searchable /
+2. **Machine Manager (new modal)** — the *library* at scale: a searchable /
    filterable / taggable list (by CPU, OS, mode), with create · duplicate · edit ·
    delete · **import / export** · "set active". This is the surface for hundreds.
    Precedent: 86Box/PCem machine lists, D-Fend/Launchbox DOSBox profiles, an IDE's
@@ -121,6 +226,10 @@ the **circuit designer** (wired; its config carries a `circuit` reference).
   Pascal/C can extend across targets, not just the 8086.
 - A **media-lab bundle** is a machine config with software attached; "run this OS"
   = load its manifest as the active machine.
+- Its **output reaches the user through the surfaces of §4.5** — e.g. FreeDOS/QBasic
+  on a functional 80286 renders into a `simplevga`/`terminal` **Widgets** display
+  (its screen), takes keys from a bound input widget, and exposes its serial/monitor
+  in **Debug**. The manager never invents a surface for it.
 
 ## 8. Incremental build plan (so this ships in slices)
 
