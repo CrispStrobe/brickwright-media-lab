@@ -75,6 +75,7 @@ output then shows only in the Debug instrument). The CLI ignores the field. See
 | ack | i8086 DOS layer | **Runs** — BSD-3 Amsterdam Compiler Kit cross-compiles Pascal / C / Modula-2 → 8086 `.COM`; the compiled programs print correct output on the machine (bw-board `run-dos.mjs`). Libre Pascal for our 8086 |
 | cpm-software | z80 CP/M layer | **Runs** — BSD-2 libre CP/M 2.2 programs written for BrickWright: `sieve.com` (a real SDCC-compiled C program, primes < 50) and `hello.com` (pasmo asm). A `.COM` in the `com` slot runs interactively on the CP/M layer (the path lite boots BBC BASIC on); `build.sh` rebuilds both from source byte-for-byte. Also runs on the real CP/M 2.2 boot (`scripts/cpm-smoke.mjs`) |
 | alice-pascal | i80386 free-BIOS + FreeDOS | **Runs** — Artistic-1.0 ALICE: The Personal Pascal (1985); on booted FreeDOS it reaches its main menu / editor (needs a real DOS for the PSP `.suf`-overlay path, which `run-dos` lacks) |
+| riscv32-linux | riscv32 (RV32IMAC, Sv32, SBI, PLIC, 16550A; 64 MiB) | **Interactive Linux** — Linux 6.1.188 + BusyBox boot to a shell prompt and answer `uname -a` over the UART (bw-board `runRiscvLinuxBundle`, `test/linux-riscv/lesson.mjs`). The binaries are mirrored on branch `media/riscv32-linux-v1` with their complete corresponding source as assets of release `riscv32-linux-v1` |
 
 ## Machine Manager (design)
 
