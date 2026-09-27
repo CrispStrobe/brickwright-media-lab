@@ -24,7 +24,7 @@ Legend: ✅ proven here · 🟡 partial / one honest gap · 🔴 not built (plan
 | **AVR (ATmega/ATtiny)** | ✅ emu (avr8js) | — (Arduino / MCU) | avr-gcc (hosted, C + asm), Arduino |
 | **RP2040 (Pico)** | ✅ emu (rp2040js) | — (MicroPython boots in-sim) | C (hosted → bin/UF2), MicroPython |
 | **Intel 80286 (Harris)** | ⚠️ functional core too slow for the widgets pane (generator-bound) | (286-tier OSs, not productized) | as 8086 |
-| **RISC-V rv32** | 🔴 **planned** — new emulated core (cf. ultraembedded *exactstep*) | Linux (rv32ima) / xv6-riscv / an RTOS / bare-metal | RISC-V GCC / LLVM (cross) |
+| **RISC-V rv32** | ✅ **emulated** — bw-board `src/riscv32.js` (RV32IMAC, M/S/U, Sv32, CLINT/PLIC/16550A) | **Linux 6.1 + BusyBox** (`projects/riscv32-linux`), xv6-riscv, FreeRTOS, RT-Thread, Zephyr, bare-metal | RISC-V GCC / LLVM (cross), an in-browser RV32IM assembler |
 
 ## The two new axes (planned, honestly not built)
 
