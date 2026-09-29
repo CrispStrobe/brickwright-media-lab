@@ -6,23 +6,27 @@
 #   bash fetch.sh --source     also the complete corresponding source (~186 MB)
 #   bash fetch.sh --upstream   re-derive the kernel from rv32emu-prebuilt's own
 #                              release instead of the mirror, as a cross-check
+#   bash fetch.sh --snapshot   also the post-boot snapshot (the machine at the
+#                              shell prompt; see README.md, "Snapshot")
 #
 # GPL-2.0 (kernel, busybox) and LGPL-2.1+ (glibc): the binaries and their
 # sources are published side by side (see README.md, "Corresponding source").
 set -euo pipefail
 
-MEDIA_COMMIT=5b257a33fb748885bd952d8b8b281c76f0b36516
+MEDIA_COMMIT=07132874ee064fa782f80ccae64af8d75cae65c8
 RAW="https://raw.githubusercontent.com/CrispStrobe/brickwright-media-lab/${MEDIA_COMMIT}/riscv32-linux"
 RELEASE="https://github.com/CrispStrobe/brickwright-media-lab/releases/download/riscv32-linux-v1"
 
 IMAGE_SHA256=9130ceb4be18d10560cf49ac495d7f2d5dde23c33972d7a522c077cc523de1a9
 INITRD_SHA256=d71915baaae4f35e32679a338885697194e4ecd7f31cbc9c69b82cd86b8edcd5
+SNAPSHOT_SHA256=7b82fc38525d36e8a98fb9aa112e804813e7d3a456fcca2ace220129357a272c
 
-want_source=0; upstream=0
+want_source=0; upstream=0; want_snapshot=0
 for a in "$@"; do
     case "$a" in
         --source) want_source=1 ;;
         --upstream) upstream=1 ;;
+        --snapshot) want_snapshot=1 ;;
         *) echo "unknown option: $a" >&2; exit 2 ;;
     esac
 done
@@ -47,6 +51,10 @@ done
 
 echo "${IMAGE_SHA256}  Image" | sha256sum -c -
 [ -f initramfs.cpio ] && echo "${INITRD_SHA256}  initramfs.cpio" | sha256sum -c -
+if [ "$want_snapshot" = 1 ]; then
+    curl -fL -o linux-shell.snap.gz "${RAW}/linux-shell.snap.gz"
+    echo "${SNAPSHOT_SHA256}  linux-shell.snap.gz" | sha256sum -c -
+fi
 
 if [ "$want_source" = 1 ]; then
     mkdir -p source && cd source

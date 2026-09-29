@@ -4,12 +4,12 @@
   "slots": {
     "kernel": {
       "file": "Image",
-      "url": "https://raw.githubusercontent.com/CrispStrobe/brickwright-media-lab/5b257a33fb748885bd952d8b8b281c76f0b36516/riscv32-linux/Image",
+      "url": "https://raw.githubusercontent.com/CrispStrobe/brickwright-media-lab/07132874ee064fa782f80ccae64af8d75cae65c8/riscv32-linux/Image",
       "sha256": "9130ceb4be18d10560cf49ac495d7f2d5dde23c33972d7a522c077cc523de1a9"
     },
     "initrd": {
       "file": "initramfs.cpio",
-      "url": "https://raw.githubusercontent.com/CrispStrobe/brickwright-media-lab/5b257a33fb748885bd952d8b8b281c76f0b36516/riscv32-linux/initramfs.cpio",
+      "url": "https://raw.githubusercontent.com/CrispStrobe/brickwright-media-lab/07132874ee064fa782f80ccae64af8d75cae65c8/riscv32-linux/initramfs.cpio",
       "sha256": "d71915baaae4f35e32679a338885697194e4ecd7f31cbc9c69b82cd86b8edcd5"
     }
   },
@@ -54,5 +54,15 @@
     }
   ],
   "source": "https://github.com/CrispStrobe/brickwright-media-lab/releases/tag/riscv32-linux-v1",
-  "notes": "rv32emu-prebuilt 2026.09.23-19f5a79 kernel Image and a busybox initramfs cut from its rootfs (bw-board test/linux-riscv/build.sh), mirrored on branch media/riscv32-linux-v1 and served content-addressed from raw.githubusercontent.com (CORS). Complete corresponding source is on release riscv32-linux-v1. Boots on bw-board RiscV32Machine (64 MiB at 0x80000000, in-emulator SBI) via createDebugTarget('riscv32', {linux}) or runRiscvLinuxBundle; verified by bw-board test/linux-riscv/lesson.mjs."
+  "notes": "rv32emu-prebuilt 2026.09.23-19f5a79 kernel Image and a busybox initramfs cut from its rootfs (bw-board test/linux-riscv/build.sh), mirrored on branch media/riscv32-linux-v1 and served content-addressed from raw.githubusercontent.com (CORS). Complete corresponding source is on release riscv32-linux-v1. Boots on bw-board RiscV32Machine (64 MiB at 0x80000000, in-emulator SBI) via createDebugTarget('riscv32', {linux}) or runRiscvLinuxBundle; verified by bw-board test/linux-riscv/lesson.mjs. The snapshot is the machine at the prompt after booting them (bw-board createDebugTarget('riscv32', {linux: {kernel, initrd, snapshot}})): the app opens the lesson there; without it, the kernel boots from scratch.",
+  "snapshot": {
+    "file": "linux-shell.snap.gz",
+    "url": "https://raw.githubusercontent.com/CrispStrobe/brickwright-media-lab/07132874ee064fa782f80ccae64af8d75cae65c8/riscv32-linux/linux-shell.snap.gz",
+    "sha256": "7b82fc38525d36e8a98fb9aa112e804813e7d3a456fcca2ace220129357a272c",
+    "rawSha256": "1972e440f4b3d683b55f3c87fdf9bd62ab70300c3f56baf59da6043e7b2ceebe",
+    "format": "bw-board riscv32-snapshot BWRV32S1, gzip",
+    "base": "the RAM bootLinux() lays down for the kernel and initrd slots above",
+    "at": "the bwb# shell prompt, 67571000 steps",
+    "madeBy": "bw-board scripts/riscv32-linux-snapshot.mjs (workflow run 36576659198)"
+  }
 }
