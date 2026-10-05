@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Reproduce bbcbasic_console_pico.uf2 / .elf — PicoBB (BBC BASIC for the Pico),
+# Reproduce bbcbasic_console_pico.uf2 — PicoBB (BBC BASIC for the Pico),
 # the minimal UART-console configuration, built for a stock RP2040 (Pico) and
 # verified byte-for-byte against the committed artifacts.
 #

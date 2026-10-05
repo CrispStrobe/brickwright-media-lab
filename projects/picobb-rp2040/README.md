@@ -34,10 +34,9 @@ make BOARD=pico STDIO=UART SERIAL_DEV=0 SOUND=NONE
 Console I/O is pico-sdk `stdio_uart` on **UART0** (PL011 @ `0x40034000`, GP0/GP1,
 115200 8N1) — exactly the peripheral bw-board's rp2040js machine emulates.
 
-Output artifacts (both committed here):
+Output artifact (committed here):
 
 * `bbcbasic_console_pico.uf2` — the firmware image booted by `proof.mjs`
-* `bbcbasic_console_pico.elf` — the ELF the UF2 is derived from
 
 ### Why `SOUND=NONE`
 
@@ -114,11 +113,9 @@ date (1783865948 = 2026-07-12), so the firmware's build-date banner is
 deterministic. The only machine-specific data otherwise embedded in the image
 is an absolute source path in one LittleFS error string (`__FILE__`); `fetch.sh`
 remaps it with `-ffile-prefix-map` so the **UF2 reproduces byte-for-byte
-regardless of build location**. The committed `.elf` still carries absolute
-pico-sdk paths in its DWARF debug sections, so the ELF is reproducible only at
-the same SDK path — `fetch.sh` therefore treats the **UF2** as the
-authoritative byte-compare, and `proof.mjs` (behaviour) as the authoritative
-check overall.
+regardless of build location** on the same toolchain (arm-none-eabi-gcc 13.2,
+pico-sdk 2.1.1). `fetch.sh` byte-compares the **UF2**, and `proof.mjs`
+(behaviour) is the authoritative check overall.
 
 ## Licensing
 
