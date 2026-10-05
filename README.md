@@ -63,6 +63,7 @@ output then shows only in the Debug instrument). The CLI ignores the field. See
 | tron-0xf | zx48 | **Plays** — the 48K acceptance title |
 | blinkenrocket-firmware | attiny88 + 788AS matrix | **Boots** — pixel-identical boot glyph under emulation |
 | steamboat-willie | eater6502 (same rig as Bad Apple) | Encoded data is GPL over a public-domain 1928 film — the cleanest demo of the set |
+| ms-basic-6502 | eater6502 (W65C51 ACIA console @ $5000) | **Boots to interactive BASIC** — MIT Microsoft BASIC V1.1, ca65-built ROM; prints the banner + `OK` and runs programs over the ACIA (`projects/ms-basic-6502/proof.mjs`). ROM reproduces byte-for-byte from the pinned source (`fetch.sh`) |
 | elks | i8086 / PCXT8086 (BIOS + µPD765 + 8237 + 8259) | **Interactive Unix** — boots to a shell; steered by keyboard (`scripts/elks-shell.mjs`), programmed in-OS via bundled ELKS BASIC (MIT). Boot verified by `scripts/elks-media-proof.mjs` |
 | minix-1.7 | i8086 / PCXT8086 | **Boots** — BSD-3 combo floppy reaches the Minix boot monitor; ships ACK (native C/Pascal/Modula-2) once the kernel starts |
 | minix-2.0 | i80386 free-BIOS (LGPL Bochs BIOS, no proprietary ROM) | **Interactive Unix** — BSD-3 Minix 2.0.4 boots in 16-bit protected mode to a multiuser `login:`, logs in `root`, runs shell commands (the 386 tier the 8086 could not reach) |
