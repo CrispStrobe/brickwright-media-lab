@@ -89,7 +89,6 @@ MAP="-ffile-prefix-map=$work/PicoBB=PicoBB -ffile-prefix-map=$work/pico-sdk=pico
     make BOARD=pico STDIO=UART SERIAL_DEV=0 SOUND=NONE )
 
 built_uf2="$work/PicoBB/console/pico/bbcbasic_console_pico.uf2"
-built_elf="$work/PicoBB/console/pico/bbcbasic_console_pico.elf"
 
 # ---- 5. verify byte-for-byte against the committed artifacts -----------------
 # The UF2 is the authoritative byte-compare: with SOURCE_DATE_EPOCH and the
@@ -109,14 +108,6 @@ else
 	echo "proof.mjs (behaviour) remains the authoritative check." >&2
 	exit 1
 fi
-if [ -f "$here/bbcbasic_console_pico.elf" ]; then
-	echo "Rebuilt ELF  sha256:"; sha256sum "$built_elf"
-	echo "Committed ELF sha256:"; sha256sum "$here/bbcbasic_console_pico.elf"
-	cmp -s "$built_elf" "$here/bbcbasic_console_pico.elf" \
-		&& echo "(ELF also byte-identical.)" \
-		|| echo "(ELF differs — expected: DWARF debug paths are toolchain/location-specific.)"
-fi
-
 cat <<EOF
 
 Run it on the emulated RP2040 (bw-board's rp2040js machine):
