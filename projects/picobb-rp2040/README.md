@@ -50,13 +50,16 @@ configs also use core1 and are out of scope for a UART console anyway.)
 ## Proven — boots and runs on the emulated RP2040
 
 `proof.mjs` boots `bbcbasic_console_pico.uf2` on bw-board's rp2040js machine and
-drives the UART0 console. It does **not** go through `runMediaBundle`: that path
-has no rp2040 machine factory and its entry logic is 16-bit (`cpu.pc & 0xffff`,
-`mem[0xfffc]`). The RP2040 is reached through bw-board's other canonical
-surface — `createRp2040jsAdapter()` (the same adapter lite's
+drives the UART0 console through bw-board's **canonical rp2040 media-bundle
+runner**, `runRp2040Bundle` (`src/machine-media-rp2040.js`). It is the rp2040
+analogue of `runI8086FloppyBundle` — a sibling of the content-pinned
+`runMediaBundle`, whose entry logic is 8/16-bit (`cpu.pc & 0xffff`, `mem[0xfffc]`)
+and has no rp2040 factory. The runner flattens the UF2, `bootFromFlash`-es it on
+`createRp2040jsAdapter()` (the same adapter lite's
 `scripts/probe-pico-micropython.mjs` and bw-board's `test/pico-blink-full-chain`
-drive): the UF2 is flattened and `bootFromFlash`-ed, UART0 TX is captured via
-`adapter.onSerial`, and bytes are typed in via `rp2040.uart[0].feedByte`.
+drive), captures UART0 TX via `adapter.onSerial`, answers the console's VT100
+size probes, and types into the REPL via `rp2040.uart[0].feedByte`. The boot
+dance now lives in one place instead of being copied into each consumer.
 
 The console is an **ANSI terminal**: at start it waits for the user to press
 Enter (printing `.` once a second until a CR arrives), then probes the terminal
