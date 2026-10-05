@@ -1,0 +1,28 @@
+{
+  "title": "BBC BASIC (Z80) — R.T. Russell, on the BrickWright Z80 machine",
+  "machine": "z80",
+  "entry": 256,
+  "program": { "kind": "cpm", "console": "bdos-shim", "tool": "projects/bbc-basic-z80/proof.mjs" },
+  "slots": { "com": "bbcbasic.com" },
+  "expect": ["BBC BASIC (Z80)", "Version 5.00", "(C) Copyright R.T.Russell", ">"],
+  "license": "Zlib",
+  "programs": [
+    {
+      "title": "arithmetic one-liner",
+      "input": "PRINT 2+2\r",
+      "expect": ["PRINT 2+2", "         4"]
+    },
+    {
+      "title": "stored FOR/NEXT program",
+      "input": "10 FOR I=1 TO 3\r20 PRINT \"Z\";I\r30 NEXT I\rRUN\r",
+      "expect": ["Z1", "Z2", "Z3", ">"]
+    }
+  ],
+  "components": [
+    { "file": "bbcbasic.com", "license": "Zlib", "source": "rtrussell/BBCZ80 bin/cpm/BBCBASIC.COM @ 410e7fb0 — generic CP/M edition, unmodified", "sha256": "833839801fe3edbb73b91613eb43ea6052822d2d09dafd08639d120ad3a6e1bd" }
+  ],
+  "provenance": {
+    "upstream": { "repo": "github.com/rtrussell/BBCZ80", "commit": "410e7fb089f9d90f985ec5ed9ec1d40492fbe79f", "path": "bin/cpm/BBCBASIC.COM", "license": "Zlib", "role": "BBC BASIC (Z80) v5.00, generic CP/M edition — prebuilt by the author, shipped unmodified" }
+  },
+  "notes": "R.T. Russell's BBC BASIC (Z80) v5.00, the generic CP/M .COM, shipped UNMODIFIED from rtrussell/BBCZ80 (zlib). It loads at 0x0100 in the `com` slot of the bw-board Z80 machine (the same slot and path lite boots BBC BASIC on). runMediaBundle realizes the machine, loads the .COM and sets the entry PC to 0x0100; the interpreter does all console I/O through CP/M BDOS CALL 5, serviced by the minimal BDOS console shim that bw-board installs on the machine's pcTraps (the machine's own `pcTraps` comment names the CP/M BDOS console shim as its first tenant; the same shim surface is src/bbc-z80-runner.js). proof.mjs drives that real boot: it realizes the machine via runMediaBundle, installs the BDOS shim, and replays the programs[] scripted sessions (each `input` is the characters typed; `expect` is what the interpreter prints back). Because BBC BASIC flushes type-ahead after each Enter, lines are fed prompt-by-prompt (waiting for '>' before the next). The boot banner (BBC BASIC (Z80) Version 5.00 / (C) Copyright R.T.Russell 2025 / the '>' prompt) is the top-level expect[]. 'PRINT 2+2' prints the right-justified '         4'; the stored FOR/NEXT loop prints Z1/Z2/Z3. Verified reproducible: fetch.sh confirms bbcbasic.com is byte-identical to the pinned upstream binary. The name 'BBC BASIC' is used by BBC permission granted to R.T. Russell, to identify the unmodified interpreter only."
+}
