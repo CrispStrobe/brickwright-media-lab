@@ -1,0 +1,44 @@
+BBC BASIC (Z80) — zlib licence
+==============================
+
+The shipped artifact `bbcbasic.com` is R.T. Russell's BBC BASIC (Z80),
+the generic CP/M edition, taken UNMODIFIED from rtrussell/BBCZ80
+(`bin/cpm/BBCBASIC.COM`). It is distributed under the zlib licence, as
+is the thin glue in this project directory (proof.mjs, fetch.sh, the
+manifest and this README). The upstream licence text (licence.txt in
+rtrussell/BBCZ80) is reproduced verbatim below.
+
+----------------------------------------------------------------------
+
+Copyright (c) 2024, Richard T. Russell, http://www.rtrussell.co.uk/
+
+This software is provided 'as-is', without any express or implied
+warranty.  In no event will the authors be held liable for any damages
+arising from the use of this software.
+
+Permission is granted to anyone to use this software for any purpose,
+including commercial applications, and to alter it and redistribute it
+freely, subject to the following restrictions:
+
+1. The origin of this software must not be misrepresented; you must not
+   claim that you wrote the original software.  If you use this software
+   in a product, an acknowledgment in the product documentation would be
+   appreciated but is not required.
+
+2. Altered source versions must be plainly marked as such, and must not be
+   misrepresented as being the original software.
+
+3. This notice may not be removed or altered from any source distribution.
+
+----------------------------------------------------------------------
+
+Glue (proof.mjs, fetch.sh, brickwright-media.json, README.md) in this
+directory is Copyright (c) 2026 Brickwright contributors, offered under
+the same zlib terms above. `bbcbasic.com` itself is Russell's and ships
+unmodified.
+
+The name "BBC BASIC" is used by permission of the British Broadcasting
+Corporation, granted to R.T. Russell, and is not transferable to a
+derived or forked work. This project uses the name only to identify the
+unmodified upstream interpreter and to describe compatibility; it does
+not alter or fork it.
