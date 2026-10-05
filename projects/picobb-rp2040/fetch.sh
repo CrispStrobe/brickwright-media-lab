@@ -94,9 +94,7 @@ built_uf2="$work/PicoBB/console/pico/bbcbasic_console_pico.uf2"
 # The UF2 is the authoritative byte-compare: with SOURCE_DATE_EPOCH and the
 # -ffile-prefix-map above it carries no build-location- or date-dependent data,
 # so a fresh build reproduces it byte-for-byte on the same toolchain
-# (arm-none-eabi-gcc 13.2) and pico-sdk 2.1.1. The ELF additionally carries DWARF
-# debug info (DW_AT_comp_dir, toolchain build paths), which is not fully location-
-# independent, so it is compared informationally only.
+# (arm-none-eabi-gcc 13.2) and pico-sdk 2.1.1.
 echo
 echo "Rebuilt UF2  sha256:"; sha256sum "$built_uf2"
 echo "Committed UF2 sha256:"; sha256sum "$here/bbcbasic_console_pico.uf2"
