@@ -43,8 +43,11 @@ jobs:
         run: npm ci
         working-directory: bw-board
 
+      # --fetch runs each fetch-only project's fetch.sh (sha-verified) so the
+      # prebuilt upstream binaries (f83/small-c/volksforth) are exercised too,
+      # without this repo re-hosting them. A download that verifies wrong fails.
       - name: Verify bootable projects
-        run: node scripts/ci-verify.mjs
+        run: node scripts/ci-verify.mjs --fetch
         working-directory: media-lab
         env:
           BW_BOARD_DIR: ${{ github.workspace }}/bw-board
