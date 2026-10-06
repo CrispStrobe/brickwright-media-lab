@@ -52,6 +52,24 @@ const skip = (p, d) => { results.skip.push(p); console.log(`SKIP  ${p}  — ${d}
 // Check that every needle appears in the transcript; return the first miss or null.
 const firstMiss = (text, needles) => needles.find((w) => !text.includes(w)) ?? null;
 
+// Filenames a project needs present before it can run: its slot values (and each
+// programs[] entry's slots), each a bare filename or a {file, ...} descriptor.
+function slotFiles(manifest) {
+    const names = [];
+    const add = (slots) => { for (const v of Object.values(slots || {})) names.push(typeof v === 'string' ? v : v?.file); };
+    add(manifest.slots);
+    for (const p of manifest.programs || []) add(p.slots);
+    return names.filter(Boolean);
+}
+
+// Run a project's fetch.sh (each verifies its downloads against pinned sha256s).
+function runFetch(name, dir, what) {
+    console.log(`      fetching ${name}/${what} via fetch.sh (sha-verified) ...`);
+    const f = spawnSync('bash', ['fetch.sh'], { cwd: dir, encoding: 'utf8', timeout: 600_000 });
+    if (f.status !== 0) console.log((f.stderr || '').slice(-300));
+    return f.status;
+}
+
 function runProof(name, dir) {
     const r = spawnSync(process.execPath, [join(dir, 'proof.mjs')], {
         cwd: dir, encoding: 'utf8', timeout: 300_000,
@@ -59,7 +77,10 @@ function runProof(name, dir) {
         maxBuffer: 64 * 1024 * 1024,
     });
     if (r.status === 0) pass(name, 'proof.mjs');
-    else fail(name, `proof.mjs exited ${r.status}\n${(r.stdout || '').split('\n').slice(-6).join('\n')}\n${(r.stderr || '').slice(-400)}`);
+    else if (r.status === 2) {  // the proof's own SKIP convention (e.g. unvendored media absent)
+        const line = (r.stdout || '').split('\n').find((l) => l.startsWith('SKIP')) || 'proof.mjs skipped';
+        skip(name, line.replace(/^SKIP:?\s*/, ''));
+    } else fail(name, `proof.mjs exited ${r.status}\n${(r.stdout || '').split('\n').slice(-6).join('\n')}\n${(r.stderr || '').slice(-400)}`);
 }
 
 function runDos(name, dir, manifest) {
@@ -76,10 +97,9 @@ function runDos(name, dir, manifest) {
         const artifactPath = join(dir, artifact);
         if (!existsSync(artifactPath)) {
             if (FETCH && existsSync(join(dir, 'fetch.sh'))) {
-                console.log(`      fetching ${name}/${artifact} via fetch.sh (sha-verified) ...`);
-                const f = spawnSync('bash', ['fetch.sh'], { cwd: dir, encoding: 'utf8', timeout: 240_000 });
-                if (f.status !== 0 || !existsSync(artifactPath)) {
-                    fail(name, `fetch.sh failed (status ${f.status})\n${(f.stderr || '').slice(-300)}`);
+                const st = runFetch(name, dir, artifact);
+                if (st !== 0 || !existsSync(artifactPath)) {
+                    fail(name, `fetch.sh failed (status ${st}) — ${artifact} still absent`);
                     return;
                 }
             } else {
@@ -115,13 +135,36 @@ const projectDirs = readdirSync(PROJECTS, { withFileTypes: true })
 for (const name of projectDirs) {
     const dir = join(PROJECTS, name);
     const manifestPath = join(dir, 'brickwright-media.json');
+    const hasProof = existsSync(join(dir, 'proof.mjs'));
 
-    if (existsSync(join(dir, 'proof.mjs'))) { runProof(name, dir); continue; }
-    if (!existsSync(manifestPath)) { skip(name, 'no brickwright-media.json'); continue; }
+    let manifest = null;
+    if (existsSync(manifestPath)) {
+        try { manifest = JSON.parse(readFileSync(manifestPath, 'utf8')); }
+        catch (e) { fail(name, `unreadable manifest: ${e.message}`); continue; }
+    }
 
-    let manifest;
-    try { manifest = JSON.parse(readFileSync(manifestPath, 'utf8')); }
-    catch (e) { fail(name, `unreadable manifest: ${e.message}`); continue; }
+    if (hasProof) {
+        // A proof drives the boot itself; make sure its slot artifacts are present
+        // (fetch with --fetch, else skip without running — so a proof whose media
+        // is fetched/unvendored does not silently exit-0 as a pass).
+        if (manifest) {
+            const missing = slotFiles(manifest).filter((f) => !existsSync(join(dir, f)));
+            if (missing.length) {
+                if (FETCH && existsSync(join(dir, 'fetch.sh'))) {
+                    const st = runFetch(name, dir, missing.join(', '));
+                    const still = missing.filter((f) => !existsSync(join(dir, f)));
+                    if (st !== 0 || still.length) { fail(name, `fetch.sh failed (status ${st}) — still missing ${still.join(', ')}`); continue; }
+                } else {
+                    skip(name, `artifact(s) ${missing.join(', ')} not committed (proof needs them; CI runs with --fetch)`);
+                    continue;
+                }
+            }
+        }
+        runProof(name, dir);
+        continue;
+    }
+
+    if (!manifest) { skip(name, 'no brickwright-media.json'); continue; }
 
     const tool = manifest.program?.tool;
     if (tool === 'run-dos') { runDos(name, dir, manifest); continue; }
