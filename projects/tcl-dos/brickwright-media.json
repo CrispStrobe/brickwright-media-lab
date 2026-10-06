@@ -1,0 +1,29 @@
+{
+  "title": "partcl — a tiny libre Tcl that RUNS on the 8086 (DOS)",
+  "machine": "i8086",
+  "program": { "kind": "dos", "tool": "run-dos", "preset": "xt", "variant": "80186", "max": 60000000 },
+  "slots": { "exe": "TCL.EXE" },
+  "mount": { "PROG.TCL": "samples/demo.tcl" },
+  "expect": ["partcl on DOS (8086)", "42", "120", "720"],
+  "programs": [
+    {
+      "language": "tcl",
+      "source": "samples/demo.tcl",
+      "slots": { "exe": "TCL.EXE" },
+      "mount": { "PROG.TCL": "samples/demo.tcl" },
+      "program": { "kind": "dos", "tool": "run-dos", "preset": "xt", "variant": "80186", "max": 60000000 },
+      "expect": ["partcl on DOS (8086)", "42", "120", "720"]
+    }
+  ],
+  "toolchain": {
+    "interpreter": "partcl (Serge Zaitsev)",
+    "upstream": "github.com/zserge/partcl",
+    "commit": "1ed1df73907875ee770ac65e6546bd56fbc6f637",
+    "buildTool": "ia16-elf-gcc (tkchia GCC port for 16-bit x86)",
+    "target": "msdos (16-bit MZ .EXE, small model, newlib + libi86)",
+    "invocation": "ia16-elf-gcc -mcmodel=small -march=any_186 -O2 dosmain.c -o TCL.EXE",
+    "binarySha256": "13ec143ec671f671df45a0d4b7c8999ff4c6b51fbefb89151fe5257866abd327"
+  },
+  "license": "MIT",
+  "notes": "partcl (Serge Zaitsev), a minimal Tcl interpreter in a single ~650-line tcl.c -- set / proc / if / while / return-break-continue, command substitution `[...]`, `$var`, braces, and prefix arithmetic (+ - * / < > <= >= == !=) -- MIT, Copyright (c) 2016 Serge Zaitsev. UNLIKE ACK (a host cross-compiler whose OUTPUT runs on the 8086), TCL.EXE is ITSELF a 16-bit MS-DOS program: it runs on the bw-board 8086 DOS service layer, reads a Tcl script from PROG.TCL via INT 21h file I/O (open/read), and prints via the C library (INT 21h) -- partcl's `puts` command calls libc puts. It is the Tcl entry in the lab's DOS-native interpreter set alongside ubasic-dos (BASIC), small-c (C), fe-dos (Lisp) and f83 / volksforth (Forth) -- a real interpreter that runs ON the machine, not merely one whose output does. One change over upstream (see fetch.sh + dosmain.c): a PROG.TCL-reading DOS front-end (public domain) that #includes tcl.c with TEST defined so upstream's stdin-REPL main() is dropped. Nothing in tcl.c is modified. Built with ia16-elf-gcc; the GPL of that GCC port is a BUILD-time tool only (the shipped binary links newlib + libi86, both permissive). Build flags: -march=any_186 (the DOS bench's C variant runs the 80186 ISA), -mcmodel=small (partcl is integer-only, so code and data each fit a single 64K segment -- no soft-float, unlike fe-dos). partcl's numbers are integers (atoi), so output is exact and deterministic. Proven on the bench: samples/demo.tcl prints the banner, [* 6 7]=42, a recursive `fact` proc (fact 5=120, fact 6=720) -- puts/set/proc/if/while and prefix arithmetic, the core of the language. The run-dos CLI mounts the program via `--file PROG.TCL=samples/demo.tcl --variant 80186` (note: the CLI can drop piped stdout on process.exit; the bench harness / lite is the authoritative capture). In brickwright-lite the same TCL.EXE runs on the browser DOS bench reading the user's Tcl source mounted as PROG.TCL."
+}
