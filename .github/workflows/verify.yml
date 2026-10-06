@@ -1,0 +1,50 @@
+name: verify
+
+# Boots every media-lab project that can be run deterministically on a pinned
+# bw-board checkout and checks its manifest's expect[] against the real console
+# transcript. Projects that need external media, an OS image, or interactive
+# input are skipped loudly, by name (see scripts/ci-verify.mjs).
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout media-lab
+        uses: actions/checkout@v4
+        with:
+          path: media-lab
+
+      # bw-board is PUBLIC, so the default GITHUB_TOKEN can clone it. Pinned to a
+      # master commit that carries runMediaBundle, run-dos.mjs and the rp2040
+      # media-bundle runner. Bump this pin deliberately when a project needs a
+      # newer bw-board surface.
+      - name: Checkout bw-board (pinned)
+        uses: actions/checkout@v4
+        with:
+          repository: CrispStrobe/bw-board
+          ref: 4869e77752e110910ac56520bc1f47a9cded97f4
+          path: bw-board
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install bw-board dependencies
+        run: npm ci
+        working-directory: bw-board
+
+      - name: Verify bootable projects
+        run: node scripts/ci-verify.mjs
+        working-directory: media-lab
+        env:
+          BW_BOARD_DIR: ${{ github.workspace }}/bw-board
