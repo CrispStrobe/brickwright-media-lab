@@ -17,11 +17,15 @@
  *                                      artifact not committed, or a machine/OS
  *                                      image this harness does not boot).
  *
- * A committed artifact is required to run: a project whose slot file is absent
- * (fetched/built by fetch.sh, not checked in) skips as "artifact not committed".
+ * A project whose slot file is absent (fetched/built by fetch.sh, not checked
+ * in) skips as "artifact not committed" — UNLESS run with --fetch (or
+ * MEDIA_LAB_FETCH=1), which runs its fetch.sh first (each fetch.sh verifies its
+ * download against a pinned sha256, so the sha IS the pin). This keeps the repo
+ * from re-hosting prebuilt upstream binaries while still exercising them in CI.
+ * A fetch that fails or verifies wrong is a FAIL, not a skip.
  *
  * Requires a bw-board checkout. Point BW_BOARD_DIR at it (defaults to a sibling
- * ../bw-board).  Usage:  BW_BOARD_DIR=/path/to/bw-board node scripts/ci-verify.mjs
+ * ../bw-board).  Usage:  BW_BOARD_DIR=/path/to/bw-board node scripts/ci-verify.mjs [--fetch]
  */
 import { readFileSync, existsSync, readdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
@@ -33,6 +37,7 @@ const ROOT = join(here, '..');
 const PROJECTS = join(ROOT, 'projects');
 const BW_BOARD = process.env.BW_BOARD_DIR || join(ROOT, '..', 'bw-board');
 const RUN_DOS = join(BW_BOARD, 'scripts', 'run-dos.mjs');
+const FETCH = process.argv.includes('--fetch') || process.env.MEDIA_LAB_FETCH === '1';
 
 if (!existsSync(BW_BOARD)) {
     console.error(`bw-board checkout not found at ${BW_BOARD} — set BW_BOARD_DIR`);
@@ -69,7 +74,19 @@ function runDos(name, dir, manifest) {
         const artifact = slots.exe || slots.com;
         if (!artifact) { fail(name, `unit ${unitIdx}: no exe/com slot`); return; }
         const artifactPath = join(dir, artifact);
-        if (!existsSync(artifactPath)) { skip(name, `artifact ${artifact} not committed (run fetch.sh)`); return; }
+        if (!existsSync(artifactPath)) {
+            if (FETCH && existsSync(join(dir, 'fetch.sh'))) {
+                console.log(`      fetching ${name}/${artifact} via fetch.sh (sha-verified) ...`);
+                const f = spawnSync('bash', ['fetch.sh'], { cwd: dir, encoding: 'utf8', timeout: 240_000 });
+                if (f.status !== 0 || !existsSync(artifactPath)) {
+                    fail(name, `fetch.sh failed (status ${f.status})\n${(f.stderr || '').slice(-300)}`);
+                    return;
+                }
+            } else {
+                skip(name, `artifact ${artifact} not committed (run fetch.sh${FETCH ? '' : '; CI runs with --fetch'})`);
+                return;
+            }
+        }
 
         const args = [RUN_DOS, artifactPath, '--preset', program.preset || 'xt'];
         if (program.variant) args.push('--variant', program.variant);
