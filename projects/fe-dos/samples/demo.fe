@@ -1,0 +1,7 @@
+; fe — rxi's tiny Lisp — running on an emulated 8086 (MS-DOS)
+(print "fe Lisp on DOS (8086)")
+(print "6 * 7 =" (* 6 7))
+(= fact (fn (n) (if (<= n 1) 1 (* n (fact (- n 1))))))
+(print "5! =" (fact 5))
+(= fib (fn (n) (if (<= 2 n) (+ (fib (- n 1)) (fib (- n 2))) n)))
+(print "fib(10) =" (fib 10))

@@ -1,0 +1,29 @@
+{
+  "title": "fe — a tiny libre Lisp that RUNS on the 8086 (DOS)",
+  "machine": "i8086",
+  "program": { "kind": "dos", "tool": "run-dos", "preset": "xt", "variant": "80186", "max": 60000000 },
+  "slots": { "exe": "FE.EXE" },
+  "mount": { "PROG.FE": "samples/demo.fe" },
+  "expect": ["fe Lisp on DOS (8086)", "6 * 7 = 42", "5! = 120", "fib(10) = 55"],
+  "programs": [
+    {
+      "language": "lisp",
+      "source": "samples/demo.fe",
+      "slots": { "exe": "FE.EXE" },
+      "mount": { "PROG.FE": "samples/demo.fe" },
+      "program": { "kind": "dos", "tool": "run-dos", "preset": "xt", "variant": "80186", "max": 60000000 },
+      "expect": ["fe Lisp on DOS (8086)", "6 * 7 = 42", "5! = 120", "fib(10) = 55"]
+    }
+  ],
+  "toolchain": {
+    "interpreter": "fe (rxi)",
+    "upstream": "github.com/rxi/fe",
+    "commit": "ed4cda96bd582cbb08520964ba627efb40f3dd91",
+    "buildTool": "ia16-elf-gcc (tkchia GCC port for 16-bit x86)",
+    "target": "msdos (16-bit MZ .EXE, medium model, newlib + libi86)",
+    "invocation": "ia16-elf-gcc -mcmodel=medium -march=any_186 -O2 -I src dosmain.c src/fe.c -o FE.EXE",
+    "binarySha256": "c9170ccc7c59ab0f1a0a45929f97ce86b65248714c734b0b88d5bd0bc7d7c72e"
+  },
+  "license": "MIT",
+  "notes": "fe (rxi), a tiny Lisp in ~900 lines of portable C -- lambdas, closures, macros, a mark-and-sweep GC over a fixed object pool, no allocation after startup -- MIT, Copyright (c) 2020 rxi. UNLIKE ACK (a host cross-compiler whose OUTPUT runs on the 8086), FE.EXE is ITSELF a 16-bit MS-DOS program: it runs on the bw-board 8086 DOS service layer, reads a fe program from PROG.FE via INT 21h file I/O (open/read), and prints via the C library (INT 21h). It is the Lisp complement to ubasic-dos (BASIC) and small-c (C) -- a real interpreter that runs ON the machine, not merely one whose output does. One change over upstream (see fetch.sh + dosmain.c): a PROG.FE-reading DOS front-end (public domain) replacing upstream's FE_STANDALONE stdin REPL, whose 64000-byte pool leaves no stack room in a small-model .exe (the lab main uses 32000). Nothing in fe.c/fe.h is modified. Built with ia16-elf-gcc; the GPL of that GCC port is a BUILD-time tool only (the shipped binary links newlib + libi86, both permissive). Build flags: -march=any_186 (the DOS bench's C variant runs the 80186 ISA), -mcmodel=medium (fe plus newlib's soft-float %g formatting just exceeds a small-model 64K code segment, so far code / near data). fe's number type is float; the demo's values are whole, so output is exact and deterministic (%.7g of 42.0 is '42'). Proven on the bench: samples/demo.fe prints the banner, 6*7=42, 5!=120 (recursive factorial) and fib(10)=55 (recursive Fibonacci) -- fn/if/<=/*/-/+/print, the core of the language. The run-dos CLI mounts the program via `--file PROG.FE=samples/demo.fe --variant 80186` (note: the CLI can drop piped stdout on process.exit; the bench harness / lite is the authoritative capture). In brickwright-lite the same FE.EXE runs on the browser DOS bench reading the user's fe source mounted as PROG.FE."
+}
