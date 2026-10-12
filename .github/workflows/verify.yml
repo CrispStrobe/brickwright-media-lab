@@ -9,6 +9,13 @@ on:
   push:
     branches: [main]
   pull_request:
+  # Nightly drift guard: the fetched projects (prebuilt upstream binaries and
+  # GPL/LGPL OS images) are sha-pinned, so if an upstream retags, moves or
+  # removes a file, --fetch's sha check turns red here before anyone hits it on
+  # a push. Catches the class of breakage the lite gallery saw (a pinned source
+  # drifting out from under the committed pin).
+  schedule:
+    - cron: '17 4 * * *'   # 04:17 UTC daily
   workflow_dispatch:
 
 permissions:

@@ -27,7 +27,7 @@
  * Requires a bw-board checkout. Point BW_BOARD_DIR at it (defaults to a sibling
  * ../bw-board).  Usage:  BW_BOARD_DIR=/path/to/bw-board node scripts/ci-verify.mjs [--fetch]
  */
-import { readFileSync, existsSync, readdirSync } from 'node:fs';
+import { readFileSync, existsSync, readdirSync, appendFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
@@ -45,9 +45,10 @@ if (!existsSync(BW_BOARD)) {
 }
 
 const results = { pass: [], fail: [], skip: [] };
-const pass = (p, d) => { results.pass.push(p); console.log(`PASS  ${p}  — ${d}`); };
-const fail = (p, d) => { results.fail.push(p); console.log(`FAIL  ${p}  — ${d}`); };
-const skip = (p, d) => { results.skip.push(p); console.log(`SKIP  ${p}  — ${d}`); };
+const rows = [];   // structured per-project outcome for the CI capability table
+const pass = (p, d) => { results.pass.push(p); rows.push({ name: p, status: 'pass', detail: d }); console.log(`PASS  ${p}  — ${d}`); };
+const fail = (p, d) => { results.fail.push(p); rows.push({ name: p, status: 'fail', detail: d }); console.log(`FAIL  ${p}  — ${d}`); };
+const skip = (p, d) => { results.skip.push(p); rows.push({ name: p, status: 'skip', detail: d }); console.log(`SKIP  ${p}  — ${d}`); };
 
 // Check that every needle appears in the transcript; return the first miss or null.
 const firstMiss = (text, needles) => needles.find((w) => !text.includes(w)) ?? null;
@@ -174,6 +175,25 @@ for (const name of projectDirs) {
 
 const total = projectDirs.length;
 console.log(`\n=== media-lab verify: ${results.pass.length} pass, ${results.fail.length} fail, ${results.skip.length} skip (of ${total}) ===`);
+
+// A capability table in the GitHub Actions run summary (set automatically in CI
+// via $GITHUB_STEP_SUMMARY). Harmless locally — the env var is simply unset.
+if (process.env.GITHUB_STEP_SUMMARY) {
+    const icon = (s) => (s === 'pass' ? '✅' : s === 'fail' ? '❌' : '⤳');
+    const md = [
+        `## media-lab capability verify`,
+        '',
+        `**${results.pass.length} pass · ${results.fail.length} fail · ${results.skip.length} skip** (of ${total} projects)`,
+        '',
+        '| Project | Status | Detail |',
+        '|---|---|---|',
+        ...rows.slice().sort((a, b) => a.name.localeCompare(b.name)).map((r) =>
+            `| \`${r.name}\` | ${icon(r.status)} ${r.status} | ${String(r.detail).split('\n')[0].replace(/\|/g, '\\|')} |`),
+        '',
+    ].join('\n');
+    try { appendFileSync(process.env.GITHUB_STEP_SUMMARY, md + '\n'); } catch { /* summary is best-effort */ }
+}
+
 if (results.fail.length) {
     console.log('FAILED: ' + results.fail.join(', '));
     process.exit(1);
