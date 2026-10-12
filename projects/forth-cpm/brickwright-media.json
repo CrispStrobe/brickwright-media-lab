@@ -8,16 +8,19 @@
   },
   "program": {
     "kind": "cpm",
-    "tool": "proof.mjs (runMediaBundle z80 + BDOS console shim)"
+    "tool": "proof.mjs (runMediaBundle z80 + BDOS console/file shim)"
   },
   "slots": {
     "com": "FORTH.COM"
   },
+  "mount": {
+    "PROG.FTH": "samples/demo.fth"
+  },
   "expect": [
     "zForth on CP/M (Z80)",
     "49 ",
-    "1 \r\n2 \r\n3 ",
-    "done"
+    "10 \r\n20 \r\n30 \r\n40 ",
+    "total=40 "
   ],
   "components": [
     {
@@ -31,10 +34,10 @@
     "upstream": "github.com/zevv/zForth",
     "commit": "41db72d165c1539d57f3f79970fc57ea881a79dc",
     "buildTool": "sdcc (z80 port) + sdasz80",
-    "target": "cpm80 (Z80 CP/M 2.2 .COM, 32-bit integer cell, BDOS console out)",
+    "target": "cpm80 (Z80 CP/M 2.2 .COM, 32-bit integer cell, BDOS console + file read)",
     "invocation": "sdcc -mz80 --no-std-crt0 --code-loc 0x0113 crt0.rel cpmmain.rel zforth.rel",
-    "binarySha256": "b8752e776d1d5e874d220b507fbe17def92eaea64160e39ce66484cf1f764e4e"
+    "binarySha256": "80f30b853e2cd7c886bdf31c2ece93321884e8b5f0994fa16d49a39de897f2a0"
   },
   "license": "MIT",
-  "notes": "The SAME tiny Forth the lab ships as a DOS program (projects/forth-dos), recompiled for a NON-DOS target. zForth's DOS build uses float cells and printf/sscanf/fopen, none SDCC-z80 friendly; this build uses a 32-bit INTEGER cell (division is integer: 7/2 == 3 — the one deliberate semantic gap versus the float-cell DOS build), sends output through BDOS function 2 (cpmmain.c, no printf), embeds the Forth program as a C string (no CP/M file I/O), and compiles with ZF_ENABLE_TRACE 0 (no va_list). The committed prog.fth is the exact canonical shape the Code-tab blocks->Forth transpiler emits (a `: banner ;` word, `7 7 *`, and a counted `( repeat )` begin/until loop), so this proves that transpiler output — the language — runs on the Z80 CP/M machine, not only on the 8086 DOS bench. build.sh rebuilds FORTH.COM byte-for-byte. crt0.s is BrickWright's (BSD-2-Clause, from projects/cpm-software). proof.mjs boots it on the bw-board z80 machine via runMediaBundle with the same minimal BDOS console shim cpm-software uses."
+  "notes": "The SAME tiny Forth the lab ships as a DOS program (projects/forth-dos), recompiled for a NON-DOS target, and — like forth-dos — it READS ITS PROGRAM from a mounted PROG.FTH (over CP/M BDOS open/read-sequential), so it runs ARBITRARY Code-tab Forth output, not a fixed demo. zForth's DOS build uses float cells and printf/sscanf/fopen, none SDCC-z80 friendly; this build uses a 32-bit INTEGER cell (division is integer: 7/2 == 3 — the one deliberate semantic gap versus the float-cell DOS build), sends output through BDOS function 2 (cpmmain.c, no printf), reads PROG.FTH over BDOS (no C library file I/O), and compiles with ZF_ENABLE_TRACE 0 (no va_list). samples/demo.fth is an arbitrary Code-tab-shaped program (a `: banner ;` word, `7 7 *`, a counted `( repeat )` begin/until loop, a running total); proof.mjs boots FORTH.COM on the bw-board z80 machine via runMediaBundle with a minimal BDOS console+file shim, mounts demo.fth as PROG.FTH, and checks the transcript. In brickwright-lite the full lite BDOS layer (cpm-z80.js) serves the same file reads, so runCpmProgram runs arbitrary generated Forth on the Z80/CP-M bench. build.sh rebuilds FORTH.COM byte-for-byte. crt0.s is BrickWright's CP/M crt0 (BSD-2-Clause, shared with projects/cpm-software); zForth is MIT."
 }

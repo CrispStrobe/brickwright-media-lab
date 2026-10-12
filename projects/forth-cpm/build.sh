@@ -1,28 +1,21 @@
 #!/usr/bin/env bash
-# Reproduce FORTH.COM — zForth, the SAME tiny libre Forth the lab ships as a
-# DOS program (projects/forth-dos), recompiled for a NON-DOS target: a Z80
-# CP/M 2.2 .COM. It runs on the bw-board Z80 machine's CP/M layer (the one lite
-# boots BBC BASIC and the cpm-software demos on), proving the interpreter — and
-# therefore a Code-tab Forth program's source — is target-portable; only the
-# run backend is machine-specific.
+# Reproduce FORTH.COM — zForth, the SAME tiny libre Forth the lab ships as an
+# 8086 DOS program (projects/forth-dos), recompiled for a NON-DOS target: a Z80
+# CP/M 2.2 .COM that runs on the bw-board Z80 machine's CP/M layer. Like
+# forth-dos it reads its program from a mounted file PROG.FTH (here over CP/M
+# BDOS open/read-sequential), so it runs ARBITRARY Code-tab Forth output, not a
+# fixed demo. It proves the interpreter — and a Code-tab Forth program's source
+# — is target-portable; only the run backend is machine-specific.
 #
-# zForth (Ico Doornekamp / zevv, MIT) is a small C VM (src/zforth/zforth.c) plus
-# a Forth-source bootstrap (forth/core.zf). The DOS build uses float cells and
-# the C library's printf/sscanf/fopen; none of that is SDCC-z80 friendly, so
-# this build:
-#   - uses a 32-bit INTEGER cell (zfconf.h) — SDCC-z80 has no cheap float, so
-#     division is integer (7/2 == 3). This is the one semantic gap versus the
-#     float-cell DOS build, and it is deliberate and recorded.
-#   - sends output through BDOS function 2 (cpmmain.c, inline asm — no printf),
-#   - EMBEDS the Forth program (prog.fth) as a C string (no CP/M file I/O),
-#   - compiles with ZF_ENABLE_TRACE 0, so no va_list is emitted.
+# zForth's DOS build uses float cells and printf/sscanf/fopen, none SDCC-z80
+# friendly. This build uses a 32-bit INTEGER cell (zfconf.h) — division is
+# integer (7/2 == 3), the one deliberate semantic gap versus the float-cell DOS
+# build — sends output through BDOS function 2 (cpmmain.c, no printf), reads
+# PROG.FTH over BDOS (no C library file I/O), and compiles with ZF_ENABLE_TRACE
+# 0 (no va_list).
 #
-# Toolchain (both free software, widely packaged):
-#   sdcc    — the Small Device C Compiler with the z80 port   apt: sdcc
-#   sdasz80 — the SDCC Z80 assembler (ships with sdcc)
-#
-# The prebuilt FORTH.COM is committed so the manifest runs without a toolchain;
-# run this only to reproduce it from source.
+# Toolchain (free software): sdcc (z80 port) + sdasz80 (apt install sdcc).
+# The prebuilt FORTH.COM is committed so the manifest runs without a toolchain.
 set -euo pipefail
 cd "$(dirname "$0")"
 here="$(pwd)"
@@ -35,7 +28,6 @@ ZF_COMMIT="41db72d165c1539d57f3f79970fc57ea881a79dc"
 work="${ZF_WORK:-$here/.zforth-build}"
 mkdir -p "$work"
 
-# 1. Clone the interpreter at the pinned commit.
 if [ ! -d "$work/zForth/.git" ]; then git clone "$ZF_REPO" "$work/zForth"; fi
 git -C "$work/zForth" fetch --depth 1 origin "$ZF_COMMIT" || true
 git -C "$work/zForth" checkout -q "$ZF_COMMIT"
@@ -46,26 +38,18 @@ cp "$here/cpmmain.c" "$zf/cpmmain.c"
 cp "$here/crt0.s"    "$zf/crt0.s"
 cp "$here/zfconf.h"  "$zf/cpminc/zfconf.h"
 
-# 2. Embed the language bootstrap (forth/core.zf — the language only; the stock
-#    misc.zf FizzBuzz demo and memaccess.zf load-time asserts are excluded) and
-#    the user program (prog.fth) as C strings.
-emit_inc () { # <src.zf> <symbol> <out.inc>
-	python3 - "$1" "$2" "$3" <<'PY'
+# Embed the language bootstrap (forth/core.zf only).
+python3 - "$zf" <<'PY'
 import sys
-src, sym, out = sys.argv[1], sys.argv[2], sys.argv[3]
+zf = sys.argv[1]
 lines = []
-for line in open(src, encoding='utf-8'):
+for line in open(zf + '/forth/core.zf', encoding='utf-8'):
 	line = line.rstrip('\n')
 	esc = line.replace('\\', '\\\\').replace('"', '\\"')
 	lines.append('"%s\\n"' % esc)
-open(out, 'w').write('static const char %s[] =\n%s;\n' % (sym, '\n'.join(lines)))
+open(zf + '/bootstrap.inc', 'w').write('static const char BOOTSTRAP[] =\n%s;\n' % '\n'.join(lines))
 PY
-}
-emit_inc "$zf/forth/core.zf" BOOTSTRAP "$zf/bootstrap.inc"
-emit_inc "$here/prog.fth"    PROG      "$zf/prog.inc"
 
-# 3. Compile each unit to a .rel, link with the CP/M crt0, carve the .COM from
-#    the Intel-HEX extent (no padding).
 ( cd "$zf"
   sdasz80 -o crt0.rel crt0.s
   sdcc -mz80 -c -I cpminc -I src/zforth src/zforth/zforth.c -o zforth.rel
@@ -91,4 +75,4 @@ JS
 echo "Built. sha256 of the shipped binary:"
 sha256sum "$here/FORTH.COM"
 echo "expected:"
-echo "b8752e776d1d5e874d220b507fbe17def92eaea64160e39ce66484cf1f764e4e  FORTH.COM"
+echo "80f30b853e2cd7c886bdf31c2ece93321884e8b5f0994fa16d49a39de897f2a0  FORTH.COM"
