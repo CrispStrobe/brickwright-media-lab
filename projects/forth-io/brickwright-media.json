@@ -1,0 +1,46 @@
+{
+  "title": "zForth-IO on DOS (8086) — a Forth that drives the machine's GPIO",
+  "machine": "i8086",
+  "program": {
+    "kind": "dos",
+    "tool": "proof.mjs (createDos8086 + onPortAccess GPIO capture)",
+    "preset": "xt",
+    "variant": "80186",
+    "max": 200000000
+  },
+  "slots": {
+    "exe": "FORTH-IO.EXE"
+  },
+  "mount": {
+    "PROG.FTH": "samples/pins.fth"
+  },
+  "gpioBase": 888,
+  "expect": [
+    "zForth-IO on DOS (8086)",
+    "pins-set"
+  ],
+  "gpio": [
+    { "pin": 3, "value": 1 },
+    { "pin": 5, "value": 0 },
+    { "pin": 7, "value": 1 },
+    { "pin": 2, "value": 42 }
+  ],
+  "components": [
+    {
+      "file": "FORTH-IO.EXE",
+      "license": "MIT",
+      "source": "src/zforth/zforth.c + forth/core.zf (zevv/zForth) + iomain.c (DOS front-end with pin!/pin@ GPIO syscalls), built with ia16-elf-gcc"
+    }
+  ],
+  "toolchain": {
+    "interpreter": "zForth (Ico Doornekamp / zevv)",
+    "upstream": "github.com/zevv/zForth",
+    "commit": "41db72d165c1539d57f3f79970fc57ea881a79dc",
+    "buildTool": "ia16-elf-gcc (tkchia GCC port for 16-bit x86)",
+    "target": "msdos (16-bit MZ .EXE, medium model, newlib + libi86)",
+    "invocation": "ia16-elf-gcc -mcmodel=medium -march=any_186 -O2 -I src/zforth -I src/linux iomain.c src/zforth/zforth.c -o FORTH-IO.EXE",
+    "binarySha256": "704ddb779937bf84b806c442701a17e2e021863320aa50418e873d624208df22"
+  },
+  "license": "MIT",
+  "notes": "The DOS-native Forth (projects/forth-dos) plus a GPIO bridge: two words that drive the machine's I/O ports. `pin! ( pin value -- )` does an 8086 OUT to port gpioBase+pin (888 = 0x378, the classic LPT1 data port; 8 pins 0x378..0x37f); `pin@ ( pin -- value )` does an IN. zForth's `sys` primitive reaches the host handler (user syscalls 132/133 in iomain.c), and the bw-board 8086 bench fires machine.hooks.onPortAccess on every OUT/IN — so a GENERATED Forth word drives a device register. samples/pins.fth is Code-tab-shaped (a `: main … ; main` body calling pin!); proof.mjs boots FORTH-IO.EXE on the real bench via createDos8086, mounts it as PROG.FTH, captures the OUTs to the GPIO range and checks both the console and the expected pin writes. This is the working realization of the device-bridge design in brickwright-lite docs/CODE-TAB-LANGUAGE-DEVICE-BRIDGE.md. Identical to forth-dos except the front-end; build.sh rebuilds FORTH-IO.EXE byte-for-byte with ia16-elf-gcc. The lite GUI surface (an 8-pin widget + a two-way \"set pin\" block) is the remaining follow-up; this project proves the port-driving half end-to-end."
+}
