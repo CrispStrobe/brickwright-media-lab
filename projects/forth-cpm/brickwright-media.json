@@ -1,0 +1,40 @@
+{
+  "title": "zForth on CP/M-80 (Z80) — the DOS-native Forth, on a non-DOS target",
+  "machine": "z80",
+  "entry": 256,
+  "machineConfig": {
+    "clockHz": 4000000,
+    "regions": []
+  },
+  "program": {
+    "kind": "cpm",
+    "tool": "proof.mjs (runMediaBundle z80 + BDOS console shim)"
+  },
+  "slots": {
+    "com": "FORTH.COM"
+  },
+  "expect": [
+    "zForth on CP/M (Z80)",
+    "49 ",
+    "1 \r\n2 \r\n3 ",
+    "done"
+  ],
+  "components": [
+    {
+      "file": "FORTH.COM",
+      "license": "MIT",
+      "source": "src/zforth/zforth.c + forth/core.zf (zevv/zForth) + cpmmain.c + crt0.s, built with SDCC (z80)"
+    }
+  ],
+  "toolchain": {
+    "interpreter": "zForth (Ico Doornekamp / zevv)",
+    "upstream": "github.com/zevv/zForth",
+    "commit": "41db72d165c1539d57f3f79970fc57ea881a79dc",
+    "buildTool": "sdcc (z80 port) + sdasz80",
+    "target": "cpm80 (Z80 CP/M 2.2 .COM, 32-bit integer cell, BDOS console out)",
+    "invocation": "sdcc -mz80 --no-std-crt0 --code-loc 0x0113 crt0.rel cpmmain.rel zforth.rel",
+    "binarySha256": "b8752e776d1d5e874d220b507fbe17def92eaea64160e39ce66484cf1f764e4e"
+  },
+  "license": "MIT",
+  "notes": "The SAME tiny Forth the lab ships as a DOS program (projects/forth-dos), recompiled for a NON-DOS target. zForth's DOS build uses float cells and printf/sscanf/fopen, none SDCC-z80 friendly; this build uses a 32-bit INTEGER cell (division is integer: 7/2 == 3 — the one deliberate semantic gap versus the float-cell DOS build), sends output through BDOS function 2 (cpmmain.c, no printf), embeds the Forth program as a C string (no CP/M file I/O), and compiles with ZF_ENABLE_TRACE 0 (no va_list). The committed prog.fth is the exact canonical shape the Code-tab blocks->Forth transpiler emits (a `: banner ;` word, `7 7 *`, and a counted `( repeat )` begin/until loop), so this proves that transpiler output — the language — runs on the Z80 CP/M machine, not only on the 8086 DOS bench. build.sh rebuilds FORTH.COM byte-for-byte. crt0.s is BrickWright's (BSD-2-Clause, from projects/cpm-software). proof.mjs boots it on the bw-board z80 machine via runMediaBundle with the same minimal BDOS console shim cpm-software uses."
+}
