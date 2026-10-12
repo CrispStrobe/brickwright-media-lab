@@ -1,5 +1,5 @@
 {
-  "title": "zForth on DOS (8086) — a tiny libre Forth",
+  "title": "zForth on DOS (8086) \u2014 a tiny libre Forth",
   "machine": "i8086",
   "program": {
     "kind": "dos",
@@ -21,16 +21,36 @@
   ],
   "programs": [
     {
-      "slots": {"exe": "FORTH.EXE"},
-      "mount": {"PROG.FTH": "samples/demo.fth"},
-      "expect": ["zForth on DOS (8086)", "49 42 64", "5 4 3 2 1"]
+      "slots": {
+        "exe": "FORTH.EXE"
+      },
+      "mount": {
+        "PROG.FTH": "samples/demo.fth"
+      },
+      "expect": [
+        "zForth on DOS (8086)",
+        "49 42 64",
+        "5 4 3 2 1"
+      ]
+    },
+    {
+      "slots": {
+        "exe": "FORTH.EXE"
+      },
+      "mount": {
+        "PROG.FTH": "samples/pins.fth"
+      },
+      "expect": [
+        "zForth on DOS (8086)",
+        "pins-set"
+      ]
     }
   ],
   "components": [
     {
       "file": "FORTH.EXE",
       "license": "MIT",
-      "source": "src/zforth/zforth.c + forth/core.zf (zevv/zForth) + dosmain.c (DOS front-end), built with ia16-elf-gcc"
+      "source": "src/zforth/zforth.c + forth/core.zf (zevv/zForth) + dosmain.c (DOS front-end with pin!/pin@ GPIO words), built with ia16-elf-gcc"
     }
   ],
   "toolchain": {
@@ -38,10 +58,11 @@
     "upstream": "github.com/zevv/zForth",
     "commit": "41db72d165c1539d57f3f79970fc57ea881a79dc",
     "buildTool": "ia16-elf-gcc (tkchia GCC port for 16-bit x86)",
-    "target": "msdos (16-bit MZ .EXE, medium model, newlib + libi86)",
+    "target": "msdos (16-bit MZ .EXE, medium model, newlib + libi86; GPIO words pin!/pin@ via 8086 OUT/IN at 0x378)",
     "invocation": "ia16-elf-gcc -mcmodel=medium -march=any_186 -O2 -I src/zforth -I src/linux dosmain.c src/zforth/zforth.c -o FORTH.EXE",
-    "binarySha256": "85cd3d80ddfe0474519b1caca7c9db486a236da89230eecc10571c60f1cb0a4d"
+    "binarySha256": "b941d46c3172df9876027bc2b8472382bd4cb04a85654ff2c8f30ff10dc0774d"
   },
   "license": "MIT",
-  "notes": "zForth is a tiny embeddable Forth: a small C VM plus a Forth-source bootstrap (forth/core.zf) that defines the language. dosmain.c embeds core.zf (the language only — the stock misc.zf FizzBuzz demo and memaccess.zf load-time asserts are excluded), evaluates it, prints the banner, then reads PROG.FTH via INT 21h and evaluates it. zf_cell is float, so the build uses the medium model (soft-float %g), like fe-dos. The DOS-native Forth alongside BASIC (ubasic-dos), C (small-c), Lisp (fe-dos) and Tcl (tcl-dos); f83/volksforth are interactive REPLs, zForth is the file-reading Forth that fits PROG.<X>. fetch.sh reproduces FORTH.EXE byte-for-byte."
+  "notes": "zForth is a tiny embeddable Forth: a small C VM plus a Forth-source bootstrap (forth/core.zf) that defines the language. dosmain.c embeds core.zf (the language only \u2014 the stock misc.zf FizzBuzz demo and memaccess.zf load-time asserts are excluded), evaluates it, prints the banner, then reads PROG.FTH via INT 21h and evaluates it. zf_cell is float, so the build uses the medium model (soft-float %g), like fe-dos. The DOS-native Forth alongside BASIC (ubasic-dos), C (small-c), Lisp (fe-dos) and Tcl (tcl-dos); f83/volksforth are interactive REPLs, zForth is the file-reading Forth that fits PROG.<X>. fetch.sh reproduces FORTH.EXE byte-for-byte. GPIO bridge: the front-end adds two prelude words, pin! ( pin value -- ) and pin@ ( pin -- value ), implemented as user syscalls (132/133 sys) that do an 8086 OUT/IN to BW_GPIO_BASE+pin (888 = 0x378, the classic LPT1 data port; 8 pins 0x378..0x37f). They are inert unless a program calls them, so every existing Forth program is byte-for-byte unaffected except for the two extra words. The bw-board 8086 bench fires machine.hooks.onPortAccess on every OUT/IN, so in brickwright-lite a generated `set pin` block drives an 8-pin GPIO strip widget (docs/CODE-TAB-LANGUAGE-DEVICE-BRIDGE.md). samples/pins.fth exercises pin! on the real bench (console-verified here; the OUT->device capture is proven in brickwright-lite's dos-compile GPIO test).",
+  "gpioBase": 888
 }
