@@ -8,7 +8,7 @@ end** — a free engine running free game data, with no proprietary IWAD:
   for the commercial Doom IWADs.
 - **FastDoom 1.3.0** — <https://github.com/viti95/FastDoom> (**GPL-2.0**):
   a speed-focused DOS Doom ENGINE (id's GPL source, heavily optimised),
-  shipping prebuilt 386 real-mode-DOS executables (`FDOOM.EXE` and a family
+  shipping prebuilt 386 DOS executables (`FDOOM.EXE` and a family
   of video-mode variants) plus Freedoom launch configs (`DOOM*.TCF`).
 
 The engine and the data are **separately licensed** (GPL-2 code, BSD-3
@@ -16,19 +16,22 @@ data) — the manifest and `fetch.sh` keep them distinct.
 
 ## What runs, and where
 
-The **386 tier**: FastDoom needs a 386 (protected mode via a DOS
-extender), VGA, and a DOS host — the same machine that already runs
-FreeDOS, Windows 3.0 and commercial Doom here. Boot FreeDOS on the
-i80386 machine, run `FDOOM.EXE -file FREEDOOM1.WAD` (or use the bundled
-`.TCF`), steer with the keyboard, hear the audio.
+The intended target is a 386 with protected-mode DOS-extender support, a DOS
+host and VGA. After fetching the separate engine and data, the intended launch
+is `FDOOM.EXE -iwad FREEDOOM1.WAD`, or the supplied launch configuration.
 
-**Not executed in this packaging environment**, and honestly so: every
-386 boot here needs the user's own **AT + VGA BIOS ROMs** (proprietary
-IBM/VGA firmware the app supplies at runtime and this repo never
-vendors), and those ROMs are not present in the build box. The
-freely-licensed halves — the engine and the data — are what this project
-delivers; the proprietary BIOS is the runtime, exactly as for every
-other 386 title.
+**Packaging status: no guest execution was performed in this packaging pass.**
+The pinned downloads and licenses are available, but this project does not yet
+qualify a rendered game/menu, keyboard or mouse interaction, audio, completion,
+performance or an installed GUI journey. The top-level project table records
+this same boundary.
+
+A compatible AT/VGA firmware profile is required. The emulator's documented
+[free BIOS/VGA AT result](https://github.com/CrispStrobe/bw-board/blob/master/docs/I80386-DPMI-HIGHMEM-AT-RESULTS.md)
+means proprietary ROMs are not a general prerequisite. This project has not yet
+been qualified with that profile and does not bundle BIOS images. Follow the
+[CLI/GUI loading and format guide](https://github.com/CrispStrobe/bw-board/blob/master/docs/X86-USER-PATHS.md)
+for actual supported inputs; a fetchable package is not automatic guest adoption.
 
 ## Provenance (pinned in `fetch.sh`)
 
