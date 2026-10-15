@@ -1,7 +1,9 @@
-# Freedoom + FastDoom — fully-libre Doom on the 386
+# Freedoom + FastDoom — staged DOS game package
 
-Two upstreams, both free, combining into a Doom that is libre **end to
-end** — a free engine running free game data, with no proprietary IWAD:
+FastDoom engine source is GPL-licensed; Freedoom replacement data is
+BSD-licensed. This recipe selects a prebuilt DOS engine and game data. Those
+source licenses do not establish the complete component and notice obligations
+of the selected prebuilt engine:
 
 - **Freedoom 0.13.0** — <https://github.com/freedoom/freedoom> (**BSD-3-Clause**):
   the game DATA (`freedoom1.wad`, `freedoom2.wad`), a from-scratch replacement
@@ -11,8 +13,21 @@ end** — a free engine running free game data, with no proprietary IWAD:
   shipping prebuilt 386 DOS executables (`FDOOM.EXE` and a family
   of video-mode variants) plus Freedoom launch configs (`DOOM*.TCF`).
 
-The engine and the data are **separately licensed** (GPL-2 code, BSD-3
-data) — the manifest and `fetch.sh` keep them distinct.
+The engine source and game data are **separately licensed** (GPL-2 code,
+BSD-3 data). The manifest and `fetch.sh` keep the two downloads distinct.
+
+## Prebuilt component review
+
+Bundling status: **pending exact component review**. The pinned engine's
+[license](https://github.com/viti95/FastDoom/blob/1.3.0/FASTDOOM/LICENSE),
+[link specification](https://github.com/viti95/FastDoom/blob/1.3.0/FASTDOOM/fdoom.lnk)
+and [stub binding](https://github.com/viti95/FastDoom/blob/1.3.0/stub.bat)
+are distinct inputs to that review. Admit the selected executable's actual
+extender/runtime and linked-library identities, corresponding source and
+required notices before describing the prebuilt package as fully libre or
+redistributable as a bundle. The root engine license alone is insufficient.
+The current recipe is not a completed component inventory or notice package.
+No archive was newly acquired or executed for this documentation review.
 
 ## What runs, and where
 
