@@ -12,12 +12,12 @@ function fixtures(extra={}){
 }
 async function temporary(fn){const root=await fs.mkdtemp(path.join(process.env.TEST_TMPDIR||os.tmpdir(),'x86-cache-test-'));try{await fn(root);}finally{await fs.rm(root,{recursive:true,force:true});}}
 function fetcher(files,calls){return async url=>{const name=url.split('/native-sieve/')[1];calls.push(name);const b=files[name];return new Response(b||'',{status:b?200:404});};}
-test('runtime ensure displays the verified notice, reuses cached payloads and never invokes a host executable',async()=>temporary(async cache=>{
+test('runtime ensure displays the verified notice, reuses verified metadata/payloads offline and never invokes a host executable',async()=>temporary(async cache=>{
  const files=fixtures(),calls=[],notices=[];
  const a=await ensureBenchmark({project:'native-sieve',ref,cache,onNotice:n=>notices.push(n),fetcher:fetcher(files,calls)});
  assert.equal((await fs.readFile(path.join(a.projectDirectory,'SIEVE.BIN'))).toString(),exe.toString());
  const first=calls.filter(n=>n==='SIEVE.BIN').length;
- await ensureBenchmark({project:'native-sieve',ref,cache,onNotice:n=>notices.push(n),fetcher:fetcher(files,calls)});
+ await ensureBenchmark({project:'native-sieve',ref,cache,onNotice:n=>notices.push(n),fetcher:async()=>{throw Error('offline cache must not fetch');}});
  assert.equal(calls.filter(n=>n==='SIEVE.BIN').length,first);assert.deepEqual(notices,[license.toString(),license.toString()]);
 }));
 test('changed download bytes fail hash admission',async()=>temporary(async cache=>{

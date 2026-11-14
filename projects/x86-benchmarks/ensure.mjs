@@ -14,11 +14,11 @@ export async function ensureBenchmark({project,ref,cache=path.join(process.env.X
  async function get(name,sha){
   if(name.startsWith('/')||name.split('/').some(p=>p==='..'||p===''||p==='.')||name.includes('\\'))throw Error('unsafe cache path');
   const target=path.join(dest,name);
-  try{const bytes=await fs.readFile(target);if(sha&&digest(bytes)===sha)return bytes;}catch(e){if(e.code!=='ENOENT')throw e;}
+  try{const bytes=await fs.readFile(target);const expected=sha||(await fs.readFile(target+'.sha256','utf8')).trim();if(expected&&digest(bytes)===expected)return bytes;}catch(e){if(e.code!=='ENOENT')throw e;}
   const response=await fetcher(base+name);if(!response.ok)throw Error(`download ${name}: HTTP ${response.status}`);
   const bytes=Buffer.from(await response.arrayBuffer());if(sha&&digest(bytes)!==sha)throw Error('download digest mismatch: '+name);
   await fs.mkdir(path.dirname(target),{recursive:true});
-  const temp=target+'.new-'+process.pid;await fs.writeFile(temp,bytes,{flag:'wx'});await fs.rename(temp,target);return bytes;
+  const temp=target+'.new-'+process.pid;await fs.writeFile(temp,bytes,{flag:'wx'});await fs.rename(temp,target);if(!sha){const pin=target+'.sha256';const tmp=pin+'.new-'+process.pid;await fs.writeFile(tmp,digest(bytes)+'\n',{flag:'wx'});await fs.rename(tmp,pin);}return bytes;
  }
  // The full immutable Git revision is the metadata pin; file hashes pin payloads.
  const proof=JSON.parse((await get('assets.json')).toString());
