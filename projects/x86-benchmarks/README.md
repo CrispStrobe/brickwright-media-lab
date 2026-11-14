@@ -1,5 +1,22 @@
 # x86 benchmark assets and explicit runners
 
+PR #36 is a bounded asset/cache/CLI harness delivery. TOPBENCH and Whetstone
+remain **INCOMPLETE** on all four cores. Recorded native Sieve whole-child
+CPU/wall ratios are **1.009895 / 1.013227: NO speedup**. The achieved actual
+xv6 opt-in result (CPU -6.45% / wall -7.68%) is a separate workload and result.
+GUI frontend wiring, core/FPU changes and additional benchmarks are outside
+this PR. The explicit consumer contract below supports later GUI integration.
+
+Review without downloads, builds, an emulator checkout or benchmark reruns:
+
+```sh
+projects/x86-benchmarks/review.sh
+```
+
+This runs cache/CLI/consumer regression checks, validates committed asset
+bytes/notices, and independently recomputes the retained numeric observations.
+It never imports the emulator or runs a guest.
+
 This directory is runtime-fetchable media, offered by URL when requested.
 It is separate from the MIT app repo/build, and is directly callable after
 verified download into a user cache. Guest programs are loaded into emulated
@@ -76,7 +93,8 @@ asset hash, displays the license on stderr, and invokes the appropriate
 runner from the user cache. Existing valid cached payloads are reused. Use
 `--project native-sieve` for the explicit raw32 native runner. No asset is
 committed to the app or its build artifact. Whetstone cache fetch supplies
-source; its executable still needs the declared build step. `ensureBenchmark`
+source; `--run` invokes its verified helper with the installed 16-bit compiler
+before guest invocation. A failed build prevents guest launch. `ensureBenchmark`
 exports an `onNotice` callback and a cache path for a future GUI action; GUI
 wiring must present that notice and explicitly select the native runner type.
 A generic DOS-program GUI action is not yet a native-386 action.
@@ -90,3 +108,22 @@ and hidden segment/system tables join CPU, RAM and instruction equality.
 The original v1 parent-wall samples included record-writing overhead and must
 not be relabeled as v2 whole-child wall measurements. Their guest observations
 and failures remain valid and retained.
+
+
+Node/desktop consumers can use the same reviewed path:
+
+```js
+const cached = await ensureBenchmark({project, ref, cache, onNotice: showNotice});
+const plan = await createBenchmarkRunPlan({...cached, board, variant, max});
+// Present plan.runnerKind; use a host process service to capture GUI output.
+const exitCode = await runBenchmarkPlan(plan);
+```
+
+`createBenchmarkRunPlan` explicitly distinguishes `dos`,
+`native-i80386-dos-shim` and `native-i80386-raw`. It refuses OS-media manifests,
+unsupported native formats and raw images on legacy DOS variants. The returned
+build/run arguments are serializable for a GUI host service. The CLI checks
+required arguments and the board path before fetching. Runtime errors are
+concise; guest incomplete exit 2 remains exit 2. A notice is displayed before
+invocation, including when cached assets are reused offline. Actual frontend
+wiring is deferred; `guiSupported: false` on the native manifests stays honest.

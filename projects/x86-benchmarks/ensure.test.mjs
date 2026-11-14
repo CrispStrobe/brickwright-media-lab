@@ -4,7 +4,10 @@ import fs from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import {createHash} from 'node:crypto';
-import {ensureBenchmark} from './ensure.mjs';
+import {EventEmitter} from 'node:events';
+import {spawnSync} from 'node:child_process';
+import {fileURLToPath} from 'node:url';
+import {ensureBenchmark, parseEnsureArgs, createBenchmarkRunPlan, runBenchmarkPlan} from './ensure.mjs';
 const sha=b=>createHash('sha256').update(b).digest('hex');
 const ref='a'.repeat(40),license=Buffer.from('MIT license test fixture\n'),exe=Buffer.from('guest bytes');
 function fixtures(extra={}){
@@ -28,3 +31,91 @@ test('manifest paths cannot escape the user cache',async()=>temporary(async cach
  const f=fixtures({'../escape':{sha256:sha(exe),bytes:exe.length}});
  await assert.rejects(ensureBenchmark({project:'native-sieve',ref,cache,fetcher:fetcher(f,[])}),/unsafe cache path/);
 }));
+
+test('CLI validates consumer choices before downloading or building',()=>{
+ const base=['--project','native-sieve','--media-ref',ref,'--run'];
+ assert.throws(()=>parseEnsureArgs(base,{}),/requires --board/);
+ assert.throws(()=>parseEnsureArgs([...base,'--board','board','--variant','8086'],{}),/native 80386/);
+ assert.throws(()=>parseEnsureArgs([...base,'--board','board','--max','NaN'],{}),/invalid variant or instruction budget/);
+ assert.throws(()=>parseEnsureArgs([...base,'--board','board','--max','-1'],{}),/invalid variant or instruction budget/);
+ assert.throws(()=>parseEnsureArgs([...base,'--board','board','--board','other'],{}),/duplicate option/);
+ assert.throws(()=>parseEnsureArgs(['--project','--run'],{}),/usage:/);
+ assert.deepEqual(parseEnsureArgs(['--help'],{}),{help:true});
+ assert.equal(parseEnsureArgs(base,{BW_BOARD_DIR:'installed-board'}).board,'installed-board');
+});
+
+async function manifestAt(directory, manifest){
+ await fs.writeFile(path.join(directory,'brickwright-media.json'),JSON.stringify(manifest));
+}
+const rawManifest={kind:'native-i80386-raw',machine:'i80386-experimental',format:'raw32',fpu:'absent'};
+const dosManifest={program:{kind:'dos',tool:'run-dos'}};
+test('consumer plan selects native raw, native DOS shim and legacy DOS explicitly',async()=>temporary(async projectDirectory=>{
+ await manifestAt(projectDirectory,rawManifest);
+ const raw=await createBenchmarkRunPlan({projectDirectory,board:'board',variant:'80386',max:123});
+ assert.equal(raw.runnerKind,'native-i80386-raw');assert.equal(raw.build,null);
+ assert.equal(raw.run.args[raw.run.args.indexOf('--board')+1],path.resolve('board'));
+ assert.deepEqual(raw.run.args.slice(-4),['--variant','80386','--max','123']);
+ await assert.rejects(createBenchmarkRunPlan({projectDirectory,board:'board',variant:'8086'}),/cannot run on the DOS path/);
+ await manifestAt(projectDirectory,dosManifest);
+ assert.equal((await createBenchmarkRunPlan({projectDirectory,board:'board',variant:'80286'})).runnerKind,'dos');
+ const native=await createBenchmarkRunPlan({projectDirectory,board:'board',variant:'80386',runtimeBuild:{script:'build.sh'}});
+ assert.equal(native.runnerKind,'native-i80386-dos-shim');
+ assert.equal(native.fpu,'absent');assert.deepEqual(native.build.args.slice(1,3),['8086','absent']);
+ await assert.rejects(createBenchmarkRunPlan({projectDirectory,board:'board',runtimeBuild:{script:'../escape.sh'}}),/unsafe cache path/);
+}));
+test('consumer rejects OS media and unsupported native formats rather than falling back',async()=>temporary(async projectDirectory=>{
+ await manifestAt(projectDirectory,{machine:'i80386',slots:{floppy:'os.img'}});
+ await assert.rejects(createBenchmarkRunPlan({projectDirectory,board:'board'}),/unsupported benchmark consumer manifest/);
+ await manifestAt(projectDirectory,{...rawManifest,fpu:'present'});
+ await assert.rejects(createBenchmarkRunPlan({projectDirectory,board:'board'}),/unsupported native benchmark manifest/);
+}));
+function processDouble(exits,calls){
+ return (command,args)=>{
+  calls.push({command,args});const child=new EventEmitter();child.stdout=new EventEmitter();
+  queueMicrotask(()=>child.emit('close',exits.shift()));return child;
+ };
+}
+test('failed source build never launches a guest',async()=>{
+ const calls=[],plan={build:{command:'sh',args:['build.sh']},run:{command:'node',args:['run.mjs']}};
+ await assert.rejects(runBenchmarkPlan(plan,{spawnProcess:processDouble([7],calls)}),/build failed; no guest run/);
+ assert.equal(calls.length,1);assert.equal(calls[0].command,'sh');
+});
+test('guest incomplete exit survives consumer invocation',async()=>{
+ const calls=[],plan={build:null,run:{command:'node',args:['run.mjs']}};
+ assert.equal(await runBenchmarkPlan(plan,{spawnProcess:processDouble([2],calls)}),2);
+ assert.equal(calls.length,1);
+});
+test('concurrent consumers can populate the same immutable cache without temporary-file collisions',async()=>temporary(async cache=>{
+ const f=fixtures(),fetcherWithDelay=async url=>{await new Promise(resolve=>setTimeout(resolve,2));return fetcher(f,[])(url);};
+ const results=await Promise.all([1,2].map(()=>ensureBenchmark({project:'native-sieve',ref,cache,fetcher:fetcherWithDelay})));
+ assert.equal(results[0].projectDirectory,results[1].projectDirectory);
+ const files=await fs.readdir(results[0].projectDirectory);assert.equal(files.some(n=>n.includes('.new-')),false);
+}));
+test('corrupted cached payload is refused offline, then repaired only with matching bytes',async()=>temporary(async cache=>{
+ const first=await ensureBenchmark({project:'native-sieve',ref,cache,fetcher:fetcher(fixtures(),[])});
+ await fs.writeFile(path.join(first.projectDirectory,'SIEVE.BIN'),'corrupt');
+ await assert.rejects(ensureBenchmark({project:'native-sieve',ref,cache,fetcher:async()=>{throw Error('offline');}}),/offline/);
+ await ensureBenchmark({project:'native-sieve',ref,cache,fetcher:fetcher(fixtures(),[])});
+ assert.deepEqual(await fs.readFile(path.join(first.projectDirectory,'SIEVE.BIN')),exe);
+}));
+test('actual CLI help and invalid requests neither fetch assets nor create a cache',async()=>temporary(async root=>{
+ const script=new URL('./ensure.mjs',import.meta.url),cache=path.join(root,'not-created');
+ const invoke=args=>spawnSync(process.execPath,[fileURLToPath(script),...args],{encoding:'utf8',timeout:5000,env:{...process.env,BW_BOARD_DIR:''}});
+ const help=invoke(['--help']);assert.equal(help.status,0);assert.match(help.stdout,/usage:/);
+ for(const options of [[],['--board',path.join(root,'missing')],['--board',root,'--variant','8086']]){
+  const result=invoke(['--project','native-sieve','--media-ref',ref,'--run','--cache',cache,...options]);
+  assert.equal(result.status,1);assert.match(result.stderr,/benchmark: /);assert.equal(result.stdout,'');
+  assert.doesNotMatch(result.stderr,/at file:/);
+ }
+ await assert.rejects(fs.access(cache),{code:'ENOENT'});
+}));
+test('successful build output drains before the guest starts',async()=>{
+ const order=[],plan={build:{command:'sh',args:['build.sh']},run:{command:'node',args:['run.mjs']}};
+ const spawnProcess=command=>{
+  order.push(command);const child=new EventEmitter();child.stdout=new EventEmitter();
+  queueMicrotask(()=>{if(command==='sh')child.stdout.emit('data',Buffer.from('build receipt'));child.emit('close',command==='sh'?0:2);});
+  return child;
+ };
+ const code=await runBenchmarkPlan(plan,{spawnProcess,buildOutput:bytes=>order.push(bytes.toString())});
+ assert.equal(code,2);assert.deepEqual(order,['sh','build receipt','node']);
+});
