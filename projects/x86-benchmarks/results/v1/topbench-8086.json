@@ -1,0 +1,332 @@
+{
+  "schema": "brickwright.x86-benchmark-run.v1",
+  "benchmark": "TOPBENCH 0.40c",
+  "version": "0.40c",
+  "variant": "8086",
+  "backend": "run-dos 8086",
+  "emulatorCommit": "fa26a41a21f3d948d49612ee2cdb26824334a53a",
+  "runner": {
+    "node": "v22.23.4",
+    "platform": "linux",
+    "arch": "x64",
+    "cpuModel": "Intel(R) Xeon(R) CPU @ 2.20GHz",
+    "logicalCpus": 4,
+    "sha256": "cdc624b7ee66e88b17c18ca5f85a8bfb18140b431d941be91b29a45ce739346a",
+    "mediaLabCommit": "4befc5a7e4004808cf1ebbc5533dd35cb0150a58"
+  },
+  "benchmarkSha256": "c739a73c6955d9798cfeae2d7b0c46011fdc9f943071ecf2bb730ebf4eab52eb",
+  "assetProof": {
+    "version": "0.40c",
+    "upstream": "https://github.com/MobyGamer/TOPBENCH",
+    "sourceCommit": "40a15475ecbbd9dc47d9b578c70248593c511980",
+    "releaseUrl": "https://github.com/MobyGamer/TOPBENCH/releases/download/0.40c/TOPBV40C.ZIP",
+    "releaseSha256": "de3ebae63f0e7bff5b5b8cb513e96ff90480c1235f188e666a00f69894ad81e6",
+    "sourceUrl": "https://codeload.github.com/MobyGamer/TOPBENCH/tar.gz/40a15475ecbbd9dc47d9b578c70248593c511980",
+    "sourceSha256": "19387c3180b24e0071406b913735652a61fe237630b0fb9b982ad9b7ca2a3cc5",
+    "compiler": {
+      "kind": "upstream prebuilt release",
+      "name": "Upstream prebuilt release; exact compiler/version/options unrecorded",
+      "options": null,
+      "rebuildVerified": false
+    },
+    "license": "MIT Jim Leonard notice retained. Only root TOPBENCH source texts are mirrored; bundled third-party detection/timer libraries and OBJ files are excluded.",
+    "files": {
+      "DATABASE.INI": {
+        "bytes": 124054,
+        "sha256": "4ef77a5a24a43d1c1ca450e7e2895c6a5ca8e15a0cd6ee97e1169efc3bf2f417"
+      },
+      "LICENSE": {
+        "bytes": 1068,
+        "sha256": "867626c6ff1423e2f16c64e1de87da137e270e5688bc06881cd58bb0c6d3e4f7"
+      },
+      "TOPBENCH.EXE": {
+        "bytes": 86773,
+        "sha256": "c739a73c6955d9798cfeae2d7b0c46011fdc9f943071ecf2bb730ebf4eab52eb"
+      },
+      "TOPBENCH.TXT": {
+        "bytes": 1305,
+        "sha256": "a495b2b9f49a4b663e36e12001a522bd7f63b7c0c0724af49fa94a7106f476fd"
+      },
+      "source/BSTUBOV.PAS": {
+        "bytes": 2451,
+        "sha256": "84ddd394dc5a235273f070eb2df17b89eaf8e43380273d6c24c6eb56f11af6f8"
+      },
+      "source/BTSUITES.PAS": {
+        "bytes": 9344,
+        "sha256": "5bf3f1b3ecfc94f4c71bf2549d183fd5c229cb9b2aa4ccfd5f9b6be1383ea2a9"
+      },
+      "source/CODESIZE.PAS": {
+        "bytes": 149022,
+        "sha256": "b7d06f4c6a0576285eaf96420dcbde4cff60188fd9626059d5e3cafbdb1dcbbf"
+      },
+      "source/HELPTEXT.TXT": {
+        "bytes": 238,
+        "sha256": "4198fc88371460ef49bb043988c8185b08a0f00e85edf923c7691c4786e4c255"
+      },
+      "source/README.md": {
+        "bytes": 1030,
+        "sha256": "955ab867821fe2a72eeeb0e92630d41bd00c533295e1582300950c5ba8563abe"
+      },
+      "source/READSTUB.TXT": {
+        "bytes": 309,
+        "sha256": "db61c0e375d5c44e0f3e6320d5f7ca9ba8c2354f3d57d4ae0b7af334c37edaa3"
+      },
+      "source/STUBTEXT.TXT": {
+        "bytes": 499,
+        "sha256": "dfe1f05b88c8ea08f5bc1c34e30159156785039a5047655346331d7c7ee62edd"
+      },
+      "source/TOPBCONF.INC": {
+        "bytes": 231,
+        "sha256": "a1950a2605e40bc2b62f63855cd72bc6e2ff4c56676425522aff0fb274899169"
+      },
+      "source/TOPBENCH.PAS": {
+        "bytes": 54102,
+        "sha256": "6452c0d7c08a78cefefa2191b2d99081851436cd20223fcc483ebb67c4751a81"
+      },
+      "source/TOPBENCH.TXT": {
+        "bytes": 1283,
+        "sha256": "39b797a7dd413673ea6423b5f93333788da2f04f9824a7220872995b35b2ccfc"
+      },
+      "source/TOPBSTUB.PAS": {
+        "bytes": 4936,
+        "sha256": "061c207a94aaac4278a268a0abe4a1385d0a838b8cb882eb5b3445eb29d3de0b"
+      },
+      "source/TOPB_CON.PAS": {
+        "bytes": 5854,
+        "sha256": "77eda81e9938ae92dda80b6a314a88215a48f726fe855b12d27a3098260792ac"
+      },
+      "source/TOPB_DAT.PAS": {
+        "bytes": 9511,
+        "sha256": "6397d7633c159a0d720f572336890e7920f0bbe4dd59fd0b27ee6a54f9d71cb6"
+      },
+      "source/TOPB_DET.PAS": {
+        "bytes": 27958,
+        "sha256": "6910d2c4599fe9a9579b961859b60ddcd7f81c7c3b3c6f11cb5bf979e9197f1c"
+      },
+      "source/TOPB_HRN.PAS": {
+        "bytes": 6467,
+        "sha256": "b92d0fea33ed3201549af0501356e8d7972e6d33b97945def68ed4c747423695"
+      },
+      "source/TOPB_SUP.PAS": {
+        "bytes": 10895,
+        "sha256": "4c9070f68347edf7f9fc35aea1bae8b2b62bf500e788c8fc851bd74ac9218717"
+      },
+      "source/VADAPTER.PAS": {
+        "bytes": 2410,
+        "sha256": "aacd597ae0b2f3178de44dc26fe7a728b0b074f4ccf681c88f82c051dd4e0f22"
+      },
+      "source/VIDEOID.ASM": {
+        "bytes": 15341,
+        "sha256": "b4e8518abebd626ce5722b114ea76a988d93c2cb6264d44c019280936ebf1c1b"
+      },
+      "source/WHATSNEW.TXT": {
+        "bytes": 2172,
+        "sha256": "5bc05e64ccfaa0ec85407ac262e72f33ae2e4cc0c952878c2f6d66b29b05986b"
+      },
+      "source/_3DGAMES.INC": {
+        "bytes": 13047,
+        "sha256": "a924d0b024570ec305d49e1b211ac0583ae8ca8c90e9248bf99d691dcd5df110"
+      },
+      "source/_EA.INC": {
+        "bytes": 10593,
+        "sha256": "d346debd2d622922e95a104107108f9a113326d4a43d24e1bc3c8a0a4b372e2e"
+      },
+      "source/_MBLOCK.INC": {
+        "bytes": 2223,
+        "sha256": "d0e493339dc314672c24a4c270884a2d71fb1f2c9b2bc2d4d13c8d67cb1b11b8"
+      },
+      "source/_OPCODES.INC": {
+        "bytes": 14945,
+        "sha256": "249a3256b5274677016f141760f21f1e5fdb34acd0babc9aa0a0018808b14a2e"
+      },
+      "source/_RUNALL.INC": {
+        "bytes": 41070,
+        "sha256": "97dd3bfdcb5d22cc34c1c9c3092bceaeb6fb324f6c5e368f4bb1b9e130eadd7b"
+      },
+      "source/_VIDMEM.INC": {
+        "bytes": 1318,
+        "sha256": "bbce3c5b88b494a970f53fefe8aab773f027c34825f79eb07333d6fee25898b8"
+      },
+      "source/introscn.txt": {
+        "bytes": 1236,
+        "sha256": "5a861735f6c80622ab8b3a88bc670cb285f03267b139744eab198fc122e4c356"
+      }
+    }
+  },
+  "sourceSha256": {
+    "src/i8086-dos.js": "f17c2cefc80082545b4e1caedcc365216db88048eaa65e362d7fe7ee0d1b02ce",
+    "src/i8086-machine.js": "7cf7fdf4e6de451071809e32e128aa0ac663524eaf8b2e08581780b0ec4f167c",
+    "src/i8086.js": "814d2a96184f7b490905f25317197ec0dcea8128e234efcf3fe3f173f799300a",
+    "src/experimental/i80286-protected.js": "b3e00b7bd10e1e02d9e9a27bf543f620229e5f9f888dddf4c9ef0a2127826e70",
+    "src/at-8042-a20.js": "c604c8a272034a9a80eeb30abe1c5d6ab09ebe6c816b3f3c778874f6b9a9f6b8",
+    "src/at-ps2-mouse.js": "b75f93e3a4473e21568af438d658941e9a9703ab330147b8f444baba278281ea",
+    "src/at-system-control.js": "aaeecd1c9ea926f4d35481a46be3f64075367152144756786443041018c443e7",
+    "src/machine-checkpoint.js": "576a8420212a8eedaf89dc0dff27cb26e8a7e73c89162e242d65b8e1cc3f0139",
+    "src/i8086-ram-words.js": "5bfdcf9743a73d1fc37afe78949f045d2aeb2d3d7b71561a694af96a443da6c5",
+    "src/i8255.js": "3445ac6676005f225db542031be51b6d1561045d2be76be339e5853a50f6ff7f",
+    "src/ns16c550.js": "34633ec3bec4d0826998fadde5e11bf88f20dfd32fc5a09144c6bad64461f41b",
+    "src/mc6850.js": "e987c5243a92a7b43533a99ff9bf2da29e0bd608a2417162c7b5dfeb1cb75889",
+    "src/i8254.js": "4346fc1eb6b2d368480292372ac8cec7db8cac6baf94d6a88c7311b1809a8c30",
+    "src/i8259.js": "fcfca4a160bac3cf4b72ca0613c63ca702cd26d6822000ba75a0035ef87da278",
+    "src/mc146818.js": "f6caa1e99c2f0fc323cab7a913df68435c5c13c4a86d3c89a8b55ccdde2ec80c",
+    "src/i8251.js": "45a2df29bc0920e7d57188a365e8c05addab0805efc1eb02d8df72a41d4dca2b",
+    "src/cga-card.js": "afb6141ce8420556e8e9acfff7642225d46f5509db20459bd6fdaba8d0b50fdc",
+    "src/mc6845.js": "30c369c37fc4030162dde6d46bea388ce9acbf489141195ab166f3c0cab5c599",
+    "src/pc-speaker.js": "50260dcd04eaedd84373e5c2b1e42faa2f1bc924833b6bdf0aa7d23a80ea9499",
+    "src/adc0809.js": "92926d8bd4315fa837d6cce7bc3770148960d181802eb52ba5d9aa013e5f64af",
+    "src/ne2000.js": "12a97f87807aaf74a94245d81acddfb10f43748c09a1d4633e0ba7959b7a1244",
+    "src/dac0832.js": "81b24b9c8f461cbd2f4a9bcd1aceda3e366062841d1c530440eccdb8cbeae787",
+    "src/hercules-card.js": "6e3af9bce88edbc609b2f8a07dc464b8a1fb60ce5fd800a4d345dac61367752b",
+    "src/vga-card.js": "245d777aeae5513a5cae02e943d1e18a5b333bd03352dd2717eee51b8c3e5d71",
+    "src/ega-card.js": "5b93057ca256f7a43046b477127862278c80bb9849e062528c1cd603f7e3d2f5",
+    "src/i8237.js": "a2a774349848e797861108c59a9563a281ce1c1b561a201b8dc022d5584142ad",
+    "src/chip-ledger.js": "b12b5d635086636f0f9f405e4a06816943b74c03c1b036fcbd3ffe813055ac3a",
+    "src/upd765.js": "b5a066fd577ee358f40c13682015d28be490acbeb00a50d8c7199671523fcde4",
+    "src/sb-dsp.js": "901fc1d6536e19a552380d226b8e285ff4ab29f871a319d552701c2100044f71",
+    "src/ym3812.js": "c78833b8efb3048143e7fac898a7af5374ce3f00f1b9e5b55baa6d212a51df04",
+    "src/audio-bus.js": "95a263b2432f8309b76a64a0b6dcf0ddcc1dd61aeabb7a8727505f343e26ba08",
+    "src/i8088-timing.js": "b1f85cab54484119016e57b954505dfb90821c0b47b5b7851a3d5d787977dc95",
+    "src/i8088-cycles.js": "402d869be7c7ca79f1f6116d0861c85887112e46f1f1ba20f59d7e3031ce1477",
+    "scripts/run-dos.mjs": "fdcddb5d9c8ea75c69d6e79d8fe2041ef1dd920e69b845f68d3306e865753307"
+  },
+  "configuration": {
+    "preset": "xt",
+    "clockHz": 5000000,
+    "memoryBytes": 1048576,
+    "config": {
+      "clockHz": 5000000,
+      "regions": [
+        {
+          "kind": "ram",
+          "start": 0,
+          "end": 786431
+        },
+        {
+          "kind": "ram",
+          "start": 851968,
+          "end": 852991
+        }
+      ],
+      "chips": [
+        {
+          "kind": "ppi",
+          "name": "ppi1",
+          "at": 96
+        },
+        {
+          "kind": "pit",
+          "name": "pit1",
+          "at": 64
+        },
+        {
+          "kind": "pcspeaker",
+          "name": "spk",
+          "ppi": "ppi1",
+          "pit": "pit1"
+        }
+      ],
+      "variant": "8086"
+    },
+    "video": "B800 text capture; no ROM",
+    "fpu": "absent",
+    "dosImage": null,
+    "biosImage": null,
+    "extender": null,
+    "loader": "scripts/run-dos.mjs MZ loader",
+    "command": "TOPBENCH.EXE -i",
+    "loadAddress": null,
+    "entry": null,
+    "maxProgressSteps": 20000000,
+    "guestInstructionCountNote": "not exposed by runDos; result.steps includes DOS service transitions"
+  },
+  "host": {
+    "cpuSeconds": 3.057849,
+    "wallSeconds": 2.847142088,
+    "maxRssKiB": 77044
+  },
+  "benchmarkScore": {},
+  "semantic": {
+    "status": "incomplete",
+    "error": null,
+    "result": {
+      "terminated": false,
+      "exitCode": 0,
+      "steps": 20000000,
+      "exhausted": true
+    },
+    "stdout": "",
+    "screen": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "serial": [],
+    "dos": {
+      "unsupported": [
+        {
+          "int": 33,
+          "ah": 68,
+          "count": 1
+        },
+        {
+          "int": 16,
+          "ah": 17,
+          "count": 1
+        }
+      ],
+      "stdout": "",
+      "stdoutChars": 0,
+      "stdoutTruncated": false,
+      "terminated": false,
+      "exitCode": 0,
+      "breakpoints": 0,
+      "rebooted": 0,
+      "keyRequests": 0
+    },
+    "cpu": {
+      "ax": 1,
+      "bx": 0,
+      "cx": 5889,
+      "dx": 6223,
+      "si": 658,
+      "di": 108,
+      "bp": 8186,
+      "sp": 8184,
+      "cs": 12003,
+      "ds": 12659,
+      "es": 64,
+      "ss": 13430,
+      "ip": 126,
+      "flags": 62022
+    },
+    "instructionSnapshot": null,
+    "chipDebt": 1232,
+    "chipDeadline": 5000,
+    "ramSha256": "7b97251f32ab0963f11b828774aa58d0d7a6263a0bb073c6a43f715270c30b11",
+    "machineCycles": 309298630,
+    "guestInstructions": null
+  },
+  "success": false
+}
