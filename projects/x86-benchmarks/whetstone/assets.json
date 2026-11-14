@@ -33,5 +33,12 @@
       "bytes": 8121,
       "sha256": "333e4ceca042c146f63eec605573d16ae8b07166cbc44a17bec1ea97c6f1efbf"
     }
+  },
+  "runtimeBuild": {
+    "script": "build.sh",
+    "sha256": "64416f59de66131de8b7231153b5ab86a3221b9e92273b6c3c925b837727999f",
+    "compiler": "installed ia16-elf-gcc; actual version/options recorded per build",
+    "fpu": "absent only",
+    "target": "chosen DOS CPU; native 80386 executes the 8086 real-mode build via its shim"
   }
 }

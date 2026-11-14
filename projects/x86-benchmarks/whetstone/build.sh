@@ -1,4 +1,5 @@
 #!/bin/sh
+# SPDX-License-Identifier: MIT
 # Source stays unmodified. Separate outputs identify CPU and floating-point mode.
 set -eu
 here=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
@@ -11,6 +12,10 @@ if [ "$fpu" != absent ]; then
 fi
 out=${3:-$here/.build/$variant-$fpu}
 mkdir -p "$out/source"
+python3 - "$here/source/whetstone.c" <<'PYVERIFY'
+import hashlib,sys
+assert hashlib.sha256(open(sys.argv[1],'rb').read()).hexdigest()=='333e4ceca042c146f63eec605573d16ae8b07166cbc44a17bec1ea97c6f1efbf', 'source digest mismatch'
+PYVERIFY
 cc=${IA16_GCC:-ia16-elf-gcc}
 "$cc" --version > "$out/compiler.txt"
 cp "$here/source/whetstone.c" "$out/source/whetstone.c"

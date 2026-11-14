@@ -32,3 +32,13 @@ silently substituting software FP. A raw freestanding native-386 Whetstone
 port also needs an independently pinned math/soft-float runtime; a DOS
 executable must not masquerade as that port. This package supplies source and
 a 16-bit build path only. No physical FPU or 80387 claim.
+
+For runtime cache invocation, `ensure.mjs --project whetstone --run` downloads
+and verifies the source/notice and the declared MIT build helper. It displays
+the source notice, then invokes the already-installed ia16 compiler into a
+separate CPU/FPU cache directory and runs that generated manifest. It does not
+install a compiler. The actual compiler/version/flags and generated binary hash
+are recorded; a missing toolchain refuses the run. Native 80386 executes the
+16-bit 8086 software-FP build via the native-core DOS shim, not a raw32 or
+FreeDOS path. This remains a validation/control run until the documented DOS
+service/formatting and completion blockers are resolved.

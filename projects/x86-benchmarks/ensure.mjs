@@ -25,7 +25,8 @@ export async function ensureBenchmark({project,ref,cache=path.join(process.env.X
  const notice=await get('LICENSE',proof.files.LICENSE.sha256);await onNotice(notice.toString());
  const rows=await Promise.allSettled(Object.entries(proof.files).map(([name,item])=>get(name,item.sha256).then(b=>{if(b.length!==item.bytes)throw Error('byte count mismatch: '+name);})));for(const row of rows)if(row.status==='rejected')throw row.reason;
  await get('brickwright-media.json');
- return {projectDirectory:dest,mediaCommit:ref,assetCount:rows.length,licenseSha256:proof.files.LICENSE.sha256};
+ if(proof.runtimeBuild)await get(proof.runtimeBuild.script,proof.runtimeBuild.sha256);
+ return {projectDirectory:dest,mediaCommit:ref,assetCount:rows.length,licenseSha256:proof.files.LICENSE.sha256,runtimeBuild:proof.runtimeBuild||null};
 }
 if(import.meta.url===pathToFileURL(process.argv[1]||'').href){
  const args=process.argv.slice(2),o={};let run=false;
@@ -33,7 +34,16 @@ if(import.meta.url===pathToFileURL(process.argv[1]||'').href){
  const result=await ensureBenchmark({project:o.project,ref:o['media-ref'],cache:o.cache,onNotice:notice=>process.stderr.write(notice+'\n')});
  if(!run){process.stdout.write(JSON.stringify(result)+'\n');}
  else{
-  const child=spawn(process.execPath,[fileURLToPath(new URL('./run.mjs',import.meta.url)),'--board',o.board||process.env.BW_BOARD_DIR,'--project',result.projectDirectory,'--variant',o.variant||'80386','--max',o.max||'20000000'],{stdio:'inherit'});
+  let directory=result.projectDirectory;
+  if(result.runtimeBuild){
+   const target=o.variant==='80386'||!o.variant?'8086':o.variant;
+   directory=path.join(directory,'.build',target+'-absent');
+   const built=spawn('sh',[path.join(result.projectDirectory,result.runtimeBuild.script),target,'absent',directory],{stdio:['ignore','pipe','inherit']});
+   built.stdout.on('data',b=>process.stderr.write(b));
+   const exit=await new Promise((resolve,reject)=>{built.on('error',reject);built.on('exit',resolve);});
+   if(exit!==0)throw Error('declared benchmark build failed; no guest run');
+  }
+  const child=spawn(process.execPath,[fileURLToPath(new URL('./run.mjs',import.meta.url)),'--board',o.board||process.env.BW_BOARD_DIR,'--project',directory,'--variant',o.variant||'80386','--max',o.max||'20000000'],{stdio:'inherit'});
   child.on('error',e=>{console.error(e.message);process.exitCode=1;});child.on('exit',code=>{process.exitCode=code??1;});
  }
 }
