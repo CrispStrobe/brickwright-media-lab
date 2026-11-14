@@ -1,0 +1,31 @@
+{
+  "title": "TOPBENCH 0.40c",
+  "machine": "i8086",
+  "license": "MIT",
+  "slots": {
+    "exe": "TOPBENCH.EXE"
+  },
+  "program": {
+    "kind": "dos",
+    "tool": "run-dos",
+    "preset": "xt",
+    "variant": "8086",
+    "args": "-i",
+    "max": 20000000
+  },
+  "mount": {
+    "DATABASE.INI": "DATABASE.INI"
+  },
+  "expect": [
+    "Score:",
+    "Memory:",
+    "Effective addressing:",
+    "Opcode exercise:",
+    "Vid adapter speed:",
+    "3DGame opcode exercise:"
+  ],
+  "expectedExitCodes": [
+    4
+  ],
+  "notes": "DOS service-layer program, not an OS image. -i exits with DOS code4 by upstream design. Completion has not been established; use the benchmark proof runner, not generic exit-zero acceptance."
+}

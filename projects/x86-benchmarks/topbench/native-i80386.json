@@ -1,0 +1,27 @@
+{
+  "schema": "brickwright.native-i80386-benchmark.v1",
+  "runner": "../run.mjs",
+  "kind": "native-i80386-dos-shim",
+  "backend": "ExperimentalI80386ATMachine",
+  "preset": "PCAT80386_EXPERIMENTAL",
+  "programManifest": "brickwright-media.json",
+  "image": "TOPBENCH.EXE",
+  "format": "MZ",
+  "pspSegment": 2048,
+  "loadSegment": 2064,
+  "entry": "from pinned MZ header",
+  "shim": "bw-board src/i8086-dos.js + run.mjs real-mode segment-cache adapter",
+  "extraRam": {
+    "start": 851968,
+    "bytes": 1024
+  },
+  "dosImage": null,
+  "biosImage": null,
+  "extender": null,
+  "fpu": "absent",
+  "output": {
+    "stdout": "INT21h",
+    "screen": "B800 text memory"
+  },
+  "guiSupported": false
+}

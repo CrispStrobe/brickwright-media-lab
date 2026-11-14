@@ -1,0 +1,138 @@
+{
+  "version": "0.40c",
+  "upstream": "https://github.com/MobyGamer/TOPBENCH",
+  "sourceCommit": "40a15475ecbbd9dc47d9b578c70248593c511980",
+  "releaseUrl": "https://github.com/MobyGamer/TOPBENCH/releases/download/0.40c/TOPBV40C.ZIP",
+  "releaseSha256": "de3ebae63f0e7bff5b5b8cb513e96ff90480c1235f188e666a00f69894ad81e6",
+  "sourceUrl": "https://codeload.github.com/MobyGamer/TOPBENCH/tar.gz/40a15475ecbbd9dc47d9b578c70248593c511980",
+  "sourceSha256": "19387c3180b24e0071406b913735652a61fe237630b0fb9b982ad9b7ca2a3cc5",
+  "compiler": {
+    "kind": "upstream prebuilt release",
+    "name": "Upstream prebuilt release; exact compiler/version/options unrecorded",
+    "options": null,
+    "rebuildVerified": false
+  },
+  "license": "MIT Jim Leonard notice retained. Only root TOPBENCH source texts are mirrored; bundled third-party detection/timer libraries and OBJ files are excluded.",
+  "files": {
+    "DATABASE.INI": {
+      "bytes": 124054,
+      "sha256": "4ef77a5a24a43d1c1ca450e7e2895c6a5ca8e15a0cd6ee97e1169efc3bf2f417"
+    },
+    "LICENSE": {
+      "bytes": 1068,
+      "sha256": "867626c6ff1423e2f16c64e1de87da137e270e5688bc06881cd58bb0c6d3e4f7"
+    },
+    "TOPBENCH.EXE": {
+      "bytes": 86773,
+      "sha256": "c739a73c6955d9798cfeae2d7b0c46011fdc9f943071ecf2bb730ebf4eab52eb"
+    },
+    "TOPBENCH.TXT": {
+      "bytes": 1305,
+      "sha256": "a495b2b9f49a4b663e36e12001a522bd7f63b7c0c0724af49fa94a7106f476fd"
+    },
+    "source/BSTUBOV.PAS": {
+      "bytes": 2451,
+      "sha256": "84ddd394dc5a235273f070eb2df17b89eaf8e43380273d6c24c6eb56f11af6f8"
+    },
+    "source/BTSUITES.PAS": {
+      "bytes": 9344,
+      "sha256": "5bf3f1b3ecfc94f4c71bf2549d183fd5c229cb9b2aa4ccfd5f9b6be1383ea2a9"
+    },
+    "source/CODESIZE.PAS": {
+      "bytes": 149022,
+      "sha256": "b7d06f4c6a0576285eaf96420dcbde4cff60188fd9626059d5e3cafbdb1dcbbf"
+    },
+    "source/HELPTEXT.TXT": {
+      "bytes": 238,
+      "sha256": "4198fc88371460ef49bb043988c8185b08a0f00e85edf923c7691c4786e4c255"
+    },
+    "source/README.md": {
+      "bytes": 1030,
+      "sha256": "955ab867821fe2a72eeeb0e92630d41bd00c533295e1582300950c5ba8563abe"
+    },
+    "source/READSTUB.TXT": {
+      "bytes": 309,
+      "sha256": "db61c0e375d5c44e0f3e6320d5f7ca9ba8c2354f3d57d4ae0b7af334c37edaa3"
+    },
+    "source/STUBTEXT.TXT": {
+      "bytes": 499,
+      "sha256": "dfe1f05b88c8ea08f5bc1c34e30159156785039a5047655346331d7c7ee62edd"
+    },
+    "source/TOPBCONF.INC": {
+      "bytes": 231,
+      "sha256": "a1950a2605e40bc2b62f63855cd72bc6e2ff4c56676425522aff0fb274899169"
+    },
+    "source/TOPBENCH.PAS": {
+      "bytes": 54102,
+      "sha256": "6452c0d7c08a78cefefa2191b2d99081851436cd20223fcc483ebb67c4751a81"
+    },
+    "source/TOPBENCH.TXT": {
+      "bytes": 1283,
+      "sha256": "39b797a7dd413673ea6423b5f93333788da2f04f9824a7220872995b35b2ccfc"
+    },
+    "source/TOPBSTUB.PAS": {
+      "bytes": 4936,
+      "sha256": "061c207a94aaac4278a268a0abe4a1385d0a838b8cb882eb5b3445eb29d3de0b"
+    },
+    "source/TOPB_CON.PAS": {
+      "bytes": 5854,
+      "sha256": "77eda81e9938ae92dda80b6a314a88215a48f726fe855b12d27a3098260792ac"
+    },
+    "source/TOPB_DAT.PAS": {
+      "bytes": 9511,
+      "sha256": "6397d7633c159a0d720f572336890e7920f0bbe4dd59fd0b27ee6a54f9d71cb6"
+    },
+    "source/TOPB_DET.PAS": {
+      "bytes": 27958,
+      "sha256": "6910d2c4599fe9a9579b961859b60ddcd7f81c7c3b3c6f11cb5bf979e9197f1c"
+    },
+    "source/TOPB_HRN.PAS": {
+      "bytes": 6467,
+      "sha256": "b92d0fea33ed3201549af0501356e8d7972e6d33b97945def68ed4c747423695"
+    },
+    "source/TOPB_SUP.PAS": {
+      "bytes": 10895,
+      "sha256": "4c9070f68347edf7f9fc35aea1bae8b2b62bf500e788c8fc851bd74ac9218717"
+    },
+    "source/VADAPTER.PAS": {
+      "bytes": 2410,
+      "sha256": "aacd597ae0b2f3178de44dc26fe7a728b0b074f4ccf681c88f82c051dd4e0f22"
+    },
+    "source/VIDEOID.ASM": {
+      "bytes": 15341,
+      "sha256": "b4e8518abebd626ce5722b114ea76a988d93c2cb6264d44c019280936ebf1c1b"
+    },
+    "source/WHATSNEW.TXT": {
+      "bytes": 2172,
+      "sha256": "5bc05e64ccfaa0ec85407ac262e72f33ae2e4cc0c952878c2f6d66b29b05986b"
+    },
+    "source/_3DGAMES.INC": {
+      "bytes": 13047,
+      "sha256": "a924d0b024570ec305d49e1b211ac0583ae8ca8c90e9248bf99d691dcd5df110"
+    },
+    "source/_EA.INC": {
+      "bytes": 10593,
+      "sha256": "d346debd2d622922e95a104107108f9a113326d4a43d24e1bc3c8a0a4b372e2e"
+    },
+    "source/_MBLOCK.INC": {
+      "bytes": 2223,
+      "sha256": "d0e493339dc314672c24a4c270884a2d71fb1f2c9b2bc2d4d13c8d67cb1b11b8"
+    },
+    "source/_OPCODES.INC": {
+      "bytes": 14945,
+      "sha256": "249a3256b5274677016f141760f21f1e5fdb34acd0babc9aa0a0018808b14a2e"
+    },
+    "source/_RUNALL.INC": {
+      "bytes": 41070,
+      "sha256": "97dd3bfdcb5d22cc34c1c9c3092bceaeb6fb324f6c5e368f4bb1b9e130eadd7b"
+    },
+    "source/_VIDMEM.INC": {
+      "bytes": 1318,
+      "sha256": "bbce3c5b88b494a970f53fefe8aab773f027c34825f79eb07333d6fee25898b8"
+    },
+    "source/introscn.txt": {
+      "bytes": 1236,
+      "sha256": "5a861735f6c80622ab8b3a88bc670cb285f03267b139744eab198fc122e4c356"
+    }
+  }
+}

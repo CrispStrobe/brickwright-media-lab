@@ -1,0 +1,23 @@
+{
+  "title": "Whetstone 1.2 (1998), software floating point validation build",
+  "machine": "i8086",
+  "license": "Painter Engineering permission; see LICENSE and full source comment",
+  "slots": {
+    "exe": ".build/8086-absent/WHT.EXE"
+  },
+  "program": {
+    "kind": "dos",
+    "tool": "run-dos",
+    "preset": "xt",
+    "variant": "8086",
+    "args": "1",
+    "max": 20000000
+  },
+  "expect": [
+    "Insufficient duration- Increase the LOOP count"
+  ],
+  "expectedExitCodes": [
+    1
+  ],
+  "notes": "Small validation loop count, not a score run. PRINTOUT retains per-module values for correctness; zero guest-clock duration explicitly refuses a score. FPU-absent software floating point; never aggregate with hardware-FPU results."
+}

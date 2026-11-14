@@ -1,0 +1,24 @@
+{
+  "schema": "brickwright.native-i80386-benchmark.v1",
+  "title": "Owned freestanding Sieve integer control",
+  "kind": "native-i80386-raw",
+  "machine": "i80386-experimental",
+  "runner": "../run.mjs",
+  "slots": {
+    "raw": "SIEVE.BIN"
+  },
+  "format": "raw32",
+  "loadAddress": 65536,
+  "entry": 65536,
+  "stack": 589824,
+  "preset": "PCAT80386_EXPERIMENTAL",
+  "fpu": "absent",
+  "dosImage": null,
+  "biosImage": null,
+  "extender": null,
+  "expectedOutput": "NATIVE386 SIEVE n=8192 passes=20 primes=1028 sum=3908641\n",
+  "completion": "HLT after exact serial output",
+  "license": "MIT",
+  "guiSupported": false,
+  "notes": "Owned algorithm control, not a TOPBENCH/Dhrystone score or physical-386 timing. Loader explicitly seeds flat 32-bit protected-mode segments; guest runs startup/serial code at fixed addresses with no OS or extender."
+}
