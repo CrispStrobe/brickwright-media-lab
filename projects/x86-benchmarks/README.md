@@ -80,3 +80,13 @@ source; its executable still needs the declared build step. `ensureBenchmark`
 exports an `onNotice` callback and a cache path for a future GUI action; GUI
 wiring must present that notice and explicitly select the native runner type.
 A generic DOS-program GUI action is not yet a native-386 action.
+
+Timing protocol v2 stops the parent wall timer immediately after child exit,
+before parsing or writing records. It also records a separate execution interval
+around the guest loop (DOS-loader cost is included on the legacy runDos path,
+and excluded on native 386). The independent whole-child CPU measurement still
+includes startup, input verification and capture. Device `getState()` snapshots
+and hidden segment/system tables join CPU, RAM and instruction equality.
+The original v1 parent-wall samples included record-writing overhead and must
+not be relabeled as v2 whole-child wall measurements. Their guest observations
+and failures remain valid and retained.

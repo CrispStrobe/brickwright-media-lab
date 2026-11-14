@@ -23,19 +23,20 @@ def main():
                 cmd=['node',str(Path(__file__).with_name('run.mjs')),'--board',str(getattr(a,arm).resolve()),'--project',str(a.project.resolve()),'--variant',a.variant,'--max',str(a.max)]
                 before=resource.getrusage(resource.RUSAGE_CHILDREN);start=time.monotonic()
                 result=subprocess.run(cmd,capture_output=True,timeout=a.timeout)
+                wall=time.monotonic()-start
                 after=resource.getrusage(resource.RUSAGE_CHILDREN)
                 base=a.output/f'pair-{i:02d}-{arm}'
                 base.with_suffix('.stdout').write_bytes(result.stdout);base.with_suffix('.stderr').write_bytes(result.stderr)
                 record=json.loads(result.stdout);base.with_suffix('.json').write_text(json.dumps(record,indent=2)+'\n')
-                sample={'pair':i,'arm':arm,'measured':i>=a.warmups,'cpuSeconds':after.ru_utime+after.ru_stime-before.ru_utime-before.ru_stime,'wallSeconds':time.monotonic()-start,'exitCode':result.returncode,'emulatorCommit':record['emulatorCommit']}
+                sample={'pair':i,'arm':arm,'measured':i>=a.warmups,'cpuSeconds':after.ru_utime+after.ru_stime-before.ru_utime-before.ru_stime,'wallSeconds':wall,'executionCpuSeconds':(record.get('execution') or {}).get('cpuSeconds'),'executionWallSeconds':(record.get('execution') or {}).get('wallSeconds'),'exitCode':result.returncode,'emulatorCommit':record['emulatorCommit']}
                 samples.append(sample);pair[arm]=record
                 if not record['success']:raise ValueError('guest '+record['semantic']['status']+'; see retained raw output')
                 if reference is None:reference=record
                 equivalent(reference,record)
             equivalent(pair['baseline'],pair['candidate'])
         measured=[s for s in samples if s['measured']]
-        means={arm:{k:statistics.mean(s[k] for s in measured if s['arm']==arm) for k in ['cpuSeconds','wallSeconds']} for arm in ['baseline','candidate']}
-        out={'pass':True,'semanticEquality':True,'samples':samples,'means':means,'ratios':{k:means['candidate'][k]/means['baseline'][k] for k in ['cpuSeconds','wallSeconds']},'favorablePairs':{k:sum(next(s[k] for s in measured if s['pair']==i and s['arm']=='candidate')<next(s[k] for s in measured if s['pair']==i and s['arm']=='baseline') for i in range(a.warmups,a.warmups+a.pairs)) for k in ['cpuSeconds','wallSeconds']},'benchmarkScore':reference['benchmarkScore']}
+        means={arm:{k:statistics.mean(s[k] for s in measured if s['arm']==arm) for k in ['cpuSeconds','wallSeconds','executionCpuSeconds','executionWallSeconds']} for arm in ['baseline','candidate']}
+        out={'pass':True,'semanticEquality':True,'samples':samples,'means':means,'ratios':{k:means['candidate'][k]/means['baseline'][k] for k in ['cpuSeconds','wallSeconds','executionCpuSeconds','executionWallSeconds']},'favorablePairs':{k:sum(next(s[k] for s in measured if s['pair']==i and s['arm']=='candidate')<next(s[k] for s in measured if s['pair']==i and s['arm']=='baseline') for i in range(a.warmups,a.warmups+a.pairs)) for k in ['cpuSeconds','wallSeconds','executionCpuSeconds','executionWallSeconds']},'benchmarkScore':reference['benchmarkScore']}
     except Exception as e:
         out={'pass':False,'error':str(e),'completedChildren':len(samples),'samples':samples}
         (a.output/'result.json').write_text(json.dumps(out,indent=2)+'\n');raise

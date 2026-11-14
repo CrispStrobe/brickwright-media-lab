@@ -41,6 +41,9 @@ collect('src/i8086-dos.js');collect(variant==='80386'?'src/experimental/i80386-a
 const runnerSha256=sha(fs.readFileSync(fileURLToPath(import.meta.url)));
 let m,d,result,error=null,stdout='',calls=0,config=null,coreStart=0;
 const serial=[];
+let execution=null;
+const beginExecution=()=>({wall:process.hrtime.bigint(),cpu:process.cpuUsage()});
+const endExecution=start=>{const used=process.cpuUsage(start.cpu);execution={cpuSeconds:(used.user+used.system)/1e6,wallSeconds:Number(process.hrtime.bigint()-start.wall)/1e9,includesLoader:variant!=='80386'};};
 const imported=async file=>import(pathToFileURL(path.join(board,file)));
 try{
  if(variant==='80386'){
@@ -55,7 +58,9 @@ try{
    const c=m.cpu;c.cr0=1;c.cs=8;c.ss=c.ds=c.es=c.fs=c.gs=16;
    for(let id=0;id<6;id++)c.segmentCaches[id]={base:0,limit:0xffffffff,default32:true,present:true,code:id===1,readable:true,writable:id!==1};
    c.eip=entry;c.esp=manifest.stack;c.eflags=2;coreStart=c.cycles;
+   const measured=beginExecution();
    while(!c.halted&&calls<max){m.step();calls++;if(c.shutdown)throw Error('native core shutdown');}
+   endExecution(measured);
    stdout=Buffer.from(serial).toString('latin1');
    result={terminated:c.halted,exitCode:null,steps:calls,exhausted:!c.halted};
   }else{
@@ -72,12 +77,16 @@ try{
   d.service=function(){const n=service.call(this);if(n!==null)syncSegments();return n;};
   d.loadExe(program,{at:0x0800,args:manifest.program.args||''});syncSegments();
   coreStart=m.cpu.cycles;
+  const measured=beginExecution();
   while(!d.terminated&&calls<max){d.step();calls++;if(m.cpu.shutdown)throw Error('native core shutdown');}
+  endExecution(measured);
   result={terminated:d.terminated,exitCode:d.exitCode,steps:calls,exhausted:!d.terminated};
   }
  }else{
   const {runDos}=await imported('scripts/run-dos.mjs');
+  const measured=beginExecution();
   const r=runDos({program:path.join(project,rel),variant,preset:manifest.program.preset,max,args:manifest.program.args||'',files:Object.entries(manifest.mount||{}).map(([n,f])=>n+'='+path.join(project,f))},{write:s=>{stdout+=s;}});
+  endExecution(measured);
   ({machine:m,dos:d,result}=r);config=m.config;
  }
 }catch(e){error={name:e.name,message:e.message};}
@@ -87,8 +96,9 @@ const cpuState=cpu?Object.fromEntries(['ax','bx','cx','dx','si','di','bp','sp','
 const report=d?.report()||null;
 const scores=Object.fromEntries([...stdout.matchAll(/^(Score|Memory|Effective addressing|Opcode exercise|Vid adapter speed|3DGame opcode exercise):\s*([0-9.]+)/gm)].map(m=>[m[1],Number(m[2])]));
 const success=isRaw?(!error&&result?.terminated&&stdout===manifest.expectedOutput):(!error&&result?.terminated&&manifest.expectedExitCodes.includes(result.exitCode)&&!report?.stdoutTruncated&&!report?.unsupported.length&&(manifest.expect||[]).every(s=>stdout.includes(s)));
-const semantic={status:success?'pass':error?'error':'incomplete',error,result,stdout,screen:d?.screenText()||[],serial,dos:report,cpu:cpuState,instructionSnapshot:cpu?._snapshotInstruction?.()??null,chipDebt:m?._chipDebt??null,chipDeadline:m?._chipDeadline??null,ramSha256:m?sha(m.mem):null,machineCycles:m?.cycles??null,guestInstructions:variant==='80386'&&cpu?cpu.cycles-coreStart:null};
+const deviceState=m?Object.fromEntries(Object.entries(m.chips).map(([name,part])=>[name,typeof part.getState==='function'?part.getState():{captureUnavailable:true}])):null;
+const semantic={deviceState,segmentCaches:cpu?.segmentCaches??null,gdtr:cpu?.gdtr??null,idtr:cpu?.idtr??null,halted:cpu?.halted??null,shutdown:cpu?.shutdown??null,status:success?'pass':error?'error':'incomplete',error,result,stdout,screen:d?.screenText()||[],serial,dos:report,cpu:cpuState,instructionSnapshot:cpu?._snapshotInstruction?.()??null,chipDebt:m?._chipDebt??null,chipDeadline:m?._chipDeadline??null,ramSha256:m?sha(m.mem):null,machineCycles:m?.cycles??null,guestInstructions:variant==='80386'&&cpu?cpu.cycles-coreStart:null};
 const used=process.cpuUsage();
-const record={schema:'brickwright.x86-benchmark-run.v1',benchmark:manifest.title,version:proof.version,variant,backend:variant==='80386'?'native i80386 core (ExperimentalI80386ATMachine; ordinary step)':'run-dos '+variant,emulatorCommit:revision,runner:{node:process.version,platform:process.platform,arch:process.arch,cpuModel:os.cpus()[0]?.model,logicalCpus:os.cpus().length,sha256:runnerSha256,mediaLabCommit:execFileSync('git',['-C',path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../..'),'rev-parse','HEAD'],{encoding:'utf8'}).trim()},benchmarkSha256:sha(program),assetProof:proof,sourceSha256,configuration:{preset:variant==='80386'?(isRaw?'PCAT80386_EXPERIMENTAL':'PCAT80386_EXPERIMENTAL + 1KiB DOS trap RAM'):manifest.program.preset,clockHz:m?.clockHz??config?.clockHz,memoryBytes:m?.memoryBytes,config,video:isRaw?'none (serial output)':'B800 text capture; no ROM',fpu:'absent',dosImage:null,biosImage:null,extender:null,loader:variant==='80386'?(isRaw?'owned fixed-address raw32 loader; seeded flat segments; guest start.S + serial output':'createDos8086 MZ loader, PSP=0800h, image=0810h; sync real-mode segment caches'):'scripts/run-dos.mjs MZ loader',command:rel+' '+(manifest.program?.args||''),loadAddress:isRaw?manifest.loadAddress:null,entry:isRaw?manifest.entry:null,maxProgressSteps:max,guestInstructionCountNote:variant==='80386'?'native CPU cycles counter counts interpreter instruction retirements; machine cycles are functional scheduling charges':'not exposed by runDos; result.steps includes DOS service transitions'},host:{cpuSeconds:(used.user+used.system)/1e6,wallSeconds:Number(process.hrtime.bigint()-started)/1e9,maxRssKiB:process.resourceUsage().maxRSS},benchmarkScore:scores,semantic,success};
+const record={schema:'brickwright.x86-benchmark-run.v2',benchmark:manifest.title,version:proof.version,variant,backend:variant==='80386'?'native i80386 core (ExperimentalI80386ATMachine; ordinary step)':'run-dos '+variant,emulatorCommit:revision,runner:{node:process.version,platform:process.platform,arch:process.arch,cpuModel:os.cpus()[0]?.model,logicalCpus:os.cpus().length,sha256:runnerSha256,mediaLabCommit:execFileSync('git',['-C',path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../..'),'rev-parse','HEAD'],{encoding:'utf8'}).trim()},benchmarkSha256:sha(program),assetProof:proof,sourceSha256,configuration:{preset:variant==='80386'?(isRaw?'PCAT80386_EXPERIMENTAL':'PCAT80386_EXPERIMENTAL + 1KiB DOS trap RAM'):manifest.program.preset,clockHz:m?.clockHz??config?.clockHz,memoryBytes:m?.memoryBytes,config,video:isRaw?'none (serial output)':'B800 text capture; no ROM',fpu:'absent',dosImage:null,biosImage:null,extender:null,loader:variant==='80386'?(isRaw?'owned fixed-address raw32 loader; seeded flat segments; guest start.S + serial output':'createDos8086 MZ loader, PSP=0800h, image=0810h; sync real-mode segment caches'):'scripts/run-dos.mjs MZ loader',command:rel+' '+(manifest.program?.args||''),loadAddress:isRaw?manifest.loadAddress:null,entry:isRaw?manifest.entry:null,maxProgressSteps:max,guestInstructionCountNote:variant==='80386'?'native CPU cycles counter counts interpreter instruction retirements; machine cycles are functional scheduling charges':'not exposed by runDos; result.steps includes DOS service transitions'},host:{cpuSeconds:(used.user+used.system)/1e6,wallSeconds:Number(process.hrtime.bigint()-started)/1e9,maxRssKiB:process.resourceUsage().maxRSS},execution,benchmarkScore:scores,semantic,success};
 await new Promise(resolve=>process.stdout.write(JSON.stringify(record)+'\n',resolve));
 process.exitCode=success?0:2;
