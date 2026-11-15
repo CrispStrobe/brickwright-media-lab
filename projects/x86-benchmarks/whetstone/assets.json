@@ -11,6 +11,7 @@
       "-march=i8086",
       "-O2",
       "-fno-builtin",
+      "-mno-newlib-autofloat-stdio",
       "-DPRINTOUT"
     ],
     "link": [
@@ -36,7 +37,7 @@
   },
   "runtimeBuild": {
     "script": "build.sh",
-    "sha256": "64416f59de66131de8b7231153b5ab86a3221b9e92273b6c3c925b837727999f",
+    "sha256": "d91c70c46dea0887ce2408134ff5917c9d0a595f35e46157c63e44b00f5a58d1",
     "compiler": "installed ia16-elf-gcc; actual version/options recorded per build",
     "fpu": "absent only",
     "target": "chosen DOS CPU; native 80386 executes the 8086 real-mode build via its shim"

@@ -20,7 +20,7 @@ cc=${IA16_GCC:-ia16-elf-gcc}
 "$cc" --version > "$out/compiler.txt"
 cp "$here/source/whetstone.c" "$out/source/whetstone.c"
 cp "$here/LICENSE" "$out/LICENSE"
-"$cc" -mcmodel=medium -march=i"$variant" -O2 -fno-builtin -DPRINTOUT \
+"$cc" -mcmodel=medium -march=i"$variant" -O2 -fno-builtin -mno-newlib-autofloat-stdio -DPRINTOUT \
  "$out/source/whetstone.c" -lm -o "$out/WHT.EXE"
 python3 - "$here" "$out" "$variant" <<'PY'
 import hashlib,json,sys
@@ -28,7 +28,7 @@ from pathlib import Path
 here,out=map(Path,sys.argv[1:3]);variant=sys.argv[3]
 proof=json.loads((here/'assets.json').read_text());manifest=json.loads((here/'brickwright-media.json').read_text())
 manifest['slots']['exe']='WHT.EXE';manifest['program']['variant']=variant
-proof['compiler'].update({'name':(out/'compiler.txt').read_text().splitlines()[0],'options':['-mcmodel=medium','-march=i'+variant,'-O2','-fno-builtin','-DPRINTOUT'],'link':['-lm'],'fpu':'absent; GCC ia16 software floating point'})
+proof['compiler'].update({'name':(out/'compiler.txt').read_text().splitlines()[0],'options':['-mcmodel=medium','-march=i'+variant,'-O2','-fno-builtin','-mno-newlib-autofloat-stdio','-DPRINTOUT'],'link':['-lm'],'fpu':'absent; GCC ia16 software floating point'})
 b=(out/'WHT.EXE').read_bytes();proof['files']['WHT.EXE']={'sha256':hashlib.sha256(b).hexdigest(),'bytes':len(b)}
 (out/'assets.json').write_text(json.dumps(proof,indent=2)+'\n');(out/'brickwright-media.json').write_text(json.dumps(manifest,indent=2)+'\n')
 print(json.dumps(proof['files']['WHT.EXE']))

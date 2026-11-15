@@ -1,7 +1,9 @@
 # x86 benchmark assets and explicit runners
 
 PR #36 is a bounded asset/cache/CLI harness delivery. TOPBENCH and Whetstone
-remain **INCOMPLETE** on all four cores. Recorded native Sieve whole-child
+historical v1 runs remain **INCOMPLETE** on all four cores. The active native
+DOS startup and floating-printf fixes have separate identities; terminal
+qualification is recorded separately from those original runs. Recorded native Sieve whole-child
 CPU/wall ratios are **1.009895 / 1.013227: NO speedup**. The achieved actual
 xv6 opt-in result (CPU -6.45% / wall -7.68%) is a separate workload and result.
 GUI frontend wiring, core/FPU changes and additional benchmarks are outside
@@ -127,3 +129,26 @@ required arguments and the board path before fetching. Runtime errors are
 concise; guest incomplete exit 2 remains exit 2. A notice is displayed before
 invocation, including when cached assets are reused offline. Actual frontend
 wiring is deferred; `guiSupported: false` on the native manifests stays honest.
+
+Native DOS startup protocol `native-i80386-dos-startup-v2` configures the real
+PIC/PIT for IRQ0/INT08 ticks and seeds a declared mode3 80x25 BDA (4096-byte
+page, 16-line cell). It preserves native caller FLAGS across the host shim.
+The observed TOPBENCH divide fault read zero BDA columns before this startup;
+this is loader state, not an unsupported DIV instruction. The adapter answers
+only AX4400 console handles 0, 1, 2; other IOCTL requests remain visible errors.
+The [RBIL device-information contract](https://fd.lod.bz/rbil/interrup/dos_kernel/214400.html)
+defines those returned bits. No font ROM or general video BIOS is supplied.
+
+Whetstone uses `-mno-newlib-autofloat-stdio` to select floating-point `printf`.
+This deliberately changes its binary hash; old integer-only output remains in
+v1. A PASS requires exit0, no unsupported services, all ten module rows equal
+to an unmodified-source host control at printed precision, positive duration
+and a numeric score. A terminal failure is `terminal-unqualified`, distinct
+from budget exhaustion. PRINTOUT and the functional guest clock prohibit a
+physical CPU score or an optimization claim from this validation.
+
+Additional small real-native startup controls (no asset fetch or full workload):
+
+```sh
+BW_BOARD_DIR="$BW_BOARD_DIR" node --test projects/x86-benchmarks/native-dos.test.mjs
+```
