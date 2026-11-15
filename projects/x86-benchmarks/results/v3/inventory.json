@@ -1,0 +1,22 @@
+{
+  "topbench-native-terminal.json": {
+    "bytes": 18125,
+    "sha256": "5fd1ed5345f90df994dc18d957791f7bc06db3d3834e6c35f92e8a10b30ce312"
+  },
+  "whetstone-host-oracle.json": {
+    "bytes": 490,
+    "sha256": "875143c63fe2f4ce4074e2076a3f62cded918929e57a7bdaabb61344a72d7b69"
+  },
+  "whetstone-host-oracle.txt": {
+    "bytes": 808,
+    "sha256": "05923f06d537a294bcac9fe0f0aca2281d8e14bf849d32703ea4dd88d8850bdb"
+  },
+  "whetstone-native-baseline.json": {
+    "bytes": 17926,
+    "sha256": "e52b9c7ccf8625632ae6f9e66fb4aabf58721956e18fb1635ae9cbfb485d0e46"
+  },
+  "whetstone-native-candidate.json": {
+    "bytes": 17926,
+    "sha256": "4baaa05850b43009ebb53b26693868a99f630f8d3c7ab0597d928b62f51cd3f5"
+  }
+}

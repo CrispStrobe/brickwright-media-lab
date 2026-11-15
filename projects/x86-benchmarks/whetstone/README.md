@@ -8,6 +8,8 @@ in `source/whetstone.c` and copied verbatim into LICENSE.
 
 `fetch.sh` verifies that exact source on explicit request. `build.sh` uses the
 installed 16-bit ia16 GCC (an equivalent 16-bit toolchain, not DJGPP) and libm.
+The full floating-point printf build uses `-mno-newlib-autofloat-stdio`;
+the earlier integer-only printf executable is a separate historical identity.
 It records compiler version, CPU/options, source and binary hashes in each
 build's own manifest/receipt. Generated executables are not committed here.
 
@@ -40,5 +42,8 @@ separate CPU/FPU cache directory and runs that generated manifest. It does not
 install a compiler. The actual compiler/version/flags and generated binary hash
 are recorded; a missing toolchain refuses the run. Native 80386 executes the
 16-bit 8086 software-FP build via the native-core DOS shim, not a raw32 or
-FreeDOS path. This remains a validation/control run until the documented DOS
-service/formatting and completion blockers are resolved.
+FreeDOS path. The native startup-v2 run now completes this validation/control path with
+all ten printed numeric rows matching an unmodified-source host oracle, exit0
+and no unsupported services. See [terminal evidence](../results/v3/README.md).
+The original v1 probes remain incomplete; no legacy-core completion or
+freestanding raw32 Whetstone result is implied.

@@ -1,0 +1,17 @@
+{
+  "purpose": "Numeric module oracle only; host exit1 is insufficient host duration, not a guest benchmark result",
+  "sourceSha256": "333e4ceca042c146f63eec605573d16ae8b07166cbc44a17bec1ea97c6f1efbf",
+  "compiler": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "options": [
+    "-std=gnu89",
+    "-O2",
+    "-fno-builtin",
+    "-DPRINTOUT",
+    "-lm"
+  ],
+  "args": [
+    "1"
+  ],
+  "exitCode": 1,
+  "stdoutSha256": "05923f06d537a294bcac9fe0f0aca2281d8e14bf849d32703ea4dd88d8850bdb"
+}

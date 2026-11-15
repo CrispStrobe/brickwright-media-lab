@@ -31,3 +31,11 @@ The initial bounded probes did not complete; no TOPBENCH score is claimed.
 A nonterminating probe is retained as an incomplete observation, not PASS.
 Only asset/notice proof currently passes. Full upstream hardware detection and
 PIT calibration may require services absent from the small benchmark shim.
+
+The startup-v2 native run reaches exit4 and prints all six rows to B800 screen
+memory (not INT21 stdout). It is **terminal-unqualified**: font information
+INT10 AX1130, display-combination AX1A00 and EGA-information AH12/BL10 remain
+unsupported. The original tick stall and zero-column DIV fault have concrete
+startup fixes and real-native positive controls. See [terminal evidence](../results/v3/README.md).
+The pinned 0.40c release executable prints a 0.40b banner; that mismatch is
+retained, not silently corrected. No font ROM is supplied by the small shim.

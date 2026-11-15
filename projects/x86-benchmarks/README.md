@@ -3,7 +3,10 @@
 PR #36 is a bounded asset/cache/CLI harness delivery. TOPBENCH and Whetstone
 historical v1 runs remain **INCOMPLETE** on all four cores. The active native
 DOS startup and floating-printf fixes have separate identities; terminal
-qualification is recorded separately from those original runs. Recorded native Sieve whole-child
+qualification is recorded separately from those original runs.
+[Native terminal evidence](results/v3/README.md) now establishes Whetstone
+software-FP validation with a same-image baseline; TOPBENCH exits4 with six
+screen rows but remains unqualified on three missing video-query contracts. Recorded native Sieve whole-child
 CPU/wall ratios are **1.009895 / 1.013227: NO speedup**. The achieved actual
 xv6 opt-in result (CPU -6.45% / wall -7.68%) is a separate workload and result.
 GUI frontend wiring, core/FPU changes and additional benchmarks are outside

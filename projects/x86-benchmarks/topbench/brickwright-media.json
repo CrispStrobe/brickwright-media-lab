@@ -27,5 +27,6 @@
   "expectedExitCodes": [
     4
   ],
-  "notes": "DOS service-layer program, not an OS image. -i exits with DOS code4 by upstream design. Completion has not been established; use the benchmark proof runner, not generic exit-zero acceptance."
+  "notes": "Upstream -i writes through CRT to the B800 screen and exits4. Require all six numeric results and no unsupported services. Native video-probe services remain unsupported; exit4 alone is not PASS.",
+  "resultOutput": "screen"
 }
