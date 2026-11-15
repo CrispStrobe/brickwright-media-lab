@@ -1,0 +1,9 @@
+Thanks for offering to help with the development of TOPBENCH!
+This archive contains the following:
+
+topbstub.exe - The TOPBENCH profiling and detection stub.
+               Requires ~53K free RAM.
+
+Use -? to get command-line usage.  Once run, please email
+trixter@oldskool.org the resulting output.ini file.
+

@@ -1,0 +1,230 @@
+{
+  "schema": "brickwright.x86-benchmark-run.v1",
+  "benchmark": "Whetstone 1.2 (1998), software floating point validation build",
+  "version": "C Whetstone 1.2, 22 March 1998",
+  "variant": "80286",
+  "backend": "run-dos 80286",
+  "emulatorCommit": "fa26a41a21f3d948d49612ee2cdb26824334a53a",
+  "runner": {
+    "node": "v22.23.4",
+    "platform": "linux",
+    "arch": "x64",
+    "cpuModel": "Intel(R) Xeon(R) CPU @ 2.20GHz",
+    "logicalCpus": 4,
+    "sha256": "cdc624b7ee66e88b17c18ca5f85a8bfb18140b431d941be91b29a45ce739346a",
+    "mediaLabCommit": "4befc5a7e4004808cf1ebbc5533dd35cb0150a58"
+  },
+  "benchmarkSha256": "063ecf407581ea608d90ae0baf918b85dbf166f2ce3692f7a948e08d6937e2b9",
+  "assetProof": {
+    "version": "C Whetstone 1.2, 22 March 1998",
+    "sourceUrl": "https://www.netlib.org/benchmark/whetstone.c",
+    "sourceSha256": "333e4ceca042c146f63eec605573d16ae8b07166cbc44a17bec1ea97c6f1efbf",
+    "sourceCommit": null,
+    "sourceIdentity": "Netlib immutable content hash; upstream is not versioned by Git",
+    "compiler": {
+      "name": "ia16-elf-gcc (GCC) 6.3.0",
+      "options": [
+        "-mcmodel=medium",
+        "-march=i8086",
+        "-O2",
+        "-fno-builtin",
+        "-DPRINTOUT"
+      ],
+      "link": [
+        "-lm"
+      ],
+      "fpu": "absent; GCC ia16 software floating point",
+      "purpose": "source package; build.sh emits separate software-FP validation executable and build receipt",
+      "binarySha256": null
+    },
+    "fpuPresent": {
+      "status": "blocked",
+      "reason": "No executing x87 backend in native i80386; hardware-float build not claimed."
+    },
+    "files": {
+      "LICENSE": {
+        "bytes": 1638,
+        "sha256": "fbbd2c86b33ce4747212e78163e36257d2d5027ad8aa13daf6653442f543bb02"
+      },
+      "source/whetstone.c": {
+        "bytes": 8121,
+        "sha256": "333e4ceca042c146f63eec605573d16ae8b07166cbc44a17bec1ea97c6f1efbf"
+      },
+      "WHT.EXE": {
+        "sha256": "063ecf407581ea608d90ae0baf918b85dbf166f2ce3692f7a948e08d6937e2b9",
+        "bytes": 70256
+      }
+    }
+  },
+  "sourceSha256": {
+    "src/i8086-dos.js": "f17c2cefc80082545b4e1caedcc365216db88048eaa65e362d7fe7ee0d1b02ce",
+    "src/i8086-machine.js": "7cf7fdf4e6de451071809e32e128aa0ac663524eaf8b2e08581780b0ec4f167c",
+    "src/i8086.js": "814d2a96184f7b490905f25317197ec0dcea8128e234efcf3fe3f173f799300a",
+    "src/experimental/i80286-protected.js": "b3e00b7bd10e1e02d9e9a27bf543f620229e5f9f888dddf4c9ef0a2127826e70",
+    "src/at-8042-a20.js": "c604c8a272034a9a80eeb30abe1c5d6ab09ebe6c816b3f3c778874f6b9a9f6b8",
+    "src/at-ps2-mouse.js": "b75f93e3a4473e21568af438d658941e9a9703ab330147b8f444baba278281ea",
+    "src/at-system-control.js": "aaeecd1c9ea926f4d35481a46be3f64075367152144756786443041018c443e7",
+    "src/machine-checkpoint.js": "576a8420212a8eedaf89dc0dff27cb26e8a7e73c89162e242d65b8e1cc3f0139",
+    "src/i8086-ram-words.js": "5bfdcf9743a73d1fc37afe78949f045d2aeb2d3d7b71561a694af96a443da6c5",
+    "src/i8255.js": "3445ac6676005f225db542031be51b6d1561045d2be76be339e5853a50f6ff7f",
+    "src/ns16c550.js": "34633ec3bec4d0826998fadde5e11bf88f20dfd32fc5a09144c6bad64461f41b",
+    "src/mc6850.js": "e987c5243a92a7b43533a99ff9bf2da29e0bd608a2417162c7b5dfeb1cb75889",
+    "src/i8254.js": "4346fc1eb6b2d368480292372ac8cec7db8cac6baf94d6a88c7311b1809a8c30",
+    "src/i8259.js": "fcfca4a160bac3cf4b72ca0613c63ca702cd26d6822000ba75a0035ef87da278",
+    "src/mc146818.js": "f6caa1e99c2f0fc323cab7a913df68435c5c13c4a86d3c89a8b55ccdde2ec80c",
+    "src/i8251.js": "45a2df29bc0920e7d57188a365e8c05addab0805efc1eb02d8df72a41d4dca2b",
+    "src/cga-card.js": "afb6141ce8420556e8e9acfff7642225d46f5509db20459bd6fdaba8d0b50fdc",
+    "src/mc6845.js": "30c369c37fc4030162dde6d46bea388ce9acbf489141195ab166f3c0cab5c599",
+    "src/pc-speaker.js": "50260dcd04eaedd84373e5c2b1e42faa2f1bc924833b6bdf0aa7d23a80ea9499",
+    "src/adc0809.js": "92926d8bd4315fa837d6cce7bc3770148960d181802eb52ba5d9aa013e5f64af",
+    "src/ne2000.js": "12a97f87807aaf74a94245d81acddfb10f43748c09a1d4633e0ba7959b7a1244",
+    "src/dac0832.js": "81b24b9c8f461cbd2f4a9bcd1aceda3e366062841d1c530440eccdb8cbeae787",
+    "src/hercules-card.js": "6e3af9bce88edbc609b2f8a07dc464b8a1fb60ce5fd800a4d345dac61367752b",
+    "src/vga-card.js": "245d777aeae5513a5cae02e943d1e18a5b333bd03352dd2717eee51b8c3e5d71",
+    "src/ega-card.js": "5b93057ca256f7a43046b477127862278c80bb9849e062528c1cd603f7e3d2f5",
+    "src/i8237.js": "a2a774349848e797861108c59a9563a281ce1c1b561a201b8dc022d5584142ad",
+    "src/chip-ledger.js": "b12b5d635086636f0f9f405e4a06816943b74c03c1b036fcbd3ffe813055ac3a",
+    "src/upd765.js": "b5a066fd577ee358f40c13682015d28be490acbeb00a50d8c7199671523fcde4",
+    "src/sb-dsp.js": "901fc1d6536e19a552380d226b8e285ff4ab29f871a319d552701c2100044f71",
+    "src/ym3812.js": "c78833b8efb3048143e7fac898a7af5374ce3f00f1b9e5b55baa6d212a51df04",
+    "src/audio-bus.js": "95a263b2432f8309b76a64a0b6dcf0ddcc1dd61aeabb7a8727505f343e26ba08",
+    "src/i8088-timing.js": "b1f85cab54484119016e57b954505dfb90821c0b47b5b7851a3d5d787977dc95",
+    "src/i8088-cycles.js": "402d869be7c7ca79f1f6116d0861c85887112e46f1f1ba20f59d7e3031ce1477",
+    "scripts/run-dos.mjs": "fdcddb5d9c8ea75c69d6e79d8fe2041ef1dd920e69b845f68d3306e865753307"
+  },
+  "configuration": {
+    "preset": "xt",
+    "clockHz": 5000000,
+    "memoryBytes": 1048576,
+    "config": {
+      "clockHz": 5000000,
+      "regions": [
+        {
+          "kind": "ram",
+          "start": 0,
+          "end": 786431
+        },
+        {
+          "kind": "ram",
+          "start": 851968,
+          "end": 852991
+        }
+      ],
+      "chips": [
+        {
+          "kind": "ppi",
+          "name": "ppi1",
+          "at": 96
+        },
+        {
+          "kind": "pit",
+          "name": "pit1",
+          "at": 64
+        },
+        {
+          "kind": "pcspeaker",
+          "name": "spk",
+          "ppi": "ppi1",
+          "pit": "pit1"
+        }
+      ],
+      "variant": "80286"
+    },
+    "video": "B800 text capture; no ROM",
+    "fpu": "absent",
+    "dosImage": null,
+    "biosImage": null,
+    "extender": null,
+    "loader": "scripts/run-dos.mjs MZ loader",
+    "command": "WHT.EXE 1",
+    "loadAddress": null,
+    "entry": null,
+    "maxProgressSteps": 20000000,
+    "guestInstructionCountNote": "not exposed by runDos; result.steps includes DOS service transitions"
+  },
+  "host": {
+    "cpuSeconds": 4.385413,
+    "wallSeconds": 4.155495874,
+    "maxRssKiB": 84932
+  },
+  "benchmarkScore": {},
+  "semantic": {
+    "status": "incomplete",
+    "error": null,
+    "result": {
+      "terminated": false,
+      "exitCode": 0,
+      "steps": 20000000,
+      "exhausted": true
+    },
+    "stdout": "      0       0       0            e            e            e            e\n     12      14      12            e            e            e            e\n     14      12      12            e            e            e            e\n    345       0       0            e            e            e            e\n    210       1       2            e            e            e            e\n     32       1       2            e            e            e            e\n    899       1       2            e            e            e            e\n    616       1       2            e            e            e            e\n      0       2       3            e            e            e            e\n",
+    "screen": [
+      "      0       0       0            e            e            e            e",
+      "",
+      "12      14      12            e            e            e            e",
+      "                                                                           14",
+      "   12      12            e            e            e            e",
+      "                                                                     345       0",
+      "       0            e            e            e            e",
+      "                                                                210       1",
+      "  2            e            e            e            e",
+      "                                                            32       1       2",
+      "          e            e            e            e",
+      "                                                      899       1       2",
+      "     e            e            e            e",
+      "                                                 616       1       2",
+      "e            e            e            e",
+      "                                              0       2       3            e",
+      "        e            e            e",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "serial": [],
+    "dos": {
+      "unsupported": [
+        {
+          "int": 33,
+          "ah": 68,
+          "count": 4
+        }
+      ],
+      "stdout": "      0       0       0            e            e            e            e\n     12      14      12            e            e            e            e\n     14      12      12            e            e            e            e\n    345       0       0            e            e            e            e\n    210       1       2            e            e            e            e\n     32       1       2            e            e            e            e\n    899       1       2            e            e            e            e\n    616       1       2            e            e            e            e\n      0       2       3            e            e            e            e\n",
+      "stdoutChars": 684,
+      "stdoutTruncated": false,
+      "terminated": false,
+      "exitCode": 0,
+      "breakpoints": 0,
+      "rebooted": 0,
+      "keyRequests": 0
+    },
+    "cpu": {
+      "ax": 1016,
+      "bx": 16258,
+      "cx": 30980,
+      "dx": 0,
+      "si": 65142,
+      "di": 2,
+      "bp": 65086,
+      "sp": 65072,
+      "cs": 5507,
+      "ds": 6017,
+      "es": 40991,
+      "ss": 6017,
+      "ip": 249,
+      "flags": 62103
+    },
+    "instructionSnapshot": null,
+    "chipDebt": 722,
+    "chipDeadline": 5000,
+    "ramSha256": "770cc7166fb3029f5a222f3c2e767a86e870ced955f9f3ef00bc5beaa63e557e",
+    "machineCycles": 238817593,
+    "guestInstructions": null
+  },
+  "success": false
+}

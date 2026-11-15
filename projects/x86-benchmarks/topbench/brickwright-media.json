@@ -1,0 +1,33 @@
+{
+  "title": "TOPBENCH 0.40c",
+  "machine": "i8086",
+  "license": "MIT",
+  "slots": {
+    "exe": "TOPBENCH.EXE"
+  },
+  "program": {
+    "kind": "dos",
+    "tool": "run-dos",
+    "preset": "xt",
+    "variant": "8086",
+    "args": "-i",
+    "max": 20000000
+  },
+  "mount": {
+    "DATABASE.INI": "DATABASE.INI"
+  },
+  "expect": [
+    "Score:",
+    "Memory:",
+    "Effective addressing:",
+    "Opcode exercise:",
+    "Vid adapter speed:",
+    "3DGame opcode exercise:"
+  ],
+  "expectedExitCodes": [
+    4
+  ],
+  "notes": "Upstream -i writes through CRT to the B800 screen and exits4. Require all six numeric results and no unsupported services. Native video-probe services remain unsupported; exit4 alone is not PASS.",
+  "resultOutput": "screen",
+  "nativeVideoQueryContract": "cga-absence-v1"
+}

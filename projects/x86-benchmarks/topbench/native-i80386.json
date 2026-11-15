@@ -1,0 +1,28 @@
+{
+  "schema": "brickwright.native-i80386-benchmark.v1",
+  "runner": "../run.mjs",
+  "kind": "native-i80386-dos-shim",
+  "backend": "ExperimentalI80386ATMachine",
+  "preset": "PCAT80386_EXPERIMENTAL",
+  "programManifest": "brickwright-media.json",
+  "image": "TOPBENCH.EXE",
+  "format": "MZ",
+  "pspSegment": 2048,
+  "loadSegment": 2064,
+  "entry": "from pinned MZ header",
+  "shim": "bw-board src/i8086-dos.js + native-dos.mjs native-i80386-dos-startup-v3",
+  "extraRam": {
+    "start": 851968,
+    "bytes": 1024
+  },
+  "dosImage": null,
+  "biosImage": null,
+  "extender": null,
+  "fpu": "absent",
+  "output": {
+    "stdout": "INT21h",
+    "screen": "B800 text memory"
+  },
+  "guiSupported": false,
+  "videoQueries": "cga-absence-v1; only observed AX1130/BH0, AX1A00, AH12/BL10 probes; no EGA/VGA/font presence"
+}

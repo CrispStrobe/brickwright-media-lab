@@ -1,0 +1,6 @@
+Usage:  TOPBSTUB
+
+No command-line arguments are available.  The output filename is "output.ini"
+and no description will be inserted into the output file.  If the file
+already exists, information will be appended to the end of the file.
+$

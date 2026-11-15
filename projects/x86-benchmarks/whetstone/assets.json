@@ -1,0 +1,45 @@
+{
+  "version": "C Whetstone 1.2, 22 March 1998",
+  "sourceUrl": "https://www.netlib.org/benchmark/whetstone.c",
+  "sourceSha256": "333e4ceca042c146f63eec605573d16ae8b07166cbc44a17bec1ea97c6f1efbf",
+  "sourceCommit": null,
+  "sourceIdentity": "Netlib immutable content hash; upstream is not versioned by Git",
+  "compiler": {
+    "name": "ia16-elf-gcc (GCC) 6.3.0",
+    "options": [
+      "-mcmodel=medium",
+      "-march=i8086",
+      "-O2",
+      "-fno-builtin",
+      "-mno-newlib-autofloat-stdio",
+      "-DPRINTOUT"
+    ],
+    "link": [
+      "-lm"
+    ],
+    "fpu": "absent; software floating point",
+    "purpose": "source package; build.sh emits separate software-FP validation executable and build receipt",
+    "binarySha256": null
+  },
+  "fpuPresent": {
+    "status": "blocked",
+    "reason": "No executing x87 backend in native i80386; hardware-float build not claimed."
+  },
+  "files": {
+    "LICENSE": {
+      "bytes": 1638,
+      "sha256": "fbbd2c86b33ce4747212e78163e36257d2d5027ad8aa13daf6653442f543bb02"
+    },
+    "source/whetstone.c": {
+      "bytes": 8121,
+      "sha256": "333e4ceca042c146f63eec605573d16ae8b07166cbc44a17bec1ea97c6f1efbf"
+    }
+  },
+  "runtimeBuild": {
+    "script": "build.sh",
+    "sha256": "d91c70c46dea0887ce2408134ff5917c9d0a595f35e46157c63e44b00f5a58d1",
+    "compiler": "installed ia16-elf-gcc; actual version/options recorded per build",
+    "fpu": "absent only",
+    "target": "chosen DOS CPU; native 80386 executes the 8086 real-mode build via its shim"
+  }
+}

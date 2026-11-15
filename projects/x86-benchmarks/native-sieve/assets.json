@@ -1,0 +1,32 @@
+{
+  "version": "owned sieve 1, 20 passes / 8192 entries",
+  "sourceCommit": "media-lab Git revision recorded by runner; exact owned source file hashes below",
+  "compiler": {
+    "name": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "options": "-m32 -march=i386 -O2 -ffreestanding -fno-builtin -fno-pic -fno-pie -fno-stack-protector -fno-asynchronous-unwind-tables -mno-sse -mno-mmx -msoft-float -nostdlib",
+    "link": "ld -m elf_i386 -T source/link.ld; objcopy -O binary",
+    "fpu": "absent; no floating-point code"
+  },
+  "files": {
+    "SIEVE.BIN": {
+      "sha256": "ec78198054f2c65a49db577c7110c40f807437dc6dea6163231422a5306d8db8",
+      "bytes": 375
+    },
+    "LICENSE": {
+      "sha256": "a991ac2aa77fe1dba902be47419cfc5a0d30ab032a6f9e697387dc4d5a6ed1f3",
+      "bytes": 1081
+    },
+    "source/link.ld": {
+      "sha256": "46738345b8ba9c34c4841cc84492920193b17710b8fe4c5203a095730e289a7a",
+      "bytes": 208
+    },
+    "source/sieve.c": {
+      "sha256": "76aad7eb950526b2850cfb992570ea381ff501047e4eaa27d64ebdd074b792d7",
+      "bytes": 829
+    },
+    "source/start.S": {
+      "sha256": "30bb2a7bf88a19fcc03c11f27144a85b9338ed813e477cbee9ea82c5aa07d746",
+      "bytes": 188
+    }
+  }
+}

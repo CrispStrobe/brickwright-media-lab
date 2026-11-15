@@ -1,0 +1,1044 @@
+{
+  "schema": "brickwright.x86-benchmark-run.v2",
+  "benchmark": "Owned freestanding Sieve integer control",
+  "version": "owned sieve 1, 20 passes / 8192 entries",
+  "variant": "80386",
+  "backend": "native i80386 core (ExperimentalI80386ATMachine; ordinary step)",
+  "emulatorCommit": "fa26a41a21f3d948d49612ee2cdb26824334a53a",
+  "runner": {
+    "node": "v22.23.4",
+    "platform": "linux",
+    "arch": "x64",
+    "cpuModel": "Intel(R) Xeon(R) CPU @ 2.20GHz",
+    "logicalCpus": 4,
+    "sha256": "68c64666be69f33e35b1cc130d234d82794056c1c474fd453d312944ecc3b4a6",
+    "mediaLabCommit": "cb3649e73726b09f199dfac9f8c158e5e7589dcd"
+  },
+  "benchmarkSha256": "ec78198054f2c65a49db577c7110c40f807437dc6dea6163231422a5306d8db8",
+  "assetProof": {
+    "version": "owned sieve 1, 20 passes / 8192 entries",
+    "sourceCommit": "media-lab Git revision recorded by runner; exact owned source file hashes below",
+    "compiler": {
+      "name": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+      "options": "-m32 -march=i386 -O2 -ffreestanding -fno-builtin -fno-pic -fno-pie -fno-stack-protector -fno-asynchronous-unwind-tables -mno-sse -mno-mmx -msoft-float -nostdlib",
+      "link": "ld -m elf_i386 -T source/link.ld; objcopy -O binary",
+      "fpu": "absent; no floating-point code"
+    },
+    "files": {
+      "SIEVE.BIN": {
+        "sha256": "ec78198054f2c65a49db577c7110c40f807437dc6dea6163231422a5306d8db8",
+        "bytes": 375
+      },
+      "LICENSE": {
+        "sha256": "a991ac2aa77fe1dba902be47419cfc5a0d30ab032a6f9e697387dc4d5a6ed1f3",
+        "bytes": 1081
+      },
+      "source/link.ld": {
+        "sha256": "46738345b8ba9c34c4841cc84492920193b17710b8fe4c5203a095730e289a7a",
+        "bytes": 208
+      },
+      "source/sieve.c": {
+        "sha256": "76aad7eb950526b2850cfb992570ea381ff501047e4eaa27d64ebdd074b792d7",
+        "bytes": 829
+      },
+      "source/start.S": {
+        "sha256": "30bb2a7bf88a19fcc03c11f27144a85b9338ed813e477cbee9ea82c5aa07d746",
+        "bytes": 188
+      }
+    }
+  },
+  "sourceSha256": {
+    "src/i8086-dos.js": "f17c2cefc80082545b4e1caedcc365216db88048eaa65e362d7fe7ee0d1b02ce",
+    "src/i8086-machine.js": "7cf7fdf4e6de451071809e32e128aa0ac663524eaf8b2e08581780b0ec4f167c",
+    "src/i8086.js": "814d2a96184f7b490905f25317197ec0dcea8128e234efcf3fe3f173f799300a",
+    "src/experimental/i80286-protected.js": "b3e00b7bd10e1e02d9e9a27bf543f620229e5f9f888dddf4c9ef0a2127826e70",
+    "src/at-8042-a20.js": "c604c8a272034a9a80eeb30abe1c5d6ab09ebe6c816b3f3c778874f6b9a9f6b8",
+    "src/at-ps2-mouse.js": "b75f93e3a4473e21568af438d658941e9a9703ab330147b8f444baba278281ea",
+    "src/at-system-control.js": "aaeecd1c9ea926f4d35481a46be3f64075367152144756786443041018c443e7",
+    "src/machine-checkpoint.js": "576a8420212a8eedaf89dc0dff27cb26e8a7e73c89162e242d65b8e1cc3f0139",
+    "src/i8086-ram-words.js": "5bfdcf9743a73d1fc37afe78949f045d2aeb2d3d7b71561a694af96a443da6c5",
+    "src/i8255.js": "3445ac6676005f225db542031be51b6d1561045d2be76be339e5853a50f6ff7f",
+    "src/ns16c550.js": "34633ec3bec4d0826998fadde5e11bf88f20dfd32fc5a09144c6bad64461f41b",
+    "src/mc6850.js": "e987c5243a92a7b43533a99ff9bf2da29e0bd608a2417162c7b5dfeb1cb75889",
+    "src/i8254.js": "4346fc1eb6b2d368480292372ac8cec7db8cac6baf94d6a88c7311b1809a8c30",
+    "src/i8259.js": "fcfca4a160bac3cf4b72ca0613c63ca702cd26d6822000ba75a0035ef87da278",
+    "src/mc146818.js": "f6caa1e99c2f0fc323cab7a913df68435c5c13c4a86d3c89a8b55ccdde2ec80c",
+    "src/i8251.js": "45a2df29bc0920e7d57188a365e8c05addab0805efc1eb02d8df72a41d4dca2b",
+    "src/cga-card.js": "afb6141ce8420556e8e9acfff7642225d46f5509db20459bd6fdaba8d0b50fdc",
+    "src/mc6845.js": "30c369c37fc4030162dde6d46bea388ce9acbf489141195ab166f3c0cab5c599",
+    "src/pc-speaker.js": "50260dcd04eaedd84373e5c2b1e42faa2f1bc924833b6bdf0aa7d23a80ea9499",
+    "src/adc0809.js": "92926d8bd4315fa837d6cce7bc3770148960d181802eb52ba5d9aa013e5f64af",
+    "src/ne2000.js": "12a97f87807aaf74a94245d81acddfb10f43748c09a1d4633e0ba7959b7a1244",
+    "src/dac0832.js": "81b24b9c8f461cbd2f4a9bcd1aceda3e366062841d1c530440eccdb8cbeae787",
+    "src/hercules-card.js": "6e3af9bce88edbc609b2f8a07dc464b8a1fb60ce5fd800a4d345dac61367752b",
+    "src/vga-card.js": "245d777aeae5513a5cae02e943d1e18a5b333bd03352dd2717eee51b8c3e5d71",
+    "src/ega-card.js": "5b93057ca256f7a43046b477127862278c80bb9849e062528c1cd603f7e3d2f5",
+    "src/i8237.js": "a2a774349848e797861108c59a9563a281ce1c1b561a201b8dc022d5584142ad",
+    "src/chip-ledger.js": "b12b5d635086636f0f9f405e4a06816943b74c03c1b036fcbd3ffe813055ac3a",
+    "src/upd765.js": "b5a066fd577ee358f40c13682015d28be490acbeb00a50d8c7199671523fcde4",
+    "src/sb-dsp.js": "901fc1d6536e19a552380d226b8e285ff4ab29f871a319d552701c2100044f71",
+    "src/ym3812.js": "c78833b8efb3048143e7fac898a7af5374ce3f00f1b9e5b55baa6d212a51df04",
+    "src/audio-bus.js": "95a263b2432f8309b76a64a0b6dcf0ddcc1dd61aeabb7a8727505f343e26ba08",
+    "src/i8088-timing.js": "b1f85cab54484119016e57b954505dfb90821c0b47b5b7851a3d5d787977dc95",
+    "src/i8088-cycles.js": "402d869be7c7ca79f1f6116d0861c85887112e46f1f1ba20f59d7e3031ce1477",
+    "src/experimental/i80386-at-machine.js": "a8499180c8ba158e37adf761f22cf5df495701afd3e55686ec917d9b4ed15a94",
+    "src/experimental/i80386.js": "6d8fa695bb26a52e3438d6f92ee12cc61b9e017c99a404dde6118d043909bfa5",
+    "src/experimental/ata16.js": "d466e62602035cc40ed1464fe82730a882d0624598f55fb89eff6370b0b2b6da",
+    "src/experimental/vga-memory.js": "966109bdc8c55992474175dae31dcff4a6d609a64a0cbf2db7b6976e16ee001a"
+  },
+  "configuration": {
+    "preset": "PCAT80386_EXPERIMENTAL",
+    "clockHz": 6000000,
+    "memoryBytes": 16777216,
+    "config": {
+      "clockHz": 6000000,
+      "variant": "80386",
+      "cpuBackend": "i80386-experimental",
+      "memoryBytes": 16777216,
+      "a20": {
+        "controller": "8042",
+        "enabled": true,
+        "queueLimit": 16,
+        "inputBusyCycles": 12,
+        "responseDelayCycles": 32,
+        "inputPort": 176,
+        "allowReset": true,
+        "powerOnKeyboardBatCycles": 4200000,
+        "keyboardAckCycles": 60000,
+        "keyboardBatCycles": 4200000,
+        "keyboardUnlocked": true
+      },
+      "hardwareReset": true,
+      "regions": [
+        {
+          "kind": "ram",
+          "start": 0,
+          "end": 655359
+        },
+        {
+          "kind": "ram",
+          "start": 753664,
+          "end": 786431
+        },
+        {
+          "kind": "rom",
+          "start": 983040,
+          "end": 1048575
+        },
+        {
+          "kind": "ram",
+          "start": 1048576,
+          "end": 1572863
+        },
+        {
+          "kind": "rom",
+          "start": 16711680,
+          "end": 16777215
+        }
+      ],
+      "chips": [
+        {
+          "kind": "dma",
+          "name": "dma1",
+          "at": 0
+        },
+        {
+          "kind": "pic",
+          "name": "pic1",
+          "at": 32
+        },
+        {
+          "kind": "pit",
+          "name": "pit1",
+          "at": 64,
+          "irq": 0,
+          "refreshChannel": 1,
+          "systemControl": "sysctl"
+        },
+        {
+          "kind": "atsystem",
+          "name": "sysctl",
+          "at": 97,
+          "pit": "pit1"
+        },
+        {
+          "kind": "atdmapage",
+          "name": "dmapg",
+          "at": 128,
+          "primary": "dma1",
+          "secondary": "dma2"
+        },
+        {
+          "kind": "pic",
+          "name": "pic2",
+          "at": 160,
+          "cascadeTo": "pic1",
+          "cascadeIrq": 2
+        },
+        {
+          "kind": "dma",
+          "name": "dma2",
+          "at": 192,
+          "stride": 2,
+          "atWordTransfersUnsupported": true
+        },
+        {
+          "kind": "rtc",
+          "name": "rtc1",
+          "at": 112,
+          "pic": "pic2",
+          "irq": 0,
+          "initialUnixSeconds": 0,
+          "initialCmos": [
+            [
+              16,
+              32
+            ],
+            [
+              20,
+              33
+            ],
+            [
+              21,
+              128
+            ],
+            [
+              22,
+              2
+            ],
+            [
+              23,
+              0
+            ],
+            [
+              24,
+              2
+            ],
+            [
+              46,
+              0
+            ],
+            [
+              47,
+              197
+            ],
+            [
+              48,
+              0
+            ],
+            [
+              49,
+              2
+            ],
+            [
+              50,
+              25
+            ]
+          ]
+        },
+        {
+          "kind": "cga",
+          "name": "cga1",
+          "at": 976
+        },
+        {
+          "kind": "uart16550",
+          "name": "uart1",
+          "at": 1016,
+          "pic": "pic1",
+          "irq": 4
+        },
+        {
+          "kind": "fdc",
+          "name": "fdc1",
+          "at": 1008,
+          "pic": "pic1",
+          "irq": 6,
+          "dma": "dma1",
+          "dmaChannel": 2
+        }
+      ],
+      "functionalInstructionCycles": 6
+    },
+    "video": "none (serial output)",
+    "fpu": "absent",
+    "dosImage": null,
+    "biosImage": null,
+    "extender": null,
+    "loader": "owned fixed-address raw32 loader; seeded flat segments; guest start.S + serial output",
+    "command": "SIEVE.BIN ",
+    "loadAddress": 65536,
+    "entry": 65536,
+    "maxProgressSteps": 20000000,
+    "guestInstructionCountNote": "native CPU cycles counter counts interpreter instruction retirements; machine cycles are functional scheduling charges"
+  },
+  "host": {
+    "cpuSeconds": 1.656516,
+    "wallSeconds": 1.422417255,
+    "maxRssKiB": 76104
+  },
+  "execution": {
+    "cpuSeconds": 1.392953,
+    "wallSeconds": 1.138374619,
+    "includesLoader": false
+  },
+  "benchmarkScore": {},
+  "semantic": {
+    "deviceState": {
+      "dma1": {
+        "command": 0,
+        "status": 0,
+        "temp": 0,
+        "ff": false,
+        "hrq": false,
+        "pageScratch": 0,
+        "lowestPriority": 3,
+        "channels": [
+          {
+            "page": 0,
+            "baseAddr": 0,
+            "curAddr": 0,
+            "baseCount": 0,
+            "curCount": 0,
+            "mode": 0,
+            "transferType": 0,
+            "autoinit": false,
+            "decrement": false,
+            "masked": true,
+            "swRequest": false,
+            "dreqLevel": false
+          },
+          {
+            "page": 0,
+            "baseAddr": 0,
+            "curAddr": 0,
+            "baseCount": 0,
+            "curCount": 0,
+            "mode": 0,
+            "transferType": 0,
+            "autoinit": false,
+            "decrement": false,
+            "masked": true,
+            "swRequest": false,
+            "dreqLevel": false
+          },
+          {
+            "page": 0,
+            "baseAddr": 0,
+            "curAddr": 0,
+            "baseCount": 0,
+            "curCount": 0,
+            "mode": 0,
+            "transferType": 0,
+            "autoinit": false,
+            "decrement": false,
+            "masked": true,
+            "swRequest": false,
+            "dreqLevel": false
+          },
+          {
+            "page": 0,
+            "baseAddr": 0,
+            "curAddr": 0,
+            "baseCount": 0,
+            "curCount": 0,
+            "mode": 0,
+            "transferType": 0,
+            "autoinit": false,
+            "decrement": false,
+            "masked": true,
+            "swRequest": false,
+            "dreqLevel": false
+          }
+        ]
+      },
+      "pic1": {
+        "irr": 0,
+        "isr": 0,
+        "imr": 0,
+        "vectorBase": 0,
+        "icw4": 0,
+        "autoEOI": false,
+        "readISR": false,
+        "initPhase": 0,
+        "needICW3": false,
+        "initWarningAt": null,
+        "needICW4": false,
+        "intActive": false,
+        "lowestPriority": 7,
+        "rotateOnAutoEOI": false,
+        "pollPending": false,
+        "specialMask": false
+      },
+      "pit1": {
+        "counters": [
+          {
+            "mode": 0,
+            "rw": 0,
+            "bcd": 0,
+            "reload": 0,
+            "ce": 0,
+            "out": 0,
+            "armed": false,
+            "phase": "hi",
+            "rwPhase": 0,
+            "latched": null,
+            "statusLatched": null,
+            "nullCount": true,
+            "gate": 1
+          },
+          {
+            "mode": 0,
+            "rw": 0,
+            "bcd": 0,
+            "reload": 0,
+            "ce": 0,
+            "out": 0,
+            "armed": false,
+            "phase": "hi",
+            "rwPhase": 0,
+            "latched": null,
+            "statusLatched": null,
+            "nullCount": true,
+            "gate": 1
+          },
+          {
+            "mode": 0,
+            "rw": 0,
+            "bcd": 0,
+            "reload": 0,
+            "ce": 0,
+            "out": 0,
+            "armed": false,
+            "phase": "hi",
+            "rwPhase": 0,
+            "latched": null,
+            "statusLatched": null,
+            "nullCount": true,
+            "gate": 0
+          }
+        ]
+      },
+      "sysctl": {
+        "v": 1,
+        "latch": 0,
+        "refresh": false,
+        "refreshClock": false,
+        "timer2": false
+      },
+      "pic2": {
+        "irr": 0,
+        "isr": 0,
+        "imr": 0,
+        "vectorBase": 0,
+        "icw4": 0,
+        "autoEOI": false,
+        "readISR": false,
+        "initPhase": 0,
+        "needICW3": false,
+        "initWarningAt": null,
+        "needICW4": false,
+        "intActive": false,
+        "lowestPriority": 7,
+        "rotateOnAutoEOI": false,
+        "pollPending": false,
+        "specialMask": false
+      },
+      "dma2": {
+        "command": 0,
+        "status": 0,
+        "temp": 0,
+        "ff": false,
+        "hrq": false,
+        "pageScratch": 0,
+        "lowestPriority": 3,
+        "channels": [
+          {
+            "page": 0,
+            "baseAddr": 0,
+            "curAddr": 0,
+            "baseCount": 0,
+            "curCount": 0,
+            "mode": 0,
+            "transferType": 0,
+            "autoinit": false,
+            "decrement": false,
+            "masked": true,
+            "swRequest": false,
+            "dreqLevel": false
+          },
+          {
+            "page": 0,
+            "baseAddr": 0,
+            "curAddr": 0,
+            "baseCount": 0,
+            "curCount": 0,
+            "mode": 0,
+            "transferType": 0,
+            "autoinit": false,
+            "decrement": false,
+            "masked": true,
+            "swRequest": false,
+            "dreqLevel": false
+          },
+          {
+            "page": 0,
+            "baseAddr": 0,
+            "curAddr": 0,
+            "baseCount": 0,
+            "curCount": 0,
+            "mode": 0,
+            "transferType": 0,
+            "autoinit": false,
+            "decrement": false,
+            "masked": true,
+            "swRequest": false,
+            "dreqLevel": false
+          },
+          {
+            "page": 0,
+            "baseAddr": 0,
+            "curAddr": 0,
+            "baseCount": 0,
+            "curCount": 0,
+            "mode": 0,
+            "transferType": 0,
+            "autoinit": false,
+            "decrement": false,
+            "masked": true,
+            "swRequest": false,
+            "dreqLevel": false
+          }
+        ]
+      },
+      "rtc1": {
+        "v": 2,
+        "index": 0,
+        "nmiMasked": false,
+        "seconds": 2,
+        "dayOfWeek": 5,
+        "setCalendar": null,
+        "pendingCalendar": null,
+        "cyclePhase": 451758,
+        "periodicPhase": 600192,
+        "ram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          38,
+          2,
+          80,
+          128,
+          0,
+          0,
+          32,
+          0,
+          0,
+          0,
+          33,
+          128,
+          2,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          197,
+          0,
+          2,
+          25,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "cga1": {
+        "cycles": 12451758,
+        "mode": 0,
+        "color": 0,
+        "lastVretrace": 0,
+        "frameCount": 124,
+        "crtc": [
+          113,
+          80,
+          90,
+          10,
+          31,
+          6,
+          25,
+          28,
+          2,
+          7,
+          6,
+          7,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "crtcAddr": 0
+      },
+      "uart1": {
+        "rxFifo": [],
+        "divisor": 0,
+        "ier": 0,
+        "lcr": 0,
+        "mcr": 0,
+        "fcr": 0,
+        "scr": 0,
+        "overrun": false,
+        "thrEvent": true,
+        "irq": false
+      },
+      "fdc1": {
+        "dor": 0,
+        "ccr": 0,
+        "phase": "command",
+        "cmdBuf": [],
+        "cmdLen": 1,
+        "resultBuf": [],
+        "resultIdx": 0,
+        "pendingInt": [],
+        "intPending": false,
+        "irq": false,
+        "driveBusy": 0,
+        "srt": 0,
+        "hut": 0,
+        "hlt": 0,
+        "nonDma": false,
+        "refusals": 0,
+        "lastRefusal": null,
+        "lastRefusalSymptom": null,
+        "lastRefusalAt": null,
+        "lastFault": null,
+        "stats": {
+          "badReads": 0,
+          "badWrites": 0,
+          "motorOff": 0,
+          "selectMismatch": 0,
+          "headMismatch": 0,
+          "overruns": 0
+        },
+        "drives": [
+          {
+            "pcn": 0,
+            "track": 0,
+            "changed": true,
+            "idIndex": 0,
+            "writeProtect": false
+          },
+          {
+            "pcn": 0,
+            "track": 0,
+            "changed": true,
+            "idIndex": 0,
+            "writeProtect": false
+          },
+          {
+            "pcn": 0,
+            "track": 0,
+            "changed": true,
+            "idIndex": 0,
+            "writeProtect": false
+          },
+          {
+            "pcn": 0,
+            "track": 0,
+            "changed": true,
+            "idIndex": 0,
+            "writeProtect": false
+          }
+        ]
+      },
+      "dmapg": {
+        "v": 1,
+        "bytes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "segmentCaches": {
+      "0": {
+        "base": 0,
+        "limit": 4294967295,
+        "default32": true,
+        "present": true,
+        "code": false,
+        "readable": true,
+        "writable": true
+      },
+      "1": {
+        "base": 0,
+        "limit": 4294967295,
+        "default32": true,
+        "present": true,
+        "code": true,
+        "readable": true,
+        "writable": false
+      },
+      "2": {
+        "base": 0,
+        "limit": 4294967295,
+        "default32": true,
+        "present": true,
+        "code": false,
+        "readable": true,
+        "writable": true
+      },
+      "3": {
+        "base": 0,
+        "limit": 4294967295,
+        "default32": true,
+        "present": true,
+        "code": false,
+        "readable": true,
+        "writable": true
+      },
+      "4": {
+        "base": 0,
+        "limit": 4294967295,
+        "default32": true,
+        "present": true,
+        "code": false,
+        "readable": true,
+        "writable": true
+      },
+      "5": {
+        "base": 0,
+        "limit": 4294967295,
+        "default32": true,
+        "present": true,
+        "code": false,
+        "readable": true,
+        "writable": true
+      }
+    },
+    "gdtr": {
+      "base": 0,
+      "limit": 0
+    },
+    "idtr": {
+      "base": 0,
+      "limit": 1023
+    },
+    "halted": true,
+    "shutdown": false,
+    "status": "pass",
+    "error": null,
+    "result": {
+      "terminated": true,
+      "exitCode": null,
+      "steps": 2075296,
+      "exhausted": false
+    },
+    "stdout": "NATIVE386 SIEVE n=8192 passes=20 primes=1028 sum=3908641\n",
+    "screen": [],
+    "serial": [
+      78,
+      65,
+      84,
+      73,
+      86,
+      69,
+      51,
+      56,
+      54,
+      32,
+      83,
+      73,
+      69,
+      86,
+      69,
+      32,
+      110,
+      61,
+      56,
+      49,
+      57,
+      50,
+      32,
+      112,
+      97,
+      115,
+      115,
+      101,
+      115,
+      61,
+      50,
+      48,
+      32,
+      112,
+      114,
+      105,
+      109,
+      101,
+      115,
+      61,
+      49,
+      48,
+      50,
+      56,
+      32,
+      115,
+      117,
+      109,
+      61,
+      51,
+      57,
+      48,
+      56,
+      54,
+      52,
+      49,
+      10
+    ],
+    "dos": null,
+    "cpu": {
+      "ax": 65290,
+      "bx": 42017,
+      "cx": 0,
+      "dx": 1016,
+      "si": 368,
+      "di": 0,
+      "bp": 0,
+      "sp": 65520,
+      "cs": 8,
+      "ds": 16,
+      "es": 16,
+      "ss": 16,
+      "ip": 324,
+      "flags": 2,
+      "eip": 65860,
+      "eflags": 2,
+      "cr0": 1,
+      "cr3": 0,
+      "cr4": 0
+    },
+    "instructionSnapshot": {
+      "eax": 589578,
+      "ecx": 0,
+      "edx": 1016,
+      "ebx": 3908641,
+      "esp": 589808,
+      "ebp": 0,
+      "esi": 65904,
+      "edi": 0,
+      "eip": 65860,
+      "eflags": 2,
+      "cs": 8,
+      "ds": 16,
+      "es": 16,
+      "ss": 16,
+      "fs": 16,
+      "gs": 16,
+      "halted": true,
+      "interruptShadow": 0,
+      "nmiShadow": 0,
+      "debugShadow": 0,
+      "nmiActive": false,
+      "retainedRealCs": false,
+      "segmentCaches": [
+        {
+          "base": 0,
+          "limit": 4294967295,
+          "default32": true,
+          "present": true,
+          "code": false,
+          "readable": true,
+          "writable": true
+        },
+        {
+          "base": 0,
+          "limit": 4294967295,
+          "default32": true,
+          "present": true,
+          "code": true,
+          "readable": true,
+          "writable": false
+        },
+        {
+          "base": 0,
+          "limit": 4294967295,
+          "default32": true,
+          "present": true,
+          "code": false,
+          "readable": true,
+          "writable": true
+        },
+        {
+          "base": 0,
+          "limit": 4294967295,
+          "default32": true,
+          "present": true,
+          "code": false,
+          "readable": true,
+          "writable": true
+        },
+        {
+          "base": 0,
+          "limit": 4294967295,
+          "default32": true,
+          "present": true,
+          "code": false,
+          "readable": true,
+          "writable": true
+        },
+        {
+          "base": 0,
+          "limit": 4294967295,
+          "default32": true,
+          "present": true,
+          "code": false,
+          "readable": true,
+          "writable": true
+        }
+      ],
+      "repeatContext": null,
+      "ldtr": {
+        "selector": 0,
+        "base": 0,
+        "limit": 0,
+        "present": false
+      },
+      "tr": {
+        "selector": 0,
+        "base": 0,
+        "limit": 0,
+        "present": false
+      },
+      "debugRegisters": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0
+      }
+    },
+    "chipDebt": 18,
+    "chipDeadline": 6000,
+    "ramSha256": "fdf3910ad2e03a9d5838f880af3e02cb0ca91705dd133c8fce9a22f584ee4378",
+    "machineCycles": 12451776,
+    "guestInstructions": 2075296
+  },
+  "success": true
+}

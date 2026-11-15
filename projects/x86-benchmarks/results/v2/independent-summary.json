@@ -1,0 +1,245 @@
+{
+  "pass": true,
+  "archiveBytes": 131812,
+  "archiveSha256": "afb33bed6676aaa0b0d806c233dd98283ec513ce01e60467a4d434ee3e4fef9e",
+  "inventoryFiles": 59,
+  "baseline": "d19b5e4d2b8aa0f025fd7a3512db3252e470433d",
+  "candidate": "fa26a41a21f3d948d49612ee2cdb26824334a53a",
+  "media": "cb3649e73726b09f199dfac9f8c158e5e7589dcd",
+  "probes": [],
+  "nativeSieve": {
+    "children": 18,
+    "warmupPairs": 2,
+    "measuredPairs": 7,
+    "guestEquality": true,
+    "guestInstructions": 2075296,
+    "machineCycles": 12451776,
+    "means": {
+      "baseline": {
+        "cpuSeconds": 1.7845434285714281,
+        "wallSeconds": 1.4859554894285583,
+        "executionCpuSeconds": 1.4044557142857144,
+        "executionWallSeconds": 1.1360140832857142
+      },
+      "candidate": {
+        "cpuSeconds": 1.8022022857142854,
+        "wallSeconds": 1.5056103914285717,
+        "executionCpuSeconds": 1.4220748571428572,
+        "executionWallSeconds": 1.1567734601428572
+      }
+    },
+    "ratios": {
+      "cpuSeconds": 1.009895448247507,
+      "wallSeconds": 1.0132271135574673,
+      "executionCpuSeconds": 1.0125451751008778,
+      "executionWallSeconds": 1.0182738728001508
+    },
+    "favorablePairs": {
+      "cpuSeconds": 1,
+      "wallSeconds": 1,
+      "executionCpuSeconds": 2,
+      "executionWallSeconds": 1
+    },
+    "samples": [
+      {
+        "pair": 0,
+        "arm": "baseline",
+        "measured": false,
+        "cpuSeconds": 1.8248189999999997,
+        "wallSeconds": 1.9625023499999656,
+        "executionCpuSeconds": 1.379187,
+        "executionWallSeconds": 1.118035533,
+        "exitCode": 0,
+        "emulatorCommit": "d19b5e4d2b8aa0f025fd7a3512db3252e470433d"
+      },
+      {
+        "pair": 0,
+        "arm": "candidate",
+        "measured": false,
+        "cpuSeconds": 1.7779530000000001,
+        "wallSeconds": 1.488310690999981,
+        "executionCpuSeconds": 1.41054,
+        "executionWallSeconds": 1.143932495,
+        "exitCode": 0,
+        "emulatorCommit": "fa26a41a21f3d948d49612ee2cdb26824334a53a"
+      },
+      {
+        "pair": 1,
+        "arm": "candidate",
+        "measured": false,
+        "cpuSeconds": 1.774388,
+        "wallSeconds": 1.4761223309999991,
+        "executionCpuSeconds": 1.409926,
+        "executionWallSeconds": 1.13653538,
+        "exitCode": 0,
+        "emulatorCommit": "fa26a41a21f3d948d49612ee2cdb26824334a53a"
+      },
+      {
+        "pair": 1,
+        "arm": "baseline",
+        "measured": false,
+        "cpuSeconds": 1.781237,
+        "wallSeconds": 1.483533388000012,
+        "executionCpuSeconds": 1.392763,
+        "executionWallSeconds": 1.129994753,
+        "exitCode": 0,
+        "emulatorCommit": "d19b5e4d2b8aa0f025fd7a3512db3252e470433d"
+      },
+      {
+        "pair": 2,
+        "arm": "baseline",
+        "measured": true,
+        "cpuSeconds": 1.8643279999999995,
+        "wallSeconds": 1.5519208449999837,
+        "executionCpuSeconds": 1.50584,
+        "executionWallSeconds": 1.21685598,
+        "exitCode": 0,
+        "emulatorCommit": "d19b5e4d2b8aa0f025fd7a3512db3252e470433d"
+      },
+      {
+        "pair": 2,
+        "arm": "candidate",
+        "measured": true,
+        "cpuSeconds": 1.7749489999999994,
+        "wallSeconds": 1.4834890390000055,
+        "executionCpuSeconds": 1.392953,
+        "executionWallSeconds": 1.138374619,
+        "exitCode": 0,
+        "emulatorCommit": "fa26a41a21f3d948d49612ee2cdb26824334a53a"
+      },
+      {
+        "pair": 3,
+        "arm": "candidate",
+        "measured": true,
+        "cpuSeconds": 1.7750080000000006,
+        "wallSeconds": 1.4825336619999803,
+        "executionCpuSeconds": 1.399409,
+        "executionWallSeconds": 1.14276639,
+        "exitCode": 0,
+        "emulatorCommit": "fa26a41a21f3d948d49612ee2cdb26824334a53a"
+      },
+      {
+        "pair": 3,
+        "arm": "baseline",
+        "measured": true,
+        "cpuSeconds": 1.7537440000000015,
+        "wallSeconds": 1.461244602000022,
+        "executionCpuSeconds": 1.380472,
+        "executionWallSeconds": 1.123670528,
+        "exitCode": 0,
+        "emulatorCommit": "d19b5e4d2b8aa0f025fd7a3512db3252e470433d"
+      },
+      {
+        "pair": 4,
+        "arm": "baseline",
+        "measured": true,
+        "cpuSeconds": 1.7518639999999985,
+        "wallSeconds": 1.4611057899999764,
+        "executionCpuSeconds": 1.370791,
+        "executionWallSeconds": 1.115714313,
+        "exitCode": 0,
+        "emulatorCommit": "d19b5e4d2b8aa0f025fd7a3512db3252e470433d"
+      },
+      {
+        "pair": 4,
+        "arm": "candidate",
+        "measured": true,
+        "cpuSeconds": 1.772984,
+        "wallSeconds": 1.4819392979999861,
+        "executionCpuSeconds": 1.407622,
+        "executionWallSeconds": 1.139895818,
+        "exitCode": 0,
+        "emulatorCommit": "fa26a41a21f3d948d49612ee2cdb26824334a53a"
+      },
+      {
+        "pair": 5,
+        "arm": "candidate",
+        "measured": true,
+        "cpuSeconds": 1.8200339999999984,
+        "wallSeconds": 1.5186035560000164,
+        "executionCpuSeconds": 1.436601,
+        "executionWallSeconds": 1.161650769,
+        "exitCode": 0,
+        "emulatorCommit": "fa26a41a21f3d948d49612ee2cdb26824334a53a"
+      },
+      {
+        "pair": 5,
+        "arm": "baseline",
+        "measured": true,
+        "cpuSeconds": 1.7785979999999992,
+        "wallSeconds": 1.4946417079999605,
+        "executionCpuSeconds": 1.370563,
+        "executionWallSeconds": 1.109305695,
+        "exitCode": 0,
+        "emulatorCommit": "d19b5e4d2b8aa0f025fd7a3512db3252e470433d"
+      },
+      {
+        "pair": 6,
+        "arm": "baseline",
+        "measured": true,
+        "cpuSeconds": 1.7856379999999987,
+        "wallSeconds": 1.475303452999981,
+        "executionCpuSeconds": 1.419424,
+        "executionWallSeconds": 1.132358757,
+        "exitCode": 0,
+        "emulatorCommit": "d19b5e4d2b8aa0f025fd7a3512db3252e470433d"
+      },
+      {
+        "pair": 6,
+        "arm": "candidate",
+        "measured": true,
+        "cpuSeconds": 1.7948260000000023,
+        "wallSeconds": 1.4941862079999737,
+        "executionCpuSeconds": 1.405056,
+        "executionWallSeconds": 1.142415235,
+        "exitCode": 0,
+        "emulatorCommit": "fa26a41a21f3d948d49612ee2cdb26824334a53a"
+      },
+      {
+        "pair": 7,
+        "arm": "candidate",
+        "measured": true,
+        "cpuSeconds": 1.781779999999999,
+        "wallSeconds": 1.4860863960000188,
+        "executionCpuSeconds": 1.413355,
+        "executionWallSeconds": 1.140632075,
+        "exitCode": 0,
+        "emulatorCommit": "fa26a41a21f3d948d49612ee2cdb26824334a53a"
+      },
+      {
+        "pair": 7,
+        "arm": "baseline",
+        "measured": true,
+        "cpuSeconds": 1.763720999999999,
+        "wallSeconds": 1.464745862999962,
+        "executionCpuSeconds": 1.376023,
+        "executionWallSeconds": 1.113155363,
+        "exitCode": 0,
+        "emulatorCommit": "d19b5e4d2b8aa0f025fd7a3512db3252e470433d"
+      },
+      {
+        "pair": 8,
+        "arm": "baseline",
+        "measured": true,
+        "cpuSeconds": 1.7939110000000005,
+        "wallSeconds": 1.4927261650000219,
+        "executionCpuSeconds": 1.408077,
+        "executionWallSeconds": 1.141037947,
+        "exitCode": 0,
+        "emulatorCommit": "d19b5e4d2b8aa0f025fd7a3512db3252e470433d"
+      },
+      {
+        "pair": 8,
+        "arm": "candidate",
+        "measured": true,
+        "cpuSeconds": 1.8958349999999982,
+        "wallSeconds": 1.5924345810000204,
+        "executionCpuSeconds": 1.499528,
+        "executionWallSeconds": 1.231679315,
+        "exitCode": 0,
+        "emulatorCommit": "fa26a41a21f3d948d49612ee2cdb26824334a53a"
+      }
+    ]
+  },
+  "scope": "native i80386/DOS shim controls; no FreeDOS, physical timing or FPU claim"
+}
