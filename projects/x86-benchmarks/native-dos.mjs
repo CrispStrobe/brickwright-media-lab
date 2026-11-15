@@ -1,5 +1,5 @@
 // MIT. Owned native real-mode DOS benchmark startup, with no OS or BIOS image.
-export const nativeDosProtocol = 'native-i80386-dos-startup-v2';
+export const nativeDosProtocol = 'native-i80386-dos-startup-v3';
 export const biosClockPorts = Object.freeze([
   [0x20,0x11], [0x21,0x08], [0x21,0x04], [0x21,0x01],
   [0xa0,0x11], [0xa1,0x70], [0xa1,0x02], [0xa1,0x01],
@@ -47,6 +47,21 @@ export function adaptNativeDosService(machine,dos) {
       cpu.ip=readWord(sp);cpu.cs=readWord(sp+2);cpu.sp=(sp+6)&0xffff;
       cpu.flags=(savedFlags&~1)|2;
       handled.push({int:0x21,ax:0x4400,handle,deviceInformation:cpu.dx});vector=0x21;
+    }else if(cpu.cs===dos.trapSeg&&cpu.ip===0x10*4&&
+      machine.config.chips.some(chip=>chip.kind==='cga')&&
+      !machine.config.chips.some(chip=>chip.kind==='vga')&&
+      ((cpu.ax===0x1130&&cpu.bh===0)||cpu.ax===0x1a00||(cpu.ah===0x12&&cpu.bl===0x10))){
+      if(cpu.protectedMode)throw Error('native DOS shim refuses protected-mode service');
+      // The fixed board has CGA, not EGA/VGA. Its BIOS does not implement
+      // these extension probes: absence preserves the caller registers.
+      // In particular AL must NOT become 1Ah (VGA detection), nor may BH/CX
+      // change to EGA feature/memory information. No font pointer is invented.
+      const request={ax:cpu.ax,bx:cpu.bx,cx:cpu.cx,dx:cpu.dx,es:cpu.es,bp:cpu.bp};
+      cpu.ip=readWord(sp);cpu.cs=readWord(sp+2);cpu.sp=(sp+6)&0xffff;
+      cpu.flags=savedFlags|2;
+      handled.push({int:0x10,request,response:{...request},outcome:'absent-on-cga',
+        capability:request.ax===0x1130?'ega-font-information':request.ax===0x1a00?'vga-display-combination':'ega-information'});
+      vector=0x10;
     }else vector=service.call(this);
     if(vector!==null){
       syncSegments();
@@ -58,4 +73,18 @@ export function adaptNativeDosService(machine,dos) {
     return vector;
   };
   return {syncSegments,handled};
+}
+
+// Exact native TOPBENCH query sequence observed before this implementation.
+// A terminal result cannot qualify by merely deleting unsupported diagnostics.
+export function validateNativeCgaQueries(handled){
+ const video=handled.filter(item=>item.int===0x10);
+ const expected=['ega-font-information','vga-display-combination','ega-information','vga-display-combination','ega-information'];
+ return video.length===expected.length&&video.every((item,i)=>{
+  const r=item.request;
+  return item.outcome==='absent-on-cga'&&item.capability===expected[i]&&r&&
+   ['ax','bx','cx','dx','es','bp'].every(key=>Number.isInteger(r[key])&&r[key]>=0&&r[key]<=0xffff&&item.response?.[key]===r[key])&&
+   (expected[i]==='ega-font-information'?r.ax===0x1130&&(r.bx>>>8)===0:
+    expected[i]==='vga-display-combination'?r.ax===0x1a00:(r.ax>>>8)===0x12&&(r.bx&255)===0x10);
+ });
 }

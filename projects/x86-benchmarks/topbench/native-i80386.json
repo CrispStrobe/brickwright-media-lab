@@ -10,7 +10,7 @@
   "pspSegment": 2048,
   "loadSegment": 2064,
   "entry": "from pinned MZ header",
-  "shim": "bw-board src/i8086-dos.js + native-dos.mjs native-i80386-dos-startup-v2",
+  "shim": "bw-board src/i8086-dos.js + native-dos.mjs native-i80386-dos-startup-v3",
   "extraRam": {
     "start": 851968,
     "bytes": 1024
@@ -23,5 +23,6 @@
     "stdout": "INT21h",
     "screen": "B800 text memory"
   },
-  "guiSupported": false
+  "guiSupported": false,
+  "videoQueries": "cga-absence-v1; only observed AX1130/BH0, AX1A00, AH12/BL10 probes; no EGA/VGA/font presence"
 }
