@@ -5,8 +5,9 @@ historical v1 runs remain **INCOMPLETE** on all four cores. The active native
 DOS startup and floating-printf fixes have separate identities; terminal
 qualification is recorded separately from those original runs.
 [Native terminal evidence](results/v3/README.md) now establishes Whetstone
-software-FP validation with a same-image baseline; TOPBENCH exits4 with six
-screen rows but remains unqualified on three missing video-query contracts. Recorded native Sieve whole-child
+software-FP validation with a same-image baseline; TOPBENCH now has [native terminal completion](results/v4/README.md) under
+the explicit CGA-negative query contract, with exit4, six numeric screen rows
+and zero unsupported services. Earlier v3 unqualified observations remain intact. Recorded native Sieve whole-child
 CPU/wall ratios are **1.009895 / 1.013227: NO speedup**. The achieved actual
 xv6 opt-in result (CPU -6.45% / wall -7.68%) is a separate workload and result.
 GUI frontend wiring, core/FPU changes and additional benchmarks are outside
@@ -133,12 +134,14 @@ concise; guest incomplete exit 2 remains exit 2. A notice is displayed before
 invocation, including when cached assets are reused offline. Actual frontend
 wiring is deferred; `guiSupported: false` on the native manifests stays honest.
 
-Native DOS startup protocol `native-i80386-dos-startup-v2` configures the real
+Native DOS startup protocol `native-i80386-dos-startup-v3` configures the real
 PIC/PIT for IRQ0/INT08 ticks and seeds a declared mode3 80x25 BDA (4096-byte
 page, 16-line cell). It preserves native caller FLAGS across the host shim.
 The observed TOPBENCH divide fault read zero BDA columns before this startup;
 this is loader state, not an unsupported DIV instruction. The adapter answers
 only AX4400 console handles 0, 1, 2; other IOCTL requests remain visible errors.
+Version3 adds only the [observed CGA negative-capability queries](native-video-queries.md),
+with explicit request/response records and an exact-sequence terminal gate.
 The [RBIL device-information contract](https://fd.lod.bz/rbil/interrup/dos_kernel/214400.html)
 defines those returned bits. No font ROM or general video BIOS is supplied.
 

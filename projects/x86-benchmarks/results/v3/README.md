@@ -2,7 +2,8 @@
 
 These are new-image/new-runner observations, separate from immutable v1/v2.
 Native i80386 means `ExperimentalI80386ATMachine`, ordinary `step`, fixed
-`PCAT80386_EXPERIMENTAL` 6 MHz scheduling clock, 16 MiB RAM and the 1 KiB
+`PCAT80386_EXPERIMENTAL` 6 MHz scheduling clock, 16 MiB address-space backing (sparse installed
+640 KiB conventional + 512 KiB extended RAM) and the 1 KiB
 D0000 DOS trap page. No OS, DOS/BIOS image, FreeDOS, extender or x87 backend.
 The MZ loader uses PSP0800/image0810; startup-v2 initializes the real PIC/PIT,
 80x25 mode3 BDA and native segment/FLAGS adapter. Records include complete

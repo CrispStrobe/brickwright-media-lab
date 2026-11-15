@@ -39,3 +39,11 @@ unsupported. The original tick stall and zero-column DIV fault have concrete
 startup fixes and real-native positive controls. See [terminal evidence](../results/v3/README.md).
 The pinned 0.40c release executable prints a 0.40b banner; that mismatch is
 retained, not silently corrected. No font ROM is supplied by the small shim.
+
+The [v4 native run](../results/v4/README.md) now completes the declared functional
+CGA shim path. The three extension-query kinds have explicit CGA absence
+semantics with full request/response captures and positive/refusal controls;
+no EGA/VGA/font capability is fabricated. The terminal gate still requires
+zero unsupported services, exact observed query sequence, exit4 and six finite
+positive screen results. Earlier observations above remain historical limits,
+not edited successes. No physical or optimization timing claim follows.

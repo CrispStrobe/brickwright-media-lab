@@ -6,3 +6,4 @@ node --test "$here/ensure.test.mjs" "$here/whetstone-result.test.mjs" "$here/ben
 node "$here/proof.mjs"
 python3 -B "$here/check-results.py" --self-test
 python3 -B "$here/check-native-terminal.py"
+python3 -B "$here/check-native-video.py"
