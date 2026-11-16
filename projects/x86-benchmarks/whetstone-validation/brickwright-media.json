@@ -1,0 +1,24 @@
+{
+  "title": "Whetstone 1.2 (1998), software floating point validation build",
+  "machine": "i8086",
+  "license": "Painter Engineering permission; see LICENSE and full source comment",
+  "slots": {
+    "exe": "WHT.EXE"
+  },
+  "program": {
+    "kind": "dos",
+    "tool": "run-dos",
+    "preset": "xt",
+    "variant": "8086",
+    "args": "1",
+    "max": 30000000
+  },
+  "expect": [
+    "Loops: 1, Iterations: 1, Duration:",
+    "C Converted Double Precision Whetstones:"
+  ],
+  "expectedExitCodes": [
+    0
+  ],
+  "notes": "Pinned software-FP PRINTOUT validation executable. Native i80386 DOS shim only; exact numeric modules, positive guest-clock duration, exit0 and zero unsupported services required. No physical timing/speedup or legacy CPU completion claim."
+}
