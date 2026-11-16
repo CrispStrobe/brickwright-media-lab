@@ -1,0 +1,7 @@
+# Adafruit CAD Parts thumbnails
+
+This collection provides one normalized image for each of the 482 component folders in the pinned Adafruit CAD Parts archive. Each manifest entry records the original archive source path, length, SHA-256 and format. Standalone upstream JPG, PNG and GIF images are used for 367 folders; GIFs use frame zero. The remaining 115 use the geometry and Fusion previews in the earlier `adafruit-previews` collection, whose source and intermediate image identities are recorded in the manifest.
+
+Images are aspect-fitted into a 256 × 192 neutral canvas, with EXIF orientation applied, Lanczos resampling and 128-color PNG encoding. Original Adafruit CAD Parts files are MIT licensed, copyright Adafruit Industries. See the [original licence](https://github.com/adafruit/Adafruit_CAD_Parts/blob/9f2a89f3d5c3491886d58cb7fe83385417563cf4/LICENSE) and the preceding preview collection for geometry conversion details. The root metadata folder is excluded because it is not a component.
+
+To regenerate, check out media commit `f87d30a2b36f4ffd42fdbf4035f29a6583221631` for its verified preview images, use Python 3.11 with `pillow==13.0.0`, and run `python scripts/generate-adafruit-thumbnails.py` from repository root. The script verifies source lengths and SHA-256 hashes, uses no more than six concurrent upstream downloads, and does not rerun geometry conversion. Images may vary between Pillow builds or platforms; the published bytes have their own SHA-256 hashes.

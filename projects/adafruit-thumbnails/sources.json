@@ -1,0 +1,4552 @@
+{
+  "commit": "fb6c7632c50e9a1d58ab57167d6d3f9f9365ae73",
+  "upstreamCommit": "9f2a89f3d5c3491886d58cb7fe83385417563cf4",
+  "baseUrl": "https://raw.githubusercontent.com/CrispStrobe/brickwright-media-lab/fb6c7632c50e9a1d58ab57167d6d3f9f9365ae73/projects/adafruit-cad-parts/original/",
+  "licenceUrl": "https://raw.githubusercontent.com/CrispStrobe/brickwright-media-lab/fb6c7632c50e9a1d58ab57167d6d3f9f9365ae73/projects/adafruit-cad-parts/original/LICENSE",
+  "folders": [
+    {
+      "name": "1048 1.2in 8x8 Matrix Backpack",
+      "files": [
+        {
+          "path": "1048 1.2in 8x8 Matrix Backpack/1048-1.2in-8x8-matrix-backpack.jpg",
+          "bytes": 85874,
+          "sha256": "942b8dcc16107e05c9d28d33a00bc1fd9900a26ace3d7c80453832c7ae4ec02f",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1054 Laser Diode",
+      "files": [
+        {
+          "path": "1054 Laser Diode/laser-diode.jpg",
+          "bytes": 66209,
+          "sha256": "e26aa3706868b1cceb697529bd9777b5e4ebdcd640608d7560ed529ad1385fa0",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1085 ADS1115 ADC",
+      "files": [
+        {
+          "path": "1085 ADS1115 ADC/1085 ADS1115 ADC.jpg",
+          "bytes": 217452,
+          "sha256": "560b3b36db7088609a1c6997b50d4a8b72a6af6c3ae7a7fd568b3e087c15edf2",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1119 Tactile Switch 12mm (B3F-40XX)",
+      "files": [
+        {
+          "path": "1119 Tactile Switch 12mm (B3F-40XX)/1119-12mm-TactileSwitch.PNG",
+          "bytes": 180671,
+          "sha256": "34b6b0181f68db472b7592e4b5f35b4a7653faa49f45ab169627c420ed69f04d",
+          "format": "png",
+          "units": "unknown"
+        },
+        {
+          "path": "1119 Tactile Switch 12mm (B3F-40XX)/1119-12mm-TactileSwitch.jpg",
+          "bytes": 29591,
+          "sha256": "d53adc4704d5a0635d573f09cc9ba38a7bf28e6700e52c2c215ae876bb3d12de",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1145 16mm button",
+      "files": [
+        {
+          "path": "1145 16mm button/1445-16mm-button.jpg",
+          "bytes": 100394,
+          "sha256": "782a79d68a6729e5dec460d216f67c434141b28cb4b5f9ceb6cfc967226c3b3b",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1214 PermaProto Small Mint",
+      "files": [
+        {
+          "path": "1214 PermaProto Small Mint/1214-Perma-Proto-Small-Mint.jpg",
+          "bytes": 285837,
+          "sha256": "88b30203d00bd26c10b076ff176d0baf3b890dab0c02de51d79f000c7f066a64",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1264 1.2in 7 Segment Display",
+      "files": [
+        {
+          "path": "1264 1.2in 7 Segment Display/1.2in 7 Segment Display.jpg",
+          "bytes": 98155,
+          "sha256": "f54d49dbe7fc1138b65784bd3b43bf63db4f37adea78703b9eb4d007e41f5a5c",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1271 1.2in 7 Segment Backpack",
+      "files": [
+        {
+          "path": "1271 1.2in 7 Segment Backpack/1271 1.2in 7 Segment Backpack.jpg",
+          "bytes": 198280,
+          "sha256": "7acd14e144f4cadfa47bc44b31709622c429428367a4d80b2de6885ccdfca0ff",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1304 MicroLipo Charger",
+      "files": [
+        {
+          "path": "1304 MicroLipo Charger/1304 MicroLipo Charger V2.jpg",
+          "bytes": 86827,
+          "sha256": "81790a142c89a5bd49a9b7540e36c2aa8a010ca30eeb13caa48824caaa74c4cf",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1374 Capacitive Touch Breakout ATA42QT1010",
+      "files": [
+        {
+          "path": "1374 Capacitive Touch Breakout ATA42QT1010/1374 AT42QT1010-Breakout.jpg",
+          "bytes": 162355,
+          "sha256": "9d3f2ed5a10c56adf8d1db40b0ae22e350be66aba8d27bcc0659f4de2c844fef",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1400 Push Button Power Switch",
+      "files": [
+        {
+          "path": "1400 Push Button Power Switch/1400 Push Button Power Switch.gif",
+          "bytes": 3223724,
+          "sha256": "efd89132dce8fe7f4c3fa797d9fe4e727a65a4b38c5d38f378a7702768a24c7c",
+          "format": "gif",
+          "units": "unknown"
+        },
+        {
+          "path": "1400 Push Button Power Switch/1400 Push Button Power Switch.png",
+          "bytes": 505274,
+          "sha256": "7bab8e7c411672f6cfe4135625a8c6c5f1ba172bc05b8193bc14ecde7c783609",
+          "format": "png",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1487 NeoMatrix 8x8",
+      "files": [
+        {
+          "path": "1487 NeoMatrix 8x8/1487 NeoMatrix 8x8.jpg",
+          "bytes": 381228,
+          "sha256": "1dc630fd8e8860c633dd05298faf71a41cc959b4b0b5669bb4f3025b238f583b",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1590 Adafruit RA8875 Breakout",
+      "files": [
+        {
+          "path": "1590 Adafruit RA8875 Breakout/Adafruit-RA8875-TFT-Breakout.jpg",
+          "bytes": 435564,
+          "sha256": "ea428475acf6ecf4bc48d3575d0eefb68bee069d6559a85337e8a4cbbd1dcd79",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1782 MCP9808",
+      "files": [
+        {
+          "path": "1782 MCP9808/1782-MCP9808.jpg",
+          "bytes": 256230,
+          "sha256": "3149f3ef5ad60bfe4e930d42535dbbe64b7e553fa5f064732e1b128b91192b47",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1833 microUSB breakout",
+      "files": [
+        {
+          "path": "1833 microUSB breakout/1833-microUSB-breakout.jpg",
+          "bytes": 152269,
+          "sha256": "1a4ae1d0f6173fb53f0e9154b50396574ae00f5786981185f0bba9cbf108e762",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1870 Coin Cell CR2032",
+      "files": [
+        {
+          "path": "1870 Coin Cell CR2032/1870-Coin-Cell-CR2032.jpg",
+          "bytes": 240749,
+          "sha256": "1407fb864f8f94c59740baf7a70ee332c487cddbfcbe041058af745c6755955a",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1871 CR2032 Breakout Switch",
+      "files": [
+        {
+          "path": "1871 CR2032 Breakout Switch/1871 CR2032 Breakout Switch.jpg",
+          "bytes": 195631,
+          "sha256": "491c34871c0d1cc664def1c32d83facb116483597a7d909ab711f4444e32a7c3",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1904 MicroUSB Lipo Charger",
+      "files": [
+        {
+          "path": "1904 MicroUSB Lipo Charger/1904 MicroUSB Lipo Charger.jpg",
+          "bytes": 220188,
+          "sha256": "675d427650df51c8a6a35a4ad142767ec4dbc8637a23688fc46533f69fd49c21",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1910 Alphanumeric Backpack STEMMA QT",
+      "files": [
+        {
+          "path": "1910 Alphanumeric Backpack STEMMA QT/1910 Alphanumeric Backpack STEMMA QT.jpg",
+          "bytes": 340057,
+          "sha256": "198b8f145964cda5c69770e32e3cbff333ffd9b243362f137ca05250828ac030",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1911 Alphanumberic Display STEMMA QT",
+      "files": [
+        {
+          "path": "1911 Alphanumberic Display STEMMA QT/1911 Alphanumberic Display STEMMA QT.jpg",
+          "bytes": 241376,
+          "sha256": "5bfee1983a441bae9c108b1666b416d48617c53f35869f10683dacd0d1df7b26",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1946 Adafruit FONA",
+      "files": [
+        {
+          "path": "1946 Adafruit FONA/1946-Adafruit-FONA-800-GSM.jpg",
+          "bytes": 482723,
+          "sha256": "2a7c2efe4a65f41ee65bb5c3899cbafd917ee0e9095e6bb147dd2645c217ef64",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1982 MPR121 Stemma Breakout",
+      "files": [
+        {
+          "path": "1982 MPR121 Stemma Breakout/1982-MPR121-QT.jpg",
+          "bytes": 152584,
+          "sha256": "d8bf496915b4f78e1ff4ef9535805df4fff454a33ac0a1bf7588d8f79cd2161d",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2000 ProTrinket 5V",
+      "files": [
+        {
+          "path": "2000 ProTrinket 5V/PCB-Component.jpg",
+          "bytes": 440345,
+          "sha256": "09df9c587aea8c2d4697682a221bf89edfefb3d824a9e8ee1b65e8a4d5a9585d",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2010 ProTrinket 3V",
+      "files": [
+        {
+          "path": "2010 ProTrinket 3V/2010 ProTrinket 3V.jpg",
+          "bytes": 513612,
+          "sha256": "de0dc230f78eff1f43bbc4041731ea8f1a7c9f7daaea16a3f627d1aa47a9424d",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2088 1.44in TFT Display",
+      "files": [
+        {
+          "path": "2088 1.44in TFT Display/2088-1.44in-TFT-Display-revC.jpg",
+          "bytes": 178380,
+          "sha256": "7b79e2ee507e4fc73ab9173588c768195a5c6d68810ecf42e7920230a497a056",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2090 2.8in TFT Cap Touch",
+      "files": [
+        {
+          "path": "2090 2.8in TFT Cap Touch/2090 2.8in TFT Cap Touch.jpg",
+          "bytes": 266529,
+          "sha256": "e0c67ee437ecea7a015071f69095b192a64a03075365c047419e74a13cb963ce",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2124 Trinket Lipo Backpack",
+      "files": [
+        {
+          "path": "2124 Trinket Lipo Backpack/2124-Trinket-Lipo-Backpack.jpg",
+          "bytes": 154334,
+          "sha256": "6daec21b3c059b427f9167596c43d99c11695e820d16bef731aa8a793ccc4979",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2133 Audio FX Soundboard with Headphone",
+      "files": [
+        {
+          "path": "2133 Audio FX Soundboard with Headphone/2133 Adafruit-EZ-SFX-with-Headphone.jpg",
+          "bytes": 284703,
+          "sha256": "544752a7093cb2e20228ae11d22732e35e117d52cfa0d5fb2ce74217c8125b85",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2217 Adafruit FX Soundboard with Amp",
+      "files": [
+        {
+          "path": "2217 Adafruit FX Soundboard with Amp/2217-Adafruit-EZ-SFX-with-Amp.jpg",
+          "bytes": 324075,
+          "sha256": "031786f94fe10fa9466633a8dc9b971aaf7ebf7ad1c4fbe201403ada6920d990",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2219 TFP401 HDMI Breakout",
+      "files": [
+        {
+          "path": "2219 TFP401 HDMI Breakout/2219 TFP401 HDMI Breakout.jpg",
+          "bytes": 623950,
+          "sha256": "5b584e4a8892ba322af3b72a090f6b06e0217ab801379d4e6c025f7f5c05739a",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2277 RGB Matrix 5mm",
+      "files": [
+        {
+          "path": "2277 RGB Matrix 5mm/2277 RGB Matrix Front.JPG",
+          "bytes": 124672,
+          "sha256": "769da121ef4a8bbaba46e0663d7ba6c0ecd4db4a8634f137096f8d023e722d98",
+          "format": "jpg",
+          "units": "unknown"
+        },
+        {
+          "path": "2277 RGB Matrix 5mm/2277 RGB MatrixRear.JPG",
+          "bytes": 41157,
+          "sha256": "7f2a84de7a870483de85a2b55078fce9805a27c604783be40d534e96a92b63f5",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2278 RGB Matrix 4mm",
+      "files": [
+        {
+          "path": "2278 RGB Matrix 4mm/2278 RGB Matrix 4mm.jpg",
+          "bytes": 75251,
+          "sha256": "6767c2a2d22ae8a0a3227924520db56f5c8990f3e12c17fbf95a272f6529d31b",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2305 DRV2605L",
+      "files": [
+        {
+          "path": "2305 DRV2605L/2305-DRV2605L.jpg",
+          "bytes": 277502,
+          "sha256": "98df12d6ab944d6de01d5089a9446dab806ddf89898eebe1211579483aebb98e",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2307 MicroServo MG923B",
+      "files": [
+        {
+          "path": "2307 MicroServo MG923B/2307 MicroServo MG923B.jpg",
+          "bytes": 76380,
+          "sha256": "a64163c99c1e545fcefb5b1ddbdb1d239647a742e3f9490b04df1adea3d197b8",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2341 Adafruit EZ-SFX Mini",
+      "files": [
+        {
+          "path": "2341 Adafruit EZ-SFX Mini/2341-Adafruit-EZ-SFX-Mini.jpg",
+          "bytes": 324899,
+          "sha256": "e9e6ed982de6c286aa9690ec44dd6c37b83b159f279b45a3f540192db115c81b",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2348 Adafruit Motor HAT",
+      "files": [
+        {
+          "path": "2348 Adafruit Motor HAT/2348 Adafruit Motor HAT.jpg",
+          "bytes": 440237,
+          "sha256": "42556d9af3f8404accccadd4f686e74b418b614cac8544c011fe7f0bc87a70f9",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2354 7in TFT Touchscreen",
+      "files": [
+        {
+          "path": "2354 7in TFT Touchscreen/Adafruit 2354 7in TFT Touchscreen v3.png",
+          "bytes": 113219,
+          "sha256": "cf417941077c27ae996f9da39e3069f1a8c770b5cef9446d08a0eb97f0edcefb",
+          "format": "png",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2471 HUZZAH ESP8266 Breakout",
+      "files": [
+        {
+          "path": "2471 HUZZAH ESP8266 Breakout/2471 HUZZAH-ESP8266-breakout.jpg",
+          "bytes": 281111,
+          "sha256": "3b553ce9ebda29df438a4d1304a14f686b1f27050fe52bf5c891e17afebbaafd",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2472 BNO055 Breakout",
+      "files": [
+        {
+          "path": "2472 BNO055 Breakout/2472 BNO055 Breakout.jpg",
+          "bytes": 271056,
+          "sha256": "cad77eeff6f182370b407a6f2e00cbae1189e2f239f5e936e1926c082ae31664",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2530 3W RGB LED",
+      "files": [
+        {
+          "path": "2530 3W RGB LED/2530-3W-RGB-LED.jpg",
+          "bytes": 138031,
+          "sha256": "3c53a5bad5b74dfb9b7279403b45fd5c69f9733f49aaa4c489602b1bcd2895a9",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "259 USB Lilon Lipoly Charger",
+      "files": [
+        {
+          "path": "259 USB Lilon Lipoly Charger/259-USB-Lilon-Lipoly-Charger.jpg",
+          "bytes": 408281,
+          "sha256": "81f534674c23ff2aff2a1e1a044496314158f70c282a6cf9a9fe493359962e98",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2590 Metro Mini V2",
+      "files": [
+        {
+          "path": "2590 Metro Mini V2/2590 Metro Mini V2.jpg",
+          "bytes": 243675,
+          "sha256": "347e4415b17badcdf5bacdd078143e18d4dc10f25b121c35e9801149477f6b75",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2590 Metro Mini",
+      "files": [
+        {
+          "path": "2590 Metro Mini/2590-Metro-Mini-Rev-B.jpg",
+          "bytes": 235976,
+          "sha256": "087ae205f068c3824d0a035e45a553876bb9d2b6318f9afcaa9650522aab4936",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2643 NeoPixel Ring 12",
+      "files": [
+        {
+          "path": "2643 NeoPixel Ring 12/2643 NeoPixel Ring 12.jpg",
+          "bytes": 47564,
+          "sha256": "40b571d0d3fec0c211ae3bdefa663482599ab3f9f14561bbaa8b944316d93f1c",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2652 Adafruit BME280",
+      "files": [
+        {
+          "path": "2652 Adafruit BME280/2652 BMP280 STEMMA QT.jpg",
+          "bytes": 64475,
+          "sha256": "291fdd45aa5a80078a45a26c3c9e3271c1e8d33ec41a92d8001cdb2dda08bb57",
+          "format": "jpg",
+          "units": "unknown"
+        },
+        {
+          "path": "2652 Adafruit BME280/Adafruit-BME280.jpg",
+          "bytes": 297875,
+          "sha256": "4d4122abc778656013f32f1ca045665d3188d9870de81d34347a039e0b32549b",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2687 Adafruit FONA 3G",
+      "files": [
+        {
+          "path": "2687 Adafruit FONA 3G/2687-Adafruit-FONA-SIM5320-3G.jpg",
+          "bytes": 302148,
+          "sha256": "cee495c2f091460132d46489b840ac757da72d73be05384d05a568a79a916c9b",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2719 OLED 2.4in",
+      "files": [
+        {
+          "path": "2719 OLED 2.4in/2719-OLED-2.4in.jpg",
+          "bytes": 81792,
+          "sha256": "375389d90f2fadfb7168dc0ffc25fff90c9f65a3e31003864b1377cfa18d3e5b",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2795 Feather 32u4 Adalogger",
+      "files": [
+        {
+          "path": "2795 Feather 32u4 Adalogger/2795 Feather 32u4 Adalogger.jpg",
+          "bytes": 173582,
+          "sha256": "7880028c85c48e21af12de494666378027377e22c3b5a4f63a610a1c3ee1158f",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2809 LIS3DH",
+      "files": [
+        {
+          "path": "2809 LIS3DH/2809-LIS3DH.jpg",
+          "bytes": 215750,
+          "sha256": "3c4b3d7f35cf6e36ba2f5748d448fcbcefb5e690165cc42b15d7646de0aa7b93",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2821 Feather HUZZAH ESP8266",
+      "files": [
+        {
+          "path": "2821 Feather HUZZAH ESP8266/2821-Adafruit-ESP8266-Feather.gif",
+          "bytes": 1539456,
+          "sha256": "e38f808cf5d06ae8d212f16688ff5e9a34bf2b47baa21be08cbd605675cedd93",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2857 SHT31-D",
+      "files": [
+        {
+          "path": "2857 SHT31-D/2857 SHT31-D.gif",
+          "bytes": 1317158,
+          "sha256": "ae2ee53d3783430413226cca3dfe44e337e2d0fc13d1859282dd83654d23966d",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2884 Proto FeatherWing",
+      "files": [
+        {
+          "path": "2884 Proto FeatherWing/2884-Proto-FeatherWing.jpg",
+          "bytes": 291421,
+          "sha256": "77de8646c17672dfddeeafdf3f0c9585c647c10fd6b87ca5a242f0c3bcdd1953",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2890 Doubler FeatherWing",
+      "files": [
+        {
+          "path": "2890 Doubler FeatherWing/2890-Doubler-FeatherWing.jpg",
+          "bytes": 353463,
+          "sha256": "14fc7a98fce556db656ded9ee88827d47bc7df6b3c101b681540ed0cf743241c",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "292 LCD Backpack I2C SPI",
+      "files": [
+        {
+          "path": "292 LCD Backpack I2C SPI/292 LCD Backpack I2C SPI.jpg",
+          "bytes": 391811,
+          "sha256": "e69de95d2cb46533efe8e419c32a441259a5bb9616e89b9c910ff9f240333a20",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2922 FeatherWing Adalogger",
+      "files": [
+        {
+          "path": "2922 FeatherWing Adalogger/2922 FeatherWing Adalogger.jpg",
+          "bytes": 209766,
+          "sha256": "df56fe5951762fa753682aab9123d1867081070e01388e8f8e3cfe8253ee121a",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2925 8-Way Switch",
+      "files": [
+        {
+          "path": "2925 8-Way Switch/2925-8-way-switch.jpg",
+          "bytes": 83662,
+          "sha256": "1f698c7b675aad85a10702b10a0c14a62122c107121fafb98227e68f1e62d8db",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2926 Terminal Block FeatherWing",
+      "files": [
+        {
+          "path": "2926 Terminal Block FeatherWing/2926 Terminal Block FeatherWing.jpg",
+          "bytes": 478582,
+          "sha256": "ade39747c6ef5d7a9d5a47433475c59bf874bdb16aedc3e312728f1939d77a38",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2927 Motor FeatherWing",
+      "files": [
+        {
+          "path": "2927 Motor FeatherWing/2927 Motor FeatherWing.gif",
+          "bytes": 1229848,
+          "sha256": "974965330e35d2f0548aac1dfcc747383dcffbc919a659fe1f552b3ee82149f2",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2928 Servo PWM FeatherWing",
+      "files": [
+        {
+          "path": "2928 Servo PWM FeatherWing/2928 Servo PWM FeatherWing.gif",
+          "bytes": 1152280,
+          "sha256": "34e1639f9e3705eecc7feaee2c8b485f2f7c6c2148ea79fe81252a5b2054b353",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2995 Feather M0 Bluefruit LE",
+      "files": [
+        {
+          "path": "2995 Feather M0 Bluefruit LE/2995 Feather M0 Bluefruit LE.jpg",
+          "bytes": 204610,
+          "sha256": "3efb591f696ddcf723f2c6026e56a442236719b6ad849dd9a74c123651b6d5d9",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3006 MAX98357",
+      "files": [
+        {
+          "path": "3006 MAX98357/3006-MAX98357.jpg",
+          "bytes": 123462,
+          "sha256": "e506808c45b54a65c00299bb025e4a8d3b1fb06fc0c90853afc792df53bd59fb",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3010 Adafruit Feather M0 WiFi",
+      "files": [
+        {
+          "path": "3010 Adafruit Feather M0 WiFi/3010-Adafruit-Feather-M0-WiFi.jpg",
+          "bytes": 250869,
+          "sha256": "9427c39b584c11faa8016096b51749112741123a4d57c25a1d5bc8dbfbc0f8ea",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3013 DS3231 RTC",
+      "files": [
+        {
+          "path": "3013 DS3231 RTC/3013 DS3231 RTC.jpg",
+          "bytes": 243778,
+          "sha256": "f4ec8794e1e54322447881dff29c4ca91dba2dd5b8705cfcdde35169b262bb3f",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3178 Feather M0 RFM95",
+      "files": [
+        {
+          "path": "3178 Feather M0 RFM95/3178 Feather M0 RFM95.jpg",
+          "bytes": 452478,
+          "sha256": "aa53b6c6be916222c300f0e9cc751db836af4f5e8e61a2b175877835c20de814",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3190 DRV8871 Breakout",
+      "files": [
+        {
+          "path": "3190 DRV8871 Breakout/3190 DRV8871 Breakout.jpg",
+          "bytes": 207909,
+          "sha256": "b20d323543609951c46a86f7a188efeb491890fd7da41b9c7975cef629531887",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3191 Power Relay FeatherWing",
+      "files": [
+        {
+          "path": "3191 Power Relay FeatherWing/3191 Power Relay FeatherWing.jpg",
+          "bytes": 186439,
+          "sha256": "c7142ee944b0fd87dc44dd1c55984d1987e66c78e25d0cf48cf10685480dc793",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3201 Ethernet FeatherWing",
+      "files": [
+        {
+          "path": "3201 Ethernet FeatherWing/3201-Ethernet-FeatherWing.jpg",
+          "bytes": 203799,
+          "sha256": "2f651f4b5fe51371ac4c97f3b4b080ba9e6d6648569422ce1586db22ad66726d",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3211 RGB Matrix Bonnet",
+      "files": [
+        {
+          "path": "3211 RGB Matrix Bonnet/3211 RGB Matrix Bonnet.jpg",
+          "bytes": 200198,
+          "sha256": "ac27985f3403ff47a756460b48d42f55a801b9096a3e9c4a3d35ade15c5f27c3",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3221 Toggle Switch",
+      "files": [
+        {
+          "path": "3221 Toggle Switch/3221-Toggle-Switch.gif",
+          "bytes": 1346476,
+          "sha256": "cd7df56152d635f666f9377d4930560a61715b179400d65dd06df67c5feebbcb",
+          "format": "gif",
+          "units": "unknown"
+        },
+        {
+          "path": "3221 Toggle Switch/3221-Toggle-Switch.jpg",
+          "bytes": 44789,
+          "sha256": "31d5dd290c7a3690a151742043dea3c838586fb6da44882c7558afd698974f2a",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3229 Radio FeatherWing",
+      "files": [
+        {
+          "path": "3229 Radio FeatherWing/3229 Radio FeatherWing.jpg",
+          "bytes": 190745,
+          "sha256": "1e891c27b4dcb3997013ddd6522ec0312e4959be81e5f798178bc43d35dc8e17",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3315 2.4 TFT FeatherWing",
+      "files": [
+        {
+          "path": "3315 2.4 TFT FeatherWing/3315-2.4-TFT-FeatherWing.gif",
+          "bytes": 1308096,
+          "sha256": "20c7e9a2abba89a36ad33dc8bce54e3109f2c43ec5329f763cdbed76535cc993",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3316 VL6180 ToF Sensor",
+      "files": [
+        {
+          "path": "3316 VL6180 ToF Sensor/3316 VL6180 ToF Sensor.jpg",
+          "bytes": 303659,
+          "sha256": "b66e8d99c60f25702978235310765ff3fe6ab61400f336af5a170ad026eaa354",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3321 Mini TFT Wing",
+      "files": [
+        {
+          "path": "3321 Mini TFT Wing/3321-mini-TFT-wing.gif",
+          "bytes": 1451448,
+          "sha256": "727d66724bf4f8d5c92a7fcd6fe4e9b96440eca0a7625739c8a9646caa996ee4",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3333 Circuit Playground Express",
+      "files": [
+        {
+          "path": "3333 Circuit Playground Express/3333-Circuit-Playground-Express.gif",
+          "bytes": 1536516,
+          "sha256": "3c31fb6cb46fce16c3d07a959640decd11b5f9ce5b8f13ac52e5fda4e552557b",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3346 Adafruit Speaker Bonnet for Pi",
+      "files": [
+        {
+          "path": "3346 Adafruit Speaker Bonnet for Pi/3346 Adafruit Speaker Bonnet for Pi Rev D.jpg",
+          "bytes": 311147,
+          "sha256": "6aa2557779568b871570d89a93366dff1cbedafb29b4e8452117a672b1196a30",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3347 Metal Ball Tactile Button 6mm",
+      "files": [
+        {
+          "path": "3347 Metal Ball Tactile Button 6mm/3347 Metal Ball Tactile Button 6mm.png",
+          "bytes": 750056,
+          "sha256": "ec654e34f28374db04cb651071b9814a28d14fbba76b7a6883299579b24f9448",
+          "format": "png",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3350 RGB button",
+      "files": [
+        {
+          "path": "3350 RGB button/3350-RGB-button.jpg",
+          "bytes": 178364,
+          "sha256": "194a1168bdf027cced73e4eac0bd61ec389b3e987e693d70e822c27a9ba30dcb",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3382 Metro M4",
+      "files": [
+        {
+          "path": "3382 Metro M4/3382-Metro-M4.jpg",
+          "bytes": 250647,
+          "sha256": "e008395eb0ba9fe9760c2eec5c5cc58d6c32b8eed54d64da65d9f73a624f84a7",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3386 PiRTC PCF8523",
+      "files": [
+        {
+          "path": "3386 PiRTC PCF8523/3386 PiRTC PCF8523.jpg",
+          "bytes": 160675,
+          "sha256": "4e2bfccb0698ddfa77d6c1989f647d4634b5736d70c9fcc943c08e9ce4f6e659",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3403 Feather M0 Express",
+      "files": [
+        {
+          "path": "3403 Feather M0 Express/3403-Feather-M0-Express.jpg",
+          "bytes": 246512,
+          "sha256": "7806376b9e75008d9a07151570411fa06bdd1eafabbb96b9489ee683163897a4",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3405 ESP32 Feather HUZZAH",
+      "files": [
+        {
+          "path": "3405 ESP32 Feather HUZZAH/3405-Adafruit-HUZZAH32-Feather.gif",
+          "bytes": 1904134,
+          "sha256": "bd213ea3fc7048f3be985365e38baea8754ba37e116b8fc7ed8966b33c5916a9",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3417 Tripler FeatherWing",
+      "files": [
+        {
+          "path": "3417 Tripler FeatherWing/3417-Tripler-FeatherWing.jpg",
+          "bytes": 366443,
+          "sha256": "351a7e3c73d1c4f388756ffde2910011b2122e5ded7fe9bbdf80026e9627b7cb",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3500 Trinket M0",
+      "files": [
+        {
+          "path": "3500 Trinket M0/Trinket-M0.gif",
+          "bytes": 1751698,
+          "sha256": "4ff20c2e47874616b0adc0482a61e6a58fb4c4542638c9dcf363706354b11edb",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3501 GEMMA M0",
+      "files": [
+        {
+          "path": "3501 GEMMA M0/3501 GEMMA M0.gif",
+          "bytes": 1067436,
+          "sha256": "75e727ec0591c7d2d1195ffb30b8ecc541d7cee216ecb606a358a4a403c436c4",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3502 Sharp Memory Display Breakout",
+      "files": [
+        {
+          "path": "3502 Sharp Memory Display Breakout/3502 Sharp Memory Display Breakout.png",
+          "bytes": 18835,
+          "sha256": "aa838d9dfaaf5fbedf52f5741465c96427724e359245596d40ee3e8ef0674950",
+          "format": "png",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "354 4400mah battery",
+      "files": [
+        {
+          "path": "354 4400mah battery/354-4400mah-battery.jpg",
+          "bytes": 80060,
+          "sha256": "9c98dc708f9592ba4c33f1b94f6f26618e9a1e7ea481f772763a9a6ee99e87a2",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3595 APDS9960 Sensor",
+      "files": [
+        {
+          "path": "3595 APDS9960 Sensor/3595-APDS9960-Sensor.jpg",
+          "bytes": 148127,
+          "sha256": "41d63b53d13edc67822df31ba387a88e198ee6fcd649732af949b2931c0f4fdd",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "364 NFC Breakout",
+      "files": [
+        {
+          "path": "364 NFC Breakout/364 NFC Breakout.jpg",
+          "bytes": 360016,
+          "sha256": "b6065430deeb76a7c0976f41e40a47f16c2180a46395ae2059867a46c0eeef9b",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3651 3.5in TFT FeatherWing",
+      "files": [
+        {
+          "path": "3651 3.5in TFT FeatherWing/3651 3.5in TFT FeatherWing V2.jpg",
+          "bytes": 316738,
+          "sha256": "76f389413d52992f8c5c622bdffef9e943edefd0f4fadf5ce41ccdb83e802df6",
+          "format": "jpg",
+          "units": "unknown"
+        },
+        {
+          "path": "3651 3.5in TFT FeatherWing/3651-3.5in-TFT-FeatherWing.jpg",
+          "bytes": 295236,
+          "sha256": "77a4b9cc5b3353d26fd6770b58efbc2aaab5074bb3aa89b930e6137526052713",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3660 BME680",
+      "files": [
+        {
+          "path": "3660 BME680/3660 BME680.gif",
+          "bytes": 452489,
+          "sha256": "15cabb89bf0c9745a5e9b378d05c3b5509c4e5399ca63d82fcb10768e5acd22f",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3727 ItsyBitsy M0",
+      "files": [
+        {
+          "path": "3727 ItsyBitsy M0/3727-Adafruit-ItsyBitsy-M0.gif",
+          "bytes": 2390163,
+          "sha256": "5aac240c2fc2b50f9f84ba6a17709a1a7dbfe26dee0128ef14abf60ff1831a89",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3787 1.5in TFT Display",
+      "files": [
+        {
+          "path": "3787 1.5in TFT Display/3787 1.54in TFT Display.gif",
+          "bytes": 1104080,
+          "sha256": "0b95310512df2638389f03bdfc55b1fff2de69b28320eac420d3060391d69c4d",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3800 ItsyBitsy M4",
+      "files": [
+        {
+          "path": "3800 ItsyBitsy M4/3800-ItsyBitsy-M4.gif",
+          "bytes": 2047181,
+          "sha256": "92491eca83112a2d5e6f9e65b81c6b58d64b1e8eb3bb52b02feb6eaf103776b3",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3802 TT Motor Metal Gear",
+      "files": [
+        {
+          "path": "3802 TT Motor Metal Gear/3802-TT-Motor-Metal-Gear.jpg",
+          "bytes": 131755,
+          "sha256": "b498a3e98e4b45bb5489ea2299d27540eb5f81ff34508305fbe795d5ed607ae8",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3857 Feather M4 Express",
+      "files": [
+        {
+          "path": "3857 Feather M4 Express/3857-Adafruit-Feather-M4-Express.gif",
+          "bytes": 1879202,
+          "sha256": "4d265acfba1ce266a3566f304dc5477bfcc9a9708a7cc776d5f6f7ad65a57569",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3923 Mini Oval Speaker",
+      "files": [
+        {
+          "path": "3923 Mini Oval Speaker/3923-mini-oval-speaker.jpg",
+          "bytes": 104539,
+          "sha256": "6943fafae588b861d646a49c2f57c509771151ab189713d7b10d183df076b24f",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3954 Adafruit NeoTrellis",
+      "files": [
+        {
+          "path": "3954 Adafruit NeoTrellis/neotrellis-preview.gif",
+          "bytes": 1631474,
+          "sha256": "0b6e1db49f5d95de839537d2b4f91c5edb5c1795e84de839e1db18f268679b32",
+          "format": "gif",
+          "units": "unknown"
+        },
+        {
+          "path": "3954 Adafruit NeoTrellis/neotrellis-preview.jpg",
+          "bytes": 342446,
+          "sha256": "2e62278396e4de3d46eb57a353014e7cf7275047d81e93e803e04ef330ca25c6",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3957 CRICKIT Hat",
+      "files": [
+        {
+          "path": "3957 CRICKIT Hat/3957-Adafruit-Crickit-HAT.gif",
+          "bytes": 2189553,
+          "sha256": "2e6dbfd3c7480a76cdf1813fc3413be9957a864b53cb06895724fcb9c932cc35",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3965 MPRLS Pressure Sensor",
+      "files": [
+        {
+          "path": "3965 MPRLS Pressure Sensor/3965 MPRLS Pressure Sensor.jpg",
+          "bytes": 284606,
+          "sha256": "e0b054b527f80518671d052af94de4506b4cb35582aa262b3c934fc5886b9131",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3966 BMP388 QT",
+      "files": [
+        {
+          "path": "3966 BMP388 QT/3966 BMP388 QT.jpg",
+          "bytes": 199077,
+          "sha256": "8ee7c26d5b36724c06f9172d36706b45b4b423bf8031476550e35f1c4e002719",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3967 VL5SL1X TOF Sensor",
+      "files": [
+        {
+          "path": "3967 VL5SL1X TOF Sensor/3967 VL5SL1X TOF Sensor.jpg",
+          "bytes": 203025,
+          "sha256": "cb16afd7147a18048f34b9fcbbf3fbea485e6fde0d219e6f9a34c8acb87ee167",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3968 Speaker 40mm",
+      "files": [
+        {
+          "path": "3968 Speaker 40mm/3968-Speaker-40mm.jpg",
+          "bytes": 78441,
+          "sha256": "74eb02a2a8f505dcce4e1c6b2237ceba8c94d20122cd2d51bc058c62755bd16c",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3988 Prop-Maker FeatherWing",
+      "files": [
+        {
+          "path": "3988 Prop-Maker FeatherWing/3988-Prop-Maker-FeatherWing.jpg",
+          "bytes": 247166,
+          "sha256": "ec960f9d782938d9cd1a151291cfb16a46b06a9f0f15610e2a333e395ef60ab8",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4022 MLX90393 QT",
+      "files": [
+        {
+          "path": "4022 MLX90393 QT/4022 MLX90393 QT.jpg",
+          "bytes": 367891,
+          "sha256": "98aedae2319239faafaaeb1aadc80a72d028e992fd144bafe98c7e62bf665607",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4022 Wide-Range Triple-axis Magnetometer MLX90393",
+      "files": [
+        {
+          "path": "4022 Wide-Range Triple-axis Magnetometer MLX90393/4022 Wide-Range Triple-axis Magnetometer MLX90393.png",
+          "bytes": 18481,
+          "sha256": "5f516e340f385fb29e31f238ebc901e23866bacff002e8aad0a887c01505dc34",
+          "format": "png",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4026 STEMMA Soil Sensor",
+      "files": [
+        {
+          "path": "4026 STEMMA Soil Sensor/4026-STEMMA-Soil-Sensor.jpg",
+          "bytes": 159944,
+          "sha256": "e4baa69aad36464aad774bca3632e6799273d4fec9f0381f183924ca5e9fec6f",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4056 USBC-to-microB-cable",
+      "files": [
+        {
+          "path": "4056 USBC-to-microB-cable/4056-USB-C-to-micro-B.jpg",
+          "bytes": 50629,
+          "sha256": "705a39fd71389cbf81e3950d7a60b840089f875af47cc39746614af62135a848",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4062 nRF52840 Feather",
+      "files": [
+        {
+          "path": "4062 nRF52840 Feather/4062-nRF52830-Feather.gif",
+          "bytes": 1657917,
+          "sha256": "bbd00ef1a619a20fea9197f3f758b33d0569218de3bbf43b9584cc8603c4d091",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4064 Grand Central M4",
+      "files": [
+        {
+          "path": "4064 Grand Central M4/4064-Grand-Central-M4.jpg",
+          "bytes": 305039,
+          "sha256": "f6d265cb1797cea17ab487178f658c505598551d54a7011cbd74cb884c0d6d60",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4074 LoRa Radio Bonnet",
+      "files": [
+        {
+          "path": "4074 LoRa Radio Bonnet/4074 LoRa Radio Bonnet.gif",
+          "bytes": 1989306,
+          "sha256": "9a7e7d2a21105b95006785b947e53265ac94b0acaefbb469b38f2a13284aa0ea",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4086 TriColor ePaper Display",
+      "files": [
+        {
+          "path": "4086 TriColor ePaper Display/4086-tricolor-epaper-display.jpg",
+          "bytes": 368492,
+          "sha256": "2c7989df7e935a5d20689454ef0fd8576a2cf83d29a32118c80ff8bd89f04852",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4089 ADT7410 Sensor",
+      "files": [
+        {
+          "path": "4089 ADT7410 Sensor/4089 ADT7410 Sensor.jpg",
+          "bytes": 240132,
+          "sha256": "db897b5933ebe1a4d64fa6849e455c959492754443a78633344b92c82239eb70",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4090 USB C Breakout",
+      "files": [
+        {
+          "path": "4090 USB C Breakout/4090 USB C Breakout.jpg",
+          "bytes": 188957,
+          "sha256": "03eae2e0b210a38eb73fb07183465b59e422b8f213e4dadd8b08338079533395",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4097 ADXL343 Accelerometer",
+      "files": [
+        {
+          "path": "4097 ADXL343 Accelerometer/4097 ADXL343 STEMMA QT.jpg",
+          "bytes": 204492,
+          "sha256": "c5c7d5debc32b71e0a9f350652ca7cc570ce536629737fb380044d8793d88ff7",
+          "format": "jpg",
+          "units": "unknown"
+        },
+        {
+          "path": "4097 ADXL343 Accelerometer/4097 ADXL343.jpg",
+          "bytes": 214191,
+          "sha256": "b3b698ef6babfde660509d4dc6e5a09b6209391f485d36e4515f471a210fe6c6",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4128 eInk FeatherWing",
+      "files": [
+        {
+          "path": "4128 eInk FeatherWing/2in-eInk-Featherwing.gif",
+          "bytes": 1661001,
+          "sha256": "2fb22221aa68658982a56feefa3b1a396d374f3916142666c69fd47d2061d5e6",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4132 GPIO Expander Bonnet",
+      "files": [
+        {
+          "path": "4132 GPIO Expander Bonnet/4132 GPIO Expander Bonnet.jpg",
+          "bytes": 302827,
+          "sha256": "d9c0335012714bc59166192f30a6ba40a866fbf5379cc4a7105185dfcb816466",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4161 VCNL4040 Sensor",
+      "files": [
+        {
+          "path": "4161 VCNL4040 Sensor/4161 VCNL4040 Sensor.jpg",
+          "bytes": 274668,
+          "sha256": "06193794e08c1df413c745732ea431ea7577807f20f9eab35b85f256e3131c87",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4196 1.54in eink display SSD1681",
+      "files": [
+        {
+          "path": "4196 1.54in eink display SSD1681/4196 1.54in eink display SSD1681.jpg",
+          "bytes": 87781,
+          "sha256": "f5117800941bf129d873c0bdadfb1547114183c3bc86edd1546e7afcc2fe707b",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4200 PyBadge",
+      "files": [
+        {
+          "path": "4200 PyBadge/4200 PyBadge.gif",
+          "bytes": 1813625,
+          "sha256": "01d2c8602366e5d8b3f5bb500bf3a1949b47b4b660763da9f94ab7d8cfcbc5ea",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4222 NeoPixel Triple-Ring Board",
+      "files": [
+        {
+          "path": "4222 NeoPixel Triple-Ring Board/4222-NeoPixel-Triple-Ring.jpg",
+          "bytes": 165456,
+          "sha256": "8885eb1893c82b91bdc8030c6ec6257b2f0c1f9572d9324d6ebbbad91bfbae5e",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4222 NeoPixel Triple-Ring",
+      "files": [
+        {
+          "path": "4222 NeoPixel Triple-Ring/4222-NeoPixel-Triple-Ring.jpg",
+          "bytes": 149826,
+          "sha256": "3f89d78d9d61bc832c96d6d9b62c9f3fbc1e4813914a5a483938e7f9cd25b43c",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4242 Adafruit PyGamer",
+      "files": [
+        {
+          "path": "4242 Adafruit PyGamer/Adafruit-PyGamer.gif",
+          "bytes": 1558409,
+          "sha256": "122d2cadac737bc45784331cc6c407df72b36a9de26051c8c2a1a674c5b415fb",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4264 AirLift FeatherWing",
+      "files": [
+        {
+          "path": "4264 AirLift FeatherWing/Adafruit-AirLift-Featherwing.gif",
+          "bytes": 1540335,
+          "sha256": "dd9bed2d7674a31fafbe66828312563c7d6f86c6d1946a1cc5ded68844573535",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4280 DC Stepper Motor Bonnet",
+      "files": [
+        {
+          "path": "4280 DC Stepper Motor Bonnet/4280 DC Stepper Motor Bonnet.jpg",
+          "bytes": 418817,
+          "sha256": "b69e418b658d72c9c3d15ab71059df35233461f8826d85c4762c9515c7b81761",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4282 PiRTC DS3231",
+      "files": [
+        {
+          "path": "4282 PiRTC DS3231/4282 PiRTC DS3231.jpg",
+          "bytes": 166075,
+          "sha256": "103c9260af85eb4bb0315bb516e17e97cb6aa807364d08f8bced9e0a314ba610",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4300 HalloWing M4",
+      "files": [
+        {
+          "path": "4300 HalloWing M4/4300-HalloWing-M4-Express.gif",
+          "bytes": 1718017,
+          "sha256": "1bc278c0786233b487f58788bdad037eb32120070bcdbded0a4d6ac7814136b8",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4311 2in TFT IPS Display",
+      "files": [
+        {
+          "path": "4311 2in TFT IPS Display/4311-2in-TFT-IPS-Display.jpg",
+          "bytes": 109863,
+          "sha256": "fdc7cd6ad43240cef9220616ba652eb2597a50f3d0ef34d7aae1cc92b73d33f5",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4313 1.3in TFT IPS Display",
+      "files": [
+        {
+          "path": "4313 1.3in TFT IPS Display/4313 1.3in-TFT-IPS-Display.jpg",
+          "bytes": 139400,
+          "sha256": "8b8a44db6a2637e515dc600b6a2367c45e92202f0440c1d63a97e9f888838a0b",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4320 PermaProto Gizmo",
+      "files": [
+        {
+          "path": "4320 PermaProto Gizmo/4320-PermaProto-Gizmo.jpg",
+          "bytes": 233019,
+          "sha256": "cdb753a99193f2bae75bcff83a21ac3c5e77f48b5e36b0a7a908248c4f99b270",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4333 Circuit Playground Bluefruit",
+      "files": [
+        {
+          "path": "4333 Circuit Playground Bluefruit/Circuit-Playground-Bluefruit.gif",
+          "bytes": 1847181,
+          "sha256": "6f638529811b346b9b9ce1992690a108308bcc07932713eb44073e847b7d15d7",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4346 PDM Mic Breakout",
+      "files": [
+        {
+          "path": "4346 PDM Mic Breakout/pdm-mic-with-jst-sh.gif",
+          "bytes": 947121,
+          "sha256": "08545de7c71a9e7e56f55c4a948c4a1803bf217835d390e05a9c7e4418eb5bf7",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4367 TFT Gizmo",
+      "files": [
+        {
+          "path": "4367 TFT Gizmo/4367 Circuit Playground TFT Gizmo.gif",
+          "bytes": 1510471,
+          "sha256": "b6a3fa59b4caff3c3189396f81bbb70a78b6e516470adb019dad0a831b914f6e",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4374 BrainCraft HAT",
+      "files": [
+        {
+          "path": "4374 BrainCraft HAT/4374-BrainCraft-HAT.gif",
+          "bytes": 1411320,
+          "sha256": "72817263827058b356d0ec7cc9fed1215eba2b1b8e3efc7021571fbacbbfbe90",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4383 1.14in TFT Display",
+      "files": [
+        {
+          "path": "4383 1.14in TFT Display/4383 1.14in TFT Display.jpg",
+          "bytes": 219111,
+          "sha256": "dd49152ecabcbd655e1ce768722a0ac911ffa6595e5defc95e2b314b8ac9406d",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4392 STEMMA QT Horizontal",
+      "files": [
+        {
+          "path": "4392 STEMMA QT Horizontal/render.PNG",
+          "bytes": 41861,
+          "sha256": "b59fcaeeaa281453d7bf1b666612a195e5250f66f1bbef6a543e04fe446fa0ed",
+          "format": "png",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4400 EdgeBadge",
+      "files": [
+        {
+          "path": "4400 EdgeBadge/4400 Adafruit EdgeBadge.gif",
+          "bytes": 1728248,
+          "sha256": "8ea04febb024a2dac72df4c53b5b9c0d7ffee1d9310e3ffabdfdbe2ae868237a",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4410 Micro Lipo USBC",
+      "files": [
+        {
+          "path": "4410 Micro Lipo USBC/4410 Micro Lipo USBC.jpg",
+          "bytes": 156547,
+          "sha256": "a0a43ad2042a0df348d15cfcd1800736aa0694deba870af5288604448a882f50",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4415 Mini GPS PA1010D",
+      "files": [
+        {
+          "path": "4415 Mini GPS PA1010D/4415 Mini GPS PA1010D.jpg",
+          "bytes": 275100,
+          "sha256": "852dbde7c0ac331b9956817a777c3ca853561017423fe75faff883b5379c2e05",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4431 STEMMA Buttons",
+      "files": [
+        {
+          "path": "4431 STEMMA Buttons/4431-STEMMA-Buttons.jpg",
+          "bytes": 115952,
+          "sha256": "0f235804bacdb5e2c7455f89ac7cef8d99d5908b02ac936fe40309e4c41187a3",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4440 0.91 OLED I2C Display",
+      "files": [
+        {
+          "path": "4440 0.91 OLED I2C Display/4440 0.91 OLED I2C Display.jpg",
+          "bytes": 249574,
+          "sha256": "8cffb49c3fccf3fb6e2231b056e9ef27788d044021da2b059aec1e06f95195ec",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4444 PyPortal Titano",
+      "files": [
+        {
+          "path": "4444 PyPortal Titano/4444-PyPortal-Titano.gif",
+          "bytes": 1557390,
+          "sha256": "1ac790f9427b418e045ad83ef655403b05110198a584271ea963adbb9f6fde28",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4465 PyPortal Pynt",
+      "files": [
+        {
+          "path": "4465 PyPortal Pynt/4465 PyPortal Pynt.gif",
+          "bytes": 1673653,
+          "sha256": "8a5df46d2baa1801551bddb50f9ee73175e0120ea1649fdcb14202378b9a72ec",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4469 MLX90640 Stemma",
+      "files": [
+        {
+          "path": "4469 MLX90640 Stemma/4469-MLX90640-Stemma.gif",
+          "bytes": 1101691,
+          "sha256": "26db594183cf7bbfc93bcd547772fab034da9104c4095adab073afbfa0117e23",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4471 MCP2221A Breakout",
+      "files": [
+        {
+          "path": "4471 MCP2221A Breakout/4471 MCP2221A Breakout.jpg",
+          "bytes": 298500,
+          "sha256": "6e6e07ae09b4987eb4dada3ecacd006065fbb7617040cf61f0ca5ac8a2d1232d",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4479 LIS3MDL",
+      "files": [
+        {
+          "path": "4479 LIS3MDL/4479 LIS3MDL.jpg",
+          "bytes": 210361,
+          "sha256": "4d8ef15b8071285c135993c683dd823bce03a84296e5622e70dd6a772197b310",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4481 ItsyBitsy nRF52840",
+      "files": [
+        {
+          "path": "4481 ItsyBitsy nRF52840/4481-itsybitsy-nrf52840.gif",
+          "bytes": 1378554,
+          "sha256": "6531dd86ee6341082bf661f7bf0fe8a998024ef49ac08b27baed120774b3d426",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4494 DPS310 Sensor",
+      "files": [
+        {
+          "path": "4494 DPS310 Sensor/4494-DPS310-Sensor.gif",
+          "bytes": 1322814,
+          "sha256": "204ba25e17a610abcc5d39c5a8a6167c55532303d424cf49f2795147d156f429",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4500 CLUE nRF52840",
+      "files": [
+        {
+          "path": "4500 CLUE nRF52840/4500-CLUE-nRF52840.gif",
+          "bytes": 1272993,
+          "sha256": "e45bdeedd90cf81972fcdca7ee5aca6859d754ccb16fce59ada109f92f82eaa2",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4502 6DoF IMU",
+      "files": [
+        {
+          "path": "4502 6DoF IMU/4502 6DoF IMU.jpg",
+          "bytes": 162059,
+          "sha256": "f3e1f113f318d4e491a3b7e74a324244cba4ddf0e4500ce2b2a7b1d74be77b8a",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4506 TFT Bonnet",
+      "files": [
+        {
+          "path": "4506 TFT Bonnet/4506 TFT Bonnet.jpg",
+          "bytes": 131261,
+          "sha256": "9e3d602ec1b84a540b87689011d6175c24f2a71d54f500b248c7e8976edcbc17",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4516 Feather nRF52840 Sense",
+      "files": [
+        {
+          "path": "4516 Feather nRF52840 Sense/4516-Feather-nRF52840.gif",
+          "bytes": 1871347,
+          "sha256": "dd16c0cf76ee24fd5290c8c9c9069b48ab1346a4ca629786d0ba91a0bb4256da",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4517 LSM6DSOX-LIS3MDL",
+      "files": [
+        {
+          "path": "4517 LSM6DSOX-LIS3MDL/4517 LSM6DSOX-LIS3MDL.jpg",
+          "bytes": 207621,
+          "sha256": "3220336050f17c12f3cd315fe57f713f4a45ddf593e11684c3dcab51e5497f1d",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4538 NAU7802",
+      "files": [
+        {
+          "path": "4538 NAU7802/4538 NAU7802 Rev B.jpg",
+          "bytes": 219101,
+          "sha256": "b3e80ae37d991f2489aa5503c340bdc011d242fc0064dabf499247690796916c",
+          "format": "jpg",
+          "units": "unknown"
+        },
+        {
+          "path": "4538 NAU7802/4538 NAU7802 Rev C.jpg",
+          "bytes": 357613,
+          "sha256": "e4397189aac9b8d4405b431c7d8d63ba3c626bf7679aa9d22d7f30c590eeb111",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4565 FeatherWing LIS3MDL LSM6DSOX",
+      "files": [
+        {
+          "path": "4565 FeatherWing LIS3MDL LSM6DSOX/4565 FeatherWing LIS3MDL LSM6DSOX.jpg",
+          "bytes": 244171,
+          "sha256": "feb86b41d8d12a39ea379cb0b4010d854e972c9517b48260ae233cbf9bdc48ff",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4566 AHT20 Sensor",
+      "files": [
+        {
+          "path": "4566 AHT20 Sensor/4566-AHT20-Sensor.gif",
+          "bytes": 1107313,
+          "sha256": "e0193a939d7133d133298d9e58c01a7feeae00db49fbb2c48276dc136cf13dbd",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4600 QT Py",
+      "files": [
+        {
+          "path": "4600 QT Py/4600 QTPy.gif",
+          "bytes": 1069141,
+          "sha256": "33583e59c00bacad12a9988cccc42927bd6a7df05f89d4aa6576cb9c0fe46c94",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4631 Mini Mag Feet",
+      "files": [
+        {
+          "path": "4631 Mini Mag Feet/4631 Mini Mag Feet.png",
+          "bytes": 119198,
+          "sha256": "294ddbc7ee1fc5de1b88108d3d67aade67f81d7a38925fbe963610cc337c1298",
+          "format": "png",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4632 PMSA003I",
+      "files": [
+        {
+          "path": "4632 PMSA003I/4632-PMSA003I.gif",
+          "bytes": 772276,
+          "sha256": "84b827f99dedfa47c5f17cddb5edca8e7df85b68e9ec561cbdfb6136f1db2fae",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4636 SHTC3",
+      "files": [
+        {
+          "path": "4636 SHTC3/4636 SHTC3.gif",
+          "bytes": 1238823,
+          "sha256": "c660174b0fa1e51c7d18a1fd07347b63ea928b38a7e355776e4f22a8d70da7ef",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4646 BNO055 Stemma",
+      "files": [
+        {
+          "path": "4646 BNO055 Stemma/4646 BNO055 Stemma.jpg",
+          "bytes": 199982,
+          "sha256": "f94224efcc554202a2f99f8cf8d136a8d829cc38160163c1900be3421961fd91",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4650 OLED FeatherWing",
+      "files": [
+        {
+          "path": "4650 OLED FeatherWing/4650 OLED FeatherWing.jpg",
+          "bytes": 206889,
+          "sha256": "5683578102072f72205a38f22c801a85cace8e183b465e0a45716bf1a985bc9f",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4682 Micro SD Breakout",
+      "files": [
+        {
+          "path": "4682 Micro SD Breakout/4682 Micro SD Breakout.jpg",
+          "bytes": 221152,
+          "sha256": "ca517997ff63cd96dfffb4812f4f280f8b3979254d0d9232c07a63503125acc4",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4698 AS7341 Light Color Sensor",
+      "files": [
+        {
+          "path": "4698 AS7341 Light Color Sensor/4698 AS7341 Light Color Sensor.jpg",
+          "bytes": 219922,
+          "sha256": "42aa6f34b8f2da29aec2b303281cfe2ed2ade8d8a12d4a951eb339b7e2d7c3c9",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4701 ST25DV16K RFID",
+      "files": [
+        {
+          "path": "4701 ST25DV16K RFID/4701-ST25DV16K RFID.jpg",
+          "bytes": 206630,
+          "sha256": "584036ecf417337078447c20a99af451dcaf2ffd1ab34033fa11853c4cc4f537",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "471 Arcade Button 30mm",
+      "files": [
+        {
+          "path": "471 Arcade Button 30mm/471-Arcade-Button-30mm.jpg",
+          "bytes": 93239,
+          "sha256": "0f91df870b519a056b17d0ae317beb3b3f1bf51ce7c026c6ee010ce2197ad251",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4712 LC709203F Battey Monitor",
+      "files": [
+        {
+          "path": "4712 LC709203F Battey Monitor/4712 LC709203F.step.gif",
+          "bytes": 2025050,
+          "sha256": "491f75edbc7125e8371393c5b316de3a89ead274d6df812b0869ee5acc64a27a",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4739 MPM3610 5V Buck",
+      "files": [
+        {
+          "path": "4739 MPM3610 5V Buck/4739-MPM3610-5V-Buck.jpg",
+          "bytes": 146153,
+          "sha256": "cde0c003a4d52f5e62cd827c1854a6ef779e7d52ad4bb8989a7cfba100ec611a",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4740 MIDI FeatherWing",
+      "files": [
+        {
+          "path": "4740 MIDI FeatherWing/4740-MIDI-FeatherWing.jpg",
+          "bytes": 153540,
+          "sha256": "693afb4dd07d0fed5a2e1c207369e8344776e28919a680b8189a82f13925a110",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4741 OLED 1.5in",
+      "files": [
+        {
+          "path": "4741 OLED 1.5in/4741 1.5-inch OLED.stl.jpg",
+          "bytes": 59826,
+          "sha256": "184462a0f7c48d34507bc7d7a18f5748eabf9ab8e82847372f74e62cd353f024",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4745 Matrix Portal M4",
+      "files": [
+        {
+          "path": "4745 Matrix Portal M4/4745 Matrix Portal M4.gif",
+          "bytes": 1231985,
+          "sha256": "379b225fe463491205c9c9f7cab8f61e2402c7ce33f9745a9b8d54a96b15195c",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4754 BNO085 STEMMA QT",
+      "files": [
+        {
+          "path": "4754 BNO085 STEMMA QT/4754 BNO085 STEMMA QT.jpg",
+          "bytes": 224264,
+          "sha256": "0e5da6f914c6c1cd1173fc89eb3eda401ef40acb4e914ce3102a0c5a0695b97e",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4755 USB Solar Charger",
+      "files": [
+        {
+          "path": "4755 USB Solar Charger/4755 USB Solar Charger.jpg",
+          "bytes": 449363,
+          "sha256": "4e8e92140ecb621163101c6a702738b105fd2e6a2e9ca4c8f49765c93e544366",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4756 LTC4311 I2C Extender",
+      "files": [
+        {
+          "path": "4756 LTC4311 I2C Extender/4756 LTC4311 I2C Extender.jpg",
+          "bytes": 267109,
+          "sha256": "437106705f5632202d9b0e78c68995a32f7f90bdc6e96a496a224047f4b45951",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4759 Feather M4 CAN Express",
+      "files": [
+        {
+          "path": "4759 Feather M4 CAN Express/4759 Feather M4 CAN Express.jpg",
+          "bytes": 357311,
+          "sha256": "1ee05e9586c3b54fdcba0b82f5a80eeed960e8bee2dd10b4b85f11c365af113c",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4775 Metro ESP32-S2",
+      "files": [
+        {
+          "path": "4775 Metro ESP32-S2/4775 Metro-EPS32-S2.gif",
+          "bytes": 1456180,
+          "sha256": "f063b6e5cef4d781e42c4ccf2cd79bd316389db68ba17c82a9d652e8076c174c",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4778 2.9 inch E-Ink Featherwing",
+      "files": [
+        {
+          "path": "4778 2.9 inch E-Ink Featherwing/4778 2.9 inch E-Ink Featherwing.PNG",
+          "bytes": 526116,
+          "sha256": "4c72587f8909f3b04507ec4c2b4093fde8bc7fc281b45c771b43718ea76780a9",
+          "format": "png",
+          "units": "unknown"
+        },
+        {
+          "path": "4778 2.9 inch E-Ink Featherwing/4778 2.9 inch E-Ink Featherwing.gif",
+          "bytes": 3042009,
+          "sha256": "af9089b9c803a03c041f837b7a63a309b710b1551a2d76acec0b9b67d034cca7",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4800 MagTag",
+      "files": [
+        {
+          "path": "4800 MagTag/4800 MagTag.gif",
+          "bytes": 1501236,
+          "sha256": "ba267b7e7575ff12546a568f7b81fe1178e79b8457fad05ec6ee577958c98a00",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4808 EMC2101 STEMMA QT",
+      "files": [
+        {
+          "path": "4808 EMC2101 STEMMA QT/4808 EMC2101 STEMMA QT.jpg",
+          "bytes": 158272,
+          "sha256": "81a9c8898b003dbadbdf426661251b9617754202195c03878983d13ad4db43c4",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4829 SGP40 Sensor",
+      "files": [
+        {
+          "path": "4829 SGP40 Sensor/4829 SGP40 Sensor.jpg",
+          "bytes": 172611,
+          "sha256": "8ab768966460a77c3dac36b2a3c669ce7b21329e561507734d7e5d938f4388d4",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4836 Wii Nunchuck Adapter",
+      "files": [
+        {
+          "path": "4836 Wii Nunchuck Adapter/4836-Wii-Nunchuck-Adapter.jpg",
+          "bytes": 137068,
+          "sha256": "6d588a005ff02f6dc8af65ef178647659c96b4ed8d0053b0e0b29ed1343a1ddf",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4862 CYBERDECK Bonnet",
+      "files": [
+        {
+          "path": "4862 CYBERDECK Bonnet/4862-CyberDeck-Bonnet.gif",
+          "bytes": 2830511,
+          "sha256": "68f028e3f1e51a4c3aa250df64ec5fc231a5cd91bbe1b2d0e42a6e8efe02ba53",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4863 CYBERDECK Hat",
+      "files": [
+        {
+          "path": "4863 CYBERDECK Hat/4863-CyberDeck-HAT.gif",
+          "bytes": 2792580,
+          "sha256": "0668f5c54603dd426c197752d753be9fd50173d73e5ae38b216f458977ea3610",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4867 SCD-30 C02 Sensor",
+      "files": [
+        {
+          "path": "4867 SCD-30 C02 Sensor/4867 Adafruit SCD30.gif",
+          "bytes": 2193320,
+          "sha256": "cf7fbb5ca2f933901df2228adb621a240052ce2bfbcb740b444780aed4bccbe7",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4870 Neo Trinkey",
+      "files": [
+        {
+          "path": "4870 Neo Trinkey/4870-NeoTrinket.gif",
+          "bytes": 565535,
+          "sha256": "03b366c45502903525f53dafa9064ea89b01685d57cafecea633f2d30d89bb84",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4884 Feather RP2040",
+      "files": [
+        {
+          "path": "4884 Feather RP2040/4884 Feather-RP2040.gif",
+          "bytes": 2177238,
+          "sha256": "fca3900c87381e83af4981d72cae3540d8596a1c4ac7d4a2ee9cc6fca520a2b1",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4885 SHT40 Sensor",
+      "files": [
+        {
+          "path": "4885 SHT40 Sensor/4485 SHT40.jpg",
+          "bytes": 75981,
+          "sha256": "87e37356c5640f44499f87a2a32262885f3276a8d94c271c93bae38f0d81f3db",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4886 AW9523 LED Driver",
+      "files": [
+        {
+          "path": "4886 AW9523 LED Driver/4886 AW9523 LED Driver.jpg",
+          "bytes": 56381,
+          "sha256": "8e8714a1f41aa429f58be0ff90a871b41198217f1a799f94717aa6052d461e0e",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4888 ItsyBitsy RP2040",
+      "files": [
+        {
+          "path": "4888 ItsyBitsy RP2040/4888 ItsyBitsy RP2040.gif",
+          "bytes": 2564249,
+          "sha256": "26dcb9377cde36f8f1e8133ffd72e8e772d59c1f7d6384e100d56103c241e2d8",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4900 QTPy RP2040",
+      "files": [
+        {
+          "path": "4900 QTPy RP2040/4900 QTPY-RP2040.gif",
+          "bytes": 1232959,
+          "sha256": "be0d99359ae357c30c364066cc1ded1802e44da09ee7a43aa3043c9e8d9a640e",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4903 ISO1540 I2C Isolator",
+      "files": [
+        {
+          "path": "4903 ISO1540 I2C Isolator/4903 ISO1540 I2C Isolator.jpg",
+          "bytes": 274545,
+          "sha256": "755362444453c42e2993d30ecda4c06037d959c33f6624a6ca70c1017e252f77",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4918 TCA8418 Stemma",
+      "files": [
+        {
+          "path": "4918 TCA8418 Stemma/4918-TCA8418-Stemma.jpg",
+          "bytes": 195590,
+          "sha256": "81449dd211f9a64f01afacfe60e26d5b42f12426818a7f6473b2d447ab82cbbb",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4964 Rotary Trinkey",
+      "files": [
+        {
+          "path": "4964 Rotary Trinkey/4964 Rotary Trinkey.gif",
+          "bytes": 2218536,
+          "sha256": "c578094e51a40004f08d3175b27f8875ffc2f30896257dbe13a1a13ba2423872",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4978 NeoKey Breakout",
+      "files": [
+        {
+          "path": "4978 NeoKey Breakout/4978 NeoKey Breakout.jpg",
+          "bytes": 170569,
+          "sha256": "226f9bcd3b829fd7608e79aabe97e114fdcde186899fc0a4fdba94d9fea1ed4c",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4979 NeoKey FeatherWing",
+      "files": [
+        {
+          "path": "4979 NeoKey FeatherWing/4979 NeoKey FeatherWing.gif",
+          "bytes": 3901936,
+          "sha256": "1b40e78073ce6c38de788c27a5084b865b6e46d382ef0669b9b13f63a2dd071c",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4980 NeoKey 1x4 QT",
+      "files": [
+        {
+          "path": "4980 NeoKey 1x4 QT/4980 NeoKey 1x4 QT.gif",
+          "bytes": 2321096,
+          "sha256": "f955ea4b7ea471d892170e23fdab83ee35e0eef76bbad4d963cd29355413b183",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4985 Funhouse",
+      "files": [
+        {
+          "path": "4985 Funhouse/4985 FunHouse.gif",
+          "bytes": 1347260,
+          "sha256": "88adc34c450dfacb470db17350b8d2bc07a015b3a72312093e7e1249e35befa9",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4991 QT Rotary Encoder",
+      "files": [
+        {
+          "path": "4991 QT Rotary Encoder/4991 QT Rotary Encoder.gif",
+          "bytes": 1845125,
+          "sha256": "593f7a709f6eebe9270888bd04ff9067d2e809335b552f69861cccf19fff423d",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5020 NeoKey Trinkey",
+      "files": [
+        {
+          "path": "5020 NeoKey Trinkey/5020-NeoKey-Trinkey.gif",
+          "bytes": 2051316,
+          "sha256": "463e58fbf5de37bc931f10713a7a8eab251978c905d5282642ad704eb0febce4",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5021 Slide Trinkey",
+      "files": [
+        {
+          "path": "5021 Slide Trinkey/5021 Slide Trinkey.gif",
+          "bytes": 1527939,
+          "sha256": "791bf428921a097ac2d4cfebeaefb528a36e61f84ecd6dcf41d2ab399123f42f",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5027 MCP9808 Stemma",
+      "files": [
+        {
+          "path": "5027 MCP9808 Stemma/5027 MCP9808 Stemma.gif",
+          "bytes": 805441,
+          "sha256": "b1863be4e49d37fd50edfc21ae9cb70b9da9daae45f9f15d8eba1afb6eb7f81c",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5036 RGB Matrix 2.5mm",
+      "files": [
+        {
+          "path": "5036 RGB Matrix 2.5mm/5036 RGB Matrix Front.JPG",
+          "bytes": 91006,
+          "sha256": "5ad979959fb4aceeb06016feefeb36794b2851ecbe7770f38eb1c23a19f907ef",
+          "format": "jpg",
+          "units": "unknown"
+        },
+        {
+          "path": "5036 RGB Matrix 2.5mm/5036 RGB Matrix Rear.JPG",
+          "bytes": 50665,
+          "sha256": "79f2604e12396969b9dd8647c5d9925dbf485776ccc1dff56da6c2b59a9a10b3",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5046 BME688 Sensor",
+      "files": [
+        {
+          "path": "5046 BME688 Sensor/5046 BME688 Sensor.jpg",
+          "bytes": 347799,
+          "sha256": "fb6adfee66d1f3b5acc4c99b7c01f7cb542f4ab553f1f2895231b6336ea68eb7",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5056 Trinkey QT2040",
+      "files": [
+        {
+          "path": "5056 Trinkey QT2040/5056 Trinkey QT2040.gif",
+          "bytes": 854298,
+          "sha256": "5838146f8fd3be437094977514eb0f79b0e1a16bb6de4adf111995ce39916e40",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5100 MacroPad RP2040",
+      "files": [
+        {
+          "path": "5100 MacroPad RP2040/5100 MacroPad RP2040.gif",
+          "bytes": 1408674,
+          "sha256": "2bedb78463262e98c26b9a692f8b47e1f3de35e97ae259c6bd03cf0793053a93",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5128 MacroPad RP2040 Kit",
+      "files": [
+        {
+          "path": "5128 MacroPad RP2040 Kit/5128 MacroPad RP2040-Assembly.gif",
+          "bytes": 1934950,
+          "sha256": "6a17f240c6b522b777cb2d81aa3bc367d13e3a2f11caca8fcbf002e93e7291f8",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5146 24LC32 I2C EEPROM",
+      "files": [
+        {
+          "path": "5146 24LC32 I2C EEPROM/5146 24LC32 I2C EEPROM.jpg",
+          "bytes": 128672,
+          "sha256": "9f33d9936a558d95b6e8f16bd09afbfaaeaa7884e0189cd35969535b3e6b082b",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5187 SCD-40 C02 Sensor",
+      "files": [
+        {
+          "path": "5187 SCD-40 C02 Sensor/5187 SCD-40 C02 Sensor.jpg",
+          "bytes": 149580,
+          "sha256": "9db48a78f6f0db2256ec3b2c80468d6c8071d27c48e281b2c80017ca3e20e930",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5188 DS3231 RTC",
+      "files": [
+        {
+          "path": "5188 DS3231 RTC/5188 DS3231 RTC.jpg",
+          "bytes": 186147,
+          "sha256": "7133219851ebc98470b5748cf0ddff3291c0d52e1eb4006dfc679b44a3afba88",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5200 Proto PiCowbell",
+      "files": [
+        {
+          "path": "5200 Proto PiCowbell/5200 Proto PiCowbell.jpg",
+          "bytes": 236117,
+          "sha256": "f20ec2b06be6647073fec45ef6f4e3f85bcd64872384324d6a26c966d3a3a86d",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5201 IS31FL3741 STEMMA",
+      "files": [
+        {
+          "path": "5201 IS31FL3741 STEMMA/5201 IS31FL3741 STEMMA.gif",
+          "bytes": 2659158,
+          "sha256": "8620b27545ed370a62c40bd87c9fb9dcc90ab46198e854858e61f10889c602b5",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5210 LED Glasses IS31FL3741",
+      "files": [
+        {
+          "path": "5210 LED Glasses IS31FL3741/5210-LED-Glasses-IS31FL3741.gif",
+          "bytes": 1991733,
+          "sha256": "fa1efaaf4fc536ea28fe1c6d198b0a87b3e8ca0fac2c802bf220e2c354210db6",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5217 LED Glasses nRF52840",
+      "files": [
+        {
+          "path": "5217 LED Glasses nRF52840/5217-LED-Glasses-nRF52840.gif",
+          "bytes": 1384695,
+          "sha256": "375e36df188f70c65b548d7d913807ccaf7b31a53690d156bb0e1430b6848049",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5221 ANO Rotary Encoder",
+      "files": [
+        {
+          "path": "5221 ANO Rotary Encoder/5221 ANO Rotary Encoder.gif",
+          "bytes": 1055323,
+          "sha256": "aff2057480817ba3b90a365a3ecf71947e6c8cd359bb443923470eecb3a8ecf7",
+          "format": "gif",
+          "units": "unknown"
+        },
+        {
+          "path": "5221 ANO Rotary Encoder/5221 ANO Rotary Encoder.jpg",
+          "bytes": 95084,
+          "sha256": "418dcb479f46a835955fb3957d6f2ff8532831fb855cb8a814dc06e082e4b747",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5295 NeoSlider Stemma",
+      "files": [
+        {
+          "path": "5295 NeoSlider Stemma/5295 NeoSlider Stemma.jpg",
+          "bytes": 104630,
+          "sha256": "df07f9ae5134395c9c1511ded07d1194617c7daf917dc038ef085308217a74f1",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5300 ESP32-S2 TFT Feather",
+      "files": [
+        {
+          "path": "5300 ESP32-S2 TFT Feather/5300 ESP32-S2 TFT Feather.gif",
+          "bytes": 1456782,
+          "sha256": "d4d15d3e3471174791307ae3edb788f31c10c310a9bc3d319fa50600ad8c9d92",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5302 KB2040",
+      "files": [
+        {
+          "path": "5302 KB2040/5302-KB2040.gif",
+          "bytes": 2548064,
+          "sha256": "1c389e9156eaa5eab3627913dbb990d214c97e925f68a1015d972920ac1673c2",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5303 Feather ESP32-S2",
+      "files": [
+        {
+          "path": "5303 Feather ESP32-S2/5303 Feather ESP32-S2.jpg",
+          "bytes": 260634,
+          "sha256": "261b02f2abf6952ed50febdc8cf1b93c39e3659833239531c32a64bee2beb369",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5323 Feather ESP32-S3",
+      "files": [
+        {
+          "path": "5323 Feather ESP32-S3/5323 Feather ESP32-S3.jpg",
+          "bytes": 300979,
+          "sha256": "fd11c235abc3701077c5a204124553b81b3f1c01a39c53146300dbf69f22a3e4",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5325 QTPy ESP32S2",
+      "files": [
+        {
+          "path": "5325 QTPy ESP32S2/5325 QTPy ESP32S2.gif",
+          "bytes": 1545569,
+          "sha256": "7899e3e06324218e6445c40b59e1f4f0b0c371266d41e99261025e64531d6343",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5345 Feather ESP32-S2 TFT Reverse",
+      "files": [
+        {
+          "path": "5345 Feather ESP32-S2 TFT Reverse/5345 Feather ESP32-S2 TFT Reverse.jpg",
+          "bytes": 156251,
+          "sha256": "7cce24b6f7b97a68984cb8b724a84a493e07c261552430ecf60b8e3fd7b0d517",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5346 MCP23017 Expander",
+      "files": [
+        {
+          "path": "5346 MCP23017 Expander/5346-MCP23017-Expander.jpg",
+          "bytes": 193741,
+          "sha256": "e5cf0a3a88c6e70f3ec2b062984c041d1e506f580f8e31a18a461313c6000d5d",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5358 Mag Connector (4-pin, Right Angle)",
+      "files": [
+        {
+          "path": "5358 Mag Connector (4-pin, Right Angle)/5358 Mag Connector (4-pin, Right Angle, Pads).png",
+          "bytes": 244335,
+          "sha256": "fb3bba54f4ffe41e42b912b301736142a2daaf963333eb537f7fd4195deed8b5",
+          "format": "png",
+          "units": "unknown"
+        },
+        {
+          "path": "5358 Mag Connector (4-pin, Right Angle)/5358 Mag Connector (4-pin, Right Angle, Pins).png",
+          "bytes": 253088,
+          "sha256": "8f7c6f81f0b05f40754d6d29a6ba40b9f7dee5868fb396fcd719b3069124b690",
+          "format": "png",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5359 Mag Connector (5-pin, Right Angle)",
+      "files": [
+        {
+          "path": "5359 Mag Connector (5-pin, Right Angle)/5359 Mag Connector (5-pin, Right Angle, Pads).PNG",
+          "bytes": 292318,
+          "sha256": "01c951e1d0f5222941b430a1855d3c4d1f730cdb5cbfd83ed68b14fa5c5daf9c",
+          "format": "png",
+          "units": "unknown"
+        },
+        {
+          "path": "5359 Mag Connector (5-pin, Right Angle)/5359 Mag Connector (5-pin, Right Angle, Pins).PNG",
+          "bytes": 298858,
+          "sha256": "9e41ca151b2fb7b3f3602895bbe9adffcbb15f0eff662ad0640be3403f1cd99f",
+          "format": "png",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5360 Mag Connector (3-pin, Right Angle)",
+      "files": [
+        {
+          "path": "5360 Mag Connector (3-pin, Right Angle)/5360 Mag Connector (3-pin, Right Angle, Pads).png",
+          "bytes": 266336,
+          "sha256": "8ecc84e7bf2565fe51013e25d4e734570096062949a6239c63d7f735b324b1ae",
+          "format": "png",
+          "units": "unknown"
+        },
+        {
+          "path": "5360 Mag Connector (3-pin, Right Angle)/5360 Mag Connector (3-pin, Right Angle, Pins).png",
+          "bytes": 270636,
+          "sha256": "ed38a57269605710457bfe7d0b18de5da531c0ed83fab1b4cb08cb4a3460bd05",
+          "format": "png",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5378 VEML7700 Lux Sensor",
+      "files": [
+        {
+          "path": "5378 VEML7700 Lux Sensor/5378 VEML7700 Lux Sensor.jpg",
+          "bytes": 138848,
+          "sha256": "39e5154f2b3d7702bd30b3e0b11132eb96e74950938414fa61f80dbb34881db0",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5394 1.9in TFT Display",
+      "files": [
+        {
+          "path": "5394 1.9in TFT Display/5394 1.9in TFT Display.gif",
+          "bytes": 1338597,
+          "sha256": "942bade513f62cecd6b1da3691bf320ab2cc4c65597c4c25a7c580a9b6fe790d",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5395 QT Py ESP32 PICO",
+      "files": [
+        {
+          "path": "5395 QT Py ESP32 PICO/5395-QT-Py-ESP32-PICO.jpg",
+          "bytes": 332397,
+          "sha256": "8df7e25d29c2f0ee3941206b12b30cc5da4f1814f9b797c1eb88b025cff380ee",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5396 VL53L4CD Sensor",
+      "files": [
+        {
+          "path": "5396 VL53L4CD Sensor/5396-Adafruit-VL53L4CD.jpg",
+          "bytes": 175226,
+          "sha256": "e7674db6eff01464c81400580876ca6727f5daff3d77b04b1e7a290a4ac4d3d0",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5397 Lipo Charger BFF",
+      "files": [
+        {
+          "path": "5397 Lipo Charger BFF/5397 Lipo Charger BFF.jpg",
+          "bytes": 133151,
+          "sha256": "8eba574a386e71a932559ae7fce5e8dbdea0a0f24e3e22694439b9155431da57",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5400 ESP32 Feather V2",
+      "files": [
+        {
+          "path": "5400 ESP32 Feather V2/5400 ESP32 Feather V2.gif",
+          "bytes": 2339709,
+          "sha256": "299de658e9848784556c4bbc59263723eaa705c391aff81127acf913acb8e347",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5405 QTPy ESP32 C3",
+      "files": [
+        {
+          "path": "5405 QTPy ESP32 C3/5405 QTPy ESP32 C3.gif",
+          "bytes": 1526689,
+          "sha256": "e599d861da8eda5996ea9a50482d8c4ad7e3e880e2b4fabd58dadec6a862fd06",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5412 Mag Connector (USB to 4-pin)",
+      "files": [
+        {
+          "path": "5412 Mag Connector (USB to 4-pin)/5412 Mag Connector (4-pin).png",
+          "bytes": 162988,
+          "sha256": "306a42b76c9173c475a2fe0fa60a051cc91fe97c35792c5ef5b43cd27d071755",
+          "format": "png",
+          "units": "unknown"
+        },
+        {
+          "path": "5412 Mag Connector (USB to 4-pin)/5412 Mag Connector (USB Connector).png",
+          "bytes": 183416,
+          "sha256": "93e4dbc5591ad411e9d697a8314a4f3f632daa4aff1c33b7510638c11550f3ee",
+          "format": "png",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5413 Mag Connector (5-pin, Straight)",
+      "files": [
+        {
+          "path": "5413 Mag Connector (5-pin, Straight)/5413 Mag Connector (5-pin, Straight, Pads) - Drawing.jpg",
+          "bytes": 167810,
+          "sha256": "6286a44402f993f6ace1b758bbeb93cfcbc4c50e1f0370e246ff5e465adc6ac5",
+          "format": "jpg",
+          "units": "unknown"
+        },
+        {
+          "path": "5413 Mag Connector (5-pin, Straight)/5413 Mag Connector (5-pin, Straight, Pads).png",
+          "bytes": 202597,
+          "sha256": "3a44e3ec49d51e7e9ae67accc48e4b849457a523a15fa14e75b4e90849a318df",
+          "format": "png",
+          "units": "unknown"
+        },
+        {
+          "path": "5413 Mag Connector (5-pin, Straight)/5413 Mag Connector (5-pin, Straight, Pins) - Drawing.jpg",
+          "bytes": 189906,
+          "sha256": "ef136262d3bbb5d6c13669997a27f8f534ca1cbf9e6f99fff412de520aa4fc88",
+          "format": "jpg",
+          "units": "unknown"
+        },
+        {
+          "path": "5413 Mag Connector (5-pin, Straight)/5413 Mag Connector (5-pin, Straight, Pins).png",
+          "bytes": 227427,
+          "sha256": "d2494066f918664e2cbbbf3a3895cd48c1affc087b99d5e8f955182e184f4c24",
+          "format": "png",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5420 MEMENTO",
+      "files": [
+        {
+          "path": "5420 MEMENTO/5420 MEMENTO.gif",
+          "bytes": 2727791,
+          "sha256": "76c2fbdeb1078090ef18197a73093ad5f3032a989cae7f62cf546ac31d77f051",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5423 TSC2007 I2C Resistive Touch",
+      "files": [
+        {
+          "path": "5423 TSC2007 I2C Resistive Touch/5423 TSC2007 I2C Resistive Touch.jpg",
+          "bytes": 166712,
+          "sha256": "f33826334e527ec92796bfd4424cc2203bf552ae693e055e5759f8532cfc6032",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5426 QT Py ESP32-S3",
+      "files": [
+        {
+          "path": "5426 QT Py ESP32-S3/5426 QT Py ESP32-S3.jpg",
+          "bytes": 261723,
+          "sha256": "c64b76ea25ecf651e0acf5dc1912b264c9572aeb1967393ffe66f8b28ed4a8f7",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5483 Feather ESP32-S3 TFT",
+      "files": [
+        {
+          "path": "5483 Feather ESP32-S3 TFT/5483-Feather-ESP32-S3-TFT.jpg",
+          "bytes": 296136,
+          "sha256": "e88ca8abe4c1f1a0309475a695f37eb9647bdaee700ba7f389145b475c9a5ce9",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5499 PB86-A1R",
+      "files": [
+        {
+          "path": "5499 PB86-A1R/Adafruit PB86-1AR v1.png",
+          "bytes": 118753,
+          "sha256": "579c87536160d749cad1695812e3e5f16e71b6bd2af194056d291625dc8e2a23",
+          "format": "png",
+          "units": "unknown"
+        },
+        {
+          "path": "5499 PB86-A1R/MP86_Dimensions.png",
+          "bytes": 326882,
+          "sha256": "77d6549d2d615ce67b7639b3da007dc09341ed104ef9439389c30c51f85fa215",
+          "format": "png",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5543 LSM6DS3-LIS3MDL",
+      "files": [
+        {
+          "path": "5543 LSM6DS3-LIS3MDL/5543 LSM6DS3-LIS3MDL.jpg",
+          "bytes": 187648,
+          "sha256": "f0f470b87c6d03fa9b1b4c872c375c4203b7195912d698f065f4ae650cf2e645",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5579 MMC5603 Magnetometer",
+      "files": [
+        {
+          "path": "5579 MMC5603 Magnetometer/5579 MMC5603 Magnetometer.jpg",
+          "bytes": 358964,
+          "sha256": "a7d4873ad682740968b5c40d75c14379c45a93f5734abb51622de65a5121381a",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5580 MAX17048",
+      "files": [
+        {
+          "path": "5580 MAX17048/5580 MAX17048.jpg",
+          "bytes": 150110,
+          "sha256": "07b6118bd2c3fa966955e81e1c84d053ba16f50a39e8eb621b54e861f85fd95b",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5606 ENS160 Sensor",
+      "files": [
+        {
+          "path": "5606 ENS160 Sensor/5606 ENS160 Sensor.jpg",
+          "bytes": 195979,
+          "sha256": "dc5213e70decb85eac64443518d7a59a8c0dda6285e1c7c7cd6f164c7252302a",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5625 Stemma 5 Port Hub",
+      "files": [
+        {
+          "path": "5625 Stemma 5 Port Hub/5625 Stemma 5 Port Hub.jpg",
+          "bytes": 131910,
+          "sha256": "735ba420ed0c70fee56d906776ff0f9a73312ebc81f5ab701d9da51463e44546",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5626 PCA9548 Stemma",
+      "files": [
+        {
+          "path": "5626 PCA9548 Stemma/5626 PCA9548 Stemma.jpg",
+          "bytes": 171483,
+          "sha256": "1bf0126e7fb2cf7b9af75f0db1bed9f19bf16387b265ce56e1e36d9ff7744471",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5628 Mini Joycon Thumbstick",
+      "files": [
+        {
+          "path": "5628 Mini Joycon Thumbstick/5628-Mini-Joycon-Thumbstick.jpg",
+          "bytes": 127371,
+          "sha256": "cc24e6fd945ed515df82c922a9f631668f1865166921d91b52fb755f3b2d019a",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5631 PB86 Breakout",
+      "files": [
+        {
+          "path": "5631 PB86 Breakout/5631 PB86 Breakout.jpg",
+          "bytes": 220971,
+          "sha256": "847857f673b033df38c0727d8f486116f4860955a04ac9b8de094cba311ab885",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5639 IR LED Emitter",
+      "files": [
+        {
+          "path": "5639 IR LED Emitter/5639 IR LED Emitter.jpg",
+          "bytes": 109060,
+          "sha256": "d18f95c3793792d03c62498d2810266715336b1ada7a8c4899bc7927649d47d0",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5644 TPS61040 Boost",
+      "files": [
+        {
+          "path": "5644 TPS61040 Boost/5644 TPS61040 Boost.jpg",
+          "bytes": 174308,
+          "sha256": "32b1e5e19ac4112f73461c2a44eaa6ff2997c6c410b0b8a97e1db2ebb9928ed2",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5645 NeoPixel Driver BFF",
+      "files": [
+        {
+          "path": "5645 NeoPixel Driver BFF/5645 NeoPixel Driver BFF.jpg",
+          "bytes": 160040,
+          "sha256": "c1a43a569ef8d8e1982bcd0781977b8eee65f57d917982df8d8d3b96deec6d08",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5646 NeoPixel Grid 5x5 BFF",
+      "files": [
+        {
+          "path": "5646 NeoPixel Grid 5x5 BFF/5646 NeoPixel Grid 5x5 BFF.jpg",
+          "bytes": 119660,
+          "sha256": "886f42dc703b5076a2b54eeccb2aea1ba47fb4bffe893c606968bddbd6a5447d",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5648 MOSFET Driver",
+      "files": [
+        {
+          "path": "5648 MOSFET Driver/5648 MOSFET Driver.jpg",
+          "bytes": 171185,
+          "sha256": "d70db704983ab68df0ca151c04bd3c5ed86e1d8a8b418aa44a738f55d9ae13d8",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5649 3V to 5V Level Booster",
+      "files": [
+        {
+          "path": "5649 3V to 5V Level Booster/5649 3V to 5V Level Booster.jpg",
+          "bytes": 289742,
+          "sha256": "316bf5bc0fe17b0d0445a4b235193493ab2f811d02a916c37763436e3bd3c32b",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5650 Feather RP2040 Scorpio",
+      "files": [
+        {
+          "path": "5650 Feather RP2040 Scorpio/5650-Feather-RP2040-Scorpio.jpg",
+          "bytes": 278534,
+          "sha256": "84cacbd7243683dbabba8f1805ac76c5cafb51e70aa731aa87c180056bcf6f83",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5663 PCA9546 Multiplexer",
+      "files": [
+        {
+          "path": "5663 PCA9546 Multiplexer/5663 PCA9546 Multiplexer.jpg",
+          "bytes": 220895,
+          "sha256": "97a1b0e1086e10c69cf45069d84e7b0122d4b8556efbad03c64094dac3e6c4b6",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5664 PCA9546 Stemma QT",
+      "files": [
+        {
+          "path": "5664 PCA9546 Stemma QT/5664 PCA9546 Stemma QT.jpg",
+          "bytes": 201999,
+          "sha256": "3e54fdc6372a53aa7921e82e5e45a0921016fece1f4b0cd92d0f64181e8e9774",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5665 SHT45 Sensor",
+      "files": [
+        {
+          "path": "5665 SHT45 Sensor/5665 SHT45 Sensor.jpg",
+          "bytes": 239214,
+          "sha256": "ae4a5f98f685cfed1b351c0823e51c1193e9457e8063fcb236a6a5d03685de4d",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5666 Iot Button NeoPixel BFF",
+      "files": [
+        {
+          "path": "5666 Iot Button NeoPixel BFF/5666 Iot Button NeoPixel BFF.jpg",
+          "bytes": 130316,
+          "sha256": "9b09131ab57fc61e5c9f50d226881a277e06092d346243fc1e836c2525b32a10",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5691 Feather ESP32 S3 Reverse TFT",
+      "files": [
+        {
+          "path": "5691 Feather ESP32 S3 Reverse TFT/5691 ESP32 S3 Reverse TFT Feather.jpg",
+          "bytes": 165212,
+          "sha256": "cb769885d1eb4e902e35f78b9a9c2b0e368439379739d1ceefb30f76ef4854cd",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5703 PiCowbell Adalogger",
+      "files": [
+        {
+          "path": "5703 PiCowbell Adalogger/5703 PiCowbell Adalogger.jpg",
+          "bytes": 348525,
+          "sha256": "2ed76a5416d42a123643a53aaf143758f006a9e5a7bbe490e520d81801609a61",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5708 CAN Pal",
+      "files": [
+        {
+          "path": "5708 CAN Pal/5708 CAN Pal.jpg",
+          "bytes": 294785,
+          "sha256": "ae74e9bc86c57dd99dce637289a8537214a2c17b8d04270378d7e11ecd3d41ab",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5710 Feather RP2040 DVI",
+      "files": [
+        {
+          "path": "5710 Feather RP2040 DVI/5710 Feather RP2040 DVI.jpg",
+          "bytes": 262987,
+          "sha256": "dba963098a7edf90cc03e37ef68d83e3694082f6b43c8464a7f783141d581cd1",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5712 Feather RP2040 RFM69",
+      "files": [
+        {
+          "path": "5712 Feather RP2040 RFM69/5712 Feather RP2040 RFM69.jpg",
+          "bytes": 269781,
+          "sha256": "72fa817da3a364447c12be81e61a4c5aa4077dcfd03ddd203f9f43c79ee17157",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5723 Feather RP2040 USB Host",
+      "files": [
+        {
+          "path": "5723 Feather RP2040 USB Host/5723 Feather RP2040 USB Host.jpg",
+          "bytes": 272401,
+          "sha256": "a44577981f18827317d91334ff5e778182e2e61352e317198f2dc293ec356390",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5724 Feather RP2040 CAN",
+      "files": [
+        {
+          "path": "5724 Feather RP2040 CAN/5724 Feather RP2040 CAN.jpg",
+          "bytes": 349506,
+          "sha256": "f23e732a64665ec9fd39ed4820de0736643e9114674600f3f331861d245afa5b",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5740 ANO Rotary Encoder QT",
+      "files": [
+        {
+          "path": "5740 ANO Rotary Encoder QT/5740 ANO Rotary Encoder QT.jpg",
+          "bytes": 210854,
+          "sha256": "8ed359a5d4b71a69f8c0982a508f06761d98950aed95008ff9cc243bd9a4a25a",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5743 Mini Gamepad STEMMA QT",
+      "files": [
+        {
+          "path": "5743 Mini Gamepad STEMMA QT/5743 Mini Gamepad STEMMA QT.jpg",
+          "bytes": 167120,
+          "sha256": "50c3cd88d40e5f47f81e289e1bf234ca71484b978064373a7bb66b815abacc8b",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5745 PiCowbell DVI",
+      "files": [
+        {
+          "path": "5745 PiCowbell DVI/5745-PiCowbell-DVI.jpg",
+          "bytes": 510994,
+          "sha256": "9cc5f403cca3d7a6cf8e1c21c340eba35d11cfbe9069d1ca7f72c2eb2407df7b",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5752 Quad Rotary Breakout",
+      "files": [
+        {
+          "path": "5752 Quad Rotary Breakout/5752 Quad Rotary Breakout.jpg",
+          "bytes": 160706,
+          "sha256": "d308369742a7fa5931d310227c8d9cac93fe6bd13247fd750db29467cf12b972",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5753 PC Joystick Adapter",
+      "files": [
+        {
+          "path": "5753 PC Joystick Adapter/5753 PC Joystick Adapter.jpg",
+          "bytes": 207781,
+          "sha256": "ae595c5dc1fa6e798ae648efb35d93be257cd6ed5fbe71df42ad96f9d77ec227",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5766 NeoDriver STEMMA QT",
+      "files": [
+        {
+          "path": "5766 NeoDriver STEMMA QT/5766 NeoDriver STEMMA QT.jpg",
+          "bytes": 200336,
+          "sha256": "63ceb9f0312bfb942ba7c5e8cebaf845c3fc1318afc6b095c9741e5a303761f9",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5768 Feather RP2040 PropMaker",
+      "files": [
+        {
+          "path": "5768 Feather RP2040 PropMaker/5768-Feather-RP2040-PropMaker.jpg",
+          "bytes": 254665,
+          "sha256": "487ac8a718f83a85cc3cea57192fbce2e835c8c70ef18e89b5b935d85970b190",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5769 Audio BFF",
+      "files": [
+        {
+          "path": "5769 Audio BFF/5769 Audio BFF.jpg",
+          "bytes": 186314,
+          "sha256": "33adbb05321189230cc279439c6fe5efaef43395129e7147701c2747f396b008",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5778 Matrix Portal S3",
+      "files": [
+        {
+          "path": "5778 Matrix Portal S3/5778 Matrix Portal S3.jpg",
+          "bytes": 215688,
+          "sha256": "2798819152742975bc443dd1a177d2c4be79f4914697a2996908e9e9ea1ba086",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5800 Qualia ESP32-S3",
+      "files": [
+        {
+          "path": "5800 Qualia ESP32-S3/5800-Qualia-ESP32-S3.jpg",
+          "bytes": 276275,
+          "sha256": "105427b7f5cbfcfc6d7d10d7555e4596f7aa8593b2d0d10d79fe4f0845cab92b",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5807 HUSB238 Breakout",
+      "files": [
+        {
+          "path": "5807 HUSB238 Breakout/5807 HUSB238 Breakout.jpg",
+          "bytes": 166790,
+          "sha256": "2733d7a64631040951955f2e02fc015b0743ed6f3a15a0188b56d9c3af1ec8e0",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5810 VCNL4020 Sensor",
+      "files": [
+        {
+          "path": "5810 VCNL4020 Sensor/5810 VCNL4020 Sensor.jpg",
+          "bytes": 325679,
+          "sha256": "b507fedd549ff238141eced306e5e003e04073d4fa2de6ac1d91ea179791f0a9",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5832 INA228 STEMMA QT",
+      "files": [
+        {
+          "path": "5832 INA228 STEMMA QT/5832 INA228 STEMMA QT.jpg",
+          "bytes": 156192,
+          "sha256": "6176d29668796c3d1dad797ff7f924d081c96b8c0bf8d0ed043bbe4d952a046a",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5858 USB Host FeatherWing",
+      "files": [
+        {
+          "path": "5858 USB Host FeatherWing/5858 USB Host FeatherWing.jpg",
+          "bytes": 227457,
+          "sha256": "55cd0260adb13d769c374799000424ee173e695c42e583f4b39f7045c458eccb",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5877 CAN Bus BFF",
+      "files": [
+        {
+          "path": "5877 CAN Bus BFF/5877 CAN Bus BFF.jpg",
+          "bytes": 291658,
+          "sha256": "0e0df35d21ab069d312da1f99c3fa31f91357748f07ed37bcb43f587b65ab8ee",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5880 Rotary Encoder I2C STEMMA QT",
+      "files": [
+        {
+          "path": "5880 Rotary Encoder I2C STEMMA QT/5880 Rotary Encoder I2C STEMMA QT.jpg",
+          "bytes": 242229,
+          "sha256": "e7a291f5515c83abd195bdcee861da057d564b55a920d699c1e10c29e807d19c",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5889 ItsyBitsy ESP32",
+      "files": [
+        {
+          "path": "5889 ItsyBitsy ESP32/5889 ItsyBitsy ESP32.jpg",
+          "bytes": 174214,
+          "sha256": "b88615298cc6d15751cedea4408a60f71a8fc6fc40ca20cd78065acdb91fa9d6",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5905 Proto PiCowBell",
+      "files": [
+        {
+          "path": "5905 Proto PiCowBell/5905 Proto PiCowBell.jpg",
+          "bytes": 294952,
+          "sha256": "ee68d9f108b6678a0af700d4f9c53a9afbbb56856630fabe68c3ac5d393d4002",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5906 Proto Doubler PiCowBell",
+      "files": [
+        {
+          "path": "5906 Proto Doubler PiCowBell/5906 Proto Doubler PiCowBell.jpg",
+          "bytes": 292687,
+          "sha256": "f97d2221419e48fc0eab366bdc35288ddb3ecfa83f18c57fd6ef83b21db09a00",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5907 Terminal PiCowbell",
+      "files": [
+        {
+          "path": "5907 Terminal PiCowbell/5907-Terminal-PiCowbell.jpg",
+          "bytes": 445928,
+          "sha256": "f9638ca986c63365a98266233906a7959d56965c5b86a38b1ac477cc9dbc8082",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5913 TCRT1000 Sensor",
+      "files": [
+        {
+          "path": "5913 TCRT1000 Sensor/5913 TCRT1000 Sensor.jpg",
+          "bytes": 174557,
+          "sha256": "fc99c6c0316127ce71c216e10a820a7d8798b2064bbfce7ba1fa351de622d809",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5939 IR Remote Receiver",
+      "files": [
+        {
+          "path": "5939 IR Remote Receiver/5939 IR Remote Receiver.jpg",
+          "bytes": 168080,
+          "sha256": "5b5608c8d7c3a27808801422bf80a29262b06de7227fb92bb73cd6d13cdd2ca7",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5945 PiCowbell Camera",
+      "files": [
+        {
+          "path": "5945 PiCowbell Camera/5945-PiCowbell-Camera.jpg",
+          "bytes": 446152,
+          "sha256": "a335206fa8e744b80b2a2ffff637cfd7cada68b063d25380114e83b4c89b4d89",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5953 Pixel Trinkey",
+      "files": [
+        {
+          "path": "5953 Pixel Trinkey/5953 Pixel Trinkey.jpg",
+          "bytes": 111068,
+          "sha256": "4307f71c1cd90b422c89cdf8a766ca74a0cecb28795e9d5f0cc0d6a5ea795360",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5954 TRRS Trinkey",
+      "files": [
+        {
+          "path": "5954 TRRS Trinkey/5954 TRRS Trinkey.jpg",
+          "bytes": 133793,
+          "sha256": "9162916e9cbb9264930a8bfb13fc62ee8d0817a8ac6082f64d736b9aceb6c2ff",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5964 SEN5X Adapter Breakout",
+      "files": [
+        {
+          "path": "5964 SEN5X Adapter Breakout/5964 SEN5X Adapter Breakout.jpg",
+          "bytes": 343412,
+          "sha256": "1233fe42732879fc9b177797b6805aaccaaa925a2a1a598e6b3f3f94f3a602fb",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5967 Proto Tripler PiCowBell",
+      "files": [
+        {
+          "path": "5967 Proto Tripler PiCowBell/5967 Proto Tripler PiCowBell.jpg",
+          "bytes": 352100,
+          "sha256": "39ee31a2fdc42afaf1a6310e76b8237476c319a8874d2b7d4bef97e540aa0694",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5975 NeoPixel Breakout",
+      "files": [
+        {
+          "path": "5975 NeoPixel Breakout/5975 NeoPixel Breakout.jpg",
+          "bytes": 120106,
+          "sha256": "ee7e190ac8cc27ace1b3199db9e9f85a03b030d1c96961fc5555f89106903349",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5978 USB-C Plug Breakout",
+      "files": [
+        {
+          "path": "5978 USB-C Plug Breakout/5978-USB-C-Plug-Breakout.jpg",
+          "bytes": 123819,
+          "sha256": "a84823541011b2a9c22e8024025e64ef11c8ab67f8358d03d76896a685a073b8",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5980 Feather RP2040 Adalogger",
+      "files": [
+        {
+          "path": "5980 Feather RP2040 Adalogger/5980 Feather RP2040 Adalogger.jpg",
+          "bytes": 412294,
+          "sha256": "44e5a44afa485580a71514c96d9ddcf08588015fe4f20c0eaba7453663f00c69",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5988 RS-232 Level Shifter",
+      "files": [
+        {
+          "path": "5988 RS-232 Level Shifter/5988 RS-232 Level Shifter.jpg",
+          "bytes": 200065,
+          "sha256": "72b2f467de794b860207b2dfb72320e459589768de72557bc9e05dfacd029d89",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5991 HUSB238 USBC",
+      "files": [
+        {
+          "path": "5991 HUSB238 USBC/5991 HUSB238 USBC.jpg",
+          "bytes": 221829,
+          "sha256": "c45696bcd7880ca209074f04401ff520113cc45e0ee5c6e5c653b3f5539c2026",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5993 USB-C Vertical Breakout",
+      "files": [
+        {
+          "path": "5993 USB-C Vertical Breakout/5993-USB-C-Vertical-Breakout.jpg",
+          "bytes": 267101,
+          "sha256": "6391f2c6bb33061624e05aa5f03d6f08255fae8b449cd0a769fbd67f76afd635",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5997 CH334F 4-Port Hub",
+      "files": [
+        {
+          "path": "5997 CH334F 4-Port Hub/5997-CH334F-4-Port-Hub.jpg",
+          "bytes": 394709,
+          "sha256": "1efaecfcdb526704e663e9653b44f52a7bcc232e1e0d6b9da8ed7a0019b8c874",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5999 CH334F 2-Port HUB",
+      "files": [
+        {
+          "path": "5999 CH334F 2-Port HUB/5999 CH334F 2-Port HUB.jpg",
+          "bytes": 188752,
+          "sha256": "260aaf29e2db8d05a23a5a3d2a43ce380707abb7bcdaa1c23e7aef93075b980e",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6000 Feather RP2350",
+      "files": [
+        {
+          "path": "6000 Feather RP2350/6000 Feather RP2350.jpg",
+          "bytes": 302592,
+          "sha256": "971aa9a28b838ad6ea25abc2d87e3227cec407918d8710b37994b5b370397095",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6003 Metro RP2350",
+      "files": [
+        {
+          "path": "6003 Metro RP2350/6003 Metro RP2350.jpg",
+          "bytes": 425399,
+          "sha256": "b1fab22477a46b2d583527e79a2e310bfcacb920f9e07cba007ceeaa8ba9a46e",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6049 I2S MEMS Microphone",
+      "files": [
+        {
+          "path": "6049 I2S MEMS Microphone/6049 I2S MEMS Microphone.jpg",
+          "bytes": 154084,
+          "sha256": "97fde7f6fe9b0d6a491261572c441d1b743cd24f291236d8a833c65a95373f85",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6055 HSTX to DVI Adapter",
+      "files": [
+        {
+          "path": "6055 HSTX to DVI Adapter/6055 HSTX to DVI Adapter.jpg",
+          "bytes": 291814,
+          "sha256": "2d7abdab900a0d4359f1e4caaf4a5d4acc208bb77901c0b5c9b7aa6a889e10d8",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6062 INA3221 Power Monitor",
+      "files": [
+        {
+          "path": "6062 INA3221 Power Monitor/6062-INA3221-Power-Monitor.jpg",
+          "bytes": 334277,
+          "sha256": "978525a1a78e5dba544a86e7de96fcb480bec58745d6204291c3be6fc9796d29",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6064 VCNL4200 Breakout",
+      "files": [
+        {
+          "path": "6064 VCNL4200 Breakout/6064 VCNL4200 Breakout.jpg",
+          "bytes": 349138,
+          "sha256": "d0dc0df3e1e0c2514db76f1a227339cd0dbb98a13faa6e217cdb76d190b0e7b5",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6066 Pixel Shifter",
+      "files": [
+        {
+          "path": "6066 Pixel Shifter/6066 Pixel Shifter.jpg",
+          "bytes": 281992,
+          "sha256": "a2169fa8f5f0f75fb9f42bf0ce8dbe362ffa06ad74e45e546978a19222a700e4",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6067 LPS28 Pressure Sensor",
+      "files": [
+        {
+          "path": "6067 LPS28 Pressure Sensor/Adafruit LPS28 Pressure Sensor.jpg",
+          "bytes": 268344,
+          "sha256": "18739feb236eb0b9c158be398699974aa36398376e51a188fe438e090651643f",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6091 bq25185 USB Charger",
+      "files": [
+        {
+          "path": "6091 bq25185 USB Charger/6091 bq25185 USB Charger.jpg",
+          "bytes": 429176,
+          "sha256": "da20a33b9f5737b6d844138acb88d9d4f66e67c82544376af5eb3903ad481071",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6092 BQ25185 3V Buck",
+      "files": [
+        {
+          "path": "6092 BQ25185 3V Buck/6092 BQ25185 3V Buck.jpg",
+          "bytes": 285822,
+          "sha256": "4ee50e6755ffe21917d2bacd75fc233edb25f38ab7975f0a72bb65122f0c4fb0",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6100 Sparkle Motion",
+      "files": [
+        {
+          "path": "6100 Sparkle Motion/6100 Sparkle Motion.jpg",
+          "bytes": 394780,
+          "sha256": "55fcabde266fa8dac993c28ae1b4d160fd584d8e07502cf20869f2143817cc4d",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6106 BQ25185 5V",
+      "files": [
+        {
+          "path": "6106 BQ25185 5V/6106 BQ25185 5V.jpg",
+          "bytes": 221959,
+          "sha256": "bf2e2281c312bc7c5abe84f2bda6ff2e7a5d8d637c5a8429f44c6ce34a6c0404",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6109 A4988 Driver",
+      "files": [
+        {
+          "path": "6109 A4988 Driver/6109 A4988 Driver.jpg",
+          "bytes": 358905,
+          "sha256": "88014d587203648aba9782b63dd176832d4c915df7d80388ab1bf2aa9040ea05",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6118 USB-C HDMI Extension Cable",
+      "files": [
+        {
+          "path": "6118 USB-C HDMI Extension Cable/6118 USB-C HDMI Extension Cable.jpg",
+          "bytes": 97232,
+          "sha256": "c823c2d0d0d94b4b9b8cf2ba020872666673a9a53f3effb068753daf7677587c",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6121 TMC2209 Driver",
+      "files": [
+        {
+          "path": "6121 TMC2209 Driver/6121-TMC2209-Driver.jpg",
+          "bytes": 331962,
+          "sha256": "1a6fa143c77e705af66f096af61dfed493ffd1f0374e8b34dd77133136820bd9",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6160 Sparkle Motion Mini",
+      "files": [
+        {
+          "path": "6160 Sparkle Motion Mini/6160 Sparkle Motion Mini.jpg",
+          "bytes": 354776,
+          "sha256": "3128a72da7079675a5f0768a2bf335881e7509915779590c4738a552df8470a6",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6178 1.28in Round TFT",
+      "files": [
+        {
+          "path": "6178 1.28in Round TFT/6178 1.28in Round TFT.jpg",
+          "bytes": 138507,
+          "sha256": "595e6aff5dad6ba8a903f8d9cb650f10452eb68ca9bd0c1df393f728347572a1",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6200 Fruit Jam",
+      "files": [
+        {
+          "path": "6200 Fruit Jam/6200 Fruit Jam.jpg",
+          "bytes": 428881,
+          "sha256": "d084106d4fea05889304128df27d2e29380aa4a83697a0220d74ca0b2ba72b14",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6223 DAC7578 Breakout",
+      "files": [
+        {
+          "path": "6223 DAC7578 Breakout/6223 DAC7578 Breakout.jpg",
+          "bytes": 314724,
+          "sha256": "7d35cf9adb4e788e35312b475c186f90d2eee3a13ac26e4448f867e1e04f82f5",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6241 Feather DVI Case",
+      "files": [
+        {
+          "path": "6241 Feather DVI Case/6241 Feather DVI Case.jpg",
+          "bytes": 227885,
+          "sha256": "270e0b03fcb45ecc5f1fda0d7363841e853a952ab193c977825ec08624015bfb",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6250 PCM510x I2S DAC",
+      "files": [
+        {
+          "path": "6250 PCM510x I2S DAC/6250 PCM510x I2S DAC.jpg",
+          "bytes": 336862,
+          "sha256": "3dc105e53ae93c447406e20f5eddd19712de466ec513a4cdc9af07d5c2cde726",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6252 Pico Case",
+      "files": [
+        {
+          "path": "6252 Pico Case/6252 Pico Case.jpg",
+          "bytes": 230309,
+          "sha256": "2c692f24332d29a7af034d3ce23e3e5799d1ee32b4fa1770b72c096c14c4e2d9",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6280 TPS65131 Boost Converter",
+      "files": [
+        {
+          "path": "6280 TPS65131 Boost Converter/6280-TPS65131-Boost-Converter.jpg",
+          "bytes": 321626,
+          "sha256": "a833a05a6a6f34bec1da267312856c4bddc52fc2ac31f7d631161e27e3f9bc0c",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6299 Mini Sparkle Motion Case",
+      "files": [
+        {
+          "path": "6299 Mini Sparkle Motion Case/6299 Mini Sparkle Motion Case.jpg",
+          "bytes": 189589,
+          "sha256": "366ddd9968fffd154cf3fec749166b1a0dbcf57fac56dbed24a8a5f930582468",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6301 Sparkle Motion Case",
+      "files": [
+        {
+          "path": "6301 Sparkle Motion Case/6301 Sparkle Motion Case.jpg",
+          "bytes": 240652,
+          "sha256": "225610c5174f16264db2801c4bb49ecf49689a30af4988bcf73f6fbaf1a7194b",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6309 TLV320DAC3100 I2S DAC",
+      "files": [
+        {
+          "path": "6309 TLV320DAC3100 I2S DAC/6309 TLV320DAC3100 I2S DAC.jpg",
+          "bytes": 372572,
+          "sha256": "34b69536d69b3883bc0fede6cd14b072b41cb634bbaf590190003df669ea83fa",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6318 Solenoid Driver 8 Channel",
+      "files": [
+        {
+          "path": "6318 Solenoid Driver 8 Channel/6318-Solenoid-Driver-8-Channel.jpg",
+          "bytes": 447801,
+          "sha256": "6a50e0db9ba9131dc495adc49c07f8f5cabe015be2c6d6186346d66711b127a4",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6323 USB C Fixer",
+      "files": [
+        {
+          "path": "6323 USB C Fixer/6323 USB C Fixer.jpg",
+          "bytes": 247339,
+          "sha256": "1a35b79d4d3409f65d44dfc0ce4eb798c07dd5f95afa58f5e0ff9ab7674b902d",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6331 SEN6X Breakout",
+      "files": [
+        {
+          "path": "6331 SEN6X Breakout/6331 SEN6X Breakout.jpg",
+          "bytes": 320906,
+          "sha256": "f3ec488aa358e214b53ffb71f0214d538844fcc5f8ec11413164c22ee7f6cc6a",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6332 Sparkle Motion Stick",
+      "files": [
+        {
+          "path": "6332 Sparkle Motion Stick/6332 Sparkle Motion Stick.jpg",
+          "bytes": 350894,
+          "sha256": "031ff6d7e7a8beecb9e3b514802e1981983897fc4bc86f8f3bfeb9e148d94bc3",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6335 OPT4048 XYZ Color Sensor",
+      "files": [
+        {
+          "path": "6335 OPT4048 XYZ Color Sensor/6335 OPT4048 XYZ Color Sensor.jpg",
+          "bytes": 342883,
+          "sha256": "242dcbd26b676e1c9e7927a20abc690f38b39333e1e102b651721c17f62dd1ad",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6340 INA237 Power Monitor",
+      "files": [
+        {
+          "path": "6340 INA237 Power Monitor/6340-INA237-Power-Monitor.jpg",
+          "bytes": 244762,
+          "sha256": "7da7d36f32f7906288c55e79e40856b1f5f035a493fe056d4fc32ccc4bf70ca1",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6348 Wiz5500 Ethernet Breakout",
+      "files": [
+        {
+          "path": "6348 Wiz5500 Ethernet Breakout/6348 Wiz5500 Ethernet Breakout.jpg",
+          "bytes": 323554,
+          "sha256": "8700097fc7459c67be1c9efec38a5191232a5ad3752755040026ddd0791b71e3",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6353 STSPIN220 Stepper Motor Driver",
+      "files": [
+        {
+          "path": "6353 STSPIN220 Stepper Motor Driver/6353 STSPIN220 Stepper Motor Driver.jpg",
+          "bytes": 399934,
+          "sha256": "e5d7a742a7aa2ec66cc73ec1a35c92c0d210f98bb547b7ad0b75a615b9f8fe2a",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6354 TPS61169 Constant Current",
+      "files": [
+        {
+          "path": "6354 TPS61169 Constant Current/6354 TPS61169 Constant Current.jpg",
+          "bytes": 314190,
+          "sha256": "c13adc6c602e899cfb14733ce66babc644bacdd79bf230fdbacb243338eeaa9e",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6357 AS5600 Magnetic Sensor",
+      "files": [
+        {
+          "path": "6357 AS5600 Magnetic Sensor/6357 AS5600 Magnetic Sensor.jpg",
+          "bytes": 325575,
+          "sha256": "a70f2080e650a75e7dac977dc87b1ab663fc7e846ecb2345da5cb1a40fe99215",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6358 Triple LED Matrix Bonnet",
+      "files": [
+        {
+          "path": "6358 Triple LED Matrix Bonnet/6358 Triple LED Matrix Bonnet.jpg",
+          "bytes": 194458,
+          "sha256": "93a7c29ffe24e9813f152b301d8e8b273ee073e7f52c573720955e3e1edaacdb",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6359 LM73100 Ideal Diode",
+      "files": [
+        {
+          "path": "6359 LM73100 Ideal Diode/6359 LM73100 Ideal Diode.jpg",
+          "bytes": 344906,
+          "sha256": "f700e47ccbcff411d24a833ed5a528e6b82b89b827edf597f7377aedb0b874af",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6362 Simple Soil Moisture Sensor",
+      "files": [
+        {
+          "path": "6362 Simple Soil Moisture Sensor/6362 Simple Soil Moisture Sensor.jpg",
+          "bytes": 192573,
+          "sha256": "3823efb9dbbfbfa7686f4ba436edbaa14622964865ad82f42b842e0a3840d091",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6363 PiCowBell HSTX DVI",
+      "files": [
+        {
+          "path": "6363 PiCowBell HSTX DVI/6363 PiCowBell HSTX DVI.jpg",
+          "bytes": 423212,
+          "sha256": "7beea01cf3a09e0a3ed8ebce4d0d38762bded6b2b206329afb2e4e58019c7702",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6365 Pi STEMMA QT Breakout",
+      "files": [
+        {
+          "path": "6365 Pi STEMMA QT Breakout/6365 Pi STEMMA QT Breakout.jpg",
+          "bytes": 178321,
+          "sha256": "16aecee593cbd533374af68a9fc8de9c3c0f104d774d7f8c2f3a93359187439e",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6366 2.13in Tri-Color eInk",
+      "files": [
+        {
+          "path": "6366 2.13in Tri-Color eInk/6366 2.13in Tri-Color eInk.jpg",
+          "bytes": 234448,
+          "sha256": "718a165139e4bb8be231a7cf81215ff8fd906666cc337e8b325dcb4dd4526b2a",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6387 NeoPot",
+      "files": [
+        {
+          "path": "6387 NeoPot/6387 NeoPot.jpg",
+          "bytes": 215864,
+          "sha256": "e7b4967c01fefed49eff43c594ffc89f7c6cbf9e595351e2078a18f1da465433",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6388 QMC5883P Magnetometer",
+      "files": [
+        {
+          "path": "6388 QMC5883P Magnetometer/6388 QMC5883P Magnetometer.jpg",
+          "bytes": 277424,
+          "sha256": "53175760442b5dae5d7fb68386e07512a7c71fcfd0a98dd7f3eef20a613365c4",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6403 MLX90632 FIR Sensor",
+      "files": [
+        {
+          "path": "6403 MLX90632 FIR Sensor/6403 MLX90632 FIR Sensor.jpg",
+          "bytes": 245452,
+          "sha256": "a7d5c5a36c8e3c1cc879cc16d00f0101988872edcc7c2e6ffbe92a9c94e0e944",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6413 BMP585 Pressure Sensor",
+      "files": [
+        {
+          "path": "6413 BMP585 Pressure Sensor/6413 BMP585 Pressure Sensor.jpg",
+          "bytes": 253789,
+          "sha256": "345f5dcd477173aaeed4150be5739a629bba0e1f7d36835d56ad112f30b0d0ac",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6418 E-Ink Bonnet",
+      "files": [
+        {
+          "path": "6418 E-Ink Bonnet/6418 E-Ink Bonnet.jpg",
+          "bytes": 413586,
+          "sha256": "ae416215abf923c10b8e25b200b5609ef21685dc2a17c8c1c19447f4c1584f86",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6420 SPA006-003 Temp Pressure Sensor",
+      "files": [
+        {
+          "path": "6420 SPA006-003 Temp Pressure Sensor/6420 SPA006-003 Temp Pressure Sensor.jpg",
+          "bytes": 327421,
+          "sha256": "105aa851f42b055746beab953ff8cca409a1cbf178024052bad18be09c3edd0c",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6421 PCM5122 I2S DAC",
+      "files": [
+        {
+          "path": "6421 PCM5122 I2S DAC/6421 PCM5122 I2S DAC.jpg",
+          "bytes": 346245,
+          "sha256": "54abbac134b0bdc4e86e37a648ab21bdf599ba20a5266be0b36894a6b2ada303",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6426 STHS34PF80 IR Presence Sensor",
+      "files": [
+        {
+          "path": "6426 STHS34PF80 IR Presence Sensor/6426 STHS34PF80 IR Presence Sensor.jpg",
+          "bytes": 200922,
+          "sha256": "0fcf6b538ec851230d317355e4bdb50b926b624104f82526cbae9108155e6958",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6431 ENS161 MOX Gas Sensor",
+      "files": [
+        {
+          "path": "6431 ENS161 MOX Gas Sensor/6431 ENS161 MOX Gas Sensor.jpg",
+          "bytes": 270643,
+          "sha256": "c423306d2bf8e6260805b20ab096e42e19770994f5f8ac113f028e2e956895dd",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6494 ADS7128 ADC GPIO Expander",
+      "files": [
+        {
+          "path": "6494 ADS7128 ADC GPIO Expander/6494 ADS7128 ADC GPIO Expander.jpg",
+          "bytes": 421561,
+          "sha256": "c13ad9876fc77c87bc47bb48139153bca1c47bb8eb6a07fed7433c7408385094",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6495 Terminal Block BFF",
+      "files": [
+        {
+          "path": "6495 Terminal Block BFF/6495 Terminal Block BFF.jpg",
+          "bytes": 268752,
+          "sha256": "bda6943fc48b987d684e48ab794990f60123cfdfb07b39dd79b120346ea351b4",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6498 MAX44009 Light Sensor",
+      "files": [
+        {
+          "path": "6498 MAX44009 Light Sensor/6498 MAX44009 Light Sensor.jpg",
+          "bytes": 247383,
+          "sha256": "0531bbd21528eeb362ea1f9872e08cf4194fcbb7d203bbdc0f5fd0f67727219d",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6501 TMF8806 ToF Sensor",
+      "files": [
+        {
+          "path": "6501 TMF8806 ToF Sensor/6501 TMF8806 ToF Sensor.jpg",
+          "bytes": 336270,
+          "sha256": "9e3bd4d64b1d454de66a2a831e98942b966b81792d7bc51cdfb215b02d408046",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6513 MAX98357 Stereo Amp",
+      "files": [
+        {
+          "path": "6513 MAX98357 Stereo Amp/6513 MAX98357 Stereo Amp.jpg",
+          "bytes": 303253,
+          "sha256": "b5f9221ffbf124cb6a49d107bd1cd2301f315a1797891178f8724a43f9bec85a",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6516 GP8403 I2C DAC",
+      "files": [
+        {
+          "path": "6516 GP8403 I2C DAC/6516 GP8403 I2C DAC.jpg",
+          "bytes": 375202,
+          "sha256": "011d7cfd5a67100c529cfce2d1d1697b5c9233347e845158154868ce95389228",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6522 TMF8801 ToF Sensor",
+      "files": [
+        {
+          "path": "6522 TMF8801 ToF Sensor/6522 TMF8801 ToF Sensor.jpg",
+          "bytes": 422128,
+          "sha256": "9aabc2224ee26ea874d98e1a8b280050bf81506c2e9984922d7a63598b8742ec",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6524 TSL2585 UVA Ambient Light Sensor",
+      "files": [
+        {
+          "path": "6524 TSL2585 UVA Ambient Light Sensor/6524 TSL2585 UVA Ambient Light Sensor.jpg",
+          "bytes": 422612,
+          "sha256": "ba01748aa595f44c1b94411084d33195f18c15dce3c8a89279d5113c1d2e8815",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6525 TCS3448 Light Color Sensor",
+      "files": [
+        {
+          "path": "6525 TCS3448 Light Color Sensor/6525 TCS3448 Light Color Sensor.jpg",
+          "bytes": 368079,
+          "sha256": "c0da1d007754654233e1ccd8998c126462a94fc352f49dd27b928c0743f74ae3",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6536 Metro ESP32-P4 rev A1",
+      "files": [
+        {
+          "path": "6536 Metro ESP32-P4 rev A1/6536 Metro ESP32-P4 rev A1.jpg",
+          "bytes": 256258,
+          "sha256": "5d9674a1860cf529453a8a141b53ec812d34afcc2cb1b5858d531be1b65e2909",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6538 RV-8803 RTC Breakout",
+      "files": [
+        {
+          "path": "6538 RV-8803 RTC Breakout/6538 RV-8803 RTC Breakout.jpg",
+          "bytes": 331329,
+          "sha256": "115ef868b432fd5eef418afe18248e2c544cb5465cbde7b729fd1fe5bdabf0d1",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "815 Servo Driver 16 Channel",
+      "files": [
+        {
+          "path": "815 Servo Driver 16 Channel/815 Servo Driver 16 Channel.jpg",
+          "bytes": 288344,
+          "sha256": "054d780a2999a6bdfc01a4821922b2fadf1ab56a8bf67ee44fbcf81b8ad18dd7",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "870 Mini 8x8 LED Matrix Backpack",
+      "files": [
+        {
+          "path": "870 Mini 8x8 LED Matrix Backpack/870 Mini 8x8 LED Matrix Backpack.gif",
+          "bytes": 516841,
+          "sha256": "47ce770e2a014a3e6ea720369bd18277ec04b3c7199c00a5722f01cd6ed19061",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "904 INA219 Stemma",
+      "files": [
+        {
+          "path": "904 INA219 Stemma/904 INA219 Stemma.jpg",
+          "bytes": 148827,
+          "sha256": "2bba9129e7151f296a80980f8ff122105c832de2f19b27508b9d60599d2e85a1",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "937 Panel Mount USB Cable",
+      "files": [
+        {
+          "path": "937 Panel Mount USB Cable/937-USB-Panel-Plug.jpg",
+          "bytes": 48812,
+          "sha256": "ae61a337bc2a1a5c63187eef19b0f48ad78b1e79d201a059918ef9f4add8ac4b",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "938 Mono 128x64 OLED Stemma",
+      "files": [
+        {
+          "path": "938 Mono 128x64 OLED Stemma/938 Mono 128x64 OLED Stemma.gif",
+          "bytes": 769416,
+          "sha256": "40de3913be60f0db97484f136dec80d8cb3b9fc2e1514efaacebad3a483581e2",
+          "format": "gif",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "987 MAX98306 Stereo Amp",
+      "files": [
+        {
+          "path": "987 MAX98306 Stereo Amp/987 MAX98306-Stereo-Amp.jpg",
+          "bytes": 231553,
+          "sha256": "8f134645d3e19412dd0f1cdece8c608fa511d66587724a4776b2f26ce1dfcf6d",
+          "format": "jpg",
+          "units": "unknown"
+        }
+      ]
+    }
+  ]
+}
