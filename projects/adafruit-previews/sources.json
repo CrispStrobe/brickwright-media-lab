@@ -1,0 +1,2605 @@
+{
+  "upstreamCommit": "9f2a89f3d5c3491886d58cb7fe83385417563cf4",
+  "archiveCommit": "fb6c7632c50e9a1d58ab57167d6d3f9f9365ae73",
+  "baseUrl": "https://raw.githubusercontent.com/CrispStrobe/brickwright-media-lab/fb6c7632c50e9a1d58ab57167d6d3f9f9365ae73/projects/adafruit-cad-parts/original/",
+  "licence": "MIT License\n\nCopyright (c) 2016 Adafruit Industries\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+  "licenceUrl": "https://raw.githubusercontent.com/CrispStrobe/brickwright-media-lab/fb6c7632c50e9a1d58ab57167d6d3f9f9365ae73/projects/adafruit-cad-parts/original/LICENSE",
+  "folders": [
+    {
+      "name": "Adafruit archive files",
+      "files": [
+        {
+          "path": ".DS_Store",
+          "bytes": 18436,
+          "sha256": "bfe69713a8052661e3c7c6b25cf76db98a6c11f70890afdb1ff53a6c29e03409",
+          "format": "unknown",
+          "units": "unknown"
+        },
+        {
+          "path": "LICENSE",
+          "bytes": 1076,
+          "sha256": "f60436644e066301d4c2e8f1f0674a157b1f60e4fd5586717b99dde255cc18cd",
+          "format": "unknown",
+          "units": "unknown"
+        },
+        {
+          "path": "README.md",
+          "bytes": 94,
+          "sha256": "9ed9beac7600623b7b9bd0d02e1fdcd86610ce22966723179e6c6b618e399dce",
+          "format": "md",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1092 Tactile On Off Switch",
+      "files": [
+        {
+          "path": "1092 Tactile On Off Switch/1092 Tactile On Off Switch.f3d",
+          "bytes": 127272,
+          "sha256": "ae28cf7d471faf19a0e1b5da550e7a0e3237c466f9d500997de5907a4abf6adf",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "1092 Tactile On Off Switch/1092 Tactile On Off Switch.step",
+          "bytes": 57270,
+          "sha256": "817afa9ed6bc3b2e4fd543eec066cc752dd8f597711cfd5d6f882db351da55cd",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1143 Micro Servo - High Torque Metal Gear",
+      "files": [
+        {
+          "path": "1143 Micro Servo - High Torque Metal Gear/1143 Micro Servo High Torque Metal Gear.f3d",
+          "bytes": 359692,
+          "sha256": "3ea90183d2beb8a8c607ca4c4cda09b747cc28a429a75a4736d16ad48eb02b07",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "1143 Micro Servo - High Torque Metal Gear/1143 Micro Servo High Torque Metal Gear.step",
+          "bytes": 136339,
+          "sha256": "949e219540d8889b9ab9364d3e155e2d72605d590b9c3cb11cbfa3f653e72d3f",
+          "format": "step",
+          "units": "unknown"
+        },
+        {
+          "path": "1143 Micro Servo - High Torque Metal Gear/1143 Micro Servo High Torque Metal Gear.stl",
+          "bytes": 113584,
+          "sha256": "6855b3fe182c318434dee40c2efec86dacbdc34048bcd39a3d7cf7cd406677ec",
+          "format": "stl",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1185 Massive Arcade Button 100mm",
+      "files": [
+        {
+          "path": "1185 Massive Arcade Button 100mm/1185 Massive Arcade Button 100mm.f3d",
+          "bytes": 715816,
+          "sha256": "1bf77867bb0ced1111207dbc834be65441d80fe6e8f8bc09e8e657a5a3d6efd7",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "1185 Massive Arcade Button 100mm/1185 Massive Arcade Button 100mm.step",
+          "bytes": 802426,
+          "sha256": "85d61649551b187a005b07ad21950e92f5aec3fa457825805bab1994058c46d6",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1221 Adafruit 2020 Extrusion",
+      "files": [
+        {
+          "path": "1221 Adafruit 2020 Extrusion/1221 Adafruit 2020 Extrusion.f3d",
+          "bytes": 82759,
+          "sha256": "57d2a80c5d12c578fa425a2d14bcff01e86448677c62079ab6183ac0055d5d23",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "1221 Adafruit 2020 Extrusion/1221 Adafruit 2020 Extrusion.step",
+          "bytes": 156205,
+          "sha256": "e883641abbd4e7ed7f6fc9da1fd47818f2536843cbe764942cd12a581f98d034",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1253 Aluminum Timing Pulley",
+      "files": [
+        {
+          "path": "1253 Aluminum Timing Pulley/1253 Aluminum Timing Pulley.f3d",
+          "bytes": 778432,
+          "sha256": "55815d73ccfdaf9d3cc193a073432ed861c3cbfbd06c1b1475c23a7505da158c",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "1253 Aluminum Timing Pulley/1253 Aluminum Timing Pulley.step",
+          "bytes": 472468,
+          "sha256": "35f81cef7f951e4ca673d1c8a663d9e3a51f4e8659b986f37faa4e487ce05946",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1313 Speaker 3in 8Ohm 1W",
+      "files": [
+        {
+          "path": "1313 Speaker 3in 8Ohm 1W/1313 Speaker 3in 8Ohm 1W.f3d",
+          "bytes": 250904,
+          "sha256": "60130fe5d3a13c75167596a2135d806df765117cada8988972559fb0cfa189e1",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "1313 Speaker 3in 8Ohm 1W/1313 Speaker 3in 8Ohm 1W.step",
+          "bytes": 271015,
+          "sha256": "d8fc972d1b618c05880ea60d10cb000d46f4e2fd3dc7e5cf1e04230a934aa4e4",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1317 150mAh Lipo Battery",
+      "files": [
+        {
+          "path": "1317 150mAh Lipo Battery/1317 150mAh Lipo Battery.f3d",
+          "bytes": 57088,
+          "sha256": "9b3b4e1adc8f532d40ca7ec93ae212ba1635259dce249d3ec29be7eb4a79214e",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "1317 150mAh Lipo Battery/1317 150mAh Lipo Battery.step",
+          "bytes": 15749,
+          "sha256": "0bc41e6d6067cddf6bb57ff690f2443e64ed14fdb3ddf7b6868f0815cf57de85",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1321 Battery 9V",
+      "files": [
+        {
+          "path": "1321 Battery 9V/1321 Battery 9V.f3d",
+          "bytes": 308988,
+          "sha256": "35f72abeacc7cc4e1db05362abecee8a8a138e4310255ff29dfdd1b68886af54",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "1321 Battery 9V/1321 Battery 9V.step",
+          "bytes": 237372,
+          "sha256": "be0717e78c93fb059196e59a17c26cfd222940d852340920fa30cb141ae5c375",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1376 NeoPixel Strip",
+      "files": [
+        {
+          "path": "1376 NeoPixel Strip/1376 NeoPixel Strip [parametric].f3d",
+          "bytes": 164029,
+          "sha256": "51bf5b0a8a40af21e06519e446d0c1a7516d1b7529f5bb362a007c46e137f43f",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "1376 NeoPixel Strip/1376 NeoPixel Strip.step",
+          "bytes": 237843,
+          "sha256": "58e2e64486e8bb69efe89f504618323bfe1c0bd394a0dff09779016005a3f991",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1426 8x NeoPixel Stick",
+      "files": [
+        {
+          "path": "1426 8x NeoPixel Stick/1426 8x NeoPixel Stick.f3d",
+          "bytes": 174961,
+          "sha256": "8d74e1d96f73fabca5814509d0f6d099f13812010bc1837121ae8e6941575043",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "1426 8x NeoPixel Stick/1426 8x NeoPixel Stick.step",
+          "bytes": 116195,
+          "sha256": "d3066e01e96644b0990469cf4450ab909ef0c8b034a12bd8151320fa33f98522",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1438 Adafruit MotorShield",
+      "files": [
+        {
+          "path": "1438 Adafruit MotorShield/1438 Adafruit MotorShield V2.f3d",
+          "bytes": 205985,
+          "sha256": "40aa003321d1fa768fd8379528835554493374bfbe7972d241ae3aafc3da47b2",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "1438 Adafruit MotorShield/1438 Adafruit MotorShield.step",
+          "bytes": 73337,
+          "sha256": "600a37b31421d17d8141c0bbef370992ce12716ddd24f7274d180ac75380504b",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1455 LED driver TLC59711",
+      "files": [
+        {
+          "path": "1455 LED driver TLC59711/1455 LED-Driver-TLC59711.f3d",
+          "bytes": 946558,
+          "sha256": "d6a7f97617826f557ccc6e508c8038ea2e0ce16f5600aa6be953aafebce1fcf7",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "1455 LED driver TLC59711/1455 LED-Driver-TLC59711.step",
+          "bytes": 1102124,
+          "sha256": "66d0773246041287502b842a38b5dd96d0360b595707181ee7849af8a00a7b07",
+          "format": "step",
+          "units": "unknown"
+        },
+        {
+          "path": "1455 LED driver TLC59711/1455 LED-Driver-TLC59711.stl",
+          "bytes": 1153884,
+          "sha256": "91c50e53a858dd622a4509858000681d060f3eea72b89816909d0677913d3e10",
+          "format": "stl",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1463 16x NeoPixel Ring",
+      "files": [
+        {
+          "path": "1463 16x NeoPixel Ring/1463 16x NeoPixel Ring.f3d",
+          "bytes": 148639,
+          "sha256": "ddbd2ae6e6a7207c08d2566c9c64ddace159f2eb745be52feb79dce0867cc0f4",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "1463 16x NeoPixel Ring/1463 16x NeoPixel Ring.step",
+          "bytes": 114270,
+          "sha256": "34d9dd913b56386012bf93620b1928ef6a7a972f96434bffe69bf0399e55bcbf",
+          "format": "step",
+          "units": "unknown"
+        },
+        {
+          "path": "1463 16x NeoPixel Ring/Adafruit NeoPixel Ring 16 B.f3d",
+          "bytes": 564214,
+          "sha256": "bb9879b68f95ae5a29ab6c245144d07cd31220b6c7c022564c7f326581688632",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "1463 16x NeoPixel Ring/Adafruit NeoPixel Ring 16 B.stl",
+          "bytes": 572084,
+          "sha256": "f3d38925401989ec04a18bd87b27dfa6f72eb72354ff812fa88cc1a144988b70",
+          "format": "stl",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1501 Trinket 5V",
+      "files": [
+        {
+          "path": "1501 Trinket 5V/1501 Trinket 5V.f3d",
+          "bytes": 163509,
+          "sha256": "ec92dcb91dd55efb73ddacf2792b9ce2a8fe8aca3f4823a8c28c8cfd0ac6d68e",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "1501 Trinket 5V/1501 Trinket 5V.step",
+          "bytes": 43267,
+          "sha256": "15cd9260ddf23bf20366a5db8fb9ded90c9405b9a60a46f1139373c9a6cf4955",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1570 100mAh Lipo Battery",
+      "files": [
+        {
+          "path": "1570 100mAh Lipo Battery/1570 100mAh Lipo Battery.f3d",
+          "bytes": 56637,
+          "sha256": "65e0956d1370395a3549aa39a8babc367781372c55038ba0fd97597baf4d9f8e",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "1570 100mAh Lipo Battery/1570 100mAh Lipo Battery.step",
+          "bytes": 14835,
+          "sha256": "2386382b201eb9adfc001a3601191bfe8f006f1567905ba55309635dde9a1258",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1578 500mAh battery",
+      "files": [
+        {
+          "path": "1578 500mAh battery/1578 500mAh battery.f3d",
+          "bytes": 55050,
+          "sha256": "c803c2ea8481321a18eed8e568bf15b7b597c77b041e4b0fd3a00cf535dcb4cc",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "1578 500mAh battery/1578 500mAh battery.step",
+          "bytes": 14850,
+          "sha256": "e5d2d1b438df5da81cfa8c47ab890ce3bd68369ce243072faf7b2bf4450928f1",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1586 24x NeoRing",
+      "files": [
+        {
+          "path": "1586 24x NeoRing/1586 24x NeoRing.f3d",
+          "bytes": 153302,
+          "sha256": "8afd28f79b895d02173f88d5b5078ab0ded0349ca886b3f950554e5a4a42b918",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "1586 24x NeoRing/1586 24x NeoRing.step",
+          "bytes": 157858,
+          "sha256": "b1c2c44c8d15559e224ed550811d01ceff448000452a466c303906aa2aab00f2",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1586 NeoPixel Ring 24x",
+      "files": [
+        {
+          "path": "1586 NeoPixel Ring 24x/24x NeoPixel Ring 1586.f3d",
+          "bytes": 602263,
+          "sha256": "5404c8b75dad2c705295f7124d1c5ca5e92ba31e42f392a9a66aed2a6bd6630e",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "1586 NeoPixel Ring 24x/24x NeoPixel Ring 1586.step",
+          "bytes": 198967,
+          "sha256": "cbbf7772b8d6ea750cce4a8980624a013ca18de4ed083baf04cba8950de2c005",
+          "format": "step",
+          "units": "unknown"
+        },
+        {
+          "path": "1586 NeoPixel Ring 24x/24x NeoPixel Ring 1586.stl",
+          "bytes": 784284,
+          "sha256": "13f5ca103d6c8dc0543bacad681047e3f6198aecc052b97eef60c7150792ee1c",
+          "format": "stl",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1602 CAP1188",
+      "files": [
+        {
+          "path": "1602 CAP1188/1602 Adafruit CAP1188",
+          "bytes": 1156277,
+          "sha256": "6fd32c4ad095591ca30c5f0168a33ab6cb4b9ed975558af4f89cd48815fcbc44",
+          "format": "unknown",
+          "units": "unknown"
+        },
+        {
+          "path": "1602 CAP1188/1602 Adafruit CAP1188.f3d",
+          "bytes": 1271012,
+          "sha256": "78785560d7a2359a050f9f642da304e1d62ffab23284d2ee49091a24f944579f",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "1602 CAP1188/1602 Adafruit CAP1188.stl",
+          "bytes": 910884,
+          "sha256": "75f89f5500495209b2ad0969d58a165765aa8e81693a3b79817a571bae814530",
+          "format": "stl",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1606 Perma-Proto FullSize",
+      "files": [
+        {
+          "path": "1606 Perma-Proto FullSize/1606 Perma-Proto FullSize.f3d",
+          "bytes": 807869,
+          "sha256": "02e12f06fe736e3b5719ea680717e1fd8bb49a88bfabc0e09c756ae192e3c752",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "1606 Perma-Proto FullSize/1606 Perma-Proto FullSize.step",
+          "bytes": 1467024,
+          "sha256": "85d242df63ecac5d3b9fcf46931d8fbb5a925fb4d1cce8af0a683dde042d1a13",
+          "format": "step",
+          "units": "unknown"
+        },
+        {
+          "path": "1606 Perma-Proto FullSize/1606 Perma-Proto FullSize.stl",
+          "bytes": 4221284,
+          "sha256": "5947414222fef13e8e6669cfd9015980aab302a4ce9445cc39858af29d8635e7",
+          "format": "stl",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1608 perma-proto quarter",
+      "files": [
+        {
+          "path": "1608 perma-proto quarter/1608 perma-proto quarter.f3d",
+          "bytes": 52976,
+          "sha256": "e998b7ae948204abc571d3984c81f4161ea462e8f75a0c5b428f3a59942fec47",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "1608 perma-proto quarter/1608 perma-proto quarter.step",
+          "bytes": 18037,
+          "sha256": "09570625d9e111c829e0c97ae244d0736f160d8ea35537f0fb328fdde93aeb70",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1609 Perma-Proto HalfSize",
+      "files": [
+        {
+          "path": "1609 Perma-Proto HalfSize/1609 Perma-Proto HalfSize.f3d",
+          "bytes": 497825,
+          "sha256": "619625872c07fa294023408415eaeb758e95a8493bb61e95f1a8147b46246549",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "1609 Perma-Proto HalfSize/1609 Perma-Proto HalfSize.step",
+          "bytes": 730552,
+          "sha256": "3be7f0f6d9cb7ff240f04876df6d0eb057f152d214ed7df994051486d47348a2",
+          "format": "step",
+          "units": "unknown"
+        },
+        {
+          "path": "1609 Perma-Proto HalfSize/1609 Perma-Proto HalfSize.stl",
+          "bytes": 2121084,
+          "sha256": "61df3608856c9fc4341d4a55d2608e5b77aa1baa55f10b22d41a9f5a5571277a",
+          "format": "stl",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1680 5in TFT Display",
+      "files": [
+        {
+          "path": "1680 5in TFT Display/1680 5in TFT Display.f3d",
+          "bytes": 51462,
+          "sha256": "a52bed13e8d925c1587c3234995ea208c0b3d97e13b3c7f254fdc3136f816e79",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "1680 5in TFT Display/1680 5in TFT Display.step",
+          "bytes": 13882,
+          "sha256": "db682a5431f26a0749de4b33c7cbb5e0544da8b61922eb96106b314ddc82e95e",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1739 Pizero Large",
+      "files": [
+        {
+          "path": "1739 Pizero Large/1739 Pizero Large.f3d",
+          "bytes": 77617,
+          "sha256": "6fa0ea7ddd153cb185745f3ed8e92d83884b031be0b0d7a4d4d28e2d5c1d30e2",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "1739 Pizero Large/1739 Pizero Large.step",
+          "bytes": 26845,
+          "sha256": "9833fd7bf9de77bf0f90347006d10607d63f7215b823f3913cf10d5793e35330",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1752 MAX9744",
+      "files": [
+        {
+          "path": "1752 MAX9744/1752 MAX9744.f3d",
+          "bytes": 93235,
+          "sha256": "2ce14864f6c4dbc6fd5c4dbd6b7679e13b6b4973d3bc2d7ceca566ec6e06e9e2",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "1752 MAX9744/1752 MAX9744.step",
+          "bytes": 39642,
+          "sha256": "8aeab58a575792e650bc97dac44a8a1142f2469c62f21ed033f1f332b4f54149",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1781 2200mAh Battery",
+      "files": [
+        {
+          "path": "1781 2200mAh Battery/1781 2200mAh Battery.f3d",
+          "bytes": 61896,
+          "sha256": "962bb8c8129e615a051c98b7079a3c0c7bd7845b046b17969cc0a7e1588cdf38",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "1781 2200mAh Battery/1781 2200mAh Battery.step",
+          "bytes": 12177,
+          "sha256": "2c3770f471d1c65184772e087e05bccf4a81dd387fe500cd9dbf5b654265ab6f",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1833 micro USB Breakout",
+      "files": [
+        {
+          "path": "1833 micro USB Breakout/1833 micro USB Breakout.f3d",
+          "bytes": 103483,
+          "sha256": "11242893c89355b8dc1d5cc02b28c7cef6162232331c946468ee2013951e93eb",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "1833 micro USB Breakout/1833 micro USB Breakout.step",
+          "bytes": 60280,
+          "sha256": "b580fc7a53f806136bdb4d5f2a1fc1c196b42b475d1abf163c12087097a00c8f",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1866 Slide Rail Platform",
+      "files": [
+        {
+          "path": "1866 Slide Rail Platform/1866 Slide Rail Platform.f3d",
+          "bytes": 310152,
+          "sha256": "8aa23e8ba0c1df5503de736ca4c3cce69112383a3d98251bcc4b0a671ce0cb9b",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "1866 Slide Rail Platform/1866 Slide Rail Platform.step",
+          "bytes": 139950,
+          "sha256": "5fa96431c5d55f74bb9aa99f79182e881dad10ae71574883a1a63e6e2f7e97c1",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1867 12mm Coincell Switched",
+      "files": [
+        {
+          "path": "1867 12mm Coincell Switched/1867 12mm Coincell Switched.f3d",
+          "bytes": 179871,
+          "sha256": "a1b584f65f9d73376ea35ec83fb5b1fec65731c49c0a1085e31d0ca0fd29dc56",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "1867 12mm Coincell Switched/1867 12mm Coincell Switched.step",
+          "bytes": 74108,
+          "sha256": "c03592c3946b951239697dac8d06063af69d65ff7a9cb07816e1a729285d2177",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1893 Altimeter MLP3115A2",
+      "files": [
+        {
+          "path": "1893 Altimeter MLP3115A2/1893 Altimeter MLP3115A2.f3d",
+          "bytes": 181416,
+          "sha256": "4115d6248303f31ee6927a6e628b6b67df1d83aa8aef4afea22c8248211da966",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "1893 Altimeter MLP3115A2/1893 Altimeter MLP3115A2.step",
+          "bytes": 106231,
+          "sha256": "4c513fefa12c2dfed01c3a220d7689d0fa813e86c118700fb7ad6d4dc3172e2c",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "1982 MPR121",
+      "files": [
+        {
+          "path": "1982 MPR121/1982 MPR121.f3d",
+          "bytes": 51135,
+          "sha256": "4aed6abb7dfdaf2c5dc250a088050928c868eb6abefc41ef26d608a93a14a96e",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "1982 MPR121/1982 MPR121.step",
+          "bytes": 15017,
+          "sha256": "d03522391a35e87692511ddd895cd23caacfe9bb4f955589c3a43cd3bd1b3239",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2011 2000mAh Battery",
+      "files": [
+        {
+          "path": "2011 2000mAh Battery/2000mAh Battery.step",
+          "bytes": 14821,
+          "sha256": "dc8a606030ce3ec1b2c349d1a6843084411cd2ef5ea1889d135956523d801bd3",
+          "format": "step",
+          "units": "unknown"
+        },
+        {
+          "path": "2011 2000mAh Battery/2011 2000mAh Battery.f3d",
+          "bytes": 55256,
+          "sha256": "32af8561896bda4656795337ae08b929292ab7479adfce340923cda1c7ac3136",
+          "format": "f3d",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2130 PAM8302",
+      "files": [
+        {
+          "path": "2130 PAM8302/2130 PAM8302.f3d",
+          "bytes": 290814,
+          "sha256": "ca54b37fd79162836e1bd1b7f024702264b92e77443a70f97ce90dd2460ca6f2",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "2130 PAM8302/2130 PAM8302.step",
+          "bytes": 115942,
+          "sha256": "b1c5dd72bd6ca331c666666f1f061c49ecaa2994c6505dec3c82e514d734db66",
+          "format": "step",
+          "units": "unknown"
+        },
+        {
+          "path": "2130 PAM8302/2130 PAM8302.stl",
+          "bytes": 140484,
+          "sha256": "efc90350dcaae31a6243c36aec22efd774d10a22e5e7c5dc1be40b82024222a0",
+          "format": "stl",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2190 Verter 5V USB",
+      "files": [
+        {
+          "path": "2190 Verter 5V USB/2190 Verter 5V USB.f3d",
+          "bytes": 282934,
+          "sha256": "f4113d6ddb8e64ebc755b94bff1588bee8a74f0dea97e497850d10fdceda1b20",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "2190 Verter 5V USB/2190 Verter 5V USB.step",
+          "bytes": 101010,
+          "sha256": "20219f647e859b740c0d1ccf9df47a5e1cf2cac9e659bbfe2686a85fa6272890",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2201 Submicro servo",
+      "files": [
+        {
+          "path": "2201 Submicro servo/2201 Submicro Servo SG51R.f3d",
+          "bytes": 237212,
+          "sha256": "4a5591a96fb81b4a566700d3630d995903f02909e6e9a6bc9f735aa099900cba",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "2201 Submicro servo/2201 Submicro Servo SG51R.step",
+          "bytes": 160072,
+          "sha256": "66fa3c9570de91e698b0077e20adc652eaf3e21f98db499cfc4980c35e740013",
+          "format": "step",
+          "units": "unknown"
+        },
+        {
+          "path": "2201 Submicro servo/2201 Submicro Servo SG51R.stl",
+          "bytes": 115084,
+          "sha256": "1d92ffba6c2ad2271db85d28060931037f1fdb533f736534ce462bdce2e71ea4",
+          "format": "stl",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2218 HDMI TPF401 Breakout",
+      "files": [
+        {
+          "path": "2218 HDMI TPF401 Breakout/2218 HDMI TPF401 Breakout.f3d",
+          "bytes": 123144,
+          "sha256": "865f87ae07157d640780b6b0dfae3dbc13f05ec0a7c6956b847f97183e3bece3",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "2218 HDMI TPF401 Breakout/2218 HDMI TPF401 Breakout.step",
+          "bytes": 44631,
+          "sha256": "cd24c47ebddbc0c6be329ba6173331a67e390ce2231a45c444ae50a547f5fbbf",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2226 NeoPixel Jewel",
+      "files": [
+        {
+          "path": "2226 NeoPixel Jewel/2226 NeoPixel Jewel.f3d",
+          "bytes": 72446,
+          "sha256": "85dad65c80e5880dd7a6d52ee5ad7409ae6f98c4f068d310eb1ea27263606791",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "2226 NeoPixel Jewel/2226 NeoPixel Jewel.step",
+          "bytes": 69965,
+          "sha256": "7adbd8f442e30657bd73b22a781c96aed0747be83086e7d4ed4f8b9b065e1ca5",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2230 Extruded aluminum box 94mm",
+      "files": [
+        {
+          "path": "2230 Extruded aluminum box 94mm/2230 Extruded aluminum box 94mm.f3d",
+          "bytes": 163264,
+          "sha256": "cd422420c1c667fcffde1d78baa9062a97008aaa09e3f40e6e7229b1bbe31cce",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "2230 Extruded aluminum box 94mm/2230 Extruded aluminum box 94mm.step",
+          "bytes": 73474,
+          "sha256": "0fddb71df6f7b0177d918a08dbc9c3b5f71492aac90749d4b5cb454d16aa7a52",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2232 5in HDMI Backpack",
+      "files": [
+        {
+          "path": "2232 5in HDMI Backpack/2232 5in HDMI Backpack.f3d",
+          "bytes": 301988,
+          "sha256": "545ea937870cccace268330a7c09af053f02cc093253aed2f56ec760352a6faa",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "2232 5in HDMI Backpack/2232 5in HDMI Backpack.step",
+          "bytes": 53968,
+          "sha256": "59e8a5770a390c73033ce2491db434530ef3ec4384f7cbd888c7fb50595cdaf9",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2315 PiTFT 2.2",
+      "files": [
+        {
+          "path": "2315 PiTFT 2.2/2315 PiTFT 2.2.f3d",
+          "bytes": 206666,
+          "sha256": "ef0e775ff1f39a7af92b0f3a0e514ce408d77218c9d460f5d24b0f3659592baf",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "2315 PiTFT 2.2/2315 PiTFT 2.2.step",
+          "bytes": 111599,
+          "sha256": "1f2c2539b445badeee893ab2e0882e5c02e2fcaab6bcdbd60a7b82d8c84af3d6",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2423 PiTFT 2.8",
+      "files": [
+        {
+          "path": "2423 PiTFT 2.8/2423 PiTFT 2.8.f3d",
+          "bytes": 350432,
+          "sha256": "b6a3d056d993bf85d485596ded4365821eabc594a9f6233be7957407b969a7dd",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "2423 PiTFT 2.8/2423 PiTFT 2.8.step",
+          "bytes": 157852,
+          "sha256": "967cc3e02d8c3b7b4629533a9876e5687b8f16ae8be2392da580bb2744ce119e",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2441 PiTFT 3.5",
+      "files": [
+        {
+          "path": "2441 PiTFT 3.5/2441 PiTFT 3.5.f3d",
+          "bytes": 155971,
+          "sha256": "9d2df695dcc183b406176f06ec21c65783e38df680826da287c74fbbbfff7d72",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "2441 PiTFT 3.5/2441 PiTFT 3.5.step",
+          "bytes": 53548,
+          "sha256": "bef9c6a1a315814874bad52eb191530c6b6fed8f6b78982ff5bfa09561f045cb",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2465 Powerboost 1000C",
+      "files": [
+        {
+          "path": "2465 Powerboost 1000C/2465 Adafruit PowerBoost 1000C Rev B.f3d",
+          "bytes": 1412132,
+          "sha256": "5fbfe68fe01bf29d3e6f2926043b2d354c8f27ee4f153b73b0f140c6e4a76509",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "2465 Powerboost 1000C/2465 Adafruit PowerBoost 1000C Rev B.step",
+          "bytes": 1879501,
+          "sha256": "1bfcac9a47dfab966ac5b092149aa52e8fbc3dedcf75be338e962b6995b7ce12",
+          "format": "step",
+          "units": "unknown"
+        },
+        {
+          "path": "2465 Powerboost 1000C/2465 Adafruit PowerBoost 1000C Rev B.stl",
+          "bytes": 7448884,
+          "sha256": "3e13c87de60026fa2461811a5f589f036173757938a86657aaa2ea9f9328c842",
+          "format": "stl",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2488 Adafruit Metro 328",
+      "files": [
+        {
+          "path": "2488 Adafruit Metro 328/2488 Adafruit Metro 328.f3d",
+          "bytes": 197881,
+          "sha256": "3b2f13114747b0b779b8f13bb6a5186ad9ec4a51387030b6d07ac30be1c72bf3",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "2488 Adafruit Metro 328/2488 Adafruit Metro 328.step",
+          "bytes": 104086,
+          "sha256": "d9c042e9515d48b741a6eab22efc3dc73f6e55ebf01aa2551b1c1acef4abd3f1",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "258 1200mAh lipo",
+      "files": [
+        {
+          "path": "258 1200mAh lipo/258 1200mAh lipo.f3d",
+          "bytes": 100332,
+          "sha256": "f44556fa7351e51c1a02d15de13a7e93d8110b96b2324cded429cd488517f497",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "258 1200mAh lipo/258 1200mAh lipo.step",
+          "bytes": 38402,
+          "sha256": "c81bcfef27a54a671cec259164a23666fbad6d8b4320c10dc6b5ae0567002001",
+          "format": "step",
+          "units": "unknown"
+        },
+        {
+          "path": "258 1200mAh lipo/258 1200mAh lipo.stl",
+          "bytes": 60484,
+          "sha256": "abe4ffb89a83d1ee48780c04e4dbb38808b326f491f312eef56e2552ad5d2103",
+          "format": "stl",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2629 Quarter Inch D-Ring Tripod Mount",
+      "files": [
+        {
+          "path": "2629 Quarter Inch D-Ring Tripod Mount/2629 Quarter Inch D-Ring Tripod Mount.f3d",
+          "bytes": 83937,
+          "sha256": "8d518aa9d19b6a70ba759b924405cca98fbb9ad9b01b63878021c5869d13d57e",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "2629 Quarter Inch D-Ring Tripod Mount/2629 Quarter Inch D-Ring Tripod Mount.step",
+          "bytes": 208316,
+          "sha256": "62ba61b030e1695b0f42a5a6bf7c6561b1ec3aa11d517f5d87ec1c74a587bb92",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2756 Teensy 3.2",
+      "files": [
+        {
+          "path": "2756 Teensy 3.2/2756 Teensy 3.2.f3d",
+          "bytes": 224255,
+          "sha256": "9c016387c0474ccc299284be36cf25ff30c4d2ece1ff529a2edd16c784f8be66",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "2756 Teensy 3.2/2756 Teensy 3.2.step",
+          "bytes": 169311,
+          "sha256": "3d231fcac04ca54e3c6ac8788c70ff5d4f3abfc4dd3a382846b7154a30cb2aaf",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2829 Adafruit Feather Bluefruit 32u4",
+      "files": [
+        {
+          "path": "2829 Adafruit Feather Bluefruit 32u4/2829 Adafruit Feather Bluefruit 32u4.f3d",
+          "bytes": 92760,
+          "sha256": "021198fbc4aa3899f31a8a76dc4dae047acfddfb6e68a8deecc4270b4984aae5",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "2829 Adafruit Feather Bluefruit 32u4/2829 Adafruit Feather Bluefruit 32u4.step",
+          "bytes": 34111,
+          "sha256": "f159ad7f7208f8ac8b03a52e4c8ee9cfef13e6fe7ef91d85920fe4865d02d4c0",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2831 Photo Transistor Light Sensor",
+      "files": [
+        {
+          "path": "2831 Photo Transistor Light Sensor/2831 Photo Transistor Light Sensor.f3d",
+          "bytes": 102458,
+          "sha256": "70f7ff5055efb349e3a0824b4111df5d79c310e5537cfe911052104d74634ac5",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "2831 Photo Transistor Light Sensor/2831 Photo Transistor Light Sensor.step",
+          "bytes": 28872,
+          "sha256": "1b836a8c124ee2874d3cf99751e5029f0a9b818d6b1c6d0e5b3063a2f49ca17b",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2895 Relay Feather Wing",
+      "files": [
+        {
+          "path": "2895 Relay Feather Wing/2895 Relay Feather Wing.f3d",
+          "bytes": 1908700,
+          "sha256": "d3b8c2a428c787d9e6bd9b7e40e68062c44736ab8d624ff9059f8ea5b92b456c",
+          "format": "f3d",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2900 Feather OLED Wing",
+      "files": [
+        {
+          "path": "2900 Feather OLED Wing/2900 Feather OLED Wing.f3d",
+          "bytes": 155903,
+          "sha256": "bacd7187f3dd7af464f1f68e5fc4cb59a5a16d4b4f4c70ca085f39022f34d812",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "2900 Feather OLED Wing/2900 Feather OLED Wing.step",
+          "bytes": 71027,
+          "sha256": "dafb12855b2eb45848db1ead10ab1675f62ee625748cf698a8c150a769cec5db",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "2941 DC Motor in Servo Body",
+      "files": [
+        {
+          "path": "2941 DC Motor in Servo Body/2941 Micro DC Motor.f3d",
+          "bytes": 261819,
+          "sha256": "7ef2d841d514719f29fa49e5f5aa8711037125d0a5021f79c5278afc8c772ee6",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "2941 DC Motor in Servo Body/2941 Micro DC Motor.step",
+          "bytes": 121685,
+          "sha256": "71727e2f71d884286fc4dbfc55e2f7b39aac49a0535501c91eb824fd175753c1",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3000 Circuit Playground Classic",
+      "files": [
+        {
+          "path": "3000 Circuit Playground Classic/3000 Circuit Playground Classic.f3d",
+          "bytes": 257420,
+          "sha256": "87b2f2b1a8553d473d61866ebac36ee25314a8449a4a9a76156b82a8c41dffc7",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "3000 Circuit Playground Classic/3000 Circuit Playground Classic.step",
+          "bytes": 256343,
+          "sha256": "20fa1bfa7522b74deafa9db5d25a58cf5ea9f47615abf96da3f92c90f451d50d",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3010 Feather M0 Wifi",
+      "files": [
+        {
+          "path": "3010 Feather M0 Wifi/3010 Feather M0 Wifi.f3d",
+          "bytes": 151286,
+          "sha256": "12891df89dfa2b8c76d8080d5b6080974d791c4845b17479b4087d9fc5a5bff8",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "3010 Feather M0 Wifi/3010 Feather M0 Wifi.step",
+          "bytes": 36188,
+          "sha256": "4c3c35989eae8cac6acd72199f5dc181130249dd643dedad4de7d4ace230967d",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3027 Adafruit FONA Feather 32u4",
+      "files": [
+        {
+          "path": "3027 Adafruit FONA Feather 32u4/3027 Adafruit FONA Feather 32u4.f3d",
+          "bytes": 258397,
+          "sha256": "e7556add834c4dde4e4b95f3df9011b11b686a97a5e7101530ab0a5969d367a7",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "3027 Adafruit FONA Feather 32u4/3027 Adafruit FONA Feather 32u4.step",
+          "bytes": 102235,
+          "sha256": "b4dcf502954681b1b5fb739d155b3c02266b65afa7a3c5fba481b49fad3b8e74",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3093 Crickit CPX",
+      "files": [
+        {
+          "path": "3093 Crickit CPX/3093 Crickit CPX.dxf",
+          "bytes": 4335,
+          "sha256": "af3fc52c776b55ae2c890c0730f8b84353a755ee41e2415d653719ca9210a359",
+          "format": "dxf",
+          "units": "unknown"
+        },
+        {
+          "path": "3093 Crickit CPX/3093 Crickit CPX.f3d",
+          "bytes": 1798749,
+          "sha256": "8da3536d5597b6b8e294ded291c6e1fd45a9a80d6201be9541af7433fe1a7ad7",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "3093 Crickit CPX/3093 Crickit CPX.step",
+          "bytes": 850364,
+          "sha256": "e6c96391cbc652cf7e5d9e4babbcd4b80e3eda6f8131e736566000e9d4af0617",
+          "format": "step",
+          "units": "unknown"
+        },
+        {
+          "path": "3093 Crickit CPX/3093 Crickit CPX.stl",
+          "bytes": 665084,
+          "sha256": "15d4a25fc5c3aa939b129916c26d7161e2149f6ff4191069033ed34b3bc6f9f3",
+          "format": "stl",
+          "units": "unknown"
+        },
+        {
+          "path": "3093 Crickit CPX/3093 Crickit CPX.svg",
+          "bytes": 2980,
+          "sha256": "b4ffe1778eae9357d65e091a29f05511a065d50d844f56b9417e377c8cd00f9a",
+          "format": "svg",
+          "units": "unknown"
+        },
+        {
+          "path": "3093 Crickit CPX/Crickit CPX Assembly.f3d",
+          "bytes": 3953973,
+          "sha256": "9fef8a67cd00393b895073f594c705487cafab5fd412929661493d8152d52120",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "3093 Crickit CPX/Crickit CPX Assembly.step",
+          "bytes": 1987669,
+          "sha256": "68f70dc0678a334d073156c7d29d2876144b9fc4ee4d1d7f0634fb6e314f6310",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3101 8mm soft button",
+      "files": [
+        {
+          "path": "3101 8mm soft button/3101 8mm soft button.f3d",
+          "bytes": 165445,
+          "sha256": "de70d1c2a23d506a32fc98d76896251a079b090a100277e8c2299d6f7bc99290",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "3101 8mm soft button/3101 8mm soft button.step",
+          "bytes": 139235,
+          "sha256": "4172ba50d1038d5f3fada6b2b2b4ff473a35f722c34650efe67d8007bc9f5621",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3102 Mini Joystick",
+      "files": [
+        {
+          "path": "3102 Mini Joystick/3102 Mini Joystick.f3d",
+          "bytes": 254005,
+          "sha256": "8b990ce3e8d9e00a0fae65fe84702f59ef125e68b9052281426ae6540554b286",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "3102 Mini Joystick/3102 Mini Joystick.step",
+          "bytes": 150923,
+          "sha256": "e330ff2edf6a0420d400825b3b4e405862966cc048ec8bc508d3229eba155330",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3104 3105 Mini Illuminated Momentary Pushbutton",
+      "files": [
+        {
+          "path": "3104 3105 Mini Illuminated Momentary Pushbutton/3104 3105 Mini Illuminated Momentary Pushbutton v7.step",
+          "bytes": 10362,
+          "sha256": "e60f424d037b56fbe76179792cdd419c98ee011a8ba258d314d0fb4dcad3218c",
+          "format": "step",
+          "units": "unknown"
+        },
+        {
+          "path": "3104 3105 Mini Illuminated Momentary Pushbutton/3104 3105 Mini Illuminated Momentary Pushbutton.f3d",
+          "bytes": 103240,
+          "sha256": "1b7f62737ace5b3899b5b407ed48963521c99813560b0e149b1d43562c9b1210",
+          "format": "f3d",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3133 Ultimate GPS FeatherWing",
+      "files": [
+        {
+          "path": "3133 Ultimate GPS FeatherWing/3133 Adafruit Ultimate GPS FeatherWing.f3d",
+          "bytes": 1054583,
+          "sha256": "fc2bb8cf57935a17a6fea9edd5a4f5d22e5433074dd4e418c4ce54f62e0dbf4c",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "3133 Ultimate GPS FeatherWing/3133 Adafruit Ultimate GPS FeatherWing.step",
+          "bytes": 1385507,
+          "sha256": "06856a162d7e0bcebbab60d46e2f8bc576b9c3aa938d96951d16a466e581814a",
+          "format": "step",
+          "units": "unknown"
+        },
+        {
+          "path": "3133 Ultimate GPS FeatherWing/3133 Adafruit Ultimate GPS FeatherWing.stl",
+          "bytes": 1200484,
+          "sha256": "5c702c7a118a01bee1ec7df542e77f215c905a28ca8719ad02a00948bbd33f80",
+          "format": "stl",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3200 Teensy Feather Adapter",
+      "files": [
+        {
+          "path": "3200 Teensy Feather Adapter/3200 Teensy Feather Adapter.f3d",
+          "bytes": 280494,
+          "sha256": "dead516554500411ae6be81433219b8bb0543c8ca1bd97fc81f93ff5bf5e6c34",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "3200 Teensy Feather Adapter/3200 Teensy Feather Adapter.step",
+          "bytes": 239951,
+          "sha256": "c11a5926bdc9a15cf2b9764d4e90016c24f1463b03bf5ebd928f34cafd314a66",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3202 Spy Camera",
+      "files": [
+        {
+          "path": "3202 Spy Camera/3202 Spy Camera.f3d",
+          "bytes": 265071,
+          "sha256": "4b87250dfece2f8a87bc0189e28e8715e23031c557b23d84f335ae8af08cbdee",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "3202 Spy Camera/3202 Spy Camera.step",
+          "bytes": 124304,
+          "sha256": "a10bd8437b70756019d2ddb136225421484096e9191b0330125cfcb56b482064",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "324 NEMA-17 Stepper Motor",
+      "files": [
+        {
+          "path": "324 NEMA-17 Stepper Motor/324 NEMA-17 Stepper Motor.f3d",
+          "bytes": 442007,
+          "sha256": "34611d7c787023c4920995dda6d65cbf0487bed032d574918883086c5c7be100",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "324 NEMA-17 Stepper Motor/324 NEMA-17 Stepper Motor.step",
+          "bytes": 1175898,
+          "sha256": "b6d032e9c6249229bd13c81ab6d46bc43a239d646a10a548a419daf6b4e926a1",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3258 USB Panel Mout Cable",
+      "files": [
+        {
+          "path": "3258 USB Panel Mout Cable/3258 microUSB panel mount.f3d",
+          "bytes": 132054,
+          "sha256": "a320095f0173ac294f1fffbaff4e8136b42a0b3e2c2eff855138c31a4dcb985c",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "3258 USB Panel Mout Cable/3258 microUSB panel mount.step",
+          "bytes": 61562,
+          "sha256": "f909e1ddaf72ab9585554888ac7ec6b663f5c15212be9470ff2751ad967b22b1",
+          "format": "step",
+          "units": "unknown"
+        },
+        {
+          "path": "3258 USB Panel Mout Cable/3258 microUSB panel mount.stl",
+          "bytes": 130884,
+          "sha256": "a045ae39e3b9158a56ca347e17b349a61e6fd0e061c1dfdd3dcbf4d25d6ff30b",
+          "format": "stl",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "328 2500mAh battery",
+      "files": [
+        {
+          "path": "328 2500mAh battery/328 2500mAh battery.f3d",
+          "bytes": 44815,
+          "sha256": "dfd38c23d929bab674c029d91d531434919890b9a5cd4ca5810320692238d2b0",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "328 2500mAh battery/328 2500mAh battery.step",
+          "bytes": 9128,
+          "sha256": "fd09eff2cdb25962ae02105c606ddb63a55dbb365f3efa6e972367e49eaa9195",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3351 Enclosed Speaker 3W 4Ohm",
+      "files": [
+        {
+          "path": "3351 Enclosed Speaker 3W 4Ohm/3351 Enclosed Speaker 3W 4Ohm.f3d",
+          "bytes": 216163,
+          "sha256": "278b21a7f21ad9efa8dc06ab3ae968ae21336071c803a2bc88a99332aab21e1d",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "3351 Enclosed Speaker 3W 4Ohm/3351 Enclosed Speaker 3W 4Ohm.step",
+          "bytes": 174912,
+          "sha256": "76387fbd0679e1938dceeb968abbe0bccb9e17077559d9f66fd737c6a31f1c62",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3422 Adafruit Arcade Bonnet",
+      "files": [
+        {
+          "path": "3422 Adafruit Arcade Bonnet/3422 Adafruit Arcade Bonnet.f3d",
+          "bytes": 186213,
+          "sha256": "e6536a414d89600a3a32493cf0686ee4b8dfaa7299a39f98b79382f9f2bc2dee",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "3422 Adafruit Arcade Bonnet/3422 Adafruit Arcade Bonnet.step",
+          "bytes": 121756,
+          "sha256": "6a8e94ee2a5dd017f32e28ea6fee03d62582d9ee8360d2df71f8e4b0870862da",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3429 Mini Arcade Button",
+      "files": [
+        {
+          "path": "3429 Mini Arcade Button/3429 Mini Arcade Button.f3d",
+          "bytes": 217404,
+          "sha256": "0eb1340383e82e26145d14cb2fae3edb7f04749a0d1ed5349c7ab1eb18fe3fb3",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "3429 Mini Arcade Button/3429 Mini Arcade Button.smt",
+          "bytes": 113524,
+          "sha256": "2eae3371a4fdf1b9cbb4039e08731609bb62cc32327a6e155bbf2a6922bfefc3",
+          "format": "smt",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3436 Adafruit Music Maker Amp Feather Wing",
+      "files": [
+        {
+          "path": "3436 Adafruit Music Maker Amp Feather Wing/3436 Adafruit Music Maker Amp Feather Wing.f3d",
+          "bytes": 373514,
+          "sha256": "68c8bb83fb470532c81e1944c14997aa417dde3f8f687243d4ba3ddddfc62d5f",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "3436 Adafruit Music Maker Amp Feather Wing/3436 Adafruit Music Maker Amp Feather Wing.step",
+          "bytes": 172867,
+          "sha256": "8cdfea06a321abc2643cf6496266b285e67d10dce24862247dbd17a2db0932a3",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3464 Joy Bonnet",
+      "files": [
+        {
+          "path": "3464 Joy Bonnet/3464 Joy Bonnet.f3d",
+          "bytes": 233508,
+          "sha256": "33e044a0dddf3482b3b1eda7f2f0a6027728cd7bd801eed38b8a1c3071fa9a8c",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "3464 Joy Bonnet/3464 Joy Bonnet.f3d.step",
+          "bytes": 98720,
+          "sha256": "55cc72f00e08ee78587b5b4f024a0a0ad299c5841ca3b17f67334cc82f565f40",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "353 6600mAh Battery",
+      "files": [
+        {
+          "path": "353 6600mAh Battery/353 6600mAh Battery.f3d",
+          "bytes": 63754,
+          "sha256": "8b13a98cb3da498fe398bcc024cce382ec14393562180749a0f56141d4dcd904",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "353 6600mAh Battery/353 6600mAh Battery.step",
+          "bytes": 17395,
+          "sha256": "7338c3ed19ce7ff18f6a83ee874a57777a0679fbea3b6a8fac394cfd52a8c23f",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3538 AMG8833 IR Thermal Camera",
+      "files": [
+        {
+          "path": "3538 AMG8833 IR Thermal Camera/3538 AMG8833 IR Thermal Camera.f3d",
+          "bytes": 175048,
+          "sha256": "73f9e85255966b335e548fe26666ec5d38135d8912331367d8196d0bbf2fec51",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "3538 AMG8833 IR Thermal Camera/3538 AMG8833 IR Thermal Camera.step",
+          "bytes": 75023,
+          "sha256": "8b58656c937919282e389c61dbeeaed1d3ae027b9dfe881e919380bca2f9b2db",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "355 MOSFET P-channel",
+      "files": [
+        {
+          "path": "355 MOSFET P-channel/335 MOSFET N-channel.f3d",
+          "bytes": 114222,
+          "sha256": "276438b2f7b8892bbc5a85f937d15cd1c78dd83d68299acc862183ffc7e4f829",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "355 MOSFET P-channel/335 MOSFET N-channel.smt",
+          "bytes": 101088,
+          "sha256": "814d5c68627ac184d50b3e138b825525fde0e80b991e6e546215720a9846569f",
+          "format": "smt",
+          "units": "unknown"
+        },
+        {
+          "path": "355 MOSFET P-channel/335 MOSFET N-channel.stl",
+          "bytes": 31284,
+          "sha256": "da55c786af5251b44377cd385725aba4139c0376c7063d301bdf054c183bfb39",
+          "format": "stl",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3577 PICO Hat",
+      "files": [
+        {
+          "path": "3577 PICO Hat/3577 PICO Hat.f3d",
+          "bytes": 82974,
+          "sha256": "a1aa262724877bfed43a638490989acf03de6554ad820ec07a8dd619dbcfc152",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "3577 PICO Hat/3577 PICO Hat.step",
+          "bytes": 41612,
+          "sha256": "1d798bcca488bc7ad161665ac5c7edf33dc6aecfcb4b3531b13d9dfe43160ce0",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3632 Joy FeatherWing",
+      "files": [
+        {
+          "path": "3632 Joy FeatherWing/3632 Joy FeatherWing.f3d",
+          "bytes": 277062,
+          "sha256": "fdf722ad3f4b91c3d14cb1cb159338572a27b8235a9cc586500bd71d1266a2de",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "3632 Joy FeatherWing/3632 Joy FeatherWing.step",
+          "bytes": 145908,
+          "sha256": "d13dbadc65aad51d3200befcb501ea65715977cdcd3bb05a768998d7eaa59c5a",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3692 TRS Jack",
+      "files": [
+        {
+          "path": "3692 TRS Jack/3692 TRS Jack.f3d",
+          "bytes": 127649,
+          "sha256": "41a878a52ecfc5a58b4925714b532a96f34b6bb610e23b6e58766264b8211481",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "3692 TRS Jack/3692 TRS Jack.step",
+          "bytes": 238212,
+          "sha256": "95bdbe31d377206f718dcf2746989c645daba6161805473035d3e1ae383dcdbd",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3722 Snowglobe",
+      "files": [
+        {
+          "path": "3722 Snowglobe/3722 Snow Globe.f3d",
+          "bytes": 144239,
+          "sha256": "5416b2d5ed94a7b1cfa4b2c7d904d1ac1fef23af4ef54cade3b7b0f113d75fbf",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "3722 Snowglobe/3722 Snow Globe.step",
+          "bytes": 71145,
+          "sha256": "eeb74ff868741daa95cc10e16987248358555ebda5d97a9a15955fe6c72f85f8",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3777 TT Motor",
+      "files": [
+        {
+          "path": "3777 TT Motor/3777 TT Motor.f3d",
+          "bytes": 256240,
+          "sha256": "9823c28e825e51bb038d4bccb2e2ef5d8a674b18f080895428485e67235df410",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "3777 TT Motor/3777 TT Motor.step",
+          "bytes": 112694,
+          "sha256": "12e0fa54576085011cc9f5221ad95aca62d565e051d995523d192d0a65797ce3",
+          "format": "step",
+          "units": "unknown"
+        },
+        {
+          "path": "3777 TT Motor/3777 TT Motor.stl",
+          "bytes": 166084,
+          "sha256": "c457c4533b41aff66b93870e2cd8662058e75253c84b16c1cc085d7cb690ad8c",
+          "format": "stl",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3842 3xAA Battery",
+      "files": [
+        {
+          "path": "3842 3xAA Battery/3842 3xAA Battery.f3d",
+          "bytes": 313201,
+          "sha256": "65bce70a0dd3e44271f7a79cae77e66a2e667cd0073d9fab0a440aa1641a97ac",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "3842 3xAA Battery/3842 3xAA Battery.step",
+          "bytes": 221410,
+          "sha256": "61c94a1890d542e1a30cb12d60fbd6f6b2b87c2b1e86994dfe64d9d3a25c6d34",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3885 STEMMA Speaker",
+      "files": [
+        {
+          "path": "3885 STEMMA Speaker/3885 STEMMA Speaker rev A.f3d",
+          "bytes": 783635,
+          "sha256": "c068e8a7fcc9124fe8d052fec6994b6558093746173049c444024688fcef7ac7",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "3885 STEMMA Speaker/3885 STEMMA Speaker rev A.step",
+          "bytes": 963499,
+          "sha256": "25ff7bb0b08d3afa3bf862e7c81f264bc09fdca4e26941e60686846674bb1d9b",
+          "format": "step",
+          "units": "unknown"
+        },
+        {
+          "path": "3885 STEMMA Speaker/3885 STEMMA Speaker rev A.stl",
+          "bytes": 695184,
+          "sha256": "fccd9b3fde1d50037193a92b20db1dd322e37a25f8c4a520d0ce4797ce3b2c5c",
+          "format": "stl",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3898 400mah Battery",
+      "files": [
+        {
+          "path": "3898 400mah Battery/3898 400mAh Battery.f3d",
+          "bytes": 76855,
+          "sha256": "e02dfef26c9d6e4ea9679f555ace7a7b030260fe0a40cefc7bcbdc1f23e8d81a",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "3898 400mah Battery/3898 400mAh Battery.step",
+          "bytes": 30200,
+          "sha256": "e0ec62d53f0c487c6c2548cf3009d30ca9c01665a5dd6a91d05b3c1a33e804bc",
+          "format": "step",
+          "units": "unknown"
+        },
+        {
+          "path": "3898 400mah Battery/3898 400mAh Battery.stl",
+          "bytes": 41084,
+          "sha256": "5ae4e6f4294292b366db06ad76d0933fc5a8b5b20a8b825cdc6524a18fad9270",
+          "format": "stl",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "3900 Hallowing",
+      "files": [
+        {
+          "path": "3900 Hallowing/3900 HalloWing M0 Express Rev C.f3d",
+          "bytes": 3348289,
+          "sha256": "52d1a6c0d77162c9e5249b0c796d6592d01794865f66d77d9f84ed2c668fa7d1",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "3900 Hallowing/3900 HalloWing M0 Express Rev C.step",
+          "bytes": 5519169,
+          "sha256": "8c621fea45c4f061c013c79c96eb8eb83444c07ef225d8d47d2e6dd15ef14d41",
+          "format": "step",
+          "units": "unknown"
+        },
+        {
+          "path": "3900 Hallowing/3900 HalloWing M0 Express Rev C.stl",
+          "bytes": 2831684,
+          "sha256": "7805cd0d5bd1897b64b9b9e48b39d502c613edd8e34d547daea02982ef5a8873",
+          "format": "stl",
+          "units": "unknown"
+        },
+        {
+          "path": "3900 Hallowing/3900 Hallowing M0 Express.f3d",
+          "bytes": 3341698,
+          "sha256": "1ecabbe681981a36580516ab4da1337422455f45c219ad5ebf72a2d062862d9e",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "3900 Hallowing/3900 Hallowing M0 Express.step",
+          "bytes": 5061075,
+          "sha256": "1ecf0b3045666a8c00c3fc73684a3472329533d6e51d9bf97f11152abc929e9c",
+          "format": "step",
+          "units": "unknown"
+        },
+        {
+          "path": "3900 Hallowing/3900 Hallowing M0 Express.stl",
+          "bytes": 2668884,
+          "sha256": "f843f906d7e8e82d9f3a5325007b284858268a70e162c952c4c935cbe6f9b45b",
+          "format": "stl",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4116 PyPortal",
+      "files": [
+        {
+          "path": "4116 PyPortal/4116 PyPortal.step",
+          "bytes": 6018680,
+          "sha256": "985a0d60a829bd9b82038874d3a9eabd22c6373cd4d09c5a78f8983b9ed1dc36",
+          "format": "step",
+          "units": "unknown"
+        },
+        {
+          "path": "4116 PyPortal/4116 PyPortal.stl",
+          "bytes": 2767284,
+          "sha256": "6ae2fa1b1eaf7783afac57c91a9b5fcb8b9b42bb42e4ddabc45c2964abc54228",
+          "format": "stl",
+          "units": "unknown"
+        },
+        {
+          "path": "4116 PyPortal/4116 pyPortal.f3d",
+          "bytes": 3573865,
+          "sha256": "3562e0807a9e02341cbddb3ae4bed09674129bbe7b19347b059c62aaa21a5e21",
+          "format": "f3d",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "413 Large Solenoid",
+      "files": [
+        {
+          "path": "413 Large Solenoid/413 Large Solenoid.f3d",
+          "bytes": 245151,
+          "sha256": "82f7e2b78c100b2429d3154f9d5b2d6f8002bf0abfb2c4c72e2c26f1907b95ee",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "413 Large Solenoid/413 Large Solenoid.step",
+          "bytes": 89653,
+          "sha256": "bd5b50a2c23088cee4dbe1363d0e6c926552572d649f9be1ae90e54776fcec15",
+          "format": "step",
+          "units": "unknown"
+        },
+        {
+          "path": "413 Large Solenoid/413 Large Solenoid.stl",
+          "bytes": 175284,
+          "sha256": "1d389e3b249e7409e8e5529ecd0f4c0960a288e6ebfe99528f44a61818c5cbf3",
+          "format": "stl",
+          "units": "unknown"
+        },
+        {
+          "path": "413 Large Solenoid/413-large-solenoid",
+          "bytes": 75717,
+          "sha256": "f4401e3aede758bf67322a5f263f85e212cbb5dc6931249caeb3f6ca6f5690e3",
+          "format": "unknown",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4286 DS3502 Digital Pot",
+      "files": [
+        {
+          "path": "4286 DS3502 Digital Pot/4286 Adafruit DS3502 v3.step",
+          "bytes": 559451,
+          "sha256": "8b0047332ed9f3972e7a1e45f67b375d4aa10a369839ba56f057d635275685b7",
+          "format": "step",
+          "units": "unknown"
+        },
+        {
+          "path": "4286 DS3502 Digital Pot/4286 Adafruit DS3502.f3d",
+          "bytes": 1407741,
+          "sha256": "02765a0429f173a7c5989c16e74625e96bb26a3761823e619ed8e48fc7642bbd",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "4286 DS3502 Digital Pot/4286 Adafruit DS3502.stl",
+          "bytes": 327284,
+          "sha256": "79027acffc100a94f42b0280f1a29acbe3d851dc50e9c871a267d690c6931ef0",
+          "format": "stl",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4343 Monster M4sk",
+      "files": [
+        {
+          "path": "4343 Monster M4sk/MONSTER M4SK revD.f3d",
+          "bytes": 5152319,
+          "sha256": "f60efc7684603f5210ae9b727b75b0dd13696eb65c7c2a1ff545db27f2eddd0a",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "4343 Monster M4sk/MONSTER M4SK revD.step",
+          "bytes": 6113683,
+          "sha256": "8de8f4a2f0555067360c7990107f782d536b3c831eaae3f1b40c4fd5db61995d",
+          "format": "step",
+          "units": "unknown"
+        },
+        {
+          "path": "4343 Monster M4sk/MONSTER M4SK revD.stl",
+          "bytes": 3238484,
+          "sha256": "4d1a4b642534fe50b76bf3d0c545fca576c9f717a2782cf007a91abe5f6dc3c5",
+          "format": "stl",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4344 MSA301 Accelerometer",
+      "files": [
+        {
+          "path": "4344 MSA301 Accelerometer/4244 Adafruit MSA301.f3d",
+          "bytes": 1676874,
+          "sha256": "e8f66e40f651e6634bc7265d48ca05ffa282db2c7adef7bed2c8afa9e55a35ef",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "4344 MSA301 Accelerometer/4244 Adafruit MSA301.stl",
+          "bytes": 373084,
+          "sha256": "f1e1513cb7c0a5b568f5b76b4f4dcd3606f40c03c98d0311a2435333bfe997c5",
+          "format": "stl",
+          "units": "unknown"
+        },
+        {
+          "path": "4344 MSA301 Accelerometer/4344 Adafruit MSA301.step",
+          "bytes": 816512,
+          "sha256": "1357b92eac2f00dd60455b16d6e32b31a6f269e9b1f01b5f8dbaa7fcc8151e7d",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4654 MiniBoost 5V",
+      "files": [
+        {
+          "path": "4654 MiniBoost 5V/4654 MiniBoost 5V.f3d",
+          "bytes": 549825,
+          "sha256": "a838fd58d2807890313bd5e567ea44497b95cfe25adf3082bfec5c1ce8877053",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "4654 MiniBoost 5V/4654 MiniBoost 5V.step",
+          "bytes": 179502,
+          "sha256": "e923ce8054ca5459e8a369f7ad43fa002d76e036787aa7bedcf5e02f71325c0e",
+          "format": "step",
+          "units": "unknown"
+        },
+        {
+          "path": "4654 MiniBoost 5V/4654 MiniBoost 5V.stl",
+          "bytes": 135484,
+          "sha256": "11ff359c8f0662dfa8b24fb0acf5f465d7225505490d614a3eb42773b6a71517",
+          "format": "stl",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "4816 BMP390 QT",
+      "files": [
+        {
+          "path": "4816 BMP390 QT/4816 BMP390 QT.f3d",
+          "bytes": 758531,
+          "sha256": "d38dfc0720e6f644bcdf3b369b683842a989b5b801e21c0bca7af8ebe10cdb17",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "4816 BMP390 QT/4816 BMP390 QT.step",
+          "bytes": 793596,
+          "sha256": "6e998cd63e2e4d0f622a49fe7308350d0885e6fbf185de3d44cbdb02891b84de",
+          "format": "step",
+          "units": "unknown"
+        },
+        {
+          "path": "4816 BMP390 QT/4816 BMP390 QT.stl",
+          "bytes": 390684,
+          "sha256": "5d89d19e99c29e140bda59eeae14e7baf94c2660c128033cceeee9eaeeff6027",
+          "format": "stl",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "512 Analog 2-axis Joystick",
+      "files": [
+        {
+          "path": "512 Analog 2-axis Joystick/512 Analog 2-axis Joystick.f3d",
+          "bytes": 359286,
+          "sha256": "b06605e3138d904c1382c86039213e2d701a742d35ff0e2e691e50abead418d5",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "512 Analog 2-axis Joystick/512 Analog 2-axis Joystick.step",
+          "bytes": 213902,
+          "sha256": "91e43b98df6b327694cfb43ac701b6e0f67b8935612c7a7f60345f6bf2e4d0f4",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "562 10K Potentiometer",
+      "files": [
+        {
+          "path": "562 10K Potentiometer/562 10K Potentiometer.f3d",
+          "bytes": 290627,
+          "sha256": "30f471af6e7623dbe251c6dfea0c8a8f8b9549497c934de47533d55af96640cb",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "562 10K Potentiometer/562 10K Potentiometer.step",
+          "bytes": 393858,
+          "sha256": "38824c650c0cd53b3847c05e055ef209bbf4932c255e95424a3ac4dde7b9feff",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "592 microUSB B Connector Cable",
+      "files": [
+        {
+          "path": "592 microUSB B Connector Cable/592 microUSB B Connector Cable.f3d",
+          "bytes": 92256,
+          "sha256": "ffa3de8a45778087022286159a7962349cd36ddf75ead3d78f8f5e9bcc7c10dc",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "592 microUSB B Connector Cable/592 microUSB B Connector Cable.step",
+          "bytes": 34643,
+          "sha256": "dd16a5d67596f556c5bb91bac7c2a0d4a1eb4db4afc7f2d3011cf94dfa6e0a23",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5981 TRRS Trinkey Case",
+      "files": [
+        {
+          "path": "5981 TRRS Trinkey Case/5981 Bottom.stl",
+          "bytes": 165984,
+          "sha256": "4e46759511187e0e895959b08a369683e9713df7b48c84fa161df960d4992c91",
+          "format": "stl",
+          "units": "unknown"
+        },
+        {
+          "path": "5981 TRRS Trinkey Case/5981 TRRS Trinkey Case.f3z",
+          "bytes": 2919458,
+          "sha256": "4068b8ff307291730aacce3100810d68065fc3e4d739dc279cf7049ddc322b07",
+          "format": "f3z",
+          "units": "unknown"
+        },
+        {
+          "path": "5981 TRRS Trinkey Case/5981 TRRS Trinkey Case.step",
+          "bytes": 3591253,
+          "sha256": "6ff896e42fe2555aa128da327ada59f4be62cde3f690bb0cea6d758dc22c159f",
+          "format": "step",
+          "units": "unknown"
+        },
+        {
+          "path": "5981 TRRS Trinkey Case/5981 Top.stl",
+          "bytes": 67584,
+          "sha256": "06c656de4ce0428652ff07dad84b1f69b64876050f69d78cb4e1b701a7cf185b",
+          "format": "stl",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "5998 Pixel Trinkey Case",
+      "files": [
+        {
+          "path": "5998 Pixel Trinkey Case/5998 Bottom.stl",
+          "bytes": 211484,
+          "sha256": "f88d31d77e8751debab9ac68a12e32ee9e58aa324502fd68af15a59732a3437b",
+          "format": "stl",
+          "units": "unknown"
+        },
+        {
+          "path": "5998 Pixel Trinkey Case/5998 Pixel Trinkey Case.f3z",
+          "bytes": 1929148,
+          "sha256": "9b5786d480253543d7b717673d55b25b385956bf47afe795321b3167f6efe8d6",
+          "format": "f3z",
+          "units": "unknown"
+        },
+        {
+          "path": "5998 Pixel Trinkey Case/5998 Pixel Trinkey Case.step",
+          "bytes": 3157183,
+          "sha256": "373d9be6270334dba0e23e9cb64a0133290764bd6a4e1ef626a1d44b48d888cf",
+          "format": "step",
+          "units": "unknown"
+        },
+        {
+          "path": "5998 Pixel Trinkey Case/5998 Top.stl",
+          "bytes": 72284,
+          "sha256": "7339f97fd96b63536e3816627bd223ddcdee26c24458eb7e84ae3d00b8207ba7",
+          "format": "stl",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6002 QT Py Case",
+      "files": [
+        {
+          "path": "6002 QT Py Case/6002 Bottom.stl",
+          "bytes": 208484,
+          "sha256": "ed2ca3ae806be0f11ed5c7e7bae1021c9430527baf2a3d6c422479e1284caac5",
+          "format": "stl",
+          "units": "unknown"
+        },
+        {
+          "path": "6002 QT Py Case/6002 Case.stl",
+          "bytes": 65484,
+          "sha256": "f3681279021f17e497dacde38edddb4da39a7bb7960f3d19206cd4ce0925fa5d",
+          "format": "stl",
+          "units": "unknown"
+        },
+        {
+          "path": "6002 QT Py Case/6002 QTPy Case.f3z",
+          "bytes": 2352719,
+          "sha256": "e2bc9c52d0f9f423832f84c0874d24d77bad13dc0c011911db165d4d585c4429",
+          "format": "f3z",
+          "units": "unknown"
+        },
+        {
+          "path": "6002 QT Py Case/6002 QTPy Case.step",
+          "bytes": 2695386,
+          "sha256": "6455cd4db68bbb450f3b49a468c9d5406c1d29b132e52820bf9c0c301e569c64",
+          "format": "step",
+          "units": "unknown"
+        },
+        {
+          "path": "6002 QT Py Case/6002 Top.stl",
+          "bytes": 55284,
+          "sha256": "7cdab375b6bd848e2541b14c107591d71696e75ec8afb38856146789522bd1cd",
+          "format": "stl",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6057 Feather RP2040 USB Case",
+      "files": [
+        {
+          "path": "6057 Feather RP2040 USB Case/6057 Bottom.stl",
+          "bytes": 195884,
+          "sha256": "7f3799d6fecd5f193a0586d5a813139082d70db89b3c8749f94ea78936fb8506",
+          "format": "stl",
+          "units": "unknown"
+        },
+        {
+          "path": "6057 Feather RP2040 USB Case/6057 Feather RP2040 USB Case.f3z",
+          "bytes": 2681628,
+          "sha256": "aa7cd80b52c96ac840918e42e655278ac12a42070106639a74739231c9c1dcc1",
+          "format": "f3z",
+          "units": "unknown"
+        },
+        {
+          "path": "6057 Feather RP2040 USB Case/6057 Feather RP2040 USB Case.step",
+          "bytes": 4078705,
+          "sha256": "5b1748eeb05555d51e5df8f3b83d340783096a534489b7fff78282610cb55c41",
+          "format": "step",
+          "units": "unknown"
+        },
+        {
+          "path": "6057 Feather RP2040 USB Case/6057 Top.stl",
+          "bytes": 135984,
+          "sha256": "19d25585473788f18c9bd2efed87849c0b501583cbdcc627a412965915f33a58",
+          "format": "stl",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "610 DC Jack",
+      "files": [
+        {
+          "path": "610 DC Jack/610 DC Jack.f3d",
+          "bytes": 178239,
+          "sha256": "7e54d0b1354e16066d39957d6f27869bc6a6422ea9cfab0966f17160d3ba068c",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "610 DC Jack/610 DC Jack.step",
+          "bytes": 89361,
+          "sha256": "2d58c523b160a8ae1d3527c0b486ceb17c16ae148b91382e748c63b028b39ac9",
+          "format": "step",
+          "units": "unknown"
+        },
+        {
+          "path": "610 DC Jack/610 DC Jack.stl",
+          "bytes": 419284,
+          "sha256": "85ba6492bc1ea8fa030d60620e338ba34644b81c23c3315aee22426aac925b48",
+          "format": "stl",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6114 USB Solar Charger Case",
+      "files": [
+        {
+          "path": "6114 USB Solar Charger Case/6114 Bottom.stl",
+          "bytes": 700484,
+          "sha256": "b265614f58039d02aefa76445403c75a47dd978e922049db0c5e745a8eee1e61",
+          "format": "stl",
+          "units": "unknown"
+        },
+        {
+          "path": "6114 USB Solar Charger Case/6114 Top Cover.stl",
+          "bytes": 399084,
+          "sha256": "422fd2dbbbad40bd29c3b93b35dc4ae0bba316e3fd5b4aede95fe26cff7b9147",
+          "format": "stl",
+          "units": "unknown"
+        },
+        {
+          "path": "6114 USB Solar Charger Case/6114 USB Solar Charger Case.f3z",
+          "bytes": 2701239,
+          "sha256": "ee60990512c04b93e3314e7d1097b6469148df62460e5c43cc0279011764db96",
+          "format": "f3z",
+          "units": "unknown"
+        },
+        {
+          "path": "6114 USB Solar Charger Case/6114 USB Solar Charger Case.step",
+          "bytes": 3919267,
+          "sha256": "b257c5c57a8bbee30ff38612817761b2492f8abf319d5f9cd94a7fa1e5becda2",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6124 BQ25185 3V Case",
+      "files": [
+        {
+          "path": "6124 BQ25185 3V Case/6124 BQ25185 3V Buck Case.f3z",
+          "bytes": 2060331,
+          "sha256": "f1180062eb7126edca27d95a4a52453f75ebdb6a81f05e9ebf2949461eb621fd",
+          "format": "f3z",
+          "units": "unknown"
+        },
+        {
+          "path": "6124 BQ25185 3V Case/6124 BQ25185 3V Buck Case.step",
+          "bytes": 3173213,
+          "sha256": "1c50a0746c7cfe5f29ea5acefef7ad636d0a2c347900caff7fb06e29a32679c4",
+          "format": "step",
+          "units": "unknown"
+        },
+        {
+          "path": "6124 BQ25185 3V Case/6124 Bottom.stl",
+          "bytes": 545084,
+          "sha256": "b7b3c3b16fa6d04ddc140a3e11e3289ed025ebf9eb37b768502e1e831ff0face",
+          "format": "stl",
+          "units": "unknown"
+        },
+        {
+          "path": "6124 BQ25185 3V Case/6124 Top.stl",
+          "bytes": 293484,
+          "sha256": "010d144ecd0dd2d3a950631bba3c7724290f525155ab90b9f0615a11eb4c542e",
+          "format": "stl",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6126 BQ26185 5V Case",
+      "files": [
+        {
+          "path": "6126 BQ26185 5V Case/6126 BQ25185 5V Buck Case.f3z",
+          "bytes": 1816425,
+          "sha256": "1a7a5aa70ef9b83e22126ac325887af05401fdf481cee2871bc40e52559c6866",
+          "format": "f3z",
+          "units": "unknown"
+        },
+        {
+          "path": "6126 BQ26185 5V Case/6126 BQ25185 5V Buck Case.step",
+          "bytes": 2385474,
+          "sha256": "41432fad97b019ac69c3ce5e2d501616f3fb78df14b14b83729f8e4db0548bb9",
+          "format": "step",
+          "units": "unknown"
+        },
+        {
+          "path": "6126 BQ26185 5V Case/6126 Bottom.stl",
+          "bytes": 526684,
+          "sha256": "2d2ab283b044d521faf370de18fba23d05c94b751af329487cf36e9dc2276a1d",
+          "format": "stl",
+          "units": "unknown"
+        },
+        {
+          "path": "6126 BQ26185 5V Case/6126 Top.stl",
+          "bytes": 89484,
+          "sha256": "3e053908c0593c74fbb055622bff9d85a9d27daf0d94bff59133e81bed85006f",
+          "format": "stl",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "64 Halfsize Breadboard",
+      "files": [
+        {
+          "path": "64 Halfsize Breadboard/64 Halfsize Breadboard.f3d",
+          "bytes": 68658,
+          "sha256": "fdbd7efe4007a5fd4361e67b069b16dad72c877983bc25370ddda81f750e719d",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "64 Halfsize Breadboard/64 Halfsize Breadboard.step",
+          "bytes": 23037,
+          "sha256": "b8e48b1c25d45354f6d3f90d5e75cbf3d4063d48e3d1867d255cb52b9de0d279",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "6425 Fruit Jam Case",
+      "files": [
+        {
+          "path": "6425 Fruit Jam Case/6425 Fruit Jam Case Bottom.3mf",
+          "bytes": 53287,
+          "sha256": "6ffc037624849dcb8fb629bb78a97e74590818488e7b1a50f6a2715e403aa704",
+          "format": "3mf",
+          "units": "unknown"
+        },
+        {
+          "path": "6425 Fruit Jam Case/6425 Fruit Jam Case Switch.3mf",
+          "bytes": 9441,
+          "sha256": "27f0fa0460a8ac0abbf72394b90f61a8a633242d5795a88a11a1e9ad6585e8f3",
+          "format": "3mf",
+          "units": "unknown"
+        },
+        {
+          "path": "6425 Fruit Jam Case/6425 Fruit Jam Case Top.3mf",
+          "bytes": 95866,
+          "sha256": "d6b7786b239b7092af810586447a8ca0f466dc7be3fb8f84bb48fe98175c470f",
+          "format": "3mf",
+          "units": "unknown"
+        },
+        {
+          "path": "6425 Fruit Jam Case/6425 Fruit Jam Case.f3z",
+          "bytes": 7369289,
+          "sha256": "74f2a404aca218f4f86cde7fbf4d89b1391207d7aa46c7936d66c46eedfc56fc",
+          "format": "f3z",
+          "units": "unknown"
+        },
+        {
+          "path": "6425 Fruit Jam Case/6425 Fruit Jam Case.step",
+          "bytes": 13704994,
+          "sha256": "37bb62e1ec8ffed527d532f14a83babf7265a2a811f501ff3311c50b064cedab",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "67 9V Battery Holder",
+      "files": [
+        {
+          "path": "67 9V Battery Holder/67 9V battery holder.f3d",
+          "bytes": 69325,
+          "sha256": "207fc048ea2a6bab19d96957ee5b5039f2430c4ec20580d1b3aa5555e62026a4",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "67 9V Battery Holder/67 9V battery holder.step",
+          "bytes": 37088,
+          "sha256": "c249d6e6d565c778085cf9a2c86474d25b188b22a3ebe7c5862b8c0b0f9dd9ea",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "711 DC Toy Motor",
+      "files": [
+        {
+          "path": "711 DC Toy Motor/711 DC Toy Motor.f3d",
+          "bytes": 157680,
+          "sha256": "969213b64b3ede9fc0e17d91c385704548304307e1b96741741c0e421c815d87",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "711 DC Toy Motor/711 DC Toy Motor.step",
+          "bytes": 87264,
+          "sha256": "7718d43d37ff4191a8b136846fedd33de85f6c64216fa76f9eff6b0064c4ef64",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "723 Minty Perma-Proto",
+      "files": [
+        {
+          "path": "723 Minty Perma-Proto/723 Minty Perma-Proto.f3d",
+          "bytes": 976088,
+          "sha256": "aaced4f204b869441606098030643d21ea717b666111378af01dbf92820e1f17",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "723 Minty Perma-Proto/723 Minty Perma-Proto.step",
+          "bytes": 838775,
+          "sha256": "813257e8d227b21f689f4333aaae4835d088fd1d17cf289ad3b1226ee05a3ad4",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "727 3x AAA Battery Holder",
+      "files": [
+        {
+          "path": "727 3x AAA Battery Holder/727 3xAAA JST Battery Holder.f3d",
+          "bytes": 229486,
+          "sha256": "ff30a025bcd600304b43396274d5e011019f7fc068cc0314473f5751aa5db34c",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "727 3x AAA Battery Holder/727 3xAAA JST Battery Holder.step",
+          "bytes": 217436,
+          "sha256": "f58d7b994edeac458d445acd9a4d539768a35512a47ace5fc980ae35d62c0960",
+          "format": "step",
+          "units": "unknown"
+        },
+        {
+          "path": "727 3x AAA Battery Holder/727 3xAAA JST Battery Holder.stl",
+          "bytes": 119684,
+          "sha256": "04fe26dd31672f315957892718b542e158feef42c3246018ce5863fde92a54eb",
+          "format": "stl",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "770 2xAA battery holder",
+      "files": [
+        {
+          "path": "770 2xAA battery holder/770 2xAA battery holder.f3d",
+          "bytes": 290190,
+          "sha256": "5e4141c013a525bd1d8c7fb9e60b688ba2fd88e432131c2aafea2c7cfa8c8155",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "770 2xAA battery holder/770 2xAA battery holder.step",
+          "bytes": 174549,
+          "sha256": "a5769ca7d6159206ee934c0d3927fa03eb1aecd1ba5df201643e3f41e7e5721b",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "805 slide switch",
+      "files": [
+        {
+          "path": "805 slide switch/805 slide switch.f3d",
+          "bytes": 74664,
+          "sha256": "385920cf610fa9edd8639f8032518619518d8dbebe9c69b319e450527c3d006c",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "805 slide switch/805 slide switch.step",
+          "bytes": 22814,
+          "sha256": "192359d794292afb0ccaab33378a2671377e973f2e7fa6e93527f8b6fa5d2a4c",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "817 Zippy Micro Switch",
+      "files": [
+        {
+          "path": "817 Zippy Micro Switch/817 micro switch ZIPPY.f3d",
+          "bytes": 158287,
+          "sha256": "2bd7b5e276a4837c2a4c90cde5350a8360ece104872178e4dde0644cf5cbfe64",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "817 Zippy Micro Switch/817 micro switch ZIPPY.step",
+          "bytes": 49788,
+          "sha256": "2566abaa6dd7cd11345acd0fee62973b6706f08af31e7262cb434340850434da",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "830 Battery Holder",
+      "files": [
+        {
+          "path": "830 Battery Holder/830 Battery Holder 4xAA v1.f3d",
+          "bytes": 223583,
+          "sha256": "5f46383bdb9a3ae0ce428c1e288969531f2adda713ba7f5b88b95ea982937020",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "830 Battery Holder/830 Battery Holder 4xAA.step",
+          "bytes": 222147,
+          "sha256": "aed16f3913d44d3c4ac6912c489efec9d65dcadad6b03940968d205af98ade67",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "858 Stepper Motor 5VDC",
+      "files": [
+        {
+          "path": "858 Stepper Motor 5VDC/858 Stepper Motor 5VDC.f3d",
+          "bytes": 313155,
+          "sha256": "640073528044ab10bb1de4f299a0990ff404aaaaa5c61febca9aa0d286a07548",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "858 Stepper Motor 5VDC/858 Stepper Motor 5VDC.step",
+          "bytes": 137557,
+          "sha256": "6981d3445975a952389e50fa66dd0062749358886bcf55de252f5335704fc98e",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "875 8x AA Battery Holder",
+      "files": [
+        {
+          "path": "875 8x AA Battery Holder/875 8xAA Battery Holder.f3d",
+          "bytes": 64694,
+          "sha256": "4fdbe0e5f0c489de17b3f76cec622e73224563898af4e488b7d9bc9a350f0897",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "875 8x AA Battery Holder/875 8xAA Battery Holder.step",
+          "bytes": 31258,
+          "sha256": "07302aedfb19e90dd68498b622417e2123a8062569850105eb4c6720659e9600",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "878 7-segment display backpack",
+      "files": [
+        {
+          "path": "878 7-segment display backpack/878 7-segment display backpack.f3d",
+          "bytes": 132107,
+          "sha256": "464394c1647dfffc50747a6a8c0f63d0c15a15b23c99183f002a10406d96cd4f",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "878 7-segment display backpack/878 7-segment display backpack.step",
+          "bytes": 26764,
+          "sha256": "e61ffab954b4d5d1948018fb1673e14433e1ab942e5076ce09fba67cb221be58",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "916 metal button",
+      "files": [
+        {
+          "path": "916 metal button/916 Metal Button.f3d",
+          "bytes": 204161,
+          "sha256": "e4d561f44bda8e9a62f0ea2fbf7d618703763e8403f9740ac54f4b0b149f6618",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "916 metal button/916 Metal Button.step",
+          "bytes": 716628,
+          "sha256": "e144eaf82a3aa93b698b8fe4c3de908ac1eb7e2b224f35aae3047d3ad5fb7e9a",
+          "format": "step",
+          "units": "unknown"
+        },
+        {
+          "path": "916 metal button/916 Metal Button.stl",
+          "bytes": 2043684,
+          "sha256": "c05e55c5975c2743a943c0629536f7c0d2da3699931bbf6316a7aaefffb2497a",
+          "format": "stl",
+          "units": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "931 OLED 128x32 I2C",
+      "files": [
+        {
+          "path": "931 OLED 128x32 I2C/931 OLED 128x32 I2C.f3d",
+          "bytes": 84065,
+          "sha256": "e6c009aa914a471264b4893efa95885c268b7cd94e070b50f5ecec21f808faee",
+          "format": "f3d",
+          "units": "unknown"
+        },
+        {
+          "path": "931 OLED 128x32 I2C/931 OLED 128x32 I2C.step",
+          "bytes": 30906,
+          "sha256": "8028b98420d10194b9246ca37deb86404a42468f81370741ac6ff4a0b308b210",
+          "format": "step",
+          "units": "unknown"
+        }
+      ]
+    }
+  ]
+}

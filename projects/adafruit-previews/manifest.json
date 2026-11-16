@@ -1,0 +1,1742 @@
+{
+  "version": 1,
+  "upstreamCommit": "9f2a89f3d5c3491886d58cb7fe83385417563cf4",
+  "archiveCommit": "fb6c7632c50e9a1d58ab57167d6d3f9f9365ae73",
+  "licence": "MIT",
+  "licenceUrl": "https://raw.githubusercontent.com/CrispStrobe/brickwright-media-lab/fb6c7632c50e9a1d58ab57167d6d3f9f9365ae73/projects/adafruit-cad-parts/original/LICENSE",
+  "attribution": "Adafruit Industries; generated from original Adafruit CAD geometry.",
+  "renderer": "Open CASCADE STEP and STL tessellation with fixed isometric projection; Fusion embedded source previews",
+  "entries": [
+    {
+      "folder": "1092 Tactile On Off Switch",
+      "image": {
+        "path": "projects/adafruit-previews/images/c3f7a6ac08ba940f66df7708.png",
+        "bytes": 4554,
+        "sha256": "72fe4e5b8be442e621458a3b81cc1d8153b5a5440db02315448252a3c6f2ba7e",
+        "format": "png"
+      },
+      "source": {
+        "path": "1092 Tactile On Off Switch/1092 Tactile On Off Switch.step",
+        "bytes": 57270,
+        "sha256": "817afa9ed6bc3b2e4fd543eec066cc752dd8f597711cfd5d6f882db351da55cd",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "1143 Micro Servo - High Torque Metal Gear",
+      "image": {
+        "path": "projects/adafruit-previews/images/8838c51dede1487104ce0f0f.png",
+        "bytes": 3867,
+        "sha256": "48fdc2b1ffe196f5acb3bc19c87019dea35e5f16183ee1241746cd9d471abbbc",
+        "format": "png"
+      },
+      "source": {
+        "path": "1143 Micro Servo - High Torque Metal Gear/1143 Micro Servo High Torque Metal Gear.step",
+        "bytes": 136339,
+        "sha256": "949e219540d8889b9ab9364d3e155e2d72605d590b9c3cb11cbfa3f653e72d3f",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "1185 Massive Arcade Button 100mm",
+      "image": {
+        "path": "projects/adafruit-previews/images/859ef224e04361f61aca3828.png",
+        "bytes": 11148,
+        "sha256": "62e781c09c3b765e69ce9a70e2e496ba99649999cb33cac65952b6525e81e6c5",
+        "format": "png"
+      },
+      "source": {
+        "path": "1185 Massive Arcade Button 100mm/1185 Massive Arcade Button 100mm.step",
+        "bytes": 802426,
+        "sha256": "85d61649551b187a005b07ad21950e92f5aec3fa457825805bab1994058c46d6",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "1221 Adafruit 2020 Extrusion",
+      "image": {
+        "path": "projects/adafruit-previews/images/1aae682940d2147736eff087.png",
+        "bytes": 9088,
+        "sha256": "d88782e99f235620939909ce4aa05aebe08d6a19f19edf83fcb231e24dac36bb",
+        "format": "png"
+      },
+      "source": {
+        "path": "1221 Adafruit 2020 Extrusion/1221 Adafruit 2020 Extrusion.step",
+        "bytes": 156205,
+        "sha256": "e883641abbd4e7ed7f6fc9da1fd47818f2536843cbe764942cd12a581f98d034",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "1253 Aluminum Timing Pulley",
+      "image": {
+        "path": "projects/adafruit-previews/images/7e00ca1d7e26c35e1d8e1d43.png",
+        "bytes": 11681,
+        "sha256": "652135a41c702e717808eeaa7ab644a4f1a24c0156566e82d6aaf12af18f271c",
+        "format": "png"
+      },
+      "source": {
+        "path": "1253 Aluminum Timing Pulley/1253 Aluminum Timing Pulley.step",
+        "bytes": 472468,
+        "sha256": "35f81cef7f951e4ca673d1c8a663d9e3a51f4e8659b986f37faa4e487ce05946",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "1313 Speaker 3in 8Ohm 1W",
+      "image": {
+        "path": "projects/adafruit-previews/images/f6fff21c0d36b3b5bb0455ac.png",
+        "bytes": 9732,
+        "sha256": "975803e43ebb50aca957c9cf2d7e0587f2867fac09787ad0f9871ef3432ec13a",
+        "format": "png"
+      },
+      "source": {
+        "path": "1313 Speaker 3in 8Ohm 1W/1313 Speaker 3in 8Ohm 1W.step",
+        "bytes": 271015,
+        "sha256": "d8fc972d1b618c05880ea60d10cb000d46f4e2fd3dc7e5cf1e04230a934aa4e4",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "1317 150mAh Lipo Battery",
+      "image": {
+        "path": "projects/adafruit-previews/images/fb9253ea03f55b1d0b944a05.png",
+        "bytes": 2812,
+        "sha256": "d671ffffb55a7247f79b31ce9b4af80e321d609e44abe619204093ee1c6fc3cd",
+        "format": "png"
+      },
+      "source": {
+        "path": "1317 150mAh Lipo Battery/1317 150mAh Lipo Battery.step",
+        "bytes": 15749,
+        "sha256": "0bc41e6d6067cddf6bb57ff690f2443e64ed14fdb3ddf7b6868f0815cf57de85",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "1321 Battery 9V",
+      "image": {
+        "path": "projects/adafruit-previews/images/a7748fa1f319eb3169dedf7a.png",
+        "bytes": 5811,
+        "sha256": "607100990ec12b138a0480bc6c56468e00644ad4f05bc284f480cec88680e737",
+        "format": "png"
+      },
+      "source": {
+        "path": "1321 Battery 9V/1321 Battery 9V.step",
+        "bytes": 237372,
+        "sha256": "be0717e78c93fb059196e59a17c26cfd222940d852340920fa30cb141ae5c375",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "1376 NeoPixel Strip",
+      "image": {
+        "path": "projects/adafruit-previews/images/c5a5894d14d233100ad6ceba.png",
+        "bytes": 1906,
+        "sha256": "49ee1cdd920c061b71bd68fe347b48d840847ed3944e7380498356cf264cec6a",
+        "format": "png"
+      },
+      "source": {
+        "path": "1376 NeoPixel Strip/1376 NeoPixel Strip.step",
+        "bytes": 237843,
+        "sha256": "58e2e64486e8bb69efe89f504618323bfe1c0bd394a0dff09779016005a3f991",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "1426 8x NeoPixel Stick",
+      "image": {
+        "path": "projects/adafruit-previews/images/443916201dca4d96b4e7bbe6.png",
+        "bytes": 2945,
+        "sha256": "367fbad143ed3bbe270429f2c14ca8a1294752164e5b863abacfc28391616268",
+        "format": "png"
+      },
+      "source": {
+        "path": "1426 8x NeoPixel Stick/1426 8x NeoPixel Stick.step",
+        "bytes": 116195,
+        "sha256": "d3066e01e96644b0990469cf4450ab909ef0c8b034a12bd8151320fa33f98522",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "1438 Adafruit MotorShield",
+      "image": {
+        "path": "projects/adafruit-previews/images/206f9bc664a240e14a0d4e69.png",
+        "bytes": 3445,
+        "sha256": "583751620b60013b55fb9b8bb2c483dcd66805f27da635a337c057def392f491",
+        "format": "png"
+      },
+      "source": {
+        "path": "1438 Adafruit MotorShield/1438 Adafruit MotorShield.step",
+        "bytes": 73337,
+        "sha256": "600a37b31421d17d8141c0bbef370992ce12716ddd24f7274d180ac75380504b",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "1455 LED driver TLC59711",
+      "image": {
+        "path": "projects/adafruit-previews/images/2b6a2301404f0ffbcf19b928.png",
+        "bytes": 7082,
+        "sha256": "0f95c45c84d34b99712cd1788a46be1f118984f95da63a63a51b91154db41c3c",
+        "format": "png"
+      },
+      "source": {
+        "path": "1455 LED driver TLC59711/1455 LED-Driver-TLC59711.step",
+        "bytes": 1102124,
+        "sha256": "66d0773246041287502b842a38b5dd96d0360b595707181ee7849af8a00a7b07",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "1463 16x NeoPixel Ring",
+      "image": {
+        "path": "projects/adafruit-previews/images/9bcbb9794c06ca2d88361bfd.png",
+        "bytes": 3575,
+        "sha256": "af33a5712ebeff0e5046dc0d31fa8f0b5b6c1b02d4e9d27fb6e79c3563e05f11",
+        "format": "png"
+      },
+      "source": {
+        "path": "1463 16x NeoPixel Ring/1463 16x NeoPixel Ring.step",
+        "bytes": 114270,
+        "sha256": "34d9dd913b56386012bf93620b1928ef6a7a972f96434bffe69bf0399e55bcbf",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "1501 Trinket 5V",
+      "image": {
+        "path": "projects/adafruit-previews/images/e7d0d5cf956b0c1e5b3e24c5.png",
+        "bytes": 2959,
+        "sha256": "c45ccc9cb5a386fe9b500e8467060f39252bb051dcfd24a232b45fc5adc9f660",
+        "format": "png"
+      },
+      "source": {
+        "path": "1501 Trinket 5V/1501 Trinket 5V.step",
+        "bytes": 43267,
+        "sha256": "15cd9260ddf23bf20366a5db8fb9ded90c9405b9a60a46f1139373c9a6cf4955",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "1570 100mAh Lipo Battery",
+      "image": {
+        "path": "projects/adafruit-previews/images/3f8b6eb4ed80173d0dbc3491.png",
+        "bytes": 3329,
+        "sha256": "ed1a56dee1f7e85563a882550a69acf8a13e318d7ff9294e3dbd89a073b67302",
+        "format": "png"
+      },
+      "source": {
+        "path": "1570 100mAh Lipo Battery/1570 100mAh Lipo Battery.step",
+        "bytes": 14835,
+        "sha256": "2386382b201eb9adfc001a3601191bfe8f006f1567905ba55309635dde9a1258",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "1578 500mAh battery",
+      "image": {
+        "path": "projects/adafruit-previews/images/dafc0c906cfd9edd5edc0256.png",
+        "bytes": 2911,
+        "sha256": "213879db171ad5e8eb3fc3096ec5cd83940d83e84606cea5b1e416ea4b851707",
+        "format": "png"
+      },
+      "source": {
+        "path": "1578 500mAh battery/1578 500mAh battery.step",
+        "bytes": 14850,
+        "sha256": "e5d2d1b438df5da81cfa8c47ab890ce3bd68369ce243072faf7b2bf4450928f1",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "1586 24x NeoRing",
+      "image": {
+        "path": "projects/adafruit-previews/images/43a65dc90bd53b79b36fb305.png",
+        "bytes": 3862,
+        "sha256": "a5b30243e52a19df980f27264f82537f85c3bf95d33139ed54190edfd7a7576c",
+        "format": "png"
+      },
+      "source": {
+        "path": "1586 24x NeoRing/1586 24x NeoRing.step",
+        "bytes": 157858,
+        "sha256": "b1c2c44c8d15559e224ed550811d01ceff448000452a466c303906aa2aab00f2",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "1586 NeoPixel Ring 24x",
+      "image": {
+        "path": "projects/adafruit-previews/images/ba3c71971f2ab9a89971a4bb.png",
+        "bytes": 4475,
+        "sha256": "e77ac9d3055f47b4ad6a721d62669d88a91686016fff836b468c61b8133e23c7",
+        "format": "png"
+      },
+      "source": {
+        "path": "1586 NeoPixel Ring 24x/24x NeoPixel Ring 1586.step",
+        "bytes": 198967,
+        "sha256": "cbbf7772b8d6ea750cce4a8980624a013ca18de4ed083baf04cba8950de2c005",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "1606 Perma-Proto FullSize",
+      "image": {
+        "path": "projects/adafruit-previews/images/a568f00f6ab31e86999751ee.png",
+        "bytes": 3626,
+        "sha256": "426f68e3b994f3582246933b6674d3bddb6bb569260049becde1417817ad1455",
+        "format": "png"
+      },
+      "source": {
+        "path": "1606 Perma-Proto FullSize/1606 Perma-Proto FullSize.step",
+        "bytes": 1467024,
+        "sha256": "85d242df63ecac5d3b9fcf46931d8fbb5a925fb4d1cce8af0a683dde042d1a13",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "1608 perma-proto quarter",
+      "image": {
+        "path": "projects/adafruit-previews/images/ffc3b93b833ead6c961a6554.png",
+        "bytes": 2172,
+        "sha256": "46b521fa9fb74b08559f39fdc1b218ad16cfbb5f08e1c7acaace5e96b99013b2",
+        "format": "png"
+      },
+      "source": {
+        "path": "1608 perma-proto quarter/1608 perma-proto quarter.step",
+        "bytes": 18037,
+        "sha256": "09570625d9e111c829e0c97ae244d0736f160d8ea35537f0fb328fdde93aeb70",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "1609 Perma-Proto HalfSize",
+      "image": {
+        "path": "projects/adafruit-previews/images/af059a2e7a7fe875593b3a48.png",
+        "bytes": 5081,
+        "sha256": "e326ee930ba4bbdb5ad173745777afd306dd1ef2cbacce923b7ef6547c2c0bf2",
+        "format": "png"
+      },
+      "source": {
+        "path": "1609 Perma-Proto HalfSize/1609 Perma-Proto HalfSize.step",
+        "bytes": 730552,
+        "sha256": "3be7f0f6d9cb7ff240f04876df6d0eb057f152d214ed7df994051486d47348a2",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "1680 5in TFT Display",
+      "image": {
+        "path": "projects/adafruit-previews/images/7c385a9a4cd2319634bb50b3.png",
+        "bytes": 1756,
+        "sha256": "752a919a4cf057da72feabfd452cf9af39767711f01094daeb238ca5fd5c0a66",
+        "format": "png"
+      },
+      "source": {
+        "path": "1680 5in TFT Display/1680 5in TFT Display.step",
+        "bytes": 13882,
+        "sha256": "db682a5431f26a0749de4b33c7cbb5e0544da8b61922eb96106b314ddc82e95e",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "1739 Pizero Large",
+      "image": {
+        "path": "projects/adafruit-previews/images/2b6b272267ad10ba8c90b693.png",
+        "bytes": 3140,
+        "sha256": "b3d4a174bad8bf0f9c5039d4fbf5c65c40ba9fe52f3cacb2fe065002ef873982",
+        "format": "png"
+      },
+      "source": {
+        "path": "1739 Pizero Large/1739 Pizero Large.step",
+        "bytes": 26845,
+        "sha256": "9833fd7bf9de77bf0f90347006d10607d63f7215b823f3913cf10d5793e35330",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "1752 MAX9744",
+      "image": {
+        "path": "projects/adafruit-previews/images/067d12382c59367c7001b339.png",
+        "bytes": 3020,
+        "sha256": "9fae54c96e1183baa52a10971641f4f383da529764a2d42e11328a1dce408288",
+        "format": "png"
+      },
+      "source": {
+        "path": "1752 MAX9744/1752 MAX9744.step",
+        "bytes": 39642,
+        "sha256": "8aeab58a575792e650bc97dac44a8a1142f2469c62f21ed033f1f332b4f54149",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "1781 2200mAh Battery",
+      "image": {
+        "path": "projects/adafruit-previews/images/c5f842a86345901483518e78.png",
+        "bytes": 3153,
+        "sha256": "370cfef8a59211e714f0c461d9cb51fe50ec206397ce73a7f16cd13b467c51b9",
+        "format": "png"
+      },
+      "source": {
+        "path": "1781 2200mAh Battery/1781 2200mAh Battery.step",
+        "bytes": 12177,
+        "sha256": "2c3770f471d1c65184772e087e05bccf4a81dd387fe500cd9dbf5b654265ab6f",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "1833 micro USB Breakout",
+      "image": {
+        "path": "projects/adafruit-previews/images/cf9f0305a87f2ce56a2b8d3e.png",
+        "bytes": 4208,
+        "sha256": "20390817c65648fbf745ece608a0d6da675e4225c72a7e86049fb8c52664aef8",
+        "format": "png"
+      },
+      "source": {
+        "path": "1833 micro USB Breakout/1833 micro USB Breakout.step",
+        "bytes": 60280,
+        "sha256": "b580fc7a53f806136bdb4d5f2a1fc1c196b42b475d1abf163c12087097a00c8f",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "1866 Slide Rail Platform",
+      "image": {
+        "path": "projects/adafruit-previews/images/d403ca5c07766400becebd5d.png",
+        "bytes": 8374,
+        "sha256": "5722e20ed6f9a98dfc3fc422cb50c09a10d5c150a059b6ab2a24fcff97acb7c8",
+        "format": "png"
+      },
+      "source": {
+        "path": "1866 Slide Rail Platform/1866 Slide Rail Platform.step",
+        "bytes": 139950,
+        "sha256": "5fa96431c5d55f74bb9aa99f79182e881dad10ae71574883a1a63e6e2f7e97c1",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "1867 12mm Coincell Switched",
+      "image": {
+        "path": "projects/adafruit-previews/images/61a425ce026a50f1b7d75e39.png",
+        "bytes": 2854,
+        "sha256": "7ea734b26f17652e9728eb6bb5a3176ac5049279ff857d3fdaa8d7c06a72f5f2",
+        "format": "png"
+      },
+      "source": {
+        "path": "1867 12mm Coincell Switched/1867 12mm Coincell Switched.step",
+        "bytes": 74108,
+        "sha256": "c03592c3946b951239697dac8d06063af69d65ff7a9cb07816e1a729285d2177",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "1893 Altimeter MLP3115A2",
+      "image": {
+        "path": "projects/adafruit-previews/images/2f6b5f8d5c75385885e8304b.png",
+        "bytes": 3252,
+        "sha256": "562ecea4e54a9e4dc4b17776c136d868a9fc0637cdc6daec4620da1287d1aad4",
+        "format": "png"
+      },
+      "source": {
+        "path": "1893 Altimeter MLP3115A2/1893 Altimeter MLP3115A2.step",
+        "bytes": 106231,
+        "sha256": "4c513fefa12c2dfed01c3a220d7689d0fa813e86c118700fb7ad6d4dc3172e2c",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "1982 MPR121",
+      "image": {
+        "path": "projects/adafruit-previews/images/5b25962a6b5103bc32bc7ca2.png",
+        "bytes": 2238,
+        "sha256": "493133ec8bf61760f78134d1752dd6ba056ec20bedd2310767ebaccf095194a9",
+        "format": "png"
+      },
+      "source": {
+        "path": "1982 MPR121/1982 MPR121.step",
+        "bytes": 15017,
+        "sha256": "d03522391a35e87692511ddd895cd23caacfe9bb4f955589c3a43cd3bd1b3239",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "2011 2000mAh Battery",
+      "image": {
+        "path": "projects/adafruit-previews/images/2a2d10a18d465fb136311822.png",
+        "bytes": 2228,
+        "sha256": "b8c0b073496ab6474493dab5510f68e218e020b3b92b4601d2d0fa9c425eaa39",
+        "format": "png"
+      },
+      "source": {
+        "path": "2011 2000mAh Battery/2000mAh Battery.step",
+        "bytes": 14821,
+        "sha256": "dc8a606030ce3ec1b2c349d1a6843084411cd2ef5ea1889d135956523d801bd3",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "2130 PAM8302",
+      "image": {
+        "path": "projects/adafruit-previews/images/4e946ac5191efaa44e565929.png",
+        "bytes": 3542,
+        "sha256": "80a77bdf2f457252e1da6e68f823451a1049d5cb8e1dc924808b948b4ea2713b",
+        "format": "png"
+      },
+      "source": {
+        "path": "2130 PAM8302/2130 PAM8302.step",
+        "bytes": 115942,
+        "sha256": "b1c5dd72bd6ca331c666666f1f061c49ecaa2994c6505dec3c82e514d734db66",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "2190 Verter 5V USB",
+      "image": {
+        "path": "projects/adafruit-previews/images/e51905b53463ee43a3e266fd.png",
+        "bytes": 4384,
+        "sha256": "2a1cfd8cfe7ef12a6d2242b6670e007f9404612ea897330d5a7655ede8a54ec1",
+        "format": "png"
+      },
+      "source": {
+        "path": "2190 Verter 5V USB/2190 Verter 5V USB.step",
+        "bytes": 101010,
+        "sha256": "20219f647e859b740c0d1ccf9df47a5e1cf2cac9e659bbfe2686a85fa6272890",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "2201 Submicro servo",
+      "image": {
+        "path": "projects/adafruit-previews/images/c7e5ef006ceab485acf71e5b.png",
+        "bytes": 4230,
+        "sha256": "8c45439ace780180cc2328200bd253eedb4b5b76918f0e7073c481dc7ead19ac",
+        "format": "png"
+      },
+      "source": {
+        "path": "2201 Submicro servo/2201 Submicro Servo SG51R.step",
+        "bytes": 160072,
+        "sha256": "66fa3c9570de91e698b0077e20adc652eaf3e21f98db499cfc4980c35e740013",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "2218 HDMI TPF401 Breakout",
+      "image": {
+        "path": "projects/adafruit-previews/images/c6f29a0556443b12aa44d1c3.png",
+        "bytes": 2730,
+        "sha256": "91dc64f3250fd2574747f8c10aafb172b5edc8ab8b5e390875c1590280cbc075",
+        "format": "png"
+      },
+      "source": {
+        "path": "2218 HDMI TPF401 Breakout/2218 HDMI TPF401 Breakout.step",
+        "bytes": 44631,
+        "sha256": "cd24c47ebddbc0c6be329ba6173331a67e390ce2231a45c444ae50a547f5fbbf",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "2226 NeoPixel Jewel",
+      "image": {
+        "path": "projects/adafruit-previews/images/bd5b7ab31cdf7a1e195821ff.png",
+        "bytes": 3622,
+        "sha256": "0dbd8393ab98d794aa7fcada6e73a13a089950574ed609acb67c54ea6be66764",
+        "format": "png"
+      },
+      "source": {
+        "path": "2226 NeoPixel Jewel/2226 NeoPixel Jewel.step",
+        "bytes": 69965,
+        "sha256": "7adbd8f442e30657bd73b22a781c96aed0747be83086e7d4ed4f8b9b065e1ca5",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "2230 Extruded aluminum box 94mm",
+      "image": {
+        "path": "projects/adafruit-previews/images/f36cab165af97b27e70e7eb9.png",
+        "bytes": 2551,
+        "sha256": "9f65a13c83f124cf575b1fa269e8a39b199cbf4b041ab832d89f80a518c05364",
+        "format": "png"
+      },
+      "source": {
+        "path": "2230 Extruded aluminum box 94mm/2230 Extruded aluminum box 94mm.step",
+        "bytes": 73474,
+        "sha256": "0fddb71df6f7b0177d918a08dbc9c3b5f71492aac90749d4b5cb454d16aa7a52",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "2232 5in HDMI Backpack",
+      "image": {
+        "path": "projects/adafruit-previews/images/a091d8e57627e66d41558b8a.png",
+        "bytes": 2521,
+        "sha256": "21ad387a101ea93d5000ce89f9b3a3b2f1e9f9e9b2c1caf10a1f7d7b9dc165e9",
+        "format": "png"
+      },
+      "source": {
+        "path": "2232 5in HDMI Backpack/2232 5in HDMI Backpack.step",
+        "bytes": 53968,
+        "sha256": "59e8a5770a390c73033ce2491db434530ef3ec4384f7cbd888c7fb50595cdaf9",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "2315 PiTFT 2.2",
+      "image": {
+        "path": "projects/adafruit-previews/images/f7a0b8cafb3183c62aa2c083.png",
+        "bytes": 3937,
+        "sha256": "a52eb6468ce257f55886cf3c8d7e12c2d71f2e547be0368da031432af785fdb7",
+        "format": "png"
+      },
+      "source": {
+        "path": "2315 PiTFT 2.2/2315 PiTFT 2.2.step",
+        "bytes": 111599,
+        "sha256": "1f2c2539b445badeee893ab2e0882e5c02e2fcaab6bcdbd60a7b82d8c84af3d6",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "2423 PiTFT 2.8",
+      "image": {
+        "path": "projects/adafruit-previews/images/c380a16a3e12697370b01075.png",
+        "bytes": 3929,
+        "sha256": "cf5bfe3f2138d0429c19fba16c5294af1fe8c36eaf02cb77ce45eb10b94cea07",
+        "format": "png"
+      },
+      "source": {
+        "path": "2423 PiTFT 2.8/2423 PiTFT 2.8.step",
+        "bytes": 157852,
+        "sha256": "967cc3e02d8c3b7b4629533a9876e5687b8f16ae8be2392da580bb2744ce119e",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "2441 PiTFT 3.5",
+      "image": {
+        "path": "projects/adafruit-previews/images/16d5d8a8ae8c52fa034e9e74.png",
+        "bytes": 2719,
+        "sha256": "1b96bad5160abf515d71915bcaf6706a04edc42bd3bec21fb2f41517617f264a",
+        "format": "png"
+      },
+      "source": {
+        "path": "2441 PiTFT 3.5/2441 PiTFT 3.5.step",
+        "bytes": 53548,
+        "sha256": "bef9c6a1a315814874bad52eb191530c6b6fed8f6b78982ff5bfa09561f045cb",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "2465 Powerboost 1000C",
+      "image": {
+        "path": "projects/adafruit-previews/images/6e0c4bb937d66e7f289d3c35.png",
+        "bytes": 5209,
+        "sha256": "e0f486fd0b7965704ee883dc866d30845b9aa1d0c2bce872e152c87e30241b7a",
+        "format": "png"
+      },
+      "source": {
+        "path": "2465 Powerboost 1000C/2465 Adafruit PowerBoost 1000C Rev B.step",
+        "bytes": 1879501,
+        "sha256": "1bfcac9a47dfab966ac5b092149aa52e8fbc3dedcf75be338e962b6995b7ce12",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "2488 Adafruit Metro 328",
+      "image": {
+        "path": "projects/adafruit-previews/images/b9cab94b072674da21f974c0.png",
+        "bytes": 4100,
+        "sha256": "f6bc9d775fc1db79fb9183b7fa0eed2c0461e76a1601163c8385ea60bfe20559",
+        "format": "png"
+      },
+      "source": {
+        "path": "2488 Adafruit Metro 328/2488 Adafruit Metro 328.step",
+        "bytes": 104086,
+        "sha256": "d9c042e9515d48b741a6eab22efc3dc73f6e55ebf01aa2551b1c1acef4abd3f1",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "258 1200mAh lipo",
+      "image": {
+        "path": "projects/adafruit-previews/images/c733bc5239efeecebb7b0ce6.png",
+        "bytes": 2311,
+        "sha256": "38b33276d57f3ac3ad620372b373598784e763a35e13b6953a1c64be8effa69d",
+        "format": "png"
+      },
+      "source": {
+        "path": "258 1200mAh lipo/258 1200mAh lipo.step",
+        "bytes": 38402,
+        "sha256": "c81bcfef27a54a671cec259164a23666fbad6d8b4320c10dc6b5ae0567002001",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "2629 Quarter Inch D-Ring Tripod Mount",
+      "image": {
+        "path": "projects/adafruit-previews/images/60daed72bc759f119668fa71.png",
+        "bytes": 10772,
+        "sha256": "718ba0dacf829924387272d84787437b1fa3edd93cfd06099af9759e145e1436",
+        "format": "png"
+      },
+      "source": {
+        "path": "2629 Quarter Inch D-Ring Tripod Mount/2629 Quarter Inch D-Ring Tripod Mount.step",
+        "bytes": 208316,
+        "sha256": "62ba61b030e1695b0f42a5a6bf7c6561b1ec3aa11d517f5d87ec1c74a587bb92",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "2756 Teensy 3.2",
+      "image": {
+        "path": "projects/adafruit-previews/images/9f249c7d9cb7bab295341b5d.png",
+        "bytes": 6325,
+        "sha256": "9803064d65ce025ea4fac8c4e0a1cb34b7ecdb4ef9fa8bd582ecec52a98b2ae6",
+        "format": "png"
+      },
+      "source": {
+        "path": "2756 Teensy 3.2/2756 Teensy 3.2.step",
+        "bytes": 169311,
+        "sha256": "3d231fcac04ca54e3c6ac8788c70ff5d4f3abfc4dd3a382846b7154a30cb2aaf",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "2829 Adafruit Feather Bluefruit 32u4",
+      "image": {
+        "path": "projects/adafruit-previews/images/21022e9de33b14fc92e52273.png",
+        "bytes": 2613,
+        "sha256": "4c73ec7f541d20ff410b430662aab2d47aea320020a1ab1a14ae111a8de2857b",
+        "format": "png"
+      },
+      "source": {
+        "path": "2829 Adafruit Feather Bluefruit 32u4/2829 Adafruit Feather Bluefruit 32u4.step",
+        "bytes": 34111,
+        "sha256": "f159ad7f7208f8ac8b03a52e4c8ee9cfef13e6fe7ef91d85920fe4865d02d4c0",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "2831 Photo Transistor Light Sensor",
+      "image": {
+        "path": "projects/adafruit-previews/images/c6f73de884b79c1294c875db.png",
+        "bytes": 2922,
+        "sha256": "1992f66ac7510eb3e6b053e2ae07bc7f27203d4d662f9887a3d9680214aa8096",
+        "format": "png"
+      },
+      "source": {
+        "path": "2831 Photo Transistor Light Sensor/2831 Photo Transistor Light Sensor.step",
+        "bytes": 28872,
+        "sha256": "1b836a8c124ee2874d3cf99751e5029f0a9b818d6b1c6d0e5b3063a2f49ca17b",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "2900 Feather OLED Wing",
+      "image": {
+        "path": "projects/adafruit-previews/images/1f9062d17a87c161ac914be8.png",
+        "bytes": 3476,
+        "sha256": "ba3ea58f1e8c4fe1f5625cabbf7338690ce416f15b4aace9af6141f1415170a3",
+        "format": "png"
+      },
+      "source": {
+        "path": "2900 Feather OLED Wing/2900 Feather OLED Wing.step",
+        "bytes": 71027,
+        "sha256": "dafb12855b2eb45848db1ead10ab1675f62ee625748cf698a8c150a769cec5db",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "2941 DC Motor in Servo Body",
+      "image": {
+        "path": "projects/adafruit-previews/images/1213134f183e8d8738da3583.png",
+        "bytes": 4282,
+        "sha256": "22ada5f9be765855395dd5b0b82806ea2cdf3178560ea111b75eb63748ad6b37",
+        "format": "png"
+      },
+      "source": {
+        "path": "2941 DC Motor in Servo Body/2941 Micro DC Motor.step",
+        "bytes": 121685,
+        "sha256": "71727e2f71d884286fc4dbfc55e2f7b39aac49a0535501c91eb824fd175753c1",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "3000 Circuit Playground Classic",
+      "image": {
+        "path": "projects/adafruit-previews/images/d2093601835c0f34d01e51de.png",
+        "bytes": 4756,
+        "sha256": "ae874d95a76748d69074b98a1a85bb90d73d12638c33f14c3a76ff0c73edbd33",
+        "format": "png"
+      },
+      "source": {
+        "path": "3000 Circuit Playground Classic/3000 Circuit Playground Classic.step",
+        "bytes": 256343,
+        "sha256": "20fa1bfa7522b74deafa9db5d25a58cf5ea9f47615abf96da3f92c90f451d50d",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "3010 Feather M0 Wifi",
+      "image": {
+        "path": "projects/adafruit-previews/images/e7c8984e4cb078c8bd7da72a.png",
+        "bytes": 2773,
+        "sha256": "c2f302bdd0b1c08b856b2f1e2b5d6354143912870b3a6fd863ed0db5d2eeca8c",
+        "format": "png"
+      },
+      "source": {
+        "path": "3010 Feather M0 Wifi/3010 Feather M0 Wifi.step",
+        "bytes": 36188,
+        "sha256": "4c3c35989eae8cac6acd72199f5dc181130249dd643dedad4de7d4ace230967d",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "3027 Adafruit FONA Feather 32u4",
+      "image": {
+        "path": "projects/adafruit-previews/images/3db6f8a439a73a58d2f775b9.png",
+        "bytes": 4117,
+        "sha256": "b841542be2b820b6867c6d0c94a9b8ede842d19ea9c86539d254062f1edcd81a",
+        "format": "png"
+      },
+      "source": {
+        "path": "3027 Adafruit FONA Feather 32u4/3027 Adafruit FONA Feather 32u4.step",
+        "bytes": 102235,
+        "sha256": "b4dcf502954681b1b5fb739d155b3c02266b65afa7a3c5fba481b49fad3b8e74",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "3093 Crickit CPX",
+      "image": {
+        "path": "projects/adafruit-previews/images/5007fd23312b293608ca28f1.png",
+        "bytes": 4477,
+        "sha256": "40624e365a21b84fa537c3acbb6ba9f97811548d875db55405a1f573fa8c4661",
+        "format": "png"
+      },
+      "source": {
+        "path": "3093 Crickit CPX/3093 Crickit CPX.step",
+        "bytes": 850364,
+        "sha256": "e6c96391cbc652cf7e5d9e4babbcd4b80e3eda6f8131e736566000e9d4af0617",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "3101 8mm soft button",
+      "image": {
+        "path": "projects/adafruit-previews/images/77a898592d2640b7ea6e9a02.png",
+        "bytes": 5109,
+        "sha256": "76a077e314f189dc7363907e6058aa240fee493903b7ec824f50ce6a98dc9af4",
+        "format": "png"
+      },
+      "source": {
+        "path": "3101 8mm soft button/3101 8mm soft button.step",
+        "bytes": 139235,
+        "sha256": "4172ba50d1038d5f3fada6b2b2b4ff473a35f722c34650efe67d8007bc9f5621",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "3102 Mini Joystick",
+      "image": {
+        "path": "projects/adafruit-previews/images/fc07dc9173938c2bb5579648.png",
+        "bytes": 8351,
+        "sha256": "fd29ed8e8f02bfd12af77484bd10755f2cc56bc02e1d6835a855abb4c412b3c0",
+        "format": "png"
+      },
+      "source": {
+        "path": "3102 Mini Joystick/3102 Mini Joystick.step",
+        "bytes": 150923,
+        "sha256": "e330ff2edf6a0420d400825b3b4e405862966cc048ec8bc508d3229eba155330",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "3104 3105 Mini Illuminated Momentary Pushbutton",
+      "image": {
+        "path": "projects/adafruit-previews/images/c255997ef3c566a9cf7876a1.png",
+        "bytes": 4660,
+        "sha256": "2b505398cb9841539d92595ac3e56918dab8bc56f46b5557d9b47e665b49a49e",
+        "format": "png"
+      },
+      "source": {
+        "path": "3104 3105 Mini Illuminated Momentary Pushbutton/3104 3105 Mini Illuminated Momentary Pushbutton v7.step",
+        "bytes": 10362,
+        "sha256": "e60f424d037b56fbe76179792cdd419c98ee011a8ba258d314d0fb4dcad3218c",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "3133 Ultimate GPS FeatherWing",
+      "image": {
+        "path": "projects/adafruit-previews/images/066744137f67ae149e5b7201.png",
+        "bytes": 4847,
+        "sha256": "0fa3073ede9c3ed4c45a5836a8ab83739ea55e5dd8694cf9dc4d67f8247b5cf6",
+        "format": "png"
+      },
+      "source": {
+        "path": "3133 Ultimate GPS FeatherWing/3133 Adafruit Ultimate GPS FeatherWing.step",
+        "bytes": 1385507,
+        "sha256": "06856a162d7e0bcebbab60d46e2f8bc576b9c3aa938d96951d16a466e581814a",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "3200 Teensy Feather Adapter",
+      "image": {
+        "path": "projects/adafruit-previews/images/9cc0f65e625d0eae4d83f1fd.png",
+        "bytes": 5153,
+        "sha256": "8eac1189e6c165673488a31ef56ce35f7919f37d0cf324088608fdabe7b199f0",
+        "format": "png"
+      },
+      "source": {
+        "path": "3200 Teensy Feather Adapter/3200 Teensy Feather Adapter.step",
+        "bytes": 239951,
+        "sha256": "c11a5926bdc9a15cf2b9764d4e90016c24f1463b03bf5ebd928f34cafd314a66",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "3202 Spy Camera",
+      "image": {
+        "path": "projects/adafruit-previews/images/1756c426e4671cbc4030ca1e.png",
+        "bytes": 3718,
+        "sha256": "38f23826808842dd3d0f3457e2fdb7b79ef329acd357c410a0fc02ac97d9aebb",
+        "format": "png"
+      },
+      "source": {
+        "path": "3202 Spy Camera/3202 Spy Camera.step",
+        "bytes": 124304,
+        "sha256": "a10bd8437b70756019d2ddb136225421484096e9191b0330125cfcb56b482064",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "324 NEMA-17 Stepper Motor",
+      "image": {
+        "path": "projects/adafruit-previews/images/cac6d0654657bf5bf91aa377.png",
+        "bytes": 5283,
+        "sha256": "3dfad5bb004a1da3eb4d6ba8210a9d011328ab60f27b21853db7fb062c52b301",
+        "format": "png"
+      },
+      "source": {
+        "path": "324 NEMA-17 Stepper Motor/324 NEMA-17 Stepper Motor.step",
+        "bytes": 1175898,
+        "sha256": "b6d032e9c6249229bd13c81ab6d46bc43a239d646a10a548a419daf6b4e926a1",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "3258 USB Panel Mout Cable",
+      "image": {
+        "path": "projects/adafruit-previews/images/bcb1ce7471bbe905377e62cb.png",
+        "bytes": 4465,
+        "sha256": "008586cab22a181d6b5cc39ff2586e02d873b935fb9facab6ab5564039235e35",
+        "format": "png"
+      },
+      "source": {
+        "path": "3258 USB Panel Mout Cable/3258 microUSB panel mount.step",
+        "bytes": 61562,
+        "sha256": "f909e1ddaf72ab9585554888ac7ec6b663f5c15212be9470ff2751ad967b22b1",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "328 2500mAh battery",
+      "image": {
+        "path": "projects/adafruit-previews/images/b04855cf62cb3132f380b821.png",
+        "bytes": 1655,
+        "sha256": "8d888cd4c64506fa7c41a11ad36c65ec81c632ab75e4b1891990cb9a355ea209",
+        "format": "png"
+      },
+      "source": {
+        "path": "328 2500mAh battery/328 2500mAh battery.step",
+        "bytes": 9128,
+        "sha256": "fd09eff2cdb25962ae02105c606ddb63a55dbb365f3efa6e972367e49eaa9195",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "3351 Enclosed Speaker 3W 4Ohm",
+      "image": {
+        "path": "projects/adafruit-previews/images/f7b7d70de6e3c13ad9e5df1e.png",
+        "bytes": 11384,
+        "sha256": "52d7230048db4295efcfa586098364f06795d4653677cff11e1167186e3bf458",
+        "format": "png"
+      },
+      "source": {
+        "path": "3351 Enclosed Speaker 3W 4Ohm/3351 Enclosed Speaker 3W 4Ohm.step",
+        "bytes": 174912,
+        "sha256": "76387fbd0679e1938dceeb968abbe0bccb9e17077559d9f66fd737c6a31f1c62",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "3422 Adafruit Arcade Bonnet",
+      "image": {
+        "path": "projects/adafruit-previews/images/eac4a64fca966a6f1e0ea41b.png",
+        "bytes": 4024,
+        "sha256": "3dc4cb0ec3b55941385466d9971556fe0ef48868207da4c76572e31f09b51c1f",
+        "format": "png"
+      },
+      "source": {
+        "path": "3422 Adafruit Arcade Bonnet/3422 Adafruit Arcade Bonnet.step",
+        "bytes": 121756,
+        "sha256": "6a8e94ee2a5dd017f32e28ea6fee03d62582d9ee8360d2df71f8e4b0870862da",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "3436 Adafruit Music Maker Amp Feather Wing",
+      "image": {
+        "path": "projects/adafruit-previews/images/e70d1a79a6325fbbf5e96a95.png",
+        "bytes": 5319,
+        "sha256": "0525b0982ef7c56d33cb9821e5671abea271f843976a313bcc04307d9fbf5b1a",
+        "format": "png"
+      },
+      "source": {
+        "path": "3436 Adafruit Music Maker Amp Feather Wing/3436 Adafruit Music Maker Amp Feather Wing.step",
+        "bytes": 172867,
+        "sha256": "8cdfea06a321abc2643cf6496266b285e67d10dce24862247dbd17a2db0932a3",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "3464 Joy Bonnet",
+      "image": {
+        "path": "projects/adafruit-previews/images/b7ade51c7f7a2704b93584db.png",
+        "bytes": 2936,
+        "sha256": "6378bdc9855579f3b5a264ad17f7630e6ac8371cc387e15721dcb740907fea8c",
+        "format": "png"
+      },
+      "source": {
+        "path": "3464 Joy Bonnet/3464 Joy Bonnet.f3d.step",
+        "bytes": 98720,
+        "sha256": "55cc72f00e08ee78587b5b4f024a0a0ad299c5841ca3b17f67334cc82f565f40",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "353 6600mAh Battery",
+      "image": {
+        "path": "projects/adafruit-previews/images/3fc8db2ea55a3d613820d341.png",
+        "bytes": 4804,
+        "sha256": "2dc2819dec9d0513e680d6340a240c7282d1dd999d6631c1dc1c9806ba257468",
+        "format": "png"
+      },
+      "source": {
+        "path": "353 6600mAh Battery/353 6600mAh Battery.step",
+        "bytes": 17395,
+        "sha256": "7338c3ed19ce7ff18f6a83ee874a57777a0679fbea3b6a8fac394cfd52a8c23f",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "3538 AMG8833 IR Thermal Camera",
+      "image": {
+        "path": "projects/adafruit-previews/images/f15b4314377ca48b1f2b59b4.png",
+        "bytes": 3796,
+        "sha256": "94021610b3b3b332cb96357285d6895c5f27f4cbe84445cfa86290e84a0b79e7",
+        "format": "png"
+      },
+      "source": {
+        "path": "3538 AMG8833 IR Thermal Camera/3538 AMG8833 IR Thermal Camera.step",
+        "bytes": 75023,
+        "sha256": "8b58656c937919282e389c61dbeeaed1d3ae027b9dfe881e919380bca2f9b2db",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "3577 PICO Hat",
+      "image": {
+        "path": "projects/adafruit-previews/images/9a1131bcd6ee0a482d8acec0.png",
+        "bytes": 2849,
+        "sha256": "11ff659aa4fd20ae3e8880b818d5c8cd61b3b86d31d32e311afb83a8a743900d",
+        "format": "png"
+      },
+      "source": {
+        "path": "3577 PICO Hat/3577 PICO Hat.step",
+        "bytes": 41612,
+        "sha256": "1d798bcca488bc7ad161665ac5c7edf33dc6aecfcb4b3531b13d9dfe43160ce0",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "3632 Joy FeatherWing",
+      "image": {
+        "path": "projects/adafruit-previews/images/59f4b5067cbb4e71e67528de.png",
+        "bytes": 4471,
+        "sha256": "e9af660b0b48e594829b608b41f6fca00d45f1e09bd42081dcd54167d9b3e2a7",
+        "format": "png"
+      },
+      "source": {
+        "path": "3632 Joy FeatherWing/3632 Joy FeatherWing.step",
+        "bytes": 145908,
+        "sha256": "d13dbadc65aad51d3200befcb501ea65715977cdcd3bb05a768998d7eaa59c5a",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "3692 TRS Jack",
+      "image": {
+        "path": "projects/adafruit-previews/images/d3a86fc5eeff1534cba0cb39.png",
+        "bytes": 5330,
+        "sha256": "c7c9ba640cbe26494ef53d8cb0e1e2361eaa259f2eac1e8e30de25d942be812c",
+        "format": "png"
+      },
+      "source": {
+        "path": "3692 TRS Jack/3692 TRS Jack.step",
+        "bytes": 238212,
+        "sha256": "95bdbe31d377206f718dcf2746989c645daba6161805473035d3e1ae383dcdbd",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "3722 Snowglobe",
+      "image": {
+        "path": "projects/adafruit-previews/images/6c8e2033c1b08bf8e3ced1ec.png",
+        "bytes": 21849,
+        "sha256": "5e75d873689a2b705ede5a345ecbc10dae29db3c72667837f58c1748ccc7c12d",
+        "format": "png"
+      },
+      "source": {
+        "path": "3722 Snowglobe/3722 Snow Globe.step",
+        "bytes": 71145,
+        "sha256": "eeb74ff868741daa95cc10e16987248358555ebda5d97a9a15955fe6c72f85f8",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "3777 TT Motor",
+      "image": {
+        "path": "projects/adafruit-previews/images/ce8170fec2a5e3d4df4d80c8.png",
+        "bytes": 7234,
+        "sha256": "51df16b319af69ad906e7bba8f47d95530428753dadd7e0f0138aec0f47f9433",
+        "format": "png"
+      },
+      "source": {
+        "path": "3777 TT Motor/3777 TT Motor.step",
+        "bytes": 112694,
+        "sha256": "12e0fa54576085011cc9f5221ad95aca62d565e051d995523d192d0a65797ce3",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "3842 3xAA Battery",
+      "image": {
+        "path": "projects/adafruit-previews/images/0f2ee2d359bbdbc94fbe9e0c.png",
+        "bytes": 4679,
+        "sha256": "6ff3c1ab583dfa1fdb28e8edb8de13c0346ff563aa4244c7c3987df6669e39d4",
+        "format": "png"
+      },
+      "source": {
+        "path": "3842 3xAA Battery/3842 3xAA Battery.step",
+        "bytes": 221410,
+        "sha256": "61c94a1890d542e1a30cb12d60fbd6f6b2b87c2b1e86994dfe64d9d3a25c6d34",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "3885 STEMMA Speaker",
+      "image": {
+        "path": "projects/adafruit-previews/images/08cab984dd5facf5aedefa2f.png",
+        "bytes": 5183,
+        "sha256": "7d21ddc07610070e0b81d71750e8fd8f020ae3abc83eb1f77ccb12780d229515",
+        "format": "png"
+      },
+      "source": {
+        "path": "3885 STEMMA Speaker/3885 STEMMA Speaker rev A.step",
+        "bytes": 963499,
+        "sha256": "25ff7bb0b08d3afa3bf862e7c81f264bc09fdca4e26941e60686846674bb1d9b",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "3898 400mah Battery",
+      "image": {
+        "path": "projects/adafruit-previews/images/f85dfad98a67eb9ba79f6df9.png",
+        "bytes": 3325,
+        "sha256": "0f08511f592a573599fd8cc5e20996ac62829ca3eaba4ecc8e32cc852a95fbf2",
+        "format": "png"
+      },
+      "source": {
+        "path": "3898 400mah Battery/3898 400mAh Battery.step",
+        "bytes": 30200,
+        "sha256": "e0ec62d53f0c487c6c2548cf3009d30ca9c01665a5dd6a91d05b3c1a33e804bc",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "3900 Hallowing",
+      "image": {
+        "path": "projects/adafruit-previews/images/a975545d9af482ffb8b7a1a5.png",
+        "bytes": 6096,
+        "sha256": "328b2785c26f09617053bb0ea3f3acf4e9e17427e06d6dbb2697b7a0c1e7df1b",
+        "format": "png"
+      },
+      "source": {
+        "path": "3900 Hallowing/3900 Hallowing M0 Express.step",
+        "bytes": 5061075,
+        "sha256": "1ecf0b3045666a8c00c3fc73684a3472329533d6e51d9bf97f11152abc929e9c",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "4116 PyPortal",
+      "image": {
+        "path": "projects/adafruit-previews/images/0808dc850ff4b421e1dc59cf.png",
+        "bytes": 4556,
+        "sha256": "af0ae644ac6d036a6159cd4ccdd61a167618962b3e23132e20048563c8f0f35b",
+        "format": "png"
+      },
+      "source": {
+        "path": "4116 PyPortal/4116 PyPortal.step",
+        "bytes": 6018680,
+        "sha256": "985a0d60a829bd9b82038874d3a9eabd22c6373cd4d09c5a78f8983b9ed1dc36",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "413 Large Solenoid",
+      "image": {
+        "path": "projects/adafruit-previews/images/d783f5748c30bcee1a7239c9.png",
+        "bytes": 4655,
+        "sha256": "0582a167de759b3a70e650907cd2079ab82bcb0368682ca4e665937b388cceb1",
+        "format": "png"
+      },
+      "source": {
+        "path": "413 Large Solenoid/413 Large Solenoid.step",
+        "bytes": 89653,
+        "sha256": "bd5b50a2c23088cee4dbe1363d0e6c926552572d649f9be1ae90e54776fcec15",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "4286 DS3502 Digital Pot",
+      "image": {
+        "path": "projects/adafruit-previews/images/a401d2c4c1f803fff6e9062f.png",
+        "bytes": 4511,
+        "sha256": "7f30996fbcd9bbdd204e1d43fa7c7a5948b44516385c3c78f95b5c7170bf1cc9",
+        "format": "png"
+      },
+      "source": {
+        "path": "4286 DS3502 Digital Pot/4286 Adafruit DS3502 v3.step",
+        "bytes": 559451,
+        "sha256": "8b0047332ed9f3972e7a1e45f67b375d4aa10a369839ba56f057d635275685b7",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "4343 Monster M4sk",
+      "image": {
+        "path": "projects/adafruit-previews/images/f4d6e1a95fe8bb38b77d8efd.png",
+        "bytes": 9260,
+        "sha256": "af64c1f26541ce8d47b1c9db0395e44211088fcc108205159efbc1f6c6a0ae7b",
+        "format": "png"
+      },
+      "source": {
+        "path": "4343 Monster M4sk/MONSTER M4SK revD.step",
+        "bytes": 6113683,
+        "sha256": "8de8f4a2f0555067360c7990107f782d536b3c831eaae3f1b40c4fd5db61995d",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "4344 MSA301 Accelerometer",
+      "image": {
+        "path": "projects/adafruit-previews/images/8058a1c968e63d50426a19c7.png",
+        "bytes": 4317,
+        "sha256": "887e272e2a8bf222b6df0536df88ebca5c14bf1aa75d6dd1b1dfa1ff455135e9",
+        "format": "png"
+      },
+      "source": {
+        "path": "4344 MSA301 Accelerometer/4344 Adafruit MSA301.step",
+        "bytes": 816512,
+        "sha256": "1357b92eac2f00dd60455b16d6e32b31a6f269e9b1f01b5f8dbaa7fcc8151e7d",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "4654 MiniBoost 5V",
+      "image": {
+        "path": "projects/adafruit-previews/images/a50b80518c2ae283b23e1e43.png",
+        "bytes": 3556,
+        "sha256": "84d0c1d48d627ca6ca138069e5fa7a1f13108f4c6abdb92a14c9c5f0f536d66e",
+        "format": "png"
+      },
+      "source": {
+        "path": "4654 MiniBoost 5V/4654 MiniBoost 5V.step",
+        "bytes": 179502,
+        "sha256": "e923ce8054ca5459e8a369f7ad43fa002d76e036787aa7bedcf5e02f71325c0e",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "4816 BMP390 QT",
+      "image": {
+        "path": "projects/adafruit-previews/images/2aebec772c02dc9279ec185f.png",
+        "bytes": 4141,
+        "sha256": "f82b876296b90fb949eb2dc7dbda8a4ce56e0e69e9f310a1d6bc863f490b2e84",
+        "format": "png"
+      },
+      "source": {
+        "path": "4816 BMP390 QT/4816 BMP390 QT.step",
+        "bytes": 793596,
+        "sha256": "6e998cd63e2e4d0f622a49fe7308350d0885e6fbf185de3d44cbdb02891b84de",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "512 Analog 2-axis Joystick",
+      "image": {
+        "path": "projects/adafruit-previews/images/1efde6c8c3be34030557cfbb.png",
+        "bytes": 4592,
+        "sha256": "3e263b78901dc75304291e18aeceb673a8f9bbd6e96a0824f4424cd2bb8a2bd2",
+        "format": "png"
+      },
+      "source": {
+        "path": "512 Analog 2-axis Joystick/512 Analog 2-axis Joystick.step",
+        "bytes": 213902,
+        "sha256": "91e43b98df6b327694cfb43ac701b6e0f67b8935612c7a7f60345f6bf2e4d0f4",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "562 10K Potentiometer",
+      "image": {
+        "path": "projects/adafruit-previews/images/b89c4765ecb9bd088fb415bd.png",
+        "bytes": 9424,
+        "sha256": "a16a6cfbfbc2df767082295478d2f1c36ab32dbceb7e6430edac41986252fa2a",
+        "format": "png"
+      },
+      "source": {
+        "path": "562 10K Potentiometer/562 10K Potentiometer.step",
+        "bytes": 393858,
+        "sha256": "38824c650c0cd53b3847c05e055ef209bbf4932c255e95424a3ac4dde7b9feff",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "592 microUSB B Connector Cable",
+      "image": {
+        "path": "projects/adafruit-previews/images/572b1abaf19004ccfb8b2dee.png",
+        "bytes": 4178,
+        "sha256": "72dc706744d481243d58a1272a2771e279d2ca55fe1dc2f374cf6ac51694e7a9",
+        "format": "png"
+      },
+      "source": {
+        "path": "592 microUSB B Connector Cable/592 microUSB B Connector Cable.step",
+        "bytes": 34643,
+        "sha256": "dd16a5d67596f556c5bb91bac7c2a0d4a1eb4db4afc7f2d3011cf94dfa6e0a23",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "5981 TRRS Trinkey Case",
+      "image": {
+        "path": "projects/adafruit-previews/images/f3649f28c1c5a525baeef3bc.png",
+        "bytes": 6119,
+        "sha256": "70ece32d30d8945a18e15c0eace565e5eb2258d8d9614cdc3d72dab36a2712cd",
+        "format": "png"
+      },
+      "source": {
+        "path": "5981 TRRS Trinkey Case/5981 TRRS Trinkey Case.step",
+        "bytes": 3591253,
+        "sha256": "6ff896e42fe2555aa128da327ada59f4be62cde3f690bb0cea6d758dc22c159f",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "5998 Pixel Trinkey Case",
+      "image": {
+        "path": "projects/adafruit-previews/images/4ae479fd2d460afcacf68e57.png",
+        "bytes": 6484,
+        "sha256": "9d32244abae562d27907bc265f37ae14e74e8f73af03398e40092abaf4f6ed40",
+        "format": "png"
+      },
+      "source": {
+        "path": "5998 Pixel Trinkey Case/5998 Pixel Trinkey Case.step",
+        "bytes": 3157183,
+        "sha256": "373d9be6270334dba0e23e9cb64a0133290764bd6a4e1ef626a1d44b48d888cf",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "6002 QT Py Case",
+      "image": {
+        "path": "projects/adafruit-previews/images/8b0d8caa1e8105ddbddd625a.png",
+        "bytes": 9485,
+        "sha256": "c46579127449e375e4190f0560ee47b6c5acb91b961104785bc732c57ed3de50",
+        "format": "png"
+      },
+      "source": {
+        "path": "6002 QT Py Case/6002 QTPy Case.step",
+        "bytes": 2695386,
+        "sha256": "6455cd4db68bbb450f3b49a468c9d5406c1d29b132e52820bf9c0c301e569c64",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "6057 Feather RP2040 USB Case",
+      "image": {
+        "path": "projects/adafruit-previews/images/89269a4f864d698a0f4ea153.png",
+        "bytes": 5835,
+        "sha256": "885bcd433c2bf607dabc892fb6a3a5b0cae51dbf5211395ac5607cdd568a636e",
+        "format": "png"
+      },
+      "source": {
+        "path": "6057 Feather RP2040 USB Case/6057 Feather RP2040 USB Case.step",
+        "bytes": 4078705,
+        "sha256": "5b1748eeb05555d51e5df8f3b83d340783096a534489b7fff78282610cb55c41",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "610 DC Jack",
+      "image": {
+        "path": "projects/adafruit-previews/images/908fb83d364be2267d9ac75f.png",
+        "bytes": 6330,
+        "sha256": "a91a3070b98643a16be701e602ae452c76d386b0b70404a81a617bac4d45f2e1",
+        "format": "png"
+      },
+      "source": {
+        "path": "610 DC Jack/610 DC Jack.step",
+        "bytes": 89361,
+        "sha256": "2d58c523b160a8ae1d3527c0b486ceb17c16ae148b91382e748c63b028b39ac9",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "6114 USB Solar Charger Case",
+      "image": {
+        "path": "projects/adafruit-previews/images/8fc5fc996b57df0683155228.png",
+        "bytes": 10705,
+        "sha256": "bbf7b5608d7fffdeb7678877877ba8ce50e9c5d333ef9ec90dffdd4794220ee8",
+        "format": "png"
+      },
+      "source": {
+        "path": "6114 USB Solar Charger Case/6114 USB Solar Charger Case.step",
+        "bytes": 3919267,
+        "sha256": "b257c5c57a8bbee30ff38612817761b2492f8abf319d5f9cd94a7fa1e5becda2",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "6124 BQ25185 3V Case",
+      "image": {
+        "path": "projects/adafruit-previews/images/e55159ad7d3404379ddc47b4.png",
+        "bytes": 9976,
+        "sha256": "92fee6c53b19f5a5af8966bc4c37d2568a1b4303e0142fa662cde571d61cf597",
+        "format": "png"
+      },
+      "source": {
+        "path": "6124 BQ25185 3V Case/6124 BQ25185 3V Buck Case.step",
+        "bytes": 3173213,
+        "sha256": "1c50a0746c7cfe5f29ea5acefef7ad636d0a2c347900caff7fb06e29a32679c4",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "6126 BQ26185 5V Case",
+      "image": {
+        "path": "projects/adafruit-previews/images/068f05bef210840cb971ff7b.png",
+        "bytes": 9842,
+        "sha256": "51558a160851730723bc6c18c5b6403936124f09fc258a2f760fb41fbd8d11af",
+        "format": "png"
+      },
+      "source": {
+        "path": "6126 BQ26185 5V Case/6126 BQ25185 5V Buck Case.step",
+        "bytes": 2385474,
+        "sha256": "41432fad97b019ac69c3ce5e2d501616f3fb78df14b14b83729f8e4db0548bb9",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "64 Halfsize Breadboard",
+      "image": {
+        "path": "projects/adafruit-previews/images/cb3894a6d0cf95e86a16f18f.png",
+        "bytes": 1859,
+        "sha256": "f47d1eb8f400c2a4ea2244b5511c0c9eecc6769aef67ec9db451cecc93ae762a",
+        "format": "png"
+      },
+      "source": {
+        "path": "64 Halfsize Breadboard/64 Halfsize Breadboard.step",
+        "bytes": 23037,
+        "sha256": "b8e48b1c25d45354f6d3f90d5e75cbf3d4063d48e3d1867d255cb52b9de0d279",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "6425 Fruit Jam Case",
+      "image": {
+        "path": "projects/adafruit-previews/images/8f381309df69a11fab69075a.png",
+        "bytes": 7674,
+        "sha256": "2a26c7dd88d03a7786be50818c4e9a6a99730eb2b65330cd72ac7281ddcda6ba",
+        "format": "png"
+      },
+      "source": {
+        "path": "6425 Fruit Jam Case/6425 Fruit Jam Case.step",
+        "bytes": 13704994,
+        "sha256": "37bb62e1ec8ffed527d532f14a83babf7265a2a811f501ff3311c50b064cedab",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "67 9V Battery Holder",
+      "image": {
+        "path": "projects/adafruit-previews/images/08b1b4ca759ad1d6f5da88d5.png",
+        "bytes": 4449,
+        "sha256": "da5eba8747141361bc737f74bd82081f3eab2863c02808f2fb60d6c71fcade09",
+        "format": "png"
+      },
+      "source": {
+        "path": "67 9V Battery Holder/67 9V battery holder.step",
+        "bytes": 37088,
+        "sha256": "c249d6e6d565c778085cf9a2c86474d25b188b22a3ebe7c5862b8c0b0f9dd9ea",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "711 DC Toy Motor",
+      "image": {
+        "path": "projects/adafruit-previews/images/12dd8943b1d5800e4aee88a2.png",
+        "bytes": 3896,
+        "sha256": "7a5f262af6f211d5cc825f158d76c19dcd8ef41612c11d46564bcbac657a16af",
+        "format": "png"
+      },
+      "source": {
+        "path": "711 DC Toy Motor/711 DC Toy Motor.step",
+        "bytes": 87264,
+        "sha256": "7718d43d37ff4191a8b136846fedd33de85f6c64216fa76f9eff6b0064c4ef64",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "723 Minty Perma-Proto",
+      "image": {
+        "path": "projects/adafruit-previews/images/e9a3ad7362b7435260607a8d.png",
+        "bytes": 8293,
+        "sha256": "d707f2ddcd2d3d67f2539a9e59bb3f8680b9dfb04bb46dd0065fd93a9c698130",
+        "format": "png"
+      },
+      "source": {
+        "path": "723 Minty Perma-Proto/723 Minty Perma-Proto.step",
+        "bytes": 838775,
+        "sha256": "813257e8d227b21f689f4333aaae4835d088fd1d17cf289ad3b1226ee05a3ad4",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "727 3x AAA Battery Holder",
+      "image": {
+        "path": "projects/adafruit-previews/images/06f7d1e286aa409e1e9ca240.png",
+        "bytes": 3612,
+        "sha256": "747c49e61b7c2fb1b21a5c24c2221f037c9134aedaae64b38cff8c6271e5af26",
+        "format": "png"
+      },
+      "source": {
+        "path": "727 3x AAA Battery Holder/727 3xAAA JST Battery Holder.step",
+        "bytes": 217436,
+        "sha256": "f58d7b994edeac458d445acd9a4d539768a35512a47ace5fc980ae35d62c0960",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "770 2xAA battery holder",
+      "image": {
+        "path": "projects/adafruit-previews/images/a825e94c52221639f67b4d09.png",
+        "bytes": 7719,
+        "sha256": "e8b46a121d47bedcb8b91ae68e1a0239e79156bf50431a434ef09fd2009e3799",
+        "format": "png"
+      },
+      "source": {
+        "path": "770 2xAA battery holder/770 2xAA battery holder.step",
+        "bytes": 174549,
+        "sha256": "a5769ca7d6159206ee934c0d3927fa03eb1aecd1ba5df201643e3f41e7e5721b",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "805 slide switch",
+      "image": {
+        "path": "projects/adafruit-previews/images/95300041ecae3a457a515f70.png",
+        "bytes": 2372,
+        "sha256": "0a71ff41294db99d5cf342fa2d00cad35458516290ae2822d4916fa5796c3cf7",
+        "format": "png"
+      },
+      "source": {
+        "path": "805 slide switch/805 slide switch.step",
+        "bytes": 22814,
+        "sha256": "192359d794292afb0ccaab33378a2671377e973f2e7fa6e93527f8b6fa5d2a4c",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "817 Zippy Micro Switch",
+      "image": {
+        "path": "projects/adafruit-previews/images/b388cb6dc1fce8d03e4035c6.png",
+        "bytes": 3398,
+        "sha256": "11c09d6412a34ac89f74d35664a241ba649103f55934d1d346c59f85571167a4",
+        "format": "png"
+      },
+      "source": {
+        "path": "817 Zippy Micro Switch/817 micro switch ZIPPY.step",
+        "bytes": 49788,
+        "sha256": "2566abaa6dd7cd11345acd0fee62973b6706f08af31e7262cb434340850434da",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "830 Battery Holder",
+      "image": {
+        "path": "projects/adafruit-previews/images/c31341d986e06c3762b9806c.png",
+        "bytes": 3985,
+        "sha256": "1d2d3c2860d5bbb3316106bf47a3b66b6244adc48d13e6e7c0b3fe2149961be1",
+        "format": "png"
+      },
+      "source": {
+        "path": "830 Battery Holder/830 Battery Holder 4xAA.step",
+        "bytes": 222147,
+        "sha256": "aed16f3913d44d3c4ac6912c489efec9d65dcadad6b03940968d205af98ade67",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "858 Stepper Motor 5VDC",
+      "image": {
+        "path": "projects/adafruit-previews/images/8e25de226132fe0d1da82f73.png",
+        "bytes": 7757,
+        "sha256": "4c141feaceb226b95066cd7afaf7a2cf7d90261cb5e3e03483f917441ca97d78",
+        "format": "png"
+      },
+      "source": {
+        "path": "858 Stepper Motor 5VDC/858 Stepper Motor 5VDC.step",
+        "bytes": 137557,
+        "sha256": "6981d3445975a952389e50fa66dd0062749358886bcf55de252f5335704fc98e",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "875 8x AA Battery Holder",
+      "image": {
+        "path": "projects/adafruit-previews/images/9cba4eeddb695130bd8eab0d.png",
+        "bytes": 3593,
+        "sha256": "3cec2dad978201590f81f0e2d4790c07df352a302d34631cb3e2170eccdc1f5a",
+        "format": "png"
+      },
+      "source": {
+        "path": "875 8x AA Battery Holder/875 8xAA Battery Holder.step",
+        "bytes": 31258,
+        "sha256": "07302aedfb19e90dd68498b622417e2123a8062569850105eb4c6720659e9600",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "878 7-segment display backpack",
+      "image": {
+        "path": "projects/adafruit-previews/images/4eeefc862bf9b5505eb704a5.png",
+        "bytes": 2597,
+        "sha256": "4230fbfc0e93055fc8e6e1d6ec369a1ea1aed03ab6e238da3d4d0ec5ec4c861d",
+        "format": "png"
+      },
+      "source": {
+        "path": "878 7-segment display backpack/878 7-segment display backpack.step",
+        "bytes": 26764,
+        "sha256": "e61ffab954b4d5d1948018fb1673e14433e1ab942e5076ce09fba67cb221be58",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "916 metal button",
+      "image": {
+        "path": "projects/adafruit-previews/images/0b77a49ed6975bc72d32c29a.png",
+        "bytes": 15933,
+        "sha256": "0d81b81e7ab8f5a5db77c3cb08231187f9a9efa9e5c6b3fc8eaa4f4542f69356",
+        "format": "png"
+      },
+      "source": {
+        "path": "916 metal button/916 Metal Button.step",
+        "bytes": 716628,
+        "sha256": "e144eaf82a3aa93b698b8fe4c3de908ac1eb7e2b224f35aae3047d3ad5fb7e9a",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "931 OLED 128x32 I2C",
+      "image": {
+        "path": "projects/adafruit-previews/images/fed8dd20680098b30c1bd6cb.png",
+        "bytes": 2669,
+        "sha256": "de064c5e17d9b1526acd98e4bb1379d267ecfb1ef3ab4994d5e0b1345283cb0f",
+        "format": "png"
+      },
+      "source": {
+        "path": "931 OLED 128x32 I2C/931 OLED 128x32 I2C.step",
+        "bytes": 30906,
+        "sha256": "8028b98420d10194b9246ca37deb86404a42468f81370741ac6ff4a0b308b210",
+        "format": "step"
+      }
+    },
+    {
+      "folder": "1602 CAP1188",
+      "image": {
+        "path": "projects/adafruit-previews/images/bb19a8d00ddcdef4c90b6e6c.png",
+        "bytes": 6621,
+        "sha256": "12c8b4d91ee034d2b0ad5a36b135628908ada9f8ff800046f18e8880dec18c5a",
+        "format": "png"
+      },
+      "source": {
+        "path": "1602 CAP1188/1602 Adafruit CAP1188.stl",
+        "bytes": 910884,
+        "sha256": "75f89f5500495209b2ad0969d58a165765aa8e81693a3b79817a571bae814530",
+        "format": "stl"
+      }
+    },
+    {
+      "folder": "2895 Relay Feather Wing",
+      "image": {
+        "path": "projects/adafruit-previews/images/35501dd11f82e52020491ba0.png",
+        "bytes": 30161,
+        "sha256": "e514beff652b1f4e7e17bd5bf1586ef4d35d95e9c960ee217801a10005b56573",
+        "format": "png"
+      },
+      "source": {
+        "path": "2895 Relay Feather Wing/2895 Relay Feather Wing.f3d",
+        "bytes": 1908700,
+        "sha256": "d3b8c2a428c787d9e6bd9b7e40e68062c44736ab8d624ff9059f8ea5b92b456c",
+        "format": "f3d"
+      }
+    },
+    {
+      "folder": "3429 Mini Arcade Button",
+      "image": {
+        "path": "projects/adafruit-previews/images/b21ea095c6ed374d176f23ec.png",
+        "bytes": 29036,
+        "sha256": "44afdfa35c7f4e36bb189a9e6813f738c485d4695b36a70864496880b5f0ac75",
+        "format": "png"
+      },
+      "source": {
+        "path": "3429 Mini Arcade Button/3429 Mini Arcade Button.f3d",
+        "bytes": 217404,
+        "sha256": "0eb1340383e82e26145d14cb2fae3edb7f04749a0d1ed5349c7ab1eb18fe3fb3",
+        "format": "f3d"
+      }
+    },
+    {
+      "folder": "355 MOSFET P-channel",
+      "image": {
+        "path": "projects/adafruit-previews/images/c6f1916951fad1a30e47e157.png",
+        "bytes": 3190,
+        "sha256": "396b1d68be2035f7e228f7d68b1892d800437bc59cd39f375f9f22a7a6697542",
+        "format": "png"
+      },
+      "source": {
+        "path": "355 MOSFET P-channel/335 MOSFET N-channel.stl",
+        "bytes": 31284,
+        "sha256": "da55c786af5251b44377cd385725aba4139c0376c7063d301bdf054c183bfb39",
+        "format": "stl"
+      }
+    }
+  ],
+  "failures": [
+    {
+      "folder": "Adafruit archive files",
+      "reason": "Archive root contains metadata, not a component"
+    }
+  ]
+}
