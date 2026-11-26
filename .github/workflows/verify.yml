@@ -58,3 +58,30 @@ jobs:
         working-directory: media-lab
         env:
           BW_BOARD_DIR: ${{ github.workspace }}/bw-board
+
+  kim:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: media-lab
+      - uses: actions/checkout@v4
+        with:
+          repository: CrispStrobe/bw-board
+          ref: 8f823cbacdf2ea9ce74818151b870892e568d0bd
+          path: bw-board
+          sparse-checkout: src
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Boot ACE and exercise KIM-1 expansion and storage media
+        working-directory: media-lab
+        env:
+          BW_BOARD_DIR: ${{ github.workspace }}/bw-board
+        run: |
+          projects/ace-kim/fetch.sh
+          node projects/ace-kim/proof.mjs
+          node projects/kim1-expansion-demos/proof.mjs
+          projects/kim1-cpm65/fetch.sh
+          node projects/kim1-cpm65/proof.mjs
