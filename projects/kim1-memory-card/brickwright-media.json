@@ -1,0 +1,7 @@
+{
+  "title": "KIM-1 Pico programmable memory card",
+  "machine": "kim-1",
+  "program": {"kind": "source"},
+  "license": "GPL-3.0-only",
+  "notes": "Pinned source of memcfg and the physical card firmware. PicoWi is MIT and hardware files are CC BY-SA 4.0. Import the raw maps that memcfg produces into the KIM-1 panel."
+}

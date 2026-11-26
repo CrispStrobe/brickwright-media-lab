@@ -1,0 +1,7 @@
+{
+  "title": "Corsham xKIM",
+  "machine": "kim-1",
+  "program": {"kind": "source"},
+  "license": "GPL-3.0-only",
+  "notes": "Pinned source kit. Build the extension ROM with the upstream make.bat and assembler. The optional FAT file commands require more of the Corsham protocol than the standard sector interface."
+}

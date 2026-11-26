@@ -1,0 +1,12 @@
+{
+  "title": "ACE KIM keypad computer",
+  "machine": "ace-kim",
+  "program": {"kind": "rom"},
+  "slots": {"bios": "bios.rom", "monitor": "kc-monitor.rom"},
+  "license": "MIT",
+  "components": [
+    {"file": "bios.rom", "license": "MIT", "source": "acwright/6502-BIOS v1.8 at 932021a429bf2c9cdc3a9cbd6a974bef9268e183", "sha256": "0343d53e8f073cd515e67fbfd344641d1a5a35d5f903bbdd69564e97d4a3aa51"},
+    {"file": "kc-monitor.rom", "license": "MIT", "source": "acwright/6502-KIM KC Monitor v1.1 at b01b5dcda9409385188abab4ec47bed237dac3c0", "sha256": "4defbbea6dca97fde50c69a5bdd9c584c946b0010003fc2aaa66ba78a1d015a0"}
+  ],
+  "expect": ["ESC TO START", "$0800: $00", "$0800 = $5A"]
+}

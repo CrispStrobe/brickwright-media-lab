@@ -1,0 +1,14 @@
+{
+  "title": "CP/M-65 for KIM-1 · SPI, Corsham and K-1013",
+  "machine": "kim-1",
+  "program": {"kind": "paper-tape", "console": "tty"},
+  "slots": {"program": "spi.pap", "sd-image": "spi.raw"},
+  "programs": [
+    {"title": "Direct SPI SD", "slots": {"program": "spi.pap", "sd-image": "spi.raw"}},
+    {"title": "Corsham parallel disk", "slots": {"program": "corsham.pap", "corsham-disk": "corsham.dsk"}},
+    {"title": "K-1013 ImageDisk", "slots": {"program": "k1013.pap", "k1013-drive-a": "k1013.imd"}}
+  ],
+  "expect": ["CP/M-65 for the KIM-1", "A>"],
+  "license": "BSD-2-Clause",
+  "notes": "The license identifies upstream CP/M-65 itself. The original multi-component guest media are fetched directly from upstream, verified, and used without republishing the archives."
+}
