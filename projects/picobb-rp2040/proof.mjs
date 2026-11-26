@@ -66,6 +66,11 @@ const report = (label, checks) => {
   }
 };
 report('boot', r.expect);
+const visible = r.output.replace(/\x1b\[[\d;]*[A-Za-z]/g, '');
+for (const [label, ok] of [
+  ['filesystem mounts without diagnostics', !/Corrupted dir pair|Unable to locate LittleFS image|Unable to format littlefs/i.test(visible)],
+  ['reloaded BASIC program actually ran', /[\r\n]PICO-DISK-ROUNDTRIP[\r\n]/.test(visible)]
+]) report('LittleFS', [{text: label, ok}]);
 for (const p of r.programs) report(p.title, p.expect);
 
 console.log('\n=== TRANSCRIPT (JSON) ===');

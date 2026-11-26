@@ -64,14 +64,16 @@ dance now lives in one place instead of being copied into each consumer.
 The console is an **ANSI terminal**: at start it waits for the user to press
 Enter (printing `.` once a second until a CR arrives), then probes the terminal
 size with `ESC[6n`; `proof.mjs` answers those cursor-position queries like a
-VT100 (`ESC[24;80R`). On first boot the LittleFS store is empty, so PicoBB
-formats it and continues to the `>` prompt.
+VT100 (`ESC[24;80R`). The library image includes an empty, formatted 128 KiB
+LittleFS filesystem at flash address `0x10050000`. PicoBB mounts it before
+opening the `>` prompt. `prepare-filesystem.sh` uses the pinned PicoBB utilities
+to reproduce the image.
 
 Captured UART transcript (ANSI `ESC[6n` size-probes elided for readability):
 
 ```
 Waiting for connection
-Unable to locate LittleFS image
+LittleFS image v2.1, Size = 128KB, Origin = 0x10050000
 BBC BASIC for Pico Console v0.50, Build Jul 12 2026, UART Console, Flash Filesystem, Min Stack, Stack Check 4, RTC
 (C) Copyright R. T. Russell, 2025
 >PRINT 2+2
@@ -86,11 +88,12 @@ BBC BASIC for Pico Console v0.50, Build Jul 12 2026, UART Console, Flash Filesys
 `PRINT 2+2` → `4`, and the `FOR I=1 TO 3:PRINT I*I:NEXT` loop prints the squares
 `1 4 9` (BBC BASIC right-justifies numbers in a 10-character field). Every
 string above is asserted by `proof.mjs` (banner in the top-level `expect`, the
-two sessions in `programs[]`). To run it:
+sessions in `programs[]`). The proof also saves a BASIC program, clears it from
+memory, loads it from flash and checks the actual output of `RUN`. To run it:
 
 ```
-# against lite's integrated engine (has node_modules/bw-board + rp2040js):
-BW_INTEGRATED_ROOT=/path/to/brickwright-lite/packages/scratch-gui \
+# against Brickwright's integrated engine (has node_modules/bw-board + rp2040js):
+BW_INTEGRATED_ROOT=/path/to/brickwright/packages/scratch-gui \
   node projects/picobb-rp2040/proof.mjs
 
 # or against a bw-board checkout that has node_modules/rp2040js installed:
