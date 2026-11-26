@@ -1,0 +1,14 @@
+{
+  "title": "KIM-1 expansion and video exercises",
+  "machine": "kim-1",
+  "program": {"kind": "paper-tape"},
+  "slots": {"program": "ram-check.ptp"},
+  "programs": [
+    {"title": "KIM-4 RAM check", "slots": {"program": "ram-check.ptp"}},
+    {"title": "K-1008 checkerboard", "slots": {"program": "video.ptp"}},
+    {"title": "Expanded programmable RAM map", "slots": {"memory-card": "expanded-ram.raw"}},
+    {"title": "SPI and Corsham sector test image", "slots": {"sd-image": "sectors.img"}}
+  ],
+  "license": "MIT",
+  "expect": ["RAM check $0300 = $5A", "K-1008 checkerboard"]
+}
