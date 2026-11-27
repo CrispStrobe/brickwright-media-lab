@@ -34,9 +34,13 @@ make BOARD=pico STDIO=UART SERIAL_DEV=0 SOUND=NONE
 Console I/O is pico-sdk `stdio_uart` on **UART0** (PL011 @ `0x40034000`, GP0/GP1,
 115200 8N1) — exactly the peripheral bw-board's rp2040js machine emulates.
 
-Output artifact (committed here):
+Output artifacts (committed here, with SHA-256s in the manifest):
 
-* `bbcbasic_console_pico.uf2` — the firmware image booted by `proof.mjs`
+* `bbcbasic_console_pico.uf2` — the reproducible firmware build, without a
+  filesystem image.
+* `bbcbasic_console_pico_filesystem.uf2` — the image selected by `slots.flash`
+  and booted by `proof.mjs`. It preserves the firmware bytes and adds an empty,
+  formatted 128 KiB LittleFS store at flash address `0x10050000`.
 
 ### Why `SOUND=NONE`
 
@@ -49,7 +53,7 @@ configs also use core1 and are out of scope for a UART console anyway.)
 
 ## Proven — boots and runs on the emulated RP2040
 
-`proof.mjs` boots `bbcbasic_console_pico.uf2` on bw-board's rp2040js machine and
+`proof.mjs` boots `bbcbasic_console_pico_filesystem.uf2` on bw-board's rp2040js machine and
 drives the UART0 console through bw-board's **canonical rp2040 media-bundle
 runner**, `runRp2040Bundle` (`src/machine-media-rp2040.js`). It is the rp2040
 analogue of `runI8086FloppyBundle` — a sibling of the content-pinned
@@ -63,8 +67,8 @@ dance now lives in one place instead of being copied into each consumer.
 
 The console is an **ANSI terminal**: at start it waits for the user to press
 Enter (printing `.` once a second until a CR arrives), then probes the terminal
-size with `ESC[6n`; `proof.mjs` answers those cursor-position queries like a
-VT100 (`ESC[24;80R`). The library image includes an empty, formatted 128 KiB
+size with `ESC[6n`; the runner answers those cursor-position queries like a
+VT100 (`ESC[24;80R`). The selected image includes an empty, formatted 128 KiB
 LittleFS filesystem at flash address `0x10050000`. PicoBB mounts it before
 opening the `>` prompt. `prepare-filesystem.sh` uses the pinned PicoBB utilities
 to reproduce the image.
@@ -86,10 +90,30 @@ BBC BASIC for Pico Console v0.50, Build Jul 12 2026, UART Console, Flash Filesys
 ```
 
 `PRINT 2+2` → `4`, and the `FOR I=1 TO 3:PRINT I*I:NEXT` loop prints the squares
-`1 4 9` (BBC BASIC right-justifies numbers in a 10-character field). Every
-string above is asserted by `proof.mjs` (banner in the top-level `expect`, the
-sessions in `programs[]`). The proof also saves a BASIC program, clears it from
-memory, loads it from flash and checks the actual output of `RUN`. To run it:
+`1 4 9` (BBC BASIC right-justifies numbers in a 10-character field). The
+banner and arithmetic results are asserted by `proof.mjs` (the top-level
+`expect` and the sessions in `programs[]`). The persistence proof uses three
+independent calls to the canonical runner:
+
+1. Save a program that prints `PICO-DISK-ROUNDTRIP`, clear it with `NEW`, load
+   it from flash and check the standalone output line from `RUN`.
+2. Copy only the first machine's flash bytes into a temporary UF2. The proof
+   validates complete, contiguous coverage of flash offsets `0x00000` through
+   `0x6ffff`, including the entire LittleFS region `0x50000` through `0x6ffff`.
+   Boot a **new adapter, SoC and CPU**, supply only `LOAD "FLASH"` and `RUN`,
+   and require the same standalone output line. No RAM, registers or peripheral
+   state is transferred.
+3. Boot another fresh machine with the untouched formatted image and issue the
+   same `LOAD`/`RUN`. It must reach the interpreter, report the file missing,
+   and never print the marker. This control confirms that the saved flash,
+   rather than input echo or a retained BASIC program in RAM, supplies the result.
+
+This proves readback after a completed save in a fresh emulated machine. It
+does not inject interrupted writes or establish crash durability, browser
+storage/export persistence, or physical flash behavior. The temporary snapshot
+exists only in the proof process; the committed images remain unchanged.
+
+To run it:
 
 ```
 # against Brickwright's integrated engine (has node_modules/bw-board + rp2040js):
@@ -107,11 +131,18 @@ guards the whole executable on `TARGET tinyusb_device`, even for a UART build),
 PicoBB at the pinned commit, and the two bundled submodules at the commits
 PicoBB pins (BBCSDL `483d7489`, LittleFS `4dd30c1b`), then builds the config
 above and byte-compares the result against the committed `bbcbasic_console_pico.uf2`.
+It then invokes [`prepare-filesystem.sh`](prepare-filesystem.sh) and byte-compares
+the combined image with `bbcbasic_console_pico_filesystem.uf2` too. The helper
+uses the pinned PicoBB checkout's `mklfsimage`, `uf2conv` and `uf2merge` tools:
+format an empty 128 KiB store, place it 320 KiB into flash, and merge with `-e`
+so the UF2 covers the full firmware/padding/filesystem prefix. This formatting
+step requires a host C compiler and `make`; it does not rebuild the firmware.
 
 ```
 $ ./fetch.sh
 ...
 OK — byte-identical.
+OK — formatted flash is byte-identical.
 ```
 
 **Reproducibility.** The build pins `SOURCE_DATE_EPOCH` to PicoBB's own commit
@@ -139,4 +170,5 @@ configuration are listed (no FatFS, lwIP, CYW43 or m0FaultDispatch).
 - LittleFS: `github.com/littlefs-project/littlefs` @ `4dd30c1b8f1b416633fe63a338ede8934b6449a9` (BSD-3-Clause)
 - Pico SDK: `github.com/raspberrypi/pico-sdk` tag `2.1.1` (BSD-3-Clause)
 - Machine: bw-board `rp2040js` — RP2040 Cortex-M0+, UART0 PL011 @ `0x40034000`
-- Shipped artifact: `bbcbasic_console_pico.uf2`, sha256 (see `brickwright-media.json`)
+- Firmware build: `bbcbasic_console_pico.uf2`, SHA-256 in `brickwright-media.json`
+- Selected flash image: `bbcbasic_console_pico_filesystem.uf2`, SHA-256 in `brickwright-media.json`
