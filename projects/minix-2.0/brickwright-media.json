@@ -17,7 +17,10 @@
   "freeBios": true,
   "proprietaryRomUsed": false,
   "slots": {
-    "floppy": "minix204.img"
+    "floppy": {
+      "url": "minix204.img",
+      "sha256": "1fe04d26593954eb7b71b084029b35bd937b57641d63cff419c157f8384e8780"
+    }
   },
   "floppy": {
     "geometry": {
@@ -58,7 +61,7 @@
     "shellPrompt": "# ",
     "steer": "keyboard (machine.keyIn -> 8042 + IRQ1) -- the free-386 injects scancodes, so '=' starts the kernel and 'root' logs in (the 8086 tier could not)."
   },
-  "notes": "BSD-3 Minix 2.0.4 'QD edition' combo floppy (davidgiven/minix2), run unmodified. Must boot on the FULLY-FREE 386 AT machine (LGPL Bochs BIOS + LGPL VGABios, no proprietary ROM), NOT the 8086: the 2.0.4 i86 kernel runs in 16-bit protected mode and wants ~2MB, which the 386 AT provides and the 8086/XT tier cannot. Set CMOS floppy type 0 = 1.44MB (0x10=0x40) and boot-from-floppy (0x3d=0x01). Injecting '=' at the boot monitor launches the kernel; it reaches a multiuser 'login:'. Verified via bw-board scripts/run-i80386-free-bios-freedos.mjs adapted to insert this floppy. Fetched, never re-hosted.",
+  "notes": "BSD-3 Minix 2.0.4 'QD edition' combo floppy (davidgiven/minix2), run unmodified. Must boot on the FULLY-FREE 386 AT machine (LGPL Bochs BIOS + LGPL VGABios, no proprietary ROM), NOT the 8086: the 2.0.4 i86 kernel runs in 16-bit protected mode and wants ~2MB, which the 386 AT provides and the 8086/XT tier cannot. Set CMOS floppy type 0 = 1.44MB (0x10=0x40) and boot-from-floppy (0x3d=0x01). Injecting '=' at the boot monitor launches the kernel; it reaches a multiuser 'login:'. Verified via bw-board scripts/run-i80386-free-bios-freedos.mjs adapted to insert this floppy. The Media Lab copy preserves the SHA-256 of the unmodified upstream floppy.",
   "widgets": [
     {
       "name": "screen",
@@ -90,5 +93,6 @@
   ],
   "bios": {
     "kind": "bochs-lgpl"
-  }
+  },
+  "license": "BSD-3-Clause"
 }
