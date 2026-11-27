@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 # Fetch David Given's buildable Minix 2.0.4 "QD edition" combo floppy + its
 # BSD-3 license, decompress, and verify the image against its pinned sha256.
-# BSD-3-Clause: run it, and it may be re-hosted -- but we fetch from upstream.
+# Verify the Media Lab copy against the upstream release.
 set -euo pipefail
 
 GZ_URL="https://github.com/davidgiven/minix2/releases/download/v1/combo-1440kB.img.gz"
-LICENSE_URL="https://raw.githubusercontent.com/davidgiven/minix2/master/LICENSE"
+LICENSE_URL="https://raw.githubusercontent.com/davidgiven/minix2/53fce25cc39d7692ed47f89a2b3a6c46f10c61a1/LICENSE"
 IMG="minix204.img"
 IMG_SHA256="1fe04d26593954eb7b71b084029b35bd937b57641d63cff419c157f8384e8780"
 GZ_SHA256="46c0a2ada3f9d952e1359cacba44c1011ad1a03995811e4e716be0a56dd491e5"

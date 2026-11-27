@@ -53,7 +53,7 @@ FreeDOS drives Minix's console keyboard, so it goes all the way to a shell.
 
 Minix 1.x and 2.x were relicensed **BSD-3-Clause** in April 2000 (Prentice Hall,
 copyright 1987/1997), so these classic sources are free software. Upstream
-`LICENSE` carries the grant; `fetch.sh` pulls it beside the image. The LGPL
+`LICENSE` carries the grant and ships beside the image. The LGPL
 firmware that boots it is separately licensed and vendored in bw-board, not here.
 
 ## Provenance (pinned in `fetch.sh`)
@@ -76,5 +76,6 @@ Then boot `minix204.img` as the floppy on the **fully-free 386**, e.g. with the
 harness that bw-board `scripts/run-i80386-free-bios-freedos.mjs` uses — insert
 the floppy with geometry 80/2/18, set CMOS floppy type 0 to 1.44 MB, boot from
 floppy, inject `=` at the monitor and `root` at `login:`. Verified machine-side:
-boots to a multiuser shell on free firmware. BSD-3 image is fetched, never
-re-hosted.
+boots to a multiuser shell on free firmware. Media Lab contains an unchanged
+copy for the Machines library. `fetch.sh` checks it against the upstream
+release. The emulator loads the BIOS and VGA option ROM separately.
