@@ -1,0 +1,3305 @@
+[
+  {
+    "archive": "gprtf-fw.a",
+    "member": "g-fprintf.o",
+    "memberSha256": "d14af362a37ea8ac691dde4fe6a1a1bc87cebe516d5a4d963c29b4e0c2355adb",
+    "sourceMapping": "libgloss/ia16/Makefile.in exact printf template rule",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/g-stdio.S",
+      "bytes": 450,
+      "sha256": "861a5cd0b5ba2abd0dd056a5b44a16dc2811f0a0b30c56031d798eeefe85ec65"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/g-stdio.S",
+        "bytes": 450,
+        "sha256": "861a5cd0b5ba2abd0dd056a5b44a16dc2811f0a0b30c56031d798eeefe85ec65"
+      },
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/call-cvt.h",
+        "bytes": 10518,
+        "sha256": "ce514bab8eebae1f31bb075339c427d0b05c06ff4e7ee7b47b218a18d2c32df0"
+      }
+    ]
+  },
+  {
+    "archive": "gprtf-fw.a",
+    "member": "g-printf.o",
+    "memberSha256": "3fb8f824d4287a8e17cf52c66d40fa008eae8667bd4033232cd9e95f8c8834c0",
+    "sourceMapping": "libgloss/ia16/Makefile.in exact printf template rule",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/g-stdio.S",
+      "bytes": 450,
+      "sha256": "861a5cd0b5ba2abd0dd056a5b44a16dc2811f0a0b30c56031d798eeefe85ec65"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/g-stdio.S",
+        "bytes": 450,
+        "sha256": "861a5cd0b5ba2abd0dd056a5b44a16dc2811f0a0b30c56031d798eeefe85ec65"
+      },
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/call-cvt.h",
+        "bytes": 10518,
+        "sha256": "ce514bab8eebae1f31bb075339c427d0b05c06ff4e7ee7b47b218a18d2c32df0"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-__call_atexit.o",
+    "memberSha256": "da01b8279ff640f4e3c52639f9f1ce06bbf780fd3ac62c067deb115925ede4c0",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/__call_atexit.c",
+      "bytes": 3971,
+      "sha256": "c5db5ff6cc16a38a786bb066a30783d5e991ff144183a2c858df60afe369471b"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/__call_atexit.c",
+        "bytes": 3971,
+        "sha256": "c5db5ff6cc16a38a786bb066a30783d5e991ff144183a2c858df60afe369471b"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-abort.o",
+    "memberSha256": "1b08c433b80d0b494c41ab794ce6c15275d29afdca16263fd7c255cd0dd9681f",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/machine/ia16/abort.c",
+      "bytes": 2651,
+      "sha256": "d9332eafe49ef3ace03dac334d623fb35cff8b301f13516370824ba07cdbc7cc"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/machine/ia16/abort.c",
+        "bytes": 2651,
+        "sha256": "d9332eafe49ef3ace03dac334d623fb35cff8b301f13516370824ba07cdbc7cc"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-atol.o",
+    "memberSha256": "75c32882a13a47a43d1dfba266aa739e9677067a13c195c8f50b896a5e82390d",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/atol.c",
+      "bytes": 312,
+      "sha256": "b86d8e28a6db852fc1184fc77a84d27c30207b28d81217219d364e6d2df73882"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/atol.c",
+        "bytes": 312,
+        "sha256": "b86d8e28a6db852fc1184fc77a84d27c30207b28d81217219d364e6d2df73882"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-ctype_.o",
+    "memberSha256": "3a31626f82737ea1d9a8e9cbbe49a719dfe9b0242975fdc696c3f13be0e5d7e5",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/ctype/ctype_.c",
+      "bytes": 6749,
+      "sha256": "27fc3d11acaa141e17ebf5275d35474c977401a51736917aed157a7b8cbb0542"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/ctype/ctype_.c",
+        "bytes": 6749,
+        "sha256": "27fc3d11acaa141e17ebf5275d35474c977401a51736917aed157a7b8cbb0542"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-div.o",
+    "memberSha256": "9a42014b0e87dcec7b2450d795fb6eaba00e5c9aa8e994caa9234df561dc4614",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/div.c",
+      "bytes": 4101,
+      "sha256": "d979570d5fcdf473c7b651d24fea0235eaa49bfbd20fc7c8f92f741fa4198199"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/div.c",
+        "bytes": 4101,
+        "sha256": "d979570d5fcdf473c7b651d24fea0235eaa49bfbd20fc7c8f92f741fa4198199"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-dtoa.o",
+    "memberSha256": "ba5472afebdd64718cf0d6f0c2e1fe0bcf2641627cdaa8e1fd8502168d2bdcab",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/dtoa.c",
+      "bytes": 18935,
+      "sha256": "19881a5dec6c4ba9a3a3666c44387c25f889c8fefe6d737b70371986c3fafefe"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/dtoa.c",
+        "bytes": 18935,
+        "sha256": "19881a5dec6c4ba9a3a3666c44387c25f889c8fefe6d737b70371986c3fafefe"
+      },
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/mprec.h",
+        "bytes": 12275,
+        "sha256": "e723a342751935c2ca667a7c1e66695a96e01c1943d8a31de523305219a559c6"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-envlock.o",
+    "memberSha256": "341f9b8a3718eeef4b0232463bccc6ee71f56e166795e809365b6a022da329fd",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/envlock.c",
+      "bytes": 1530,
+      "sha256": "f83ed7da4683e99d288e51e9767fea3c017ac81dd980fe8b433caee26b2e43e3"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/envlock.c",
+        "bytes": 1530,
+        "sha256": "f83ed7da4683e99d288e51e9767fea3c017ac81dd980fe8b433caee26b2e43e3"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-exit.o",
+    "memberSha256": "181d8eeb13cd1d3ec34b9ae5faed3d5a32aa8b36973d2ef96e00f9e73edd6e80",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/exit.c",
+      "bytes": 1728,
+      "sha256": "7ad728ee75aa20180cb8c09378ae9baefd2babc9637e5d0b055923204540627c"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/exit.c",
+        "bytes": 1728,
+        "sha256": "7ad728ee75aa20180cb8c09378ae9baefd2babc9637e5d0b055923204540627c"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-fclose.o",
+    "memberSha256": "8a943e2d799ab7a8cd3ce3c6efb38a1115112183fd2373c6446cbbdebfb8ed86",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdio/fclose.c",
+      "bytes": 3710,
+      "sha256": "ed97ffc9fbe51a2f6250dfad810b981fd4ae1e4161c0da924c0511e91406e7ec"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdio/fclose.c",
+        "bytes": 3710,
+        "sha256": "ed97ffc9fbe51a2f6250dfad810b981fd4ae1e4161c0da924c0511e91406e7ec"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-fflush.o",
+    "memberSha256": "1895c0d5cffa16dbc4d7ec7392351d652ee9268fbe4f1b86a3c1b60d181aa85f",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdio/fflush.c",
+      "bytes": 8745,
+      "sha256": "8454f16dfc3d4d8e8bfba39af7ac93118b32e9e494c77618c1143db420e4c417"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdio/fflush.c",
+        "bytes": 8745,
+        "sha256": "8454f16dfc3d4d8e8bfba39af7ac93118b32e9e494c77618c1143db420e4c417"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-findfp.o",
+    "memberSha256": "f4226954dcaca4db2f0bb1220d5c38d27913879f03e27ad4acd47dbfb0b20b91",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdio/findfp.c",
+      "bytes": 7766,
+      "sha256": "637faca392ddf30c6c10d388e49f436e6bb22f51b0d8e30540ea40cdae5a3626"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdio/findfp.c",
+        "bytes": 7766,
+        "sha256": "637faca392ddf30c6c10d388e49f436e6bb22f51b0d8e30540ea40cdae5a3626"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-fprintf.o",
+    "memberSha256": "6951d1870274de2f0fd01fe935865f409005fa36181f118ad200cad848cccf55",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdio/fprintf.c",
+      "bytes": 1747,
+      "sha256": "7d8b4df69e63a2821de0697764cc6ee3edf5f6974b037993d6c6d2b386c8c0b5"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdio/fprintf.c",
+        "bytes": 1747,
+        "sha256": "7d8b4df69e63a2821de0697764cc6ee3edf5f6974b037993d6c6d2b386c8c0b5"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-fvwrite.o",
+    "memberSha256": "deb3add0de01cd849269a57dc41f44b120bc26191662090d27c3678ec6d9792d",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdio/fvwrite.c",
+      "bytes": 6943,
+      "sha256": "90ef27d5dc2d5e3892654da7c50af997bbd2179bcaee6d5187ca969e386273ae"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdio/fvwrite.c",
+        "bytes": 6943,
+        "sha256": "90ef27d5dc2d5e3892654da7c50af997bbd2179bcaee6d5187ca969e386273ae"
+      },
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdio/fvwrite.h",
+        "bytes": 1202,
+        "sha256": "e4ddf9b7b8d3299f4213741cc5de12a165092dc5465e19a5f0bc60dae8c61078"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-fwalk.o",
+    "memberSha256": "0af9632c10ddd1831dc2e5b71ad42df57e3c9e153b3b1523fdc0b66dfdb5f86f",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdio/fwalk.c",
+      "bytes": 2610,
+      "sha256": "6c48a4f8004da8248d47bad4ef38a75fb1f1cfb50e97e8a10010a78bb5946725"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdio/fwalk.c",
+        "bytes": 2610,
+        "sha256": "6c48a4f8004da8248d47bad4ef38a75fb1f1cfb50e97e8a10010a78bb5946725"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-getenv_r.o",
+    "memberSha256": "7f4ed468843834197595e5d49eef37e1af4ef9c3750d6382369365906b17e30c",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/getenv_r.c",
+      "bytes": 3747,
+      "sha256": "bd2351e6fcf682577229a3a730822c138ace09213d8a55398b329acbc0e29415"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/getenv_r.c",
+        "bytes": 3747,
+        "sha256": "bd2351e6fcf682577229a3a730822c138ace09213d8a55398b329acbc0e29415"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-gettzinfo.o",
+    "memberSha256": "3527db6b721ab76d335ee6ac7ab480fe538f138d57cc6a7a08b9b5d707b34055",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/time/gettzinfo.c",
+      "bytes": 290,
+      "sha256": "9c1ba45e44ef33ba7264d6aff9f7f429cb4ffda9fc7b66be0364c36cc71b7b3c"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/time/gettzinfo.c",
+        "bytes": 290,
+        "sha256": "9c1ba45e44ef33ba7264d6aff9f7f429cb4ffda9fc7b66be0364c36cc71b7b3c"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-impure.o",
+    "memberSha256": "af76c7819adc25b379435e1529f134f97d1b471f2445912dd53065eebd0339d3",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/reent/impure.c",
+      "bytes": 1102,
+      "sha256": "8833dca3d81b7a24c01767d637cad160a034318d5785206882482b048b6a34e2"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/reent/impure.c",
+        "bytes": 1102,
+        "sha256": "8833dca3d81b7a24c01767d637cad160a034318d5785206882482b048b6a34e2"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-locale.o",
+    "memberSha256": "466af2d63c107c9d53de1f5b7a270b14f06e6e1f70e3114c96207a3d3a7be63b",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/locale/locale.c",
+      "bytes": 29716,
+      "sha256": "1873e04cc29f3710cf3650127d69f9f6c76d1c5fbf6604a91a68acbe13cac2ab"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/locale/locale.c",
+        "bytes": 29716,
+        "sha256": "1873e04cc29f3710cf3650127d69f9f6c76d1c5fbf6604a91a68acbe13cac2ab"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-makebuf.o",
+    "memberSha256": "c5ada05f3a960c8054cc14f38d6b2efdb3336f2708151be85ea30c3025cbb674",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdio/makebuf.c",
+      "bytes": 3514,
+      "sha256": "f7f6be2e8f579406f9d2f0c9db6c75b3247b1bb1fe524f2060f95f11d3d3ccc0"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdio/makebuf.c",
+        "bytes": 3514,
+        "sha256": "f7f6be2e8f579406f9d2f0c9db6c75b3247b1bb1fe524f2060f95f11d3d3ccc0"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-malloc.o",
+    "memberSha256": "28055254650387c17d999cc0b92f8cf051e6b7b73ea955e272ae94fa54b68504",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/malloc.c",
+      "bytes": 6506,
+      "sha256": "6bb6268a2372c4b364646abcbeb5e0989ed2abb3924582b39d54955f3affb15e"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/malloc.c",
+        "bytes": 6506,
+        "sha256": "6bb6268a2372c4b364646abcbeb5e0989ed2abb3924582b39d54955f3affb15e"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-mbtowc_r.o",
+    "memberSha256": "9ac04be3068bd1489b693ba68ccc105aea1e17032b4dfd9c68365d76f4c2aeaf",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/mbtowc_r.c",
+      "bytes": 15000,
+      "sha256": "d16a4c3ce969156d52f0cd752fc4f7b95eeb498c5dde7142866e57e5fc7b7e2e"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/mbtowc_r.c",
+        "bytes": 15000,
+        "sha256": "d16a4c3ce969156d52f0cd752fc4f7b95eeb498c5dde7142866e57e5fc7b7e2e"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-memchr.o",
+    "memberSha256": "8452f484938e89462e47aafec8baafc90c870afc202e3c7c1f47b17b7bd3d48b",
+    "sourceMapping": "newlib/libc/machine/ia16/Makefile.am source list",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/machine/ia16/memchr.S",
+      "bytes": 372,
+      "sha256": "1d8d78f8c296c65b2f4a78bbd21775ba1e0f373414041829dd2d606a25de897b"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/machine/ia16/memchr.S",
+        "bytes": 372,
+        "sha256": "1d8d78f8c296c65b2f4a78bbd21775ba1e0f373414041829dd2d606a25de897b"
+      },
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/machine/ia16/call-cvt.h",
+        "bytes": 48,
+        "sha256": "d4c423ac7cd4452d2b4205ab2b2623cf1c0d67554dc7c188c88aa9e37cad7212"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-memcpy.o",
+    "memberSha256": "306fdbceb9c52073628ab1bdc400d75f5d99c780ac91db7c77f382ce1d4dc893",
+    "sourceMapping": "newlib/libc/machine/ia16/Makefile.am source list",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/machine/ia16/memcpy.S",
+      "bytes": 364,
+      "sha256": "f7a9c5e6eb5af004706da7a4de28edfde17b142abafeaf650c7c1e49dd6cacf1"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/machine/ia16/memcpy.S",
+        "bytes": 364,
+        "sha256": "f7a9c5e6eb5af004706da7a4de28edfde17b142abafeaf650c7c1e49dd6cacf1"
+      },
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/machine/ia16/call-cvt.h",
+        "bytes": 48,
+        "sha256": "d4c423ac7cd4452d2b4205ab2b2623cf1c0d67554dc7c188c88aa9e37cad7212"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-memmove.o",
+    "memberSha256": "3775c4fffd3f7467879554bd274b286a19b24cdef548baa90528084df7e9758f",
+    "sourceMapping": "newlib/libc/machine/ia16/Makefile.am source list",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/machine/ia16/memmove.S",
+      "bytes": 1064,
+      "sha256": "2d1f8ac3d95f842e4455277d10def5a34b12b8714d3597d8434c89f04676b97a"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/machine/ia16/memmove.S",
+        "bytes": 1064,
+        "sha256": "2d1f8ac3d95f842e4455277d10def5a34b12b8714d3597d8434c89f04676b97a"
+      },
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/machine/ia16/call-cvt.h",
+        "bytes": 48,
+        "sha256": "d4c423ac7cd4452d2b4205ab2b2623cf1c0d67554dc7c188c88aa9e37cad7212"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-memset.o",
+    "memberSha256": "3f789f5f8f96ce6c50b5c9530b3ee3b8462f26ce362480b9b8cfa4a73628b08e",
+    "sourceMapping": "newlib/libc/machine/ia16/Makefile.am source list",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/machine/ia16/memset.S",
+      "bytes": 373,
+      "sha256": "cbf5f3615c3dd75de611b44b9ba1ac74cde8c2f1136fa681ca9ddf1b19151ca5"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/machine/ia16/memset.S",
+        "bytes": 373,
+        "sha256": "cbf5f3615c3dd75de611b44b9ba1ac74cde8c2f1136fa681ca9ddf1b19151ca5"
+      },
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/machine/ia16/call-cvt.h",
+        "bytes": 48,
+        "sha256": "d4c423ac7cd4452d2b4205ab2b2623cf1c0d67554dc7c188c88aa9e37cad7212"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-mktime.o",
+    "memberSha256": "7bc8c33befc90fa395902d1b1fbd34a29ff17ce1d45ebf5b76a28373fefd6c58",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/time/mktime.c",
+      "bytes": 7613,
+      "sha256": "74082a3f4f9172dfa270717af13a91a592a44d15c31c2d30ab745eeb5829ec09"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/time/mktime.c",
+        "bytes": 7613,
+        "sha256": "74082a3f4f9172dfa270717af13a91a592a44d15c31c2d30ab745eeb5829ec09"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-month_lengths.o",
+    "memberSha256": "350212c03fa41f12367024fc6e1e7282b88a118af5f3dd13ad432ff70e40ff96",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/time/month_lengths.c",
+      "bytes": 380,
+      "sha256": "90cf21080e30e204fa19618d5f45d229ef0ee2b8508f40dfc6ca9fe738f8212d"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/time/month_lengths.c",
+        "bytes": 380,
+        "sha256": "90cf21080e30e204fa19618d5f45d229ef0ee2b8508f40dfc6ca9fe738f8212d"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-mprec.o",
+    "memberSha256": "4bffe6c93989a2f128e7c1edbd1baba255140d1b86aadb7c27f9bdb5899820f5",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/mprec.c",
+      "bytes": 19705,
+      "sha256": "d89b59f42ad184b6c163e3dbfc3196772add477f9fb2419530ae91a56996dac7"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/mprec.c",
+        "bytes": 19705,
+        "sha256": "d89b59f42ad184b6c163e3dbfc3196772add477f9fb2419530ae91a56996dac7"
+      },
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/mprec.h",
+        "bytes": 12275,
+        "sha256": "e723a342751935c2ca667a7c1e66695a96e01c1943d8a31de523305219a559c6"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-nano-callocr.o",
+    "memberSha256": "fd0951bd95676eaeeb1afce47eb946c962f801827668343b77856aae78730774",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/nano-mallocr.c",
+      "bytes": 20123,
+      "sha256": "e55717b011aaa73f1f0246228a22088653254e137cde0bc914fc2dc488a498a5"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/nano-mallocr.c",
+        "bytes": 20123,
+        "sha256": "e55717b011aaa73f1f0246228a22088653254e137cde0bc914fc2dc488a498a5"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-nano-freer.o",
+    "memberSha256": "2cdc9d55c06faba0d1badfd3bd85dd41b24d14bc1cf4a0d38b699c0b297d2d91",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/nano-mallocr.c",
+      "bytes": 20123,
+      "sha256": "e55717b011aaa73f1f0246228a22088653254e137cde0bc914fc2dc488a498a5"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/nano-mallocr.c",
+        "bytes": 20123,
+        "sha256": "e55717b011aaa73f1f0246228a22088653254e137cde0bc914fc2dc488a498a5"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-nano-mallocr.o",
+    "memberSha256": "7c6906ae8588a423ad88ce99368fec01cd18a388ec3149a004870b88ba696a95",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/nano-mallocr.c",
+      "bytes": 20123,
+      "sha256": "e55717b011aaa73f1f0246228a22088653254e137cde0bc914fc2dc488a498a5"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/nano-mallocr.c",
+        "bytes": 20123,
+        "sha256": "e55717b011aaa73f1f0246228a22088653254e137cde0bc914fc2dc488a498a5"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-nano-msizer.o",
+    "memberSha256": "bde03df4ee8c606ea20503bb8d22ced263e3c38e212146a19db65e0162dce297",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/nano-mallocr.c",
+      "bytes": 20123,
+      "sha256": "e55717b011aaa73f1f0246228a22088653254e137cde0bc914fc2dc488a498a5"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/nano-mallocr.c",
+        "bytes": 20123,
+        "sha256": "e55717b011aaa73f1f0246228a22088653254e137cde0bc914fc2dc488a498a5"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-nano-reallocr.o",
+    "memberSha256": "7ab3d68cc8d16e8b76301e2eaba7367aa091f449e3830ebe97329c99e1368d83",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/nano-mallocr.c",
+      "bytes": 20123,
+      "sha256": "e55717b011aaa73f1f0246228a22088653254e137cde0bc914fc2dc488a498a5"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/nano-mallocr.c",
+        "bytes": 20123,
+        "sha256": "e55717b011aaa73f1f0246228a22088653254e137cde0bc914fc2dc488a498a5"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-printf.o",
+    "memberSha256": "a8cad9f7c5bf909796e339ee3bb618f28042a0952627d004f438b1070e42a0ed",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdio/printf.c",
+      "bytes": 1792,
+      "sha256": "bc2994dc9f3f2db32820b0011e79c0612564f058a256e24fed33aae3d1547abc"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdio/printf.c",
+        "bytes": 1792,
+        "sha256": "bc2994dc9f3f2db32820b0011e79c0612564f058a256e24fed33aae3d1547abc"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-s_frexp.o",
+    "memberSha256": "9c499a79087856a8b4eda40ecee10b41bd2635254b1e0a4464e6fa9edeb81174",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libm/math/s_frexp.c",
+      "bytes": 2643,
+      "sha256": "a1080066d9e548dae397e8bff8df4520b5f535ecb0ca526685b85c779a1bb295"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libm/math/s_frexp.c",
+        "bytes": 2643,
+        "sha256": "a1080066d9e548dae397e8bff8df4520b5f535ecb0ca526685b85c779a1bb295"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-sprintr.o",
+    "memberSha256": "0270a6ce85d05b4dea8a76fd43f952bb815d8e7f81a4f454f254b4ae66a1782f",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdio/vfprintf.c",
+      "bytes": 63722,
+      "sha256": "ada85bd0ec90ac2792ef9fd32f060896155ee41964a791c46df2f573a3321691"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdio/vfprintf.c",
+        "bytes": 63722,
+        "sha256": "ada85bd0ec90ac2792ef9fd32f060896155ee41964a791c46df2f573a3321691"
+      },
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdio/fvwrite.h",
+        "bytes": 1202,
+        "sha256": "e4ddf9b7b8d3299f4213741cc5de12a165092dc5465e19a5f0bc60dae8c61078"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-stdio.o",
+    "memberSha256": "1890c38ecd00194aff1300abae6d0587ee95eddb192b41d72963da8698307f78",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdio/stdio.c",
+      "bytes": 3603,
+      "sha256": "f96b3a72fe74dd55b758ac8165c04aeb87c0424e875e4da272a43f2a5737c6f1"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdio/stdio.c",
+        "bytes": 3603,
+        "sha256": "f96b3a72fe74dd55b758ac8165c04aeb87c0424e875e4da272a43f2a5737c6f1"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-strcasecmp.o",
+    "memberSha256": "40f24986d59a692248d09cb69219ebfa5d402674011875c8ae9067799bfb7b9c",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/string/strcasecmp.c",
+      "bytes": 1351,
+      "sha256": "f35ec54e7957d369ee01605d20ce9f3a129891d1cbdb28cd1135653619e5f395"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/string/strcasecmp.c",
+        "bytes": 1351,
+        "sha256": "f35ec54e7957d369ee01605d20ce9f3a129891d1cbdb28cd1135653619e5f395"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-strcat.o",
+    "memberSha256": "c18a4573c3af6b743e610e046d22918a73b91ce44a812a93221271ca6ebdf792",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/string/strcat.c",
+      "bytes": 2248,
+      "sha256": "784f0e3b694ba3cd7447c8b68bc239d59b08f580c24558f6f842459c32e978fd"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/string/strcat.c",
+        "bytes": 2248,
+        "sha256": "784f0e3b694ba3cd7447c8b68bc239d59b08f580c24558f6f842459c32e978fd"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-strchr.o",
+    "memberSha256": "426e8b323a59b63dce13882e76a3c6f9df2ef53297ea961aedeec6c4e107d8d8",
+    "sourceMapping": "newlib/libc/machine/ia16/Makefile.am source list",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/machine/ia16/strchr.S",
+      "bytes": 330,
+      "sha256": "cf830bc7936441e71e8ccae86aaf011e8fda7b2f5be0e084b9ca9512e98d16a4"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/machine/ia16/strchr.S",
+        "bytes": 330,
+        "sha256": "cf830bc7936441e71e8ccae86aaf011e8fda7b2f5be0e084b9ca9512e98d16a4"
+      },
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/machine/ia16/call-cvt.h",
+        "bytes": 48,
+        "sha256": "d4c423ac7cd4452d2b4205ab2b2623cf1c0d67554dc7c188c88aa9e37cad7212"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-strcmp.o",
+    "memberSha256": "62357d11cd46c6ea63e7cdd3ca2835a559d342d222a875b774c4bb91b2e6055d",
+    "sourceMapping": "newlib/libc/machine/ia16/Makefile.am source list",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/machine/ia16/strcmp.S",
+      "bytes": 354,
+      "sha256": "ae09e6f638f8f0357e46fe82c56f71a6e6ef9f2226b8c22075041f2d53633f20"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/machine/ia16/strcmp.S",
+        "bytes": 354,
+        "sha256": "ae09e6f638f8f0357e46fe82c56f71a6e6ef9f2226b8c22075041f2d53633f20"
+      },
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/machine/ia16/call-cvt.h",
+        "bytes": 48,
+        "sha256": "d4c423ac7cd4452d2b4205ab2b2623cf1c0d67554dc7c188c88aa9e37cad7212"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-strcpy.o",
+    "memberSha256": "0a67577816656dc468d894ef2510ab913e6de425837bc4438ae47b764e522824",
+    "sourceMapping": "newlib/libc/machine/ia16/Makefile.am source list",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/machine/ia16/strcpy.S",
+      "bytes": 353,
+      "sha256": "54446fdc8f1514fc429ca107043a747b8d9b17a2ed7c151a46698c88428fc42c"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/machine/ia16/strcpy.S",
+        "bytes": 353,
+        "sha256": "54446fdc8f1514fc429ca107043a747b8d9b17a2ed7c151a46698c88428fc42c"
+      },
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/machine/ia16/call-cvt.h",
+        "bytes": 48,
+        "sha256": "d4c423ac7cd4452d2b4205ab2b2623cf1c0d67554dc7c188c88aa9e37cad7212"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-strcspn.o",
+    "memberSha256": "bf55cb0f3ffff0a79b8b4a135ceb7156e3a1b294d9967b36b1fa19c35768e9ad",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/string/strcspn.c",
+      "bytes": 897,
+      "sha256": "6e9bc8420a2de658e102b6e582301b35c759a16d20898df0f81a3cf5ca0b3c6f"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/string/strcspn.c",
+        "bytes": 897,
+        "sha256": "6e9bc8420a2de658e102b6e582301b35c759a16d20898df0f81a3cf5ca0b3c6f"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-strlcpy.o",
+    "memberSha256": "6bf2dd7367a228e99b826dfdef2a94a95980441b71b43c6d4cae9e8d4542cd09",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/string/strlcpy.c",
+      "bytes": 2735,
+      "sha256": "643c96d207572eb0f1cdc450d01b9a74a6d2d806902f2e35571fdc6f76036341"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/string/strlcpy.c",
+        "bytes": 2735,
+        "sha256": "643c96d207572eb0f1cdc450d01b9a74a6d2d806902f2e35571fdc6f76036341"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-strlen.o",
+    "memberSha256": "b6c3a314594e4deca19f8869f3fc27a1af7531945f886bec4934a14375db37fb",
+    "sourceMapping": "newlib/libc/machine/ia16/Makefile.am source list",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/machine/ia16/strlen.S",
+      "bytes": 374,
+      "sha256": "169e343dcb2171b1156fea8c424a49923b6650721e8a1ed17f6517dbe902e6a0"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/machine/ia16/strlen.S",
+        "bytes": 374,
+        "sha256": "169e343dcb2171b1156fea8c424a49923b6650721e8a1ed17f6517dbe902e6a0"
+      },
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/machine/ia16/call-cvt.h",
+        "bytes": 48,
+        "sha256": "d4c423ac7cd4452d2b4205ab2b2623cf1c0d67554dc7c188c88aa9e37cad7212"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-strncasecmp.o",
+    "memberSha256": "7e0943f8c67f3041c1614141ad255d6429eb381d92eef30048fbb2330a16f85d",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/string/strncasecmp.c",
+      "bytes": 1485,
+      "sha256": "a3445b4c64896710ce0d817eff2b0113a654500b20ae7f7b3ea26cf40b890f7d"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/string/strncasecmp.c",
+        "bytes": 1485,
+        "sha256": "a3445b4c64896710ce0d817eff2b0113a654500b20ae7f7b3ea26cf40b890f7d"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-strncmp.o",
+    "memberSha256": "932e2a9d1d7fe6094cf233a85bf83232afefb87d7258262712ef53d0398411cd",
+    "sourceMapping": "newlib/libc/machine/ia16/Makefile.am source list",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/machine/ia16/strncmp.S",
+      "bytes": 429,
+      "sha256": "75b06191118985661c4c45505743b6c404f4d20fefd5814f6175b751aec60c19"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/machine/ia16/strncmp.S",
+        "bytes": 429,
+        "sha256": "75b06191118985661c4c45505743b6c404f4d20fefd5814f6175b751aec60c19"
+      },
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/machine/ia16/call-cvt.h",
+        "bytes": 48,
+        "sha256": "d4c423ac7cd4452d2b4205ab2b2623cf1c0d67554dc7c188c88aa9e37cad7212"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-strncpy.o",
+    "memberSha256": "2ee1c5b3ba09915de6aed07e32ed6f7083709921a4ae2288b5b4cb8cf9c497f3",
+    "sourceMapping": "newlib/libc/machine/ia16/Makefile.am source list",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/machine/ia16/strncpy.S",
+      "bytes": 460,
+      "sha256": "fa690ad7f3b3480040c060001ce82aa91200dbf7a2eb4252690bc60fb56970e5"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/machine/ia16/strncpy.S",
+        "bytes": 460,
+        "sha256": "fa690ad7f3b3480040c060001ce82aa91200dbf7a2eb4252690bc60fb56970e5"
+      },
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/machine/ia16/call-cvt.h",
+        "bytes": 48,
+        "sha256": "d4c423ac7cd4452d2b4205ab2b2623cf1c0d67554dc7c188c88aa9e37cad7212"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-strtol.o",
+    "memberSha256": "9a083dedfa7125a1e34cb312bf781d1c59e8758ab5aacd5100bbf361b94724bb",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/strtol.c",
+      "bytes": 7780,
+      "sha256": "22980cec79a0e5a03790ead9f76b195ef898d01391439ef7bc40c492d64ada51"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/strtol.c",
+        "bytes": 7780,
+        "sha256": "22980cec79a0e5a03790ead9f76b195ef898d01391439ef7bc40c492d64ada51"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-strtoul.o",
+    "memberSha256": "35288f0cdfcc20fbcb70855f0f9059e0e34b66e0e4d8717ac59b0843c086e850",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/strtoul.c",
+      "bytes": 6926,
+      "sha256": "ab389400e0b2667a165013cffb27eee20fb403cb0ec66b32aa961afe40580869"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/strtoul.c",
+        "bytes": 6926,
+        "sha256": "ab389400e0b2667a165013cffb27eee20fb403cb0ec66b32aa961afe40580869"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-sysisatty.o",
+    "memberSha256": "743e1c45fa53fd99a4a84504e79a83c62476e7abd24c2dc0e949e5450ab1fbd2",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/syscalls/sysisatty.c",
+      "bytes": 215,
+      "sha256": "4dd7077a8602f257bf70a1befa0c79af621606c7cb91b3a665c516017e93f0e7"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/syscalls/sysisatty.c",
+        "bytes": 215,
+        "sha256": "4dd7077a8602f257bf70a1befa0c79af621606c7cb91b3a665c516017e93f0e7"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-syswrite.o",
+    "memberSha256": "337f5c6bce60ab1cfdd54852cdefe6b6f09f874a8c72144252e47b53fc5633bf",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/syscalls/syswrite.c",
+      "bytes": 228,
+      "sha256": "7c4661030da9c8c3a9ee9428ed7db0a3394b68d94473defdc6e66a723359dfa5"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/syscalls/syswrite.c",
+        "bytes": 228,
+        "sha256": "7c4661030da9c8c3a9ee9428ed7db0a3394b68d94473defdc6e66a723359dfa5"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-time.o",
+    "memberSha256": "21944c8d2ef1d3c1716155e45a2c23850f50d482516fc66cacdc76ea037a0532",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/time/time.c",
+      "bytes": 1007,
+      "sha256": "ecffe4161b4f4566ee72f77c41bad285841ae85b58bfd2d3ae485e233b923fd8"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/time/time.c",
+        "bytes": 1007,
+        "sha256": "ecffe4161b4f4566ee72f77c41bad285841ae85b58bfd2d3ae485e233b923fd8"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-tzcalc_limits.o",
+    "memberSha256": "6847bbfed1587e494795f2847e7a5cc2fbccdd7666ccb03e7129ed1b6ae3954d",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/time/tzcalc_limits.c",
+      "bytes": 1997,
+      "sha256": "2359bf10afa4a7354004b3ee899f78e6d9b1eea27607ce386164c390997a7c5c"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/time/tzcalc_limits.c",
+        "bytes": 1997,
+        "sha256": "2359bf10afa4a7354004b3ee899f78e6d9b1eea27607ce386164c390997a7c5c"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-tzset.o",
+    "memberSha256": "8885cde733b0d2c05e3c66e9a3195fc6d579cdf23070bf4a8980988f5e8470c5",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/time/tzset.c",
+      "bytes": 2455,
+      "sha256": "60345784e6da8ccad6b7079a9d088de7909dd245659c12f30f6305516b83631d"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/time/tzset.c",
+        "bytes": 2455,
+        "sha256": "60345784e6da8ccad6b7079a9d088de7909dd245659c12f30f6305516b83631d"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-tzset_r.o",
+    "memberSha256": "94c9f554a78ef5f9dd6c9345e00b24198d50029c0a2867ef7622661a4279f6e6",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/time/tzset_r.c",
+      "bytes": 4513,
+      "sha256": "7b6f67fb5eeba0b060071139b650c503e5d0a1ae96606b2dfa4ce000e649f749"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/time/tzset_r.c",
+        "bytes": 4513,
+        "sha256": "7b6f67fb5eeba0b060071139b650c503e5d0a1ae96606b2dfa4ce000e649f749"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-tzvars.o",
+    "memberSha256": "89dc9cc9a02f273b54b028dd933e560afe546a04cd46096019ce43f4232d3512",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/time/tzvars.c",
+      "bytes": 160,
+      "sha256": "37ef6e332de5e5546244803ec6c90ef2c8b018b09ea6bad3ebf027d948cd1550"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/time/tzvars.c",
+        "bytes": 160,
+        "sha256": "37ef6e332de5e5546244803ec6c90ef2c8b018b09ea6bad3ebf027d948cd1550"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-vfprintf.o",
+    "memberSha256": "203623d5ab1dc755733264f438bdba0aab13bf3478026a3cea554cd3994ddf8b",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdio/vfprintf.c",
+      "bytes": 63722,
+      "sha256": "ada85bd0ec90ac2792ef9fd32f060896155ee41964a791c46df2f573a3321691"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdio/vfprintf.c",
+        "bytes": 63722,
+        "sha256": "ada85bd0ec90ac2792ef9fd32f060896155ee41964a791c46df2f573a3321691"
+      },
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdio/fvwrite.h",
+        "bytes": 1202,
+        "sha256": "e4ddf9b7b8d3299f4213741cc5de12a165092dc5465e19a5f0bc60dae8c61078"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-wbuf.o",
+    "memberSha256": "13775fafd3ee20bbd8fbf911638f8892993123d952946ace5c5deb17ea5d9d90",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdio/wbuf.c",
+      "bytes": 2943,
+      "sha256": "b27eff29bb5752dc94779cf711caf742fdab9a4d02e3d96d5c78cf3f6e3e4edc"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdio/wbuf.c",
+        "bytes": 2943,
+        "sha256": "b27eff29bb5752dc94779cf711caf742fdab9a4d02e3d96d5c78cf3f6e3e4edc"
+      },
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdio/fvwrite.h",
+        "bytes": 1202,
+        "sha256": "e4ddf9b7b8d3299f4213741cc5de12a165092dc5465e19a5f0bc60dae8c61078"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-wcrtomb.o",
+    "memberSha256": "4e603c21fd6891f3acbbebcd364fcaaa31c4fdb9f9c0ef5dd6d06f32a3b0faca",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/wcrtomb.c",
+      "bytes": 1528,
+      "sha256": "eacd798e9b910896894f462ee695ea33c2ac8ef64bd3f13cb737e2d1ff18488c"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/wcrtomb.c",
+        "bytes": 1528,
+        "sha256": "eacd798e9b910896894f462ee695ea33c2ac8ef64bd3f13cb737e2d1ff18488c"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-wcsnrtombs.o",
+    "memberSha256": "3a7c07b49b6ffd8d91477eadff56de8d29bfd54811ccc8d19d256c184da66fb2",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/wcsnrtombs.c",
+      "bytes": 4597,
+      "sha256": "a076e5d8fa5cf60077dea2e2186a28aaee66bb469f487d9b4e1ac585f32f3ae5"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/wcsnrtombs.c",
+        "bytes": 4597,
+        "sha256": "a076e5d8fa5cf60077dea2e2186a28aaee66bb469f487d9b4e1ac585f32f3ae5"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-wcsrtombs.o",
+    "memberSha256": "1782751a91c13c25d9081d56b6c3dde8f1e9585ea0e37f6b092ba4ea59a8cd63",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/wcsrtombs.c",
+      "bytes": 573,
+      "sha256": "54b0bcb7f928db80767725daa4a84f6af6c07a57ca1d458cc65f3c799208e7cc"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/wcsrtombs.c",
+        "bytes": 573,
+        "sha256": "54b0bcb7f928db80767725daa4a84f6af6c07a57ca1d458cc65f3c799208e7cc"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-wctomb_r.o",
+    "memberSha256": "8aab7846a89c4dfc625328a6a595afd1cf0d15c9f9fba015f2302f943e312ceb",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/wctomb_r.c",
+      "bytes": 8689,
+      "sha256": "fcc236dde0d87f51d06da2b9e54cb743cb6a6b3fee19b728c49c4afebc0b8ea2"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdlib/wctomb_r.c",
+        "bytes": 8689,
+        "sha256": "fcc236dde0d87f51d06da2b9e54cb743cb6a6b3fee19b728c49c4afebc0b8ea2"
+      }
+    ]
+  },
+  {
+    "archive": "libc.a",
+    "member": "lib_a-wsetup.o",
+    "memberSha256": "32fe563412b5ff0178eb115a0ccf8bfbf33ae88a8c2e0fd6b24fd70a4627d1a3",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdio/wsetup.c",
+      "bytes": 2586,
+      "sha256": "6cdb3fbdb9f3efb90631ff7defaa62d1cd005b14bd58237e1186fc48a47946dd"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libc/stdio/wsetup.c",
+        "bytes": 2586,
+        "sha256": "6cdb3fbdb9f3efb90631ff7defaa62d1cd005b14bd58237e1186fc48a47946dd"
+      }
+    ]
+  },
+  {
+    "archive": "libdos-m.a",
+    "member": "dos-closer.o",
+    "memberSha256": "10f0347600cfdb5b3685c4b2798c38f7dee0035774c6400b5906cd9657754819",
+    "sourceMapping": "libgloss/ia16/Makefile.in source/assembly rule",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/dos-closer.S",
+      "bytes": 305,
+      "sha256": "7d00e2fe69515b80b32d79ce8348b0b172f0dfe2ea7ffb53177a1920b7ccb627"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/dos-closer.S",
+        "bytes": 305,
+        "sha256": "7d00e2fe69515b80b32d79ce8348b0b172f0dfe2ea7ffb53177a1920b7ccb627"
+      },
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/call-cvt.h",
+        "bytes": 10518,
+        "sha256": "ce514bab8eebae1f31bb075339c427d0b05c06ff4e7ee7b47b218a18d2c32df0"
+      }
+    ]
+  },
+  {
+    "archive": "libdos-m.a",
+    "member": "dos-environ.o",
+    "memberSha256": "fa616e0e097acf73824ab244470460a49905fbffbbc5878be0e15092a1aef5f8",
+    "sourceMapping": "libgloss/ia16/Makefile.in source/assembly rule",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/dos-environ.S",
+      "bytes": 966,
+      "sha256": "4343cdfa47d10fa64e715e14832b3ec3075d82d70c5b2c73a5f2777209631ddd"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/dos-environ.S",
+        "bytes": 966,
+        "sha256": "4343cdfa47d10fa64e715e14832b3ec3075d82d70c5b2c73a5f2777209631ddd"
+      }
+    ]
+  },
+  {
+    "archive": "libdos-m.a",
+    "member": "dos-gettimeofdayr.o",
+    "memberSha256": "be763a7872726925728f73e6e234127f8f5e850bacd88407c8e4ced1442227d3",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/dos-gettimeofdayr.c",
+      "bytes": 2347,
+      "sha256": "92ccc17459995c737060fac4a62c1144817aa8dea97be99af6c2d04957851ef0"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/dos-gettimeofdayr.c",
+        "bytes": 2347,
+        "sha256": "92ccc17459995c737060fac4a62c1144817aa8dea97be99af6c2d04957851ef0"
+      }
+    ]
+  },
+  {
+    "archive": "libdos-m.a",
+    "member": "dos-heaplen.o",
+    "memberSha256": "c6a0bc3d8a4f3db84d94fbb4f6eda6c2e04bf327b6875e4cc4d1cc6b8b9c3508",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/dos-heaplen.c",
+      "bytes": 536,
+      "sha256": "9484ad60c42ddb64422527ddb705c4291ea775bd91acb78f34fb595e8b7f7081"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/dos-heaplen.c",
+        "bytes": 536,
+        "sha256": "9484ad60c42ddb64422527ddb705c4291ea775bd91acb78f34fb595e8b7f7081"
+      }
+    ]
+  },
+  {
+    "archive": "libdos-m.a",
+    "member": "dos-isattyr.o",
+    "memberSha256": "98b7d3d2ae829a27f81b5ba2f03515ede0ba07fa27adc3a9716c6c1d4cb455a5",
+    "sourceMapping": "libgloss/ia16/Makefile.in source/assembly rule",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/dos-isattyr.S",
+      "bytes": 365,
+      "sha256": "5eea31e22d553d25f8a1a0565f8d7295e66e66e58771268f4d7e1db68c1bdd8a"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/dos-isattyr.S",
+        "bytes": 365,
+        "sha256": "5eea31e22d553d25f8a1a0565f8d7295e66e66e58771268f4d7e1db68c1bdd8a"
+      },
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/call-cvt.h",
+        "bytes": 10518,
+        "sha256": "ce514bab8eebae1f31bb075339c427d0b05c06ff4e7ee7b47b218a18d2c32df0"
+      }
+    ]
+  },
+  {
+    "archive": "libdos-m.a",
+    "member": "dos-lseekr.o",
+    "memberSha256": "0d159db8244ab9886765fdee4aef56b3a6cb2f56cde3f4d3ea372964650ce5af",
+    "sourceMapping": "libgloss/ia16/Makefile.in source/assembly rule",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/dos-lseekr.S",
+      "bytes": 484,
+      "sha256": "aa3212b1659a24181b7b04b5e426a217fda950a7050deade2eb8c6f7bcbda583"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/dos-lseekr.S",
+        "bytes": 484,
+        "sha256": "aa3212b1659a24181b7b04b5e426a217fda950a7050deade2eb8c6f7bcbda583"
+      },
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/call-cvt.h",
+        "bytes": 10518,
+        "sha256": "ce514bab8eebae1f31bb075339c427d0b05c06ff4e7ee7b47b218a18d2c32df0"
+      }
+    ]
+  },
+  {
+    "archive": "libdos-m.a",
+    "member": "dos-msmmabort.o",
+    "memberSha256": "c1bdc54678407dc74cb9ea1cce7e726944722f4b70e9b2e4ca45750b2e262283",
+    "sourceMapping": "libgloss/ia16/Makefile.in source/assembly rule",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/dos-msmmabort.S",
+      "bytes": 1291,
+      "sha256": "332d3badce04e178b7ba5ca8bd23dc90855d55051890523f94699b6f693671e1"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/dos-msmmabort.S",
+        "bytes": 1291,
+        "sha256": "332d3badce04e178b7ba5ca8bd23dc90855d55051890523f94699b6f693671e1"
+      },
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/call-cvt.h",
+        "bytes": 10518,
+        "sha256": "ce514bab8eebae1f31bb075339c427d0b05c06ff4e7ee7b47b218a18d2c32df0"
+      }
+    ]
+  },
+  {
+    "archive": "libdos-m.a",
+    "member": "dos-near-data-segment.o",
+    "memberSha256": "b4fd271bc093b3adc308fdc457f6f498e95a806e5fe0ad6e3cb0059e0d1eb96b",
+    "sourceMapping": "libgloss/ia16/Makefile.in source/assembly rule",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/dos-near-data-segment.S",
+      "bytes": 1230,
+      "sha256": "212295a368051806cadc331f21aeef93a738dbe06067233d3456b664a0bfed9c"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/dos-near-data-segment.S",
+        "bytes": 1230,
+        "sha256": "212295a368051806cadc331f21aeef93a738dbe06067233d3456b664a0bfed9c"
+      },
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/call-cvt.h",
+        "bytes": 10518,
+        "sha256": "ce514bab8eebae1f31bb075339c427d0b05c06ff4e7ee7b47b218a18d2c32df0"
+      }
+    ]
+  },
+  {
+    "archive": "libdos-m.a",
+    "member": "dos-readr.o",
+    "memberSha256": "a501a609ee178a1b3fc477628fcf21fe49913e82557b1ecd3f7aa95d850f58f7",
+    "sourceMapping": "libgloss/ia16/Makefile.in source/assembly rule",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/dos-readr.S",
+      "bytes": 454,
+      "sha256": "71836a35a5a3aee09cad5208ceebb31d6ecb79c404aa7a4c868cb66130699134"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/dos-readr.S",
+        "bytes": 454,
+        "sha256": "71836a35a5a3aee09cad5208ceebb31d6ecb79c404aa7a4c868cb66130699134"
+      },
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/call-cvt.h",
+        "bytes": 10518,
+        "sha256": "ce514bab8eebae1f31bb075339c427d0b05c06ff4e7ee7b47b218a18d2c32df0"
+      }
+    ]
+  },
+  {
+    "archive": "libdos-m.a",
+    "member": "dos-sbrkr.o",
+    "memberSha256": "c0880ce33e0de70728cf0c21c683fb46068e5da089586fe86eeb22c889619936",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/dos-sbrkr.c",
+      "bytes": 883,
+      "sha256": "a5cc913e66ce9c57842586e989736f1f20ed3dfe3b2276ff5ea1e110287a5cbb"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/dos-sbrkr.c",
+        "bytes": 883,
+        "sha256": "a5cc913e66ce9c57842586e989736f1f20ed3dfe3b2276ff5ea1e110287a5cbb"
+      }
+    ]
+  },
+  {
+    "archive": "libdos-m.a",
+    "member": "dos-writer.o",
+    "memberSha256": "3b4bcef27a5564088213c885296b352e8544dc7ccaf5d0005d2ea544f20994cd",
+    "sourceMapping": "libgloss/ia16/Makefile.in source/assembly rule",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/dos-writer.S",
+      "bytes": 910,
+      "sha256": "dafebc6433471469c627535e2f33bfe096d0d19c782c491ef7a7e37e707fcc64"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/dos-writer.S",
+        "bytes": 910,
+        "sha256": "dafebc6433471469c627535e2f33bfe096d0d19c782c491ef7a7e37e707fcc64"
+      },
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/call-cvt.h",
+        "bytes": 10518,
+        "sha256": "ce514bab8eebae1f31bb075339c427d0b05c06ff4e7ee7b47b218a18d2c32df0"
+      }
+    ]
+  },
+  {
+    "archive": "libm.a",
+    "member": "lib_a-e_exp.o",
+    "memberSha256": "d98340ea0bc8f2a5c5d1aafb3d7e73154334a5d06d8f206a31a7e48d4132ce5f",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libm/math/e_exp.c",
+      "bytes": 5257,
+      "sha256": "076f078228645387a092ea560c2822dba43849e99b1129c17193df06a6d18661"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libm/math/e_exp.c",
+        "bytes": 5257,
+        "sha256": "076f078228645387a092ea560c2822dba43849e99b1129c17193df06a6d18661"
+      }
+    ]
+  },
+  {
+    "archive": "libm.a",
+    "member": "lib_a-e_log.o",
+    "memberSha256": "c03decbbae710edc8e139a034f029777804f81f614285583c501eec3c383ae75",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libm/math/e_log.c",
+      "bytes": 4567,
+      "sha256": "623b52cc9cf5e9512b00ff0451c2b0c8422b4156c082795b5307ef99ea4cb347"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libm/math/e_log.c",
+        "bytes": 4567,
+        "sha256": "623b52cc9cf5e9512b00ff0451c2b0c8422b4156c082795b5307ef99ea4cb347"
+      }
+    ]
+  },
+  {
+    "archive": "libm.a",
+    "member": "lib_a-e_rem_pio2.o",
+    "memberSha256": "109728f96f937969b46d84a549399e8aba8db964e084254befa759d1bb4a4a4f",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libm/math/e_rem_pio2.c",
+      "bytes": 5612,
+      "sha256": "5e80de2aa15d9e85dfc2e5a92271f14ed39213bf9c3954494994f2e0f9c40858"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libm/math/e_rem_pio2.c",
+        "bytes": 5612,
+        "sha256": "5e80de2aa15d9e85dfc2e5a92271f14ed39213bf9c3954494994f2e0f9c40858"
+      }
+    ]
+  },
+  {
+    "archive": "libm.a",
+    "member": "lib_a-e_sqrt.o",
+    "memberSha256": "b3fe28229274510debdd9df54a45c6ef307004de9f854aaf76627178410d96f8",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libm/math/e_sqrt.c",
+      "bytes": 14505,
+      "sha256": "c1efd665e485a4dd0566b5de2cd5742668627f758ce06459732f80902153c14d"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libm/math/e_sqrt.c",
+        "bytes": 14505,
+        "sha256": "c1efd665e485a4dd0566b5de2cd5742668627f758ce06459732f80902153c14d"
+      }
+    ]
+  },
+  {
+    "archive": "libm.a",
+    "member": "lib_a-k_cos.o",
+    "memberSha256": "70902dbd3d8934e442b5eb9343f959dd5f0052a8af205490ee5566c3b1097487",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libm/math/k_cos.c",
+      "bytes": 3079,
+      "sha256": "f0e70a8ac9e9fffc0783cba05104fa90ab676450da737cf0c0e2fdcaa4484bfd"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libm/math/k_cos.c",
+        "bytes": 3079,
+        "sha256": "f0e70a8ac9e9fffc0783cba05104fa90ab676450da737cf0c0e2fdcaa4484bfd"
+      }
+    ]
+  },
+  {
+    "archive": "libm.a",
+    "member": "lib_a-k_rem_pio2.o",
+    "memberSha256": "d6eb3ae2018ac3f31385b1c757f7d53601131a31020b1119ae55c76200dc9a17",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libm/math/k_rem_pio2.c",
+      "bytes": 8607,
+      "sha256": "1123eaff975595bf56d5e1ae3c218a6c71dc8709bf86c68bee207ac53221fa16"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libm/math/k_rem_pio2.c",
+        "bytes": 8607,
+        "sha256": "1123eaff975595bf56d5e1ae3c218a6c71dc8709bf86c68bee207ac53221fa16"
+      }
+    ]
+  },
+  {
+    "archive": "libm.a",
+    "member": "lib_a-k_sin.o",
+    "memberSha256": "5d5cb5dc0ebedb0d0f54d35ad57b384c3fb1ba3f3825edc7bff87db8a396d509",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libm/math/k_sin.c",
+      "bytes": 2482,
+      "sha256": "fb43493e9b0b882fb9dd9715d44e0e00c25c1724a18f40a9c9fc114a63e32130"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libm/math/k_sin.c",
+        "bytes": 2482,
+        "sha256": "fb43493e9b0b882fb9dd9715d44e0e00c25c1724a18f40a9c9fc114a63e32130"
+      }
+    ]
+  },
+  {
+    "archive": "libm.a",
+    "member": "lib_a-s_atan.o",
+    "memberSha256": "b265d781113f06454a296aed11630e1867e2f145d6f8504f54d4613ae151eb64",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libm/math/s_atan.c",
+      "bytes": 5071,
+      "sha256": "c9bde8d573813ad63b7f77132e5d60efdf699c1c4712e3a9532048d6612a73d5"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libm/math/s_atan.c",
+        "bytes": 5071,
+        "sha256": "c9bde8d573813ad63b7f77132e5d60efdf699c1c4712e3a9532048d6612a73d5"
+      }
+    ]
+  },
+  {
+    "archive": "libm.a",
+    "member": "lib_a-s_copysign.o",
+    "memberSha256": "366b48ff7adc3b7a55f120d13aa99dca88e91fe9d38c2674de92d18014605d15",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libm/common/s_copysign.c",
+      "bytes": 1813,
+      "sha256": "dd7e69e31c64d9dc0a7c69d7e9f20019b133291b38f15724c72284d6285bf8d2"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libm/common/s_copysign.c",
+        "bytes": 1813,
+        "sha256": "dd7e69e31c64d9dc0a7c69d7e9f20019b133291b38f15724c72284d6285bf8d2"
+      }
+    ]
+  },
+  {
+    "archive": "libm.a",
+    "member": "lib_a-s_cos.o",
+    "memberSha256": "0740f4873a9a38dbc205cba25bb9ca59dd2eea5eb40245a33999128f26f8bb29",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libm/math/s_cos.c",
+      "bytes": 2046,
+      "sha256": "af89424f187be4d0991474f6331ae1fd23281a7bc7be5895f3fbaf54a4d07d20"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libm/math/s_cos.c",
+        "bytes": 2046,
+        "sha256": "af89424f187be4d0991474f6331ae1fd23281a7bc7be5895f3fbaf54a4d07d20"
+      }
+    ]
+  },
+  {
+    "archive": "libm.a",
+    "member": "lib_a-s_fabs.o",
+    "memberSha256": "5568054a0dafd1ccbb5428556c83ac0b787670bd252e15bc974888b6a82574ec",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libm/math/s_fabs.c",
+      "bytes": 1361,
+      "sha256": "9123aaa7d0c3b538db9f37d2cde1156d56013d1394f6a798fa5a6c5363e31b3a"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libm/math/s_fabs.c",
+        "bytes": 1361,
+        "sha256": "9123aaa7d0c3b538db9f37d2cde1156d56013d1394f6a798fa5a6c5363e31b3a"
+      }
+    ]
+  },
+  {
+    "archive": "libm.a",
+    "member": "lib_a-s_floor.o",
+    "memberSha256": "3af50d71f9eeb130ca3d53e5e91e75c65eb5b521c87890fa7d6babe591a755f1",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libm/math/s_floor.c",
+      "bytes": 2775,
+      "sha256": "bfcaab777d6cde5ebb3402b56ae57f8f17155cb6ec7a81793dfe67290616ddda"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libm/math/s_floor.c",
+        "bytes": 2775,
+        "sha256": "bfcaab777d6cde5ebb3402b56ae57f8f17155cb6ec7a81793dfe67290616ddda"
+      }
+    ]
+  },
+  {
+    "archive": "libm.a",
+    "member": "lib_a-s_scalbn.o",
+    "memberSha256": "1960032eb7df0871345bf519428711b6621e8fb3a181be60867ceb84dd2532ae",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libm/common/s_scalbn.c",
+      "bytes": 2860,
+      "sha256": "9b15a42c63fcea7e4d64a9e25e8a9fa1e0b25aa7df10c27e8db388cdf34a61d6"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libm/common/s_scalbn.c",
+        "bytes": 2860,
+        "sha256": "9b15a42c63fcea7e4d64a9e25e8a9fa1e0b25aa7df10c27e8db388cdf34a61d6"
+      }
+    ]
+  },
+  {
+    "archive": "libm.a",
+    "member": "lib_a-s_sin.o",
+    "memberSha256": "49482146aa1a0196ab0a74352a8644d8404c099efff74cad8e3741fe74e16094",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libm/math/s_sin.c",
+      "bytes": 2967,
+      "sha256": "cdaef8e0eaddbc6b7b94ec7cfddf43f2fa582394e8ea0a6641407ab7b73986f8"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libm/math/s_sin.c",
+        "bytes": 2967,
+        "sha256": "cdaef8e0eaddbc6b7b94ec7cfddf43f2fa582394e8ea0a6641407ab7b73986f8"
+      }
+    ]
+  },
+  {
+    "archive": "libm.a",
+    "member": "lib_a-w_exp.o",
+    "memberSha256": "3739ffe7528c4321ec5f7b3913a625073b8f76bfdcbe28f5dcb04f0b6ff0fb5b",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libm/math/w_exp.c",
+      "bytes": 2894,
+      "sha256": "e525de1680315ddfbe0aabe990f9f57f6521ec1ec3e1441d2782ccc941427f77"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libm/math/w_exp.c",
+        "bytes": 2894,
+        "sha256": "e525de1680315ddfbe0aabe990f9f57f6521ec1ec3e1441d2782ccc941427f77"
+      }
+    ]
+  },
+  {
+    "archive": "libm.a",
+    "member": "lib_a-w_log.o",
+    "memberSha256": "bcdd66a323369484e6892c1fc149d492d3d21481d725a589191f852df2555f55",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libm/math/w_log.c",
+      "bytes": 2600,
+      "sha256": "3864f8484e11299d1d67d565a9b6ecc480f2651b3a9d023053afd75bc7e0de64"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libm/math/w_log.c",
+        "bytes": 2600,
+        "sha256": "3864f8484e11299d1d67d565a9b6ecc480f2651b3a9d023053afd75bc7e0de64"
+      }
+    ]
+  },
+  {
+    "archive": "libm.a",
+    "member": "lib_a-w_sqrt.o",
+    "memberSha256": "537bd03ecf0b7f87bab7ebf9ef429c9b2b88e6b78ec27cc9db9aa31df04b4150",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libm/math/w_sqrt.c",
+      "bytes": 1946,
+      "sha256": "4e00659d3ed5a74c9d86e2656f5fd8b943d823bc43fc10d0b6228659b372d6be"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/newlib/libm/math/w_sqrt.c",
+        "bytes": 1946,
+        "sha256": "4e00659d3ed5a74c9d86e2656f5fd8b943d823bc43fc10d0b6228659b372d6be"
+      }
+    ]
+  },
+  {
+    "archive": "tprtf-fw.a",
+    "member": "t-fprintf.o",
+    "memberSha256": "36cee0cd3fbf7608e1d58d8d0b2cc915a08b9c109aa7e6046b6b54fa5961a2fc",
+    "sourceMapping": "libgloss/ia16/Makefile.in exact printf template rule",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/t-stdio.S",
+      "bytes": 277,
+      "sha256": "8864518bf2a3a82acb2569d20874fe4d58093fade81068015d5c18e4e66b382b"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/t-stdio.S",
+        "bytes": 277,
+        "sha256": "8864518bf2a3a82acb2569d20874fe4d58093fade81068015d5c18e4e66b382b"
+      },
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/call-cvt.h",
+        "bytes": 10518,
+        "sha256": "ce514bab8eebae1f31bb075339c427d0b05c06ff4e7ee7b47b218a18d2c32df0"
+      }
+    ]
+  },
+  {
+    "archive": "tprtf-fw.a",
+    "member": "t-printf.o",
+    "memberSha256": "6f8535d01a52a2d0ffe67c882fb7dde13aee42da8154a3418bdf23d12406889e",
+    "sourceMapping": "libgloss/ia16/Makefile.in exact printf template rule",
+    "source": {
+      "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/t-stdio.S",
+      "bytes": 277,
+      "sha256": "8864518bf2a3a82acb2569d20874fe4d58093fade81068015d5c18e4e66b382b"
+    },
+    "noticeScope": "COPYING.NEWLIB or COPYING.LIBGLOSS defaults plus retained per-file/header notices",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/t-stdio.S",
+        "bytes": 277,
+        "sha256": "8864518bf2a3a82acb2569d20874fe4d58093fade81068015d5c18e4e66b382b"
+      },
+      {
+        "archive": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+        "path": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22/libgloss/ia16/call-cvt.h",
+        "bytes": 10518,
+        "sha256": "ce514bab8eebae1f31bb075339c427d0b05c06ff4e7ee7b47b218a18d2c32df0"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "_addsub_df.o",
+    "memberSha256": "eba1570011293d2bd264d1fd812560d90547758af3308ed6de0f717c43b230b6",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+      "bytes": 37440,
+      "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+        "bytes": 37440,
+        "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+      },
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.h",
+        "bytes": 13086,
+        "sha256": "caf470421f0eb78e762551c4c91a0e7a9911a716681afbe6912c4742d06b4a44"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "_ashldi3.o",
+    "memberSha256": "daea49dc727cc1b22ce32b2a12d8832d9bb723f65242c6efe5b022d4ac078082",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/libgcc2.c",
+      "bytes": 52111,
+      "sha256": "a487ad1fcc2d5b397bfc72a151865ffbecd19b218002dab49f64601ccd73d106"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/libgcc2.c",
+        "bytes": 52111,
+        "sha256": "a487ad1fcc2d5b397bfc72a151865ffbecd19b218002dab49f64601ccd73d106"
+      },
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/libgcc2.h",
+        "bytes": 16203,
+        "sha256": "ba22c03155b78087006de8aba77bb59da906f1dde4e953ac4efb558e53854687"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "_ashrsi3.o",
+    "memberSha256": "2fb0e82bb04e53e7a8ffca424e501cb8477b526bd18470553a60bcde49585e59",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/libgcc2.c",
+      "bytes": 52111,
+      "sha256": "a487ad1fcc2d5b397bfc72a151865ffbecd19b218002dab49f64601ccd73d106"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/libgcc2.c",
+        "bytes": 52111,
+        "sha256": "a487ad1fcc2d5b397bfc72a151865ffbecd19b218002dab49f64601ccd73d106"
+      },
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/libgcc2.h",
+        "bytes": 16203,
+        "sha256": "ba22c03155b78087006de8aba77bb59da906f1dde4e953ac4efb558e53854687"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "_clz.o",
+    "memberSha256": "f7c4cbf784e0ed2df8e678201648db1672a9d5d279671c682b8bee48f3929ddf",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/libgcc2.c",
+      "bytes": 52111,
+      "sha256": "a487ad1fcc2d5b397bfc72a151865ffbecd19b218002dab49f64601ccd73d106"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/libgcc2.c",
+        "bytes": 52111,
+        "sha256": "a487ad1fcc2d5b397bfc72a151865ffbecd19b218002dab49f64601ccd73d106"
+      },
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/libgcc2.h",
+        "bytes": 16203,
+        "sha256": "ba22c03155b78087006de8aba77bb59da906f1dde4e953ac4efb558e53854687"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "_clzsi2.o",
+    "memberSha256": "ac306a852be3116680bbb71819d01fda2d883c05310c5ecd670c552a12fd933d",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/libgcc2.c",
+      "bytes": 52111,
+      "sha256": "a487ad1fcc2d5b397bfc72a151865ffbecd19b218002dab49f64601ccd73d106"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/libgcc2.c",
+        "bytes": 52111,
+        "sha256": "a487ad1fcc2d5b397bfc72a151865ffbecd19b218002dab49f64601ccd73d106"
+      },
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/libgcc2.h",
+        "bytes": 16203,
+        "sha256": "ba22c03155b78087006de8aba77bb59da906f1dde4e953ac4efb558e53854687"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "_cmpsi2.o",
+    "memberSha256": "64ef2abc850fe5cce07bb2d7a088795c21fb367e1fd929367ec2620c439aa767",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/libgcc2.c",
+      "bytes": 52111,
+      "sha256": "a487ad1fcc2d5b397bfc72a151865ffbecd19b218002dab49f64601ccd73d106"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/libgcc2.c",
+        "bytes": 52111,
+        "sha256": "a487ad1fcc2d5b397bfc72a151865ffbecd19b218002dab49f64601ccd73d106"
+      },
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/libgcc2.h",
+        "bytes": 16203,
+        "sha256": "ba22c03155b78087006de8aba77bb59da906f1dde4e953ac4efb558e53854687"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "_ctzsi2.o",
+    "memberSha256": "89779407b568e08e6d0233982653a83169815d99e3a1f9da28d8edf109049936",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/libgcc2.c",
+      "bytes": 52111,
+      "sha256": "a487ad1fcc2d5b397bfc72a151865ffbecd19b218002dab49f64601ccd73d106"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/libgcc2.c",
+        "bytes": 52111,
+        "sha256": "a487ad1fcc2d5b397bfc72a151865ffbecd19b218002dab49f64601ccd73d106"
+      },
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/libgcc2.h",
+        "bytes": 16203,
+        "sha256": "ba22c03155b78087006de8aba77bb59da906f1dde4e953ac4efb558e53854687"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "_df_to_sf.o",
+    "memberSha256": "476aec3128e0aff8f8c7cd25d5682f841f92ae7c1b79c2b017e328b2334f489a",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+      "bytes": 37440,
+      "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+        "bytes": 37440,
+        "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+      },
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.h",
+        "bytes": 13086,
+        "sha256": "caf470421f0eb78e762551c4c91a0e7a9911a716681afbe6912c4742d06b4a44"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "_df_to_si.o",
+    "memberSha256": "13473063845aff66bca8642f535a89fa1304697bf7f71554af120754225a02e4",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+      "bytes": 37440,
+      "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+        "bytes": 37440,
+        "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+      },
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.h",
+        "bytes": 13086,
+        "sha256": "caf470421f0eb78e762551c4c91a0e7a9911a716681afbe6912c4742d06b4a44"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "_div_df.o",
+    "memberSha256": "124457ca5129ae2a488f8c56c82a6cfa181c9ec4de561d6843177b3196671ca1",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+      "bytes": 37440,
+      "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+        "bytes": 37440,
+        "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+      },
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.h",
+        "bytes": 13086,
+        "sha256": "caf470421f0eb78e762551c4c91a0e7a9911a716681afbe6912c4742d06b4a44"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "_eq_df.o",
+    "memberSha256": "2ef182ede3e72704ef7849496830c0af0147f38c117f4b0d095237f22dc5131e",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+      "bytes": 37440,
+      "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+        "bytes": 37440,
+        "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+      },
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.h",
+        "bytes": 13086,
+        "sha256": "caf470421f0eb78e762551c4c91a0e7a9911a716681afbe6912c4742d06b4a44"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "_fpcmp_parts_df.o",
+    "memberSha256": "10146c7f1983b8d301c56e9cc765577bd57e05d6756dee85a352af572d5b0329",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+      "bytes": 37440,
+      "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+        "bytes": 37440,
+        "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+      },
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.h",
+        "bytes": 13086,
+        "sha256": "caf470421f0eb78e762551c4c91a0e7a9911a716681afbe6912c4742d06b4a44"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "_fpcmp_parts_sf.o",
+    "memberSha256": "523ffe1ad33d6d54f14ded7ab6f059fcdc8c5ad0942281db3067211f5701f680",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+      "bytes": 37440,
+      "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+        "bytes": 37440,
+        "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+      },
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.h",
+        "bytes": 13086,
+        "sha256": "caf470421f0eb78e762551c4c91a0e7a9911a716681afbe6912c4742d06b4a44"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "_ge_df.o",
+    "memberSha256": "1a69131db0712aea3ca6bdc85c27c2108b7403c982473373f1f40764071e1f02",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+      "bytes": 37440,
+      "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+        "bytes": 37440,
+        "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+      },
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.h",
+        "bytes": 13086,
+        "sha256": "caf470421f0eb78e762551c4c91a0e7a9911a716681afbe6912c4742d06b4a44"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "_ge_sf.o",
+    "memberSha256": "aa9c0d713293868c19fa3466001b1b626772e247f6689af9c57330691cc252af",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+      "bytes": 37440,
+      "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+        "bytes": 37440,
+        "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+      },
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.h",
+        "bytes": 13086,
+        "sha256": "caf470421f0eb78e762551c4c91a0e7a9911a716681afbe6912c4742d06b4a44"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "_lshrdi3.o",
+    "memberSha256": "2427319a58f49e1716a69b81e676e2b4f324ee7cc756833e4eccf81fd0b1bd95",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/libgcc2.c",
+      "bytes": 52111,
+      "sha256": "a487ad1fcc2d5b397bfc72a151865ffbecd19b218002dab49f64601ccd73d106"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/libgcc2.c",
+        "bytes": 52111,
+        "sha256": "a487ad1fcc2d5b397bfc72a151865ffbecd19b218002dab49f64601ccd73d106"
+      },
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/libgcc2.h",
+        "bytes": 16203,
+        "sha256": "ba22c03155b78087006de8aba77bb59da906f1dde4e953ac4efb558e53854687"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "_make_df.o",
+    "memberSha256": "3381969680fd426817870a86d569dd36971f2d032b558de09017ea96defc150e",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+      "bytes": 37440,
+      "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+        "bytes": 37440,
+        "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+      },
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.h",
+        "bytes": 13086,
+        "sha256": "caf470421f0eb78e762551c4c91a0e7a9911a716681afbe6912c4742d06b4a44"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "_make_sf.o",
+    "memberSha256": "ff1f82eb1322a830e4951056989a1b7eaab27ad722b9f32542ce340ab03617c4",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+      "bytes": 37440,
+      "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+        "bytes": 37440,
+        "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+      },
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.h",
+        "bytes": 13086,
+        "sha256": "caf470421f0eb78e762551c4c91a0e7a9911a716681afbe6912c4742d06b4a44"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "_mul_df.o",
+    "memberSha256": "37c0daec14e4cd64aaa005dffd7c99e0564e2149eb90ccfd49a52e64adf80478",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+      "bytes": 37440,
+      "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+        "bytes": 37440,
+        "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+      },
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.h",
+        "bytes": 13086,
+        "sha256": "caf470421f0eb78e762551c4c91a0e7a9911a716681afbe6912c4742d06b4a44"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "_muldi3.o",
+    "memberSha256": "3ec147ede6b09d16cee0ff7c883b6d56cf3c68126ae314c324b1fec313b7abb1",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/libgcc2.c",
+      "bytes": 52111,
+      "sha256": "a487ad1fcc2d5b397bfc72a151865ffbecd19b218002dab49f64601ccd73d106"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/libgcc2.c",
+        "bytes": 52111,
+        "sha256": "a487ad1fcc2d5b397bfc72a151865ffbecd19b218002dab49f64601ccd73d106"
+      },
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/libgcc2.h",
+        "bytes": 16203,
+        "sha256": "ba22c03155b78087006de8aba77bb59da906f1dde4e953ac4efb558e53854687"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "_pack_df.o",
+    "memberSha256": "188892d04f67285486d632e05d8f0faaf6d6423a7e657116677c7786e0e88f0f",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+      "bytes": 37440,
+      "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+        "bytes": 37440,
+        "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+      },
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.h",
+        "bytes": 13086,
+        "sha256": "caf470421f0eb78e762551c4c91a0e7a9911a716681afbe6912c4742d06b4a44"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "_pack_sf.o",
+    "memberSha256": "00eace06a9af06ef601edce7195d6b3b930daf20194ae2e88022e8b6d1f54b08",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+      "bytes": 37440,
+      "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+        "bytes": 37440,
+        "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+      },
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.h",
+        "bytes": 13086,
+        "sha256": "caf470421f0eb78e762551c4c91a0e7a9911a716681afbe6912c4742d06b4a44"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "_sf_to_df.o",
+    "memberSha256": "0b60d7d0a0c388250c026fcb7462a4833ff29efff71041dc8813026e94488778",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+      "bytes": 37440,
+      "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+        "bytes": 37440,
+        "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+      },
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.h",
+        "bytes": 13086,
+        "sha256": "caf470421f0eb78e762551c4c91a0e7a9911a716681afbe6912c4742d06b4a44"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "_si_to_df.o",
+    "memberSha256": "0fce410ceffc5ef82001ea553e2314cd96edba6a8f298891cfbead8f34a27022",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+      "bytes": 37440,
+      "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+        "bytes": 37440,
+        "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+      },
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.h",
+        "bytes": 13086,
+        "sha256": "caf470421f0eb78e762551c4c91a0e7a9911a716681afbe6912c4742d06b4a44"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "_si_to_sf.o",
+    "memberSha256": "3d619122e0c2891cfaa4eda892a1902d43fad7c7ec4890a9f9204257b2e77ada",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+      "bytes": 37440,
+      "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+        "bytes": 37440,
+        "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+      },
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.h",
+        "bytes": 13086,
+        "sha256": "caf470421f0eb78e762551c4c91a0e7a9911a716681afbe6912c4742d06b4a44"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "_thenan_df.o",
+    "memberSha256": "a747079b78d347443a615d843896ea67bd3cf028fb9a68b561aa953b2613f4b2",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+      "bytes": 37440,
+      "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+        "bytes": 37440,
+        "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+      },
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.h",
+        "bytes": 13086,
+        "sha256": "caf470421f0eb78e762551c4c91a0e7a9911a716681afbe6912c4742d06b4a44"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "_ucmpsi2.o",
+    "memberSha256": "a450ea9d9c9788433f0b05ef31730d48ca3a24ee626513d96a6cfea06bfba2cc",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/libgcc2.c",
+      "bytes": 52111,
+      "sha256": "a487ad1fcc2d5b397bfc72a151865ffbecd19b218002dab49f64601ccd73d106"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/libgcc2.c",
+        "bytes": 52111,
+        "sha256": "a487ad1fcc2d5b397bfc72a151865ffbecd19b218002dab49f64601ccd73d106"
+      },
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/libgcc2.h",
+        "bytes": 16203,
+        "sha256": "ba22c03155b78087006de8aba77bb59da906f1dde4e953ac4efb558e53854687"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "_udivdi3.o",
+    "memberSha256": "0f7262fdd171653f7e792b00e0b7dcb95e676c5326fecd4346664a019f98590e",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/libgcc2.c",
+      "bytes": 52111,
+      "sha256": "a487ad1fcc2d5b397bfc72a151865ffbecd19b218002dab49f64601ccd73d106"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/libgcc2.c",
+        "bytes": 52111,
+        "sha256": "a487ad1fcc2d5b397bfc72a151865ffbecd19b218002dab49f64601ccd73d106"
+      },
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/libgcc2.h",
+        "bytes": 16203,
+        "sha256": "ba22c03155b78087006de8aba77bb59da906f1dde4e953ac4efb558e53854687"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "_umoddi3.o",
+    "memberSha256": "9fb6a43867e90a9fd23b854bf7d1a303ad7f416b3f36bcbb926dc68b5cd00e40",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/libgcc2.c",
+      "bytes": 52111,
+      "sha256": "a487ad1fcc2d5b397bfc72a151865ffbecd19b218002dab49f64601ccd73d106"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/libgcc2.c",
+        "bytes": 52111,
+        "sha256": "a487ad1fcc2d5b397bfc72a151865ffbecd19b218002dab49f64601ccd73d106"
+      },
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/libgcc2.h",
+        "bytes": 16203,
+        "sha256": "ba22c03155b78087006de8aba77bb59da906f1dde4e953ac4efb558e53854687"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "_unord_df.o",
+    "memberSha256": "adf035363a7d93dead6dd034139b9696e457bea7ba0990066738d195a24c01d6",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+      "bytes": 37440,
+      "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+        "bytes": 37440,
+        "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+      },
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.h",
+        "bytes": 13086,
+        "sha256": "caf470421f0eb78e762551c4c91a0e7a9911a716681afbe6912c4742d06b4a44"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "_unpack_df.o",
+    "memberSha256": "b96ada1c2c3c6a3f7d9fe86c1fc2cdcfba50d01fda13dfe742df51c73fb9fe33",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+      "bytes": 37440,
+      "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+        "bytes": 37440,
+        "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+      },
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.h",
+        "bytes": 13086,
+        "sha256": "caf470421f0eb78e762551c4c91a0e7a9911a716681afbe6912c4742d06b4a44"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "_unpack_sf.o",
+    "memberSha256": "86c8f43ddfc38a6c4a02a5366a2c38dccb30b2cb789fa72d26e84911594161bc",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+      "bytes": 37440,
+      "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+        "bytes": 37440,
+        "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+      },
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.h",
+        "bytes": 13086,
+        "sha256": "caf470421f0eb78e762551c4c91a0e7a9911a716681afbe6912c4742d06b4a44"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "_usi_to_df.o",
+    "memberSha256": "5790b7630c5ba305421345e837f6f58d87d7bfbe13006e4cad52e2d4cb994848",
+    "sourceMapping": "DWARF compilation unit",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+      "bytes": 37440,
+      "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.c",
+        "bytes": 37440,
+        "sha256": "b9c62231919cd8d8e7f58a48bea2f72bf3b173294b1341d87fe17ef8de28944f"
+      },
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/fp-bit.h",
+        "bytes": 13086,
+        "sha256": "caf470421f0eb78e762551c4c91a0e7a9911a716681afbe6912c4742d06b4a44"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "ashlsi3.o",
+    "memberSha256": "afb643fe68259c7f47e5e5c3409f3a45fdcce15bc1c513986e7b14035e2e7fa1",
+    "sourceMapping": "libgcc/config/ia16/t-ia16 explicit LIB2ADD source rule",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/config/ia16/ashlsi3.S",
+      "bytes": 2578,
+      "sha256": "e53216adfd7444e28dc0a832b93e4f26ad3ac4a6ee762427a6c72c97cd63030a"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/config/ia16/ashlsi3.S",
+        "bytes": 2578,
+        "sha256": "e53216adfd7444e28dc0a832b93e4f26ad3ac4a6ee762427a6c72c97cd63030a"
+      },
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/config/ia16/ia16-preamble.h",
+        "bytes": 1900,
+        "sha256": "ddc4631294fa0f5a740dfd44b95e3d169204183f4e1d50e0ea06f0b5d3bcf85a"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "divsi3.o",
+    "memberSha256": "6090946b80113157c0a38c9bf1ea76c389d092996da3880ef0234f87b0347e46",
+    "sourceMapping": "libgcc/config/ia16/t-ia16 explicit LIB2ADD source rule",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/config/ia16/divsi3.S",
+      "bytes": 44,
+      "sha256": "bd447cd0e5f9700b587258f45ee5894c72482a1c82b25350f9e522f5b23b9151"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/config/ia16/ia16-divmodsi.h",
+        "bytes": 3416,
+        "sha256": "bf485b27109efe611ee0ee0e6378d494ce608aafa5525690be378bc5e8c4c433"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "gtdf2.o",
+    "memberSha256": "240d1643704b7938a792d7b996fc5c5d9e2ea36d7b2b8c26dc3c611c4693a233",
+    "sourceMapping": "libgcc/config/ia16/t-ia16 explicit LIB2ADD source rule",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/config/ia16/gtdf2.S",
+      "bytes": 1175,
+      "sha256": "ab768ca4c62614792be203ac5946c7270798f9d2f5d5b4d2457d3ff10d70d8e6"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/config/ia16/gtdf2.S",
+        "bytes": 1175,
+        "sha256": "ab768ca4c62614792be203ac5946c7270798f9d2f5d5b4d2457d3ff10d70d8e6"
+      },
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/config/ia16/ia16-preamble.h",
+        "bytes": 1900,
+        "sha256": "ddc4631294fa0f5a740dfd44b95e3d169204183f4e1d50e0ea06f0b5d3bcf85a"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "ia16-ldivmods.o",
+    "memberSha256": "b1820272b57b5227b882f1e6e7fea2f5098c5ce2f6c5dfe43b1b8fd940afd69d",
+    "sourceMapping": "libgcc/config/ia16/t-ia16 explicit LIB2ADD source rule",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/config/ia16/ia16-ldivmods.S",
+      "bytes": 1945,
+      "sha256": "f4d5b86ba179a046731eda2867507bbb82b50e1fa5b8e83982f5d9804f0af48c"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/config/ia16/ia16-preamble.h",
+        "bytes": 1900,
+        "sha256": "ddc4631294fa0f5a740dfd44b95e3d169204183f4e1d50e0ea06f0b5d3bcf85a"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "ia16-ldivmodu.o",
+    "memberSha256": "673de6246de74e1678a18666b79d587fd8bb55230d7bf88e06815388b5b339a5",
+    "sourceMapping": "libgcc/config/ia16/t-ia16 explicit LIB2ADD source rule",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/config/ia16/ia16-ldivmodu.S",
+      "bytes": 1063,
+      "sha256": "4db512cde3dc29b416ba9db3163d5280d249a8108bc53fefdeb4ac94f3110a83"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/config/ia16/ia16-preamble.h",
+        "bytes": 1900,
+        "sha256": "ddc4631294fa0f5a740dfd44b95e3d169204183f4e1d50e0ea06f0b5d3bcf85a"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "lshrsi3.o",
+    "memberSha256": "37987fd8772f93e4e33bb24207709a003df7004775d841bcbecba74090fa9140",
+    "sourceMapping": "libgcc/config/ia16/t-ia16 explicit LIB2ADD source rule",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/config/ia16/lshrsi3.S",
+      "bytes": 2330,
+      "sha256": "9bb6ef73fa495e7472068366be91b7193bc0c0e617af5d0652a792cb3edb8146"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/config/ia16/lshrsi3.S",
+        "bytes": 2330,
+        "sha256": "9bb6ef73fa495e7472068366be91b7193bc0c0e617af5d0652a792cb3edb8146"
+      },
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/config/ia16/ia16-preamble.h",
+        "bytes": 1900,
+        "sha256": "ddc4631294fa0f5a740dfd44b95e3d169204183f4e1d50e0ea06f0b5d3bcf85a"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "modsi3.o",
+    "memberSha256": "4e245709514d14cf8ce6511b723e936e31c9dcd36bedfb35ad12dff805e38b2f",
+    "sourceMapping": "libgcc/config/ia16/t-ia16 explicit LIB2ADD source rule",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/config/ia16/modsi3.S",
+      "bytes": 44,
+      "sha256": "954212a5f6311e71b5a4cdcced6e77cb7d745aff428bf7db765e22bd67ce4d26"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/config/ia16/ia16-divmodsi.h",
+        "bytes": 3416,
+        "sha256": "bf485b27109efe611ee0ee0e6378d494ce608aafa5525690be378bc5e8c4c433"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "nedf2-ltdf2-ledf2.o",
+    "memberSha256": "8cb1b0f7caead0127053c7fceefa0628ad32ee1e59ca8a4d4e709f5fb22d4772",
+    "sourceMapping": "libgcc/config/ia16/t-ia16 explicit LIB2ADD source rule",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/config/ia16/nedf2-ltdf2-ledf2.S",
+      "bytes": 1279,
+      "sha256": "b73c53f728f3d90263beb195d9843b88a9f8375949022d2daa7291612bce9368"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/config/ia16/nedf2-ltdf2-ledf2.S",
+        "bytes": 1279,
+        "sha256": "b73c53f728f3d90263beb195d9843b88a9f8375949022d2daa7291612bce9368"
+      },
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/config/ia16/ia16-preamble.h",
+        "bytes": 1900,
+        "sha256": "ddc4631294fa0f5a740dfd44b95e3d169204183f4e1d50e0ea06f0b5d3bcf85a"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "udivsi3.o",
+    "memberSha256": "e0b0cb183cbecaffcdaf4a3b9f2ff2b747cfb414708dbfb6258871f458eb7e65",
+    "sourceMapping": "libgcc/config/ia16/t-ia16 explicit LIB2ADD source rule",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/config/ia16/udivsi3.S",
+      "bytes": 45,
+      "sha256": "8b49a1156df09840152e468c0995d86effa3cc34830a6d60f6b27be2e72b8827"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/config/ia16/ia16-divmodsi.h",
+        "bytes": 3416,
+        "sha256": "bf485b27109efe611ee0ee0e6378d494ce608aafa5525690be378bc5e8c4c433"
+      }
+    ]
+  },
+  {
+    "archive": "libgcc.a",
+    "member": "umodsi3.o",
+    "memberSha256": "bed84be7c5a200448b9b24239b6d8f6eef8edb6c3d9783ce2ef6f673867589b8",
+    "sourceMapping": "libgcc/config/ia16/t-ia16 explicit LIB2ADD source rule",
+    "source": {
+      "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/config/ia16/umodsi3.S",
+      "bytes": 45,
+      "sha256": "e55b2bf0ea4bbed49f1d0f1c258cbf99e64dedc7867869d249d274868c6d1cc2"
+    },
+    "noticeScope": "GPL-3.0-or-later WITH GCC-exception-3.1 (explicit source/common included header notice)",
+    "sourceOrIncludedNoticeFiles": [
+      {
+        "archive": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+        "path": "gcc-ia16-elf_6.3.0-20260612.00/libgcc/config/ia16/ia16-divmodsi.h",
+        "bytes": 3416,
+        "sha256": "bf485b27109efe611ee0ee0e6378d494ce608aafa5525690be378bc5e8c4c433"
+      }
+    ]
+  }
+]
