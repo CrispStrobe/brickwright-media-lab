@@ -103,27 +103,27 @@ obsolete changes. They were left intact.
 
 | Branch | Audited head prefix |
 |---|---|
-| `add/fe-dos-lisp-20261006` | `769b7a6a22` |
-| `add/tcl-dos-partcl-20261006` | `89df261f23` |
-| `add-ack` | `5183a3e0` |
-| `add-candidates-ledger` | `9459a816` |
-| `add-elks-os` | `9e327a21` |
-| `add-freedoom-fastdoom` | `bc36d514` |
-| `add-minix-languages` | `76223f6a` |
-| `batch/minix2-msdos-opengem` | `da171ac3` |
-| `ci/media-lab-elks-riscv` | `c6df3bcb26` |
-| `ci/media-lab-fetch-prebuilt` | `06111124` |
-| `ci/media-lab-verify` | `e745e96c24` |
-| `elks-programming-vm` | `a04e8260` |
-| `feat/kim-expansion-media` | `ba4ca40538` |
-| `lane/forth-cpm-20261012` | `5cac4100` |
-| `machine-manager-design` | `56862c2d7` |
-| `media/ci-hardening` | `d14a75ac28` |
-| `media/forth-dos` | `3f77867f27` |
-| `migrate/picobb-runrp2040bundle-20261005` | `613db07821` |
-| `project/bbc-basic-z80` | `f034b7e3` |
-| `project/ms-basic-6502` | `8ae866bc18` |
-| `project/picobb-rp2040` | `f18e52ed20` |
+| `add/fe-dos-lisp-20261006` | `769b7a6a795a` |
+| `add/tcl-dos-partcl-20261006` | `89df261fc738` |
+| `add-ack` | `5183a3e0b948` |
+| `add-candidates-ledger` | `9459a8163cdb` |
+| `add-elks-os` | `9e327a219fd7` |
+| `add-freedoom-fastdoom` | `bc36d5140dde` |
+| `add-minix-languages` | `76223f6a7308` |
+| `batch/minix2-msdos-opengem` | `da171ac3c7d6` |
+| `ci/media-lab-elks-riscv` | `c6df3bcbf091` |
+| `ci/media-lab-fetch-prebuilt` | `061111245f40` |
+| `ci/media-lab-verify` | `e745e96cb356` |
+| `elks-programming-vm` | `a04e82600014` |
+| `feat/kim-expansion-media` | `ba4ca405a8f8` |
+| `lane/forth-cpm-20261012` | `5cac4100c9ed` |
+| `machine-manager-design` | `56862c2d647f` |
+| `media/ci-hardening` | `d14a75acd31f` |
+| `media/forth-dos` | `3f77867f054a` |
+| `migrate/picobb-runrp2040bundle-20261005` | `613db078c7a8` |
+| `project/bbc-basic-z80` | `f034b7e367ee` |
+| `project/ms-basic-6502` | `8ae866bcb3ff` |
+| `project/picobb-rp2040` | `f18e52ede170` |
 
 ### Intentionally separate or superseded
 
