@@ -18,6 +18,7 @@
   "program": {
     "kind": "rom",
     "console": "acia1",
+    "inputWaitAddress": 49162,
     "tool": "projects/tali-forth-65c02/proof.mjs",
     "framebuffer": { "chip": "screen", "at": 12288, "width": 64, "height": 32, "stride": 64, "format": "gray8" }
   },

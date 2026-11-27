@@ -40,6 +40,7 @@ export function buildAnimation({ sourcePath = join(here, 'src', 'animation.json'
     if (rom.readUInt16LE(0x7ffc) !== 0x8000) throw new Error('reset vector must point to $8000');
     const manifest = JSON.parse(readFileSync(join(here, 'brickwright-media.json'), 'utf8'));
     manifest.components[0].sha256 = sha256(rom);
+    manifest.observation.frameCount = source.frames.length;
     const report = {
       format: 'brickwright-animation-build-v1',
       title: source.title,

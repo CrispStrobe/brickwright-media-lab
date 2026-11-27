@@ -21,8 +21,14 @@ if ! "$assembler" --version | head -n 1 | grep -Fq 'V1.60.3243'; then
     exit 2
 fi
 mkdir -p "$work"
-if [[ ! -d "$upstream/.git" ]]; then
-    git clone --no-checkout https://github.com/SamCoVT/TaliForth2.git "$upstream"
+if [[ ! -e "$upstream/.git" ]]; then
+    git clone https://github.com/SamCoVT/TaliForth2.git "$upstream"
+fi
+# Check before changing revisions as well as before building: a caller-supplied
+# checkout must not have tracked edits silently carried to another revision.
+if [[ -n "$(git -C "$upstream" status --porcelain --untracked-files=no)" ]]; then
+    echo "Refusing modified upstream tracked files at $upstream" >&2
+    exit 2
 fi
 if ! git -C "$upstream" cat-file -e "$commit^{commit}" 2>/dev/null; then
     git -C "$upstream" fetch origin "$commit"
@@ -30,11 +36,6 @@ fi
 actual="$(git -C "$upstream" rev-parse HEAD 2>/dev/null || true)"
 if [[ "$actual" != "$commit" ]]; then
     git -C "$upstream" checkout --detach "$commit"
-fi
-# Never silently compile edits to upstream tracked files, even with TALI_SOURCE.
-if [[ -n "$(git -C "$upstream" status --porcelain --untracked-files=no)" ]]; then
-    echo "Refusing modified upstream tracked files at $upstream" >&2
-    exit 2
 fi
 cmp "$here/LICENSE.upstream" "$upstream/COPYING.txt"
 mkdir -p "$upstream/platform/brickwright"

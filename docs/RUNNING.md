@@ -25,13 +25,47 @@ download media. A successful fetch does not establish guest execution.
 
 The repository verifier checks eligible projects and reports explicit skips:
 
+The animation proof rebuilds its ROM, so the full verifier now needs 64tass.
+Use an existing compatible assembler through `TASS64`, or build the exact
+version used by CI with the checksum-verified helper. The helper needs Bash,
+curl, Python 3, `sha256sum`, Make and a C compiler; it prints the executable path.
+
 ```sh
+export TASS64="$(scripts/prepare-64tass.sh /path/to/tool-cache)"
 BW_BOARD_DIR=/path/to/bw-board node scripts/ci-verify.mjs
 BW_BOARD_DIR=/path/to/bw-board node scripts/ci-verify.mjs --fetch
 ```
 
 The second command runs the configured downloads/builds. It does not
 make every project bootable; inspect each PASS/FAIL/SKIP and the project proof.
+
+## Try the new learning packages
+
+Run these from the media-lab root. The committed ROMs can be used without an
+assembler; rebuilding edited animation source and reproducing Tali require the
+64tass setup above.
+
+```sh
+# Type Forth into the actual guest console; BYE ends the session.
+BW_BOARD_DIR=/path/to/bw-board node projects/tali-forth-65c02/run.mjs
+
+# Execute the drawing sample and export the actual guest framebuffer.
+BW_BOARD_DIR=/path/to/bw-board node projects/tali-forth-65c02/run.mjs \
+  --script projects/tali-forth-65c02/samples/framebuffer.fs \
+  --frame /path/to/tali-frame.pgm
+
+# Execute the original animation and export captured-frame HTML playback.
+BW_BOARD_DIR=/path/to/bw-board node projects/6502-animation/run.mjs
+
+# Reproduce the completed-save/fresh-machine storage experiment.
+BW_BOARD_DIR=/path/to/bw-board node projects/picobb-rp2040/proof.mjs
+```
+
+The [animation README](../projects/6502-animation/README.md) explains source
+edits, arbitrary rebuilt bundles and playback paths. The
+[Tali README](../projects/tali-forth-65c02/README.md) gives the safe memory map,
+interactive examples, reset behavior and VIA exercise. These commands exercise
+the CLI and guest engine; installed-app adoption is a separate workflow.
 
 ## x86 command-line routes
 
@@ -70,7 +104,10 @@ adoption requirements.
 | [CP/M programs](../projects/cpm-software) | `.COM` slot / `proof.mjs`; board `scripts/cpm-smoke.mjs` for real boot | Sample programs on the shim and real CCP+BDOS CLI route; full browser disk workflow remains separate |
 | [BBC BASIC Z80](../projects/bbc-basic-z80) | `proof.mjs` and CP/M `.COM` slot | Interactive arithmetic and stored program execution |
 | [Microsoft BASIC 6502](../projects/ms-basic-6502) | `proof.mjs`, Eater ROM + ACIA | Interactive BASIC and stored program execution |
-| [PicoBB](../projects/picobb-rp2040) | `proof.mjs`, canonical `runRp2040Bundle` | UART/core0 configuration and the exact sessions documented by the project; sound/multicore are separate |
+| [6502 animation](../projects/6502-animation) | Project build/encode tools, CLI frame export, and `proof.mjs` through `runMediaBundle` | Original ROM-resident animation, complete framebuffer comparisons, changed-frame consequence, and clean reset |
+| [Tali Forth 65C02](../projects/tali-forth-65c02) | `run.mjs` for interactive or scripted Forth; `proof.mjs` through `runMediaBundle` | Definitions/redefinition, variable storage, actual framebuffer writes, VIA output, and fresh-machine isolation |
+| [PicoBB](../projects/picobb-rp2040) | `proof.mjs`, canonical `runRp2040Bundle` | UART/core0 BASIC; SAVE/LOAD/RUN after a fresh-machine boot retaining only flash, with a clean-image negative control. Interrupted writes and browser persistence remain separate |
+| [Whetstone validation](../projects/x86-benchmarks/whetstone-validation) | `../run.mjs --variant 80386`, explicit native DOS shim manifest | All ten numeric modules, positive guest-clock duration, exit 0, zero unsupported services; no physical timing claim |
 | [Linux RV32](../projects/riscv32-linux) | `runRiscvLinuxBundle` / Linux lesson | Linux shell, UART commands, verified shell snapshot; cold boot is also supported |
 | [KIM CP/M-65](../projects/kim1-cpm65) | Fetch pinned media, then `proof.mjs` | Three specified storage configurations boot to the prompt |
 | [ACE KIM](../projects/ace-kim) / [expansion demos](../projects/kim1-expansion-demos) | Their proof scripts and board configurations | The documented keypad, display, memory, and storage exercises |

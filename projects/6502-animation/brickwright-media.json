@@ -22,6 +22,7 @@
     }
   ],
   "observation": {
+    "frameCount": 4,
     "framebuffer": { "address": 8192, "bytes": 8192, "width": 100, "height": 64, "stride": 128 },
     "frameSerialAddress": 512,
     "shownFrameAddress": 513,

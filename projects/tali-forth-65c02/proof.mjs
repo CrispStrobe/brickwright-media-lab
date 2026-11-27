@@ -111,6 +111,7 @@ async function main() {
   }
 
   const live = await session('live');
+  assert.equal(live.machine.chips.screen.frame, 2048, 'guest boot must perform every framebuffer clearing write');
   assert(live.machine.chips.screen.buf.every(byte => byte === 0), 'guest boot clears framebuffer');
   const squares = live.sample('samples/square.fs');
   assert(squares.includes('49 \n ok\n'), 'first typed definition computes 49');
@@ -141,6 +142,7 @@ async function main() {
 
   // Fresh machine is the reset boundary; neither RAM words nor video carry over.
   const fresh = await session('fresh');
+  assert.equal(fresh.machine.chips.screen.frame, 2048, 'fresh guest boot must perform every framebuffer clearing write');
   fresh.value('s" square" find-name 0= . cr', -1);
   fresh.value('s" counter" find-name 0= . cr', -1);
   assert(fresh.machine.chips.screen.buf.every(byte => byte === 0), 'fresh framebuffer is cleared by guest boot');
