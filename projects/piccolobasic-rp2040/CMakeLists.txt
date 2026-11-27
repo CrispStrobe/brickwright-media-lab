@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.13)
+include("$ENV{PICO_SDK_PATH}/external/pico_sdk_import.cmake")
+project(piccolobasic_uart C CXX ASM)
+pico_sdk_init()
+set(CMAKE_C_STANDARD 11)
+add_executable(piccolobasic_uart
+    monitor.c "${PICCOLO_SOURCE}/ubasic.c" "${PICCOLO_SOURCE}/tokenizer.c")
+target_include_directories(piccolobasic_uart PRIVATE "${PICCOLO_SOURCE}")
+target_link_libraries(piccolobasic_uart pico_stdlib)
+pico_enable_stdio_usb(piccolobasic_uart 0)
+pico_enable_stdio_uart(piccolobasic_uart 1)
+target_link_options(piccolobasic_uart PRIVATE -Wl,--wrap=exit)

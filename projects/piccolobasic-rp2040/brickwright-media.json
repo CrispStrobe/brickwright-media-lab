@@ -1,0 +1,24 @@
+{
+  "title": "PiccoloBASIC (RP2040 UART console)",
+  "machine": "rp2040js",
+  "boot": true,
+  "license": "BSD-3-Clause",
+  "program": {"kind": "uf2", "console": "uart0", "basicConsole": "piccolo", "bootMs": 400},
+  "slots": {
+    "flash": {
+      "file": "piccolobasic_uart.uf2",
+      "url": "piccolobasic_uart.uf2",
+      "sha256": "eabc9be0c0b638f0bf9c0152f31f36de4566bbd339f2101d93c034301ba6a5fa"
+    }
+  },
+  "expect": ["PiccoloBASIC UART\r\n>"],
+  "notes": "Gary Sims's PiccoloBASIC interpreter with a UART line editor for unnumbered BASIC source on the RP2040. RUN executes the listing, LIST shows it, NEW clears it, and Ctrl+C stops it.",
+  "components": [
+    {
+      "file": "piccolobasic_uart.uf2",
+      "license": "BSD-3-Clause with pico-sdk, newlib and the GCC runtime",
+      "sha256": "eabc9be0c0b638f0bf9c0152f31f36de4566bbd339f2101d93c034301ba6a5fa",
+      "source": "fetch.sh, Gary Sims's PiccoloBASIC at 74f7f4491a14f4016c3dc48d778c3372b8f7baf8 and Raspberry Pi Pico SDK at bddd20f928ce76142793bef434d4f75f4af6e433"
+    }
+  ]
+}

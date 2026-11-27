@@ -1,0 +1,56 @@
+diff --git a/tokenizer.c b/tokenizer.c
+index c97f11b..288945e 100755
+--- a/tokenizer.c
++++ b/tokenizer.c
+@@ -165,7 +165,11 @@ static int get_next_token(void) {
+     nextptr = ptr;
+     do {
+       ++nextptr;
+-    } while (*nextptr != '"');
++    } while (*nextptr && *nextptr != '\n' && *nextptr != '"');
++    if (*nextptr != '"') {
++      puts("Unterminated string");
++      exit(-1);
++    }
+     ++nextptr;
+     return TOKENIZER_STRING;
+   } else {
+@@ -181,7 +185,7 @@ static int get_next_token(void) {
+   nextptr = ptr;
+   do {
+     ++nextptr;
+-  } while ((*nextptr != '\n') && (*nextptr != ':') &&
++  } while (*nextptr && (*nextptr != '\n') && (*nextptr != ':') &&
+            (nextptr - ptr < MAX_LABELLEN));
+ 
+   if (*nextptr == ':') {
+diff --git a/ubasic.c b/ubasic.c
+index 6114adb..4ac7ba6 100755
+--- a/ubasic.c
++++ b/ubasic.c
+@@ -133,6 +133,7 @@ void ubasic_init(const char *program) {
+   for(int i=0;i<MAX_VARNUM;i++) {
+     variables[i] = 0;
+     float_variables[i] = 0.0;
++    free(string_variables[i]);
+     string_variables[i] = NULL;
+   }
+ }
+@@ -142,14 +143,9 @@ char *ubasic_exit_static_itoa(int e) {
+   return ubasic_exit_buffer;
+ }
+ void ubasic_exit(int errline, char *errmsg, char *errp) {
+-  int lessoften = 0;
+-  // Never actually return/exit, keep printing last error
+-  while (true) {
+-    check_if_should_enter_CMD_mode();
+-    sleep_ms(500);
+-    if( (lessoften++ % 10) == 0)
+-      printf("Error on line %d - %s (%s)\n", errline, errmsg, errp);
+-  }
++  extern void piccolo_abort(void);
++  printf("Error on line %d - %s (%s)\n", errline, errmsg, errp);
++  piccolo_abort();
+ }
+ /*---------------------------------------------------------------------------*/
+ static void accept(int token) {
