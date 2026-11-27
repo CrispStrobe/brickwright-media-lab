@@ -30,7 +30,8 @@ The original build did not capture runtime archive hashes. This package does
 **not** establish bit-identical historical runtime archives or complete package
 installation history, and does not claim blanket license clearance.
 
-The executable was copied without rebuilding or rerunning the benchmark.
+The original package copied the executable without rebuilding or rerunning it.
+The later route-validation run below uses those unchanged executable bytes.
 It uses the existing native i80386 DOS shim (`run.mjs --variant 80386`), with
 no guest OS, BIOS image, extender or x87 backend. The prior exact-byte native
 qualification is in [`results/v3`](../results/v3/README.md). Browser integration
@@ -64,3 +65,19 @@ CPU timing measurement. Admission requires all ten numeric modules, positive
 guest-clock duration, expected exit0 and zero unsupported services. No new
 benchmark comparison, speedup, legacy CPU completion or hardware FPU result is
 claimed. The sibling `whetstone/` source/build package remains unchanged.
+
+## Native route validation — 2026-11-27
+
+The corrected runner at media-lab commit
+`a3edfed7a459f18e2555c7f3683638d55b4c8ae7` ran this exact package against
+bw-board `b47e7e09ed873b33ca2fd912b21e136decc5e677` with the command above.
+The [complete machine-readable record](../results/route-validation-2026-11-27.json)
+retains the executable, runner/dependency, engine source, and asset hashes,
+configuration, console transcript, and termination evidence.
+
+The guest terminated with exit 0 after **24,021,727 progress steps**. All ten
+numeric modules passed the existing Whetstone result validator, the guest clock
+advanced by 23 seconds, and no unsupported DOS services were reported. These
+are functional emulator observations; neither that clock nor the printed score
+measures physical CPU performance. `review.sh` also passed all 18 regression
+controls, three asset proofs, and the retained-data checks.
