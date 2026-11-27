@@ -231,7 +231,12 @@ These *manage* the config; they don't render the machine (that's §4.1–4.5):
   (its screen), takes keys from a bound input widget, and exposes its serial/monitor
   in **Debug**. The manager never invents a surface for it.
 
-## 8. Incremental build plan (so this ships in slices)
+## 8. Incremental build plan (design milestones)
+
+This section records the original architecture sequence, not a current status
+ledger. Consult [RUNNING.md](RUNNING.md), the application user-path docs, and
+individual project proofs before treating a milestone as missing or complete.
+The free-AT firmware and RV32 Linux routes already have documented execution.
 
 1. **Foundation (no UI, Node-testable):** `machine-config.js` (schema + validate +
    normalize, incl. `executionMode`), a config **store** (interface + IndexedDB
@@ -244,10 +249,26 @@ These *manage* the config; they don't render the machine (that's §4.1–4.5):
    the store.
 4. **"…" editor:** the functional-machine config form.
 5. **Quick-picker rework:** recent/favorites + "Manage…".
-6. **Free-386 in the GUI:** ships as a *config* (386 + bochs-lgpl BIOS + FreeDOS
-   HD) once the bw-board pin bump lands the free-386 code into lite.
+6. **Free-386 in the GUI:** activate the explicit board/firmware/media config
+   and qualify the installed application's input, output, and persistence.
+   Board-level free-Bochs execution exists; supplier adoption and each guest
+   journey remain independently evidenced.
 7. **Language routes:** Pascal-via-ACK + libre GW-BASIC as `toolchains.mjs`
    entries against configurable machines.
 
 Steps 1–2 are the spine and are self-contained (no pin bump, Node-testable);
 everything visible builds on them.
+
+## 9. Learning activities are a separate layer
+
+[LEARNING-EXPERIENCES.md](LEARNING-EXPERIENCES.md) defines activities over these
+machines: starting state, learner input, observable result, challenge, reset,
+and save/reload boundary. A lesson can refer to an existing media manifest
+without changing the machine-loading schema. Keep lesson-only metadata in a
+separate descriptor until consumers explicitly support it; do not silently
+declare a new field executable by all existing loaders.
+
+The useful readiness stages are fetched, booted, interactive, activity
+completed, and saved/reloaded. A boot banner establishes only its own stage.
+Reset support must name the actual mechanism (fresh boot, known image, or a
+supported snapshot), and display evidence must come from the selected guest.

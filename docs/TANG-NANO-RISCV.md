@@ -15,8 +15,10 @@ It is the sibling of two things it does **not** duplicate:
   soft-CPU core question**: which RISC-V core, at which rung, and how a compiled
   program reaches real silicon. Where they overlap, `TANG-NANO.md` is canonical
   and is cited, not restated.
-- The **emulated rv32 core** (bw-board `src/riscv32.js`, RV32IMA) — a *software*
-  interpreter, no FPGA. See [`MATRIX.md`](MATRIX.md) §"Emulated RISC-V". The two
+- The **emulated rv32 core** (bw-board `src/riscv32.js`, RV32IMAC with Sv32,
+  CLINT/PLIC and a proven Linux lesson) — a *software* interpreter, no FPGA.
+  See [`MATRIX.md`](MATRIX.md) and [the Linux project](../projects/riscv32-linux).
+  The two
   share the **ISA and the GCC/LLVM cross toolchain and nothing else** (§4).
 
 Legend: ✅ proven (measured here or cited upstream) · 🟡 partial / one honest
@@ -142,9 +144,9 @@ before any of them is promised.
 - **No MMU, no external-RAM dependency** for the first light-up: CPU + BRAM +
   UART fits in on-chip block RAM, so the SDRAM controller (the fiddly part) is
   not on the critical path to "GCC output over UART."
-- It is the honest *hardware* analogue of the emulated core's "bare-metal →
-  xv6 → Linux" bring-up ladder (`MATRIX.md`): prove the substrate with the
-  smallest real program first.
+- Prove the hardware substrate with the smallest real program first. The
+  emulated RV32 already boots Linux; stock xv6-riscv targets RV64, so it is not
+  an automatic intermediate rung on either of these RV32 substrates.
 
 Note this **complements** lite's decision #9 ("first *SoC*: VexRiscv, the LiteX
 default"). Those are not in conflict: VexRiscv/LiteX is lite's chosen
@@ -166,13 +168,14 @@ The canonical software path is `linux-on-litex-vexriscv`.
 CPU (8 MB SDRAM)" as an **explicit non-goal** and says "8 MB SDRAM rules out
 Linux — do not plan for it." Both statements are true at once:
 
-- The community boot is a **buildroot/no-MMU-tight minimal** Linux, heavily
+- The community boot is a **small Buildroot-based** Linux, heavily
   slimmed, slow, and dependent on the SDRAM controller + caches all fitting
   *alongside* the MMU core — the "tight" in the table. It is a stunt-that-works,
   not a comfortable dev target.
 - The lab's product decision descopes it deliberately: the *functional* tier
-  (Renode) gives a far better Linux-on-RISC-V experience than 8 MB of real
-  SDRAM ever will, and the silicon's value is bare-metal/RTOS immediacy.
+  can offer a less constrained Linux experience. Media Lab now also has its
+  own [64 MiB emulated RV32 Linux lesson](../projects/riscv32-linux); the
+  silicon path's initial value is bare-metal/RTOS behavior on the real board.
 
 So: **VexRiscv bare-metal/RTOS is the credible rung-2 target**; **VexRiscv-Linux
 is a demonstrable stretch we can cite but should not promise as a smooth path.**
