@@ -8,6 +8,7 @@
 #include "pico/stdlib.h"
 #include "piccoloBASIC.h"
 #include "ubasic.h"
+#include "storage.h"
 
 static char program[PROG_BUFFER_SIZE];
 static jmp_buf interpreter_exit;
@@ -72,6 +73,13 @@ int main(void) {
                 program[0] = '\0';
             } else if (!strcmp(line, "LIST")) {
                 fputs(program, stdout);
+            } else if (!strcmp(line, "FILES")) {
+                storage_files();
+            } else if (!strncmp(line, "SAVE ", 5)) {
+                storage_save(line + 5, program, used);
+            } else if (!strncmp(line, "LOAD ", 5)) {
+                int size = storage_load(line + 5, program, sizeof(program));
+                if (size >= 0) used = (size_t)size;
             } else if (length) {
                 if (used + length + 1 >= sizeof(program)) {
                     puts("Program too long");
