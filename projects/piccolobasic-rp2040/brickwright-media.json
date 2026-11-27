@@ -1,0 +1,35 @@
+{
+  "title": "PiccoloBASIC (RP2040 UART console)",
+  "machine": "rp2040js",
+  "boot": true,
+  "license": "BSD-3-Clause",
+  "program": {
+    "kind": "uf2",
+    "console": "uart0",
+    "basicConsole": "piccolo",
+    "bootMs": 400,
+    "flashStorage": {
+      "offset": 655360,
+      "length": 131072
+    }
+  },
+  "slots": {
+    "flash": {
+      "file": "piccolobasic_uart.uf2",
+      "url": "piccolobasic_uart.uf2",
+      "sha256": "96039d676e1cb589cbc0735eed9cec709f6cf300e51412ca241416273791aa24"
+    }
+  },
+  "expect": [
+    "PiccoloBASIC UART\r\n>"
+  ],
+  "notes": "Gary Sims's PiccoloBASIC interpreter with a UART line editor for unnumbered BASIC source on the RP2040. RUN executes the listing, LIST shows it, NEW clears it, and Ctrl+C stops it. The UART monitor supports SAVE and LOAD with a quoted filename and FILES to list its 128 KiB LittleFS partition.",
+  "components": [
+    {
+      "file": "piccolobasic_uart.uf2",
+      "license": "BSD-3-Clause with LittleFS, pico-sdk, newlib and the GCC runtime",
+      "sha256": "96039d676e1cb589cbc0735eed9cec709f6cf300e51412ca241416273791aa24",
+      "source": "fetch.sh, Gary Sims's PiccoloBASIC at 74f7f4491a14f4016c3dc48d778c3372b8f7baf8 and Raspberry Pi Pico SDK at bddd20f928ce76142793bef434d4f75f4af6e433, including the LittleFS driver in the pinned PiccoloBASIC source"
+    }
+  ]
+}
