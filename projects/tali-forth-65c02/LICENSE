@@ -1,0 +1,13 @@
+The Tali Forth 2 sources and generated ROM are public domain under the
+upstream declaration copied verbatim in LICENSE.upstream.
+
+The BrickWright platform adaptation (source/platform.asm), sample Forth
+programs, build/proof scripts and lesson text in this directory are also
+dedicated to the public domain. Where that dedication is not recognized,
+permission is granted to use, copy, modify, distribute and sublicense these
+project-authored additions for any purpose, with or without fee.
+
+This software is provided "as is", without warranty of any kind.
+
+64tass is a separate GPL build tool, not linked into or distributed in the
+ROM. Its source, license and build instructions are identified in README.md.

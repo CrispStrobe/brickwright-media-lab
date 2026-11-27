@@ -1,0 +1,53 @@
+{
+  "title": "Tali Forth 2 — live words on a 65C02",
+  "machine": "eater6502",
+  "machineConfig": {
+    "clockHz": 1000000,
+    "regions": [
+      { "kind": "ram", "start": 0, "end": 16383 },
+      { "kind": "rom", "start": 32768, "end": 65535 }
+    ],
+    "chips": [
+      { "kind": "via", "name": "via1", "at": 24576 },
+      { "kind": "acia", "name": "acia1", "at": 20480 },
+      { "kind": "framebuffer", "name": "screen", "at": 12288, "size": 2048 }
+    ]
+  },
+  "slots": { "rom": "tali-forth.rom" },
+  "license": "LicenseRef-Public-Domain",
+  "program": {
+    "kind": "rom",
+    "console": "acia1",
+    "tool": "projects/tali-forth-65c02/proof.mjs",
+    "framebuffer": { "chip": "screen", "at": 12288, "width": 64, "height": 32, "stride": 64, "format": "gray8" }
+  },
+  "expect": [
+    "BrickWright Tali Forth 2 - 65C02 / ACIA",
+    "Tali Forth 2 for the 65c02",
+    "Type 'bye' to exit"
+  ],
+  "programs": [
+    { "title": "Define and change a word", "source": "samples/square.fs", "expect": ["49", "50"] },
+    { "title": "Draw through memory writes", "source": "samples/framebuffer.fs", "expect": [" ok"] },
+    { "title": "Drive eight VIA outputs", "source": "samples/port.fs", "expect": ["85", "170"] }
+  ],
+  "components": [
+    {
+      "file": "tali-forth.rom",
+      "bytes": 32768,
+      "sha256": "81c331f6afcd7f7049dbf51e65d839d0a483ef0699697586819bbeff95e74703",
+      "license": "LicenseRef-Public-Domain",
+      "source": "SamCoVT/TaliForth2 at the provenance commit plus source/platform.asm; reproduced by build.sh"
+    }
+  ],
+  "provenance": {
+    "repo": "https://github.com/SamCoVT/TaliForth2",
+    "commit": "68079b0341d809d3f2bbf38fce1f70e934bf6731",
+    "branchAtReview": "master-64tass",
+    "licenseFile": "LICENSE.upstream",
+    "assembler": "64tass 1.60.3243",
+    "assemblerSource": "https://downloads.sourceforge.net/project/tass64/source/64tass-1.60.3243-src.zip",
+    "assemblerSourceSha256": "9d83be3d23a2c55e085b7c7a7856c2f96080447ea120a6a8c21a217ed76427f0"
+  },
+  "notes": "A native W65C02 ROM with a W65C51 ACIA console at $5000. Tali allocates only $0000-$2FFF; $3000-$37FF is a 64x32 byte-per-pixel bus-snooped framebuffer. The ROM initializes devices and video itself. proof.mjs sends ordinary serial input, checks newly defined/changed words, actual framebuffer bytes and VIA outputs, and starts a separate clean machine to prove isolation. CLI/media-runner acceptance only; no installed GUI integration or persistence is claimed. BYE stops the processor; reset or create a fresh session to start again."
+}
