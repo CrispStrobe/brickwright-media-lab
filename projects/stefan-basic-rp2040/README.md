@@ -10,9 +10,15 @@ program, `NEW` clears it, and Ctrl+C stops a running loop.
 20 PRINT A*2
 ```
 
-The variant enables the full language set, gives the interpreter 32 KiB of
-program memory, and leaves storage, USB, display, network and expansion
-drivers out of the firmware. The recipe fetches the pinned interpreter
+Use `SAVE "demo.bas"`, `CATALOG`, `NEW`, and `LOAD "demo.bas"` to store a
+listing, see its filename, clear RAM, and reload it. The 128 KiB LittleFS
+partition begins at flash offset `0x1df000` on a 2 MiB Pico. The interpreter
+formats the partition at startup only when it is entirely erased. FDISK
+requires explicit confirmation to format a nonblank partition.
+
+The variant enables the full language set and gives the interpreter 32 KiB of
+program memory. It uses Arduino-Pico's native LittleFS API. USB, display,
+network and expansion drivers are outside this build. The recipe fetches the pinned interpreter
 sources and builds against the pinned Arduino-Pico 3.9.5 release. The patch
 selects UART0, reconciles the core's PinStatus type, normalizes serial line
 endings and uses Ctrl+C as the break key.

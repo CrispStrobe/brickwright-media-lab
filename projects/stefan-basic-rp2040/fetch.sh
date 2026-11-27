@@ -32,7 +32,7 @@ for file in IoTBasic.ino hardware.h runtime.cpp basic.h common.h language.h runt
     curl -fLsS --retry 2 "https://raw.githubusercontent.com/slviajero/tinybasic/$revision/Basic2/IoTBasic/$file" -o "$sketch/$file"
 done
 patch -d "$sketch" -p1 < "$here/uart.patch"
-arduino-cli --config-file "$config" compile --fqbn rp2040:rp2040:rpipico:usbstack=nousb \
+arduino-cli --config-file "$config" compile --fqbn rp2040:rp2040:rpipico:usbstack=nousb,flash=2097152_131072 \
     --build-path "$work/build" "$sketch"
 cmp "$work/build/IoTBasic.ino.uf2" "$here/stefan_basic_uart.uf2"
 printf '%s\n' 'Stefan’s BASIC UF2 matches the published image.'

@@ -7,24 +7,28 @@
     "kind": "uf2",
     "console": "uart0",
     "basicConsole": "stefan",
-    "bootMs": 2000
+    "bootMs": 2000,
+    "flashStorage": {
+      "offset": 1961984,
+      "length": 131072
+    }
   },
   "slots": {
     "flash": {
       "file": "stefan_basic_uart.uf2",
       "url": "stefan_basic_uart.uf2",
-      "sha256": "86343f53953f958d3aa3cc29b4035d15cbf05b336b5cb1e787dfc8b15be72a73"
+      "sha256": "a544f1f9c14dfc6595c5367a4471881cb28bbff6a49873d8caa306474d433575"
     }
   },
   "expect": [
     "Stefan's Basic 2.0 Memory 32768",
-    "IO: 0 1 \r\n> "
+    "IO: 0 1 16 \r\n> "
   ],
   "components": [
     {
       "file": "stefan_basic_uart.uf2",
       "license": "BSD-3-Clause (Stefan Lenz), LGPL-2.1-or-later (Arduino-Pico)",
-      "sha256": "86343f53953f958d3aa3cc29b4035d15cbf05b336b5cb1e787dfc8b15be72a73",
+      "sha256": "a544f1f9c14dfc6595c5367a4471881cb28bbff6a49873d8caa306474d433575",
       "source": "fetch.sh with Stefan’s BASIC at 86ec458ca3dac9d156ce23bfa28a99f1f39ca656 and Arduino-Pico 3.9.5"
     }
   ]
