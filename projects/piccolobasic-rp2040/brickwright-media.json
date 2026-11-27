@@ -8,7 +8,7 @@
     "flash": {
       "file": "piccolobasic_uart.uf2",
       "url": "piccolobasic_uart.uf2",
-      "sha256": "eabc9be0c0b638f0bf9c0152f31f36de4566bbd339f2101d93c034301ba6a5fa"
+      "sha256": "08e8481a0be215c56b621d711c01a67da679e7d5d67e0865dc389f1d9be21769"
     }
   },
   "expect": ["PiccoloBASIC UART\r\n>"],
@@ -17,7 +17,7 @@
     {
       "file": "piccolobasic_uart.uf2",
       "license": "BSD-3-Clause with pico-sdk, newlib and the GCC runtime",
-      "sha256": "eabc9be0c0b638f0bf9c0152f31f36de4566bbd339f2101d93c034301ba6a5fa",
+      "sha256": "08e8481a0be215c56b621d711c01a67da679e7d5d67e0865dc389f1d9be21769",
       "source": "fetch.sh, Gary Sims's PiccoloBASIC at 74f7f4491a14f4016c3dc48d778c3372b8f7baf8 and Raspberry Pi Pico SDK at bddd20f928ce76142793bef434d4f75f4af6e433"
     }
   ]
