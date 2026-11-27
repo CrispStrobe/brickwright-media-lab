@@ -39,8 +39,8 @@
       "sha256": "f7003e37da058b1a41b8520b010c9791aafa10fa8a9cb11a4c0998055936b8ac"
     },
     "brickwright-media.json": {
-      "bytes": 764,
-      "sha256": "3a49ef0aeb4d082d60e9e09a620635f887c3df741eb5694fcfedb50c4e12632a"
+      "bytes": 838,
+      "sha256": "98d3aa765365389adc7af3ab90624a51caf494c567ab3be1a6382c497e4ee04a"
     },
     "compiler.txt": {
       "bytes": 227,
@@ -75,8 +75,8 @@
       "sha256": "333e4ceca042c146f63eec605573d16ae8b07166cbc44a17bec1ea97c6f1efbf"
     },
     "README.md": {
-      "bytes": 2810,
-      "sha256": "3f8a6e455d91c7d8a7cd885e7256f0911a8cf6692998e4c78bb353d42318477e"
+      "bytes": 3633,
+      "sha256": "5e9743f820c0b159569e12b32ff2aeb6aa7ad369b496ff2f52dc913f5e0776cf"
     }
   }
 }

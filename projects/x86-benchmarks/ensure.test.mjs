@@ -14,7 +14,7 @@ function fixtures(extra={}){
  return {'assets.json':Buffer.from(JSON.stringify({files:{LICENSE:{sha256:sha(license),bytes:license.length},'SIEVE.BIN':{sha256:sha(exe),bytes:exe.length},...extra}})),'LICENSE':license,'SIEVE.BIN':exe,'brickwright-media.json':Buffer.from('{}')};
 }
 async function temporary(fn){const root=await fs.mkdtemp(path.join(process.env.TEST_TMPDIR||os.tmpdir(),'x86-cache-test-'));try{await fn(root);}finally{await fs.rm(root,{recursive:true,force:true});}}
-function fetcher(files,calls){return async url=>{const name=url.split('/native-sieve/')[1];calls.push(name);const b=files[name];return new Response(b||'',{status:b?200:404});};}
+function fetcher(files,calls,project='native-sieve'){return async url=>{const name=url.split('/'+project+'/')[1];calls.push(name);const b=files[name];return new Response(b||'',{status:b?200:404});};}
 test('runtime ensure displays the verified notice, reuses verified metadata/payloads offline and never invokes a host executable',async()=>temporary(async cache=>{
  const files=fixtures(),calls=[],notices=[];
  const a=await ensureBenchmark({project:'native-sieve',ref,cache,onNotice:n=>notices.push(n),fetcher:fetcher(files,calls)});
@@ -49,6 +49,8 @@ async function manifestAt(directory, manifest){
 }
 const rawManifest={kind:'native-i80386-raw',machine:'i80386-experimental',format:'raw32',fpu:'absent'};
 const dosManifest={program:{kind:'dos',tool:'run-dos'}};
+const validationDirectory=fileURLToPath(new URL('./whetstone-validation/',import.meta.url));
+const nativeDosManifest=JSON.parse(await fs.readFile(path.join(validationDirectory,'brickwright-media.json'),'utf8'));
 test('consumer plan selects native raw, native DOS shim and legacy DOS explicitly',async()=>temporary(async projectDirectory=>{
  await manifestAt(projectDirectory,rawManifest);
  const raw=await createBenchmarkRunPlan({projectDirectory,board:'board',variant:'80386',max:123});
@@ -68,6 +70,54 @@ test('consumer rejects OS media and unsupported native formats rather than falli
  await assert.rejects(createBenchmarkRunPlan({projectDirectory,board:'board'}),/unsupported benchmark consumer manifest/);
  await manifestAt(projectDirectory,{...rawManifest,fpu:'present'});
  await assert.rejects(createBenchmarkRunPlan({projectDirectory,board:'board'}),/unsupported native benchmark manifest/);
+}));
+test('qualified Whetstone assets cache offline and produce a native DOS plan without a build',async()=>temporary(async cache=>{
+ const files={'assets.json':await fs.readFile(path.join(validationDirectory,'assets.json'))};
+ const proof=JSON.parse(files['assets.json']);
+ for(const name of Object.keys(proof.files))files[name]=await fs.readFile(path.join(validationDirectory,name));
+ const calls=[],notices=[];
+ const result=await ensureBenchmark({project:'whetstone-validation',ref,cache,
+  onNotice:notice=>notices.push(notice),fetcher:fetcher(files,calls,'whetstone-validation')});
+ assert.equal(sha(await fs.readFile(path.join(result.projectDirectory,'WHT.EXE'))),'f7003e37da058b1a41b8520b010c9791aafa10fa8a9cb11a4c0998055936b8ac');
+ assert.deepEqual(notices,[files.LICENSE.toString()]);
+ await ensureBenchmark({project:'whetstone-validation',ref,cache,fetcher:async()=>{throw Error('offline cache must not fetch');}});
+ const plan=await createBenchmarkRunPlan({...result,board:'board',variant:'80386',max:30000000});
+ assert.equal(plan.runnerKind,'native-i80386-dos-shim');assert.equal(plan.build,null);
+ assert.deepEqual(plan.run.args.slice(-4),['--variant','80386','--max','30000000']);
+ await assert.rejects(createBenchmarkRunPlan({...result,board:'board',runtimeBuild:{script:'build.sh'}}),/qualified native DOS images do not use the DOS build path/);
+}));
+function directRunner(projectDirectory,variant){
+ return spawnSync(process.execPath,[fileURLToPath(new URL('./run.mjs',import.meta.url)),
+  '--board',path.join(projectDirectory,'engine-must-not-load'),'--project',projectDirectory,'--variant',variant],
+ {encoding:'utf8',timeout:5000});
+}
+test('planner and direct runner refuse legacy CPUs for the qualified native DOS image',async()=>{
+ for(const variant of ['8086','80186','80286']){
+  await assert.rejects(createBenchmarkRunPlan({projectDirectory:validationDirectory,board:'board',variant}),/requires the native 80386 runner/);
+  const result=directRunner(validationDirectory,variant);
+  assert.equal(result.status,1);assert.match(result.stderr,/requires the native 80386 runner/);
+  assert.doesNotMatch(result.stderr,/ENOENT|no such file/);assert.equal(result.stdout,'');
+ }
+});
+test('planner and direct runner reject malformed native routes before reading payloads or starting a guest',async()=>temporary(async projectDirectory=>{
+ const malformed=[
+  {...nativeDosManifest,machine:'i8086'},
+  {...nativeDosManifest,format:'raw32'},
+  {...nativeDosManifest,fpu:'present'},
+  {...nativeDosManifest,program:{...nativeDosManifest.program,tool:'run-dos'}},
+  {...nativeDosManifest,program:{...nativeDosManifest.program,variant:'8086'}},
+  {...nativeDosManifest,slots:{com:'WHT.COM'}},
+  {...nativeDosManifest,slots:{...nativeDosManifest.slots,floppy:'os.img'}},
+  {...nativeDosManifest,kind:'unknown-native-route',program:dosManifest.program},
+  null
+ ];
+ for(const manifest of malformed){
+  await manifestAt(projectDirectory,manifest);
+  await assert.rejects(createBenchmarkRunPlan({projectDirectory,board:'board'}),/unsupported .*benchmark.*manifest/);
+  const result=directRunner(projectDirectory,'80386');
+  assert.equal(result.status,1);assert.match(result.stderr,/unsupported .*benchmark.*manifest/);
+  assert.doesNotMatch(result.stderr,/ENOENT|no such file/);assert.equal(result.stdout,'');
+ }
 }));
 function processDouble(exits,calls){
  return (command,args)=>{
@@ -106,6 +156,16 @@ test('actual CLI help and invalid requests neither fetch assets nor create a cac
   const result=invoke(['--project','native-sieve','--media-ref',ref,'--run','--cache',cache,...options]);
   assert.equal(result.status,1);assert.match(result.stderr,/benchmark: /);assert.equal(result.stdout,'');
   assert.doesNotMatch(result.stderr,/at file:/);
+ }
+ await assert.rejects(fs.access(cache),{code:'ENOENT'});
+}));
+test('validation-image CLI rejects legacy variants before creating or downloading a cache',async()=>temporary(async root=>{
+ const script=fileURLToPath(new URL('./ensure.mjs',import.meta.url)),cache=path.join(root,'not-created');
+ for(const variant of ['8086','80286']){
+  const result=spawnSync(process.execPath,[script,'--project','whetstone-validation','--media-ref',ref,
+   '--run','--board',root,'--variant',variant,'--cache',cache],{encoding:'utf8',timeout:5000});
+  assert.equal(result.status,1);assert.match(result.stderr,/whetstone-validation requires the native 80386 runner/);
+  assert.equal(result.stdout,'');
  }
  await assert.rejects(fs.access(cache),{code:'ENOENT'});
 }));

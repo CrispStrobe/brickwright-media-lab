@@ -36,10 +36,27 @@ no guest OS, BIOS image, extender or x87 backend. The prior exact-byte native
 qualification is in [`results/v3`](../results/v3/README.md). Browser integration
 and its evidence are separate from that CLI qualification.
 
+The manifest selects `native-i80386-dos-shim`, an MZ executable on
+`i80386-experimental` with no FPU. Its `x86-benchmark` tool is the dedicated
+`../run.mjs` runner. Both that runner and the cache consumer reject legacy CPU
+variants or malformed native manifests before starting an engine.
+The compiler's `-march=i8086` records the binary's build target; it does not
+qualify the legacy `run-dos` execution path. The validation package supplies a
+pinned executable and does not request a source rebuild.
+
 For a new explicitly requested native run, the existing CLI is:
 
 ```sh
 node ../run.mjs --board "$BW_BOARD_DIR" --project . --variant 80386 --max 30000000
+```
+
+The cache consumer also accepts this package. Set `MEDIA_REF` to the full
+immutable media-lab commit containing it; omit `--run` to fetch and verify
+without executing:
+
+```sh
+node ../ensure.mjs --project whetstone-validation --media-ref "$MEDIA_REF" \
+  --run --board "$BW_BOARD_DIR" --variant 80386 --max 30000000
 ```
 
 This is a one-loop PRINTOUT **validation** build, not a score build or physical

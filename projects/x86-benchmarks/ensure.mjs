@@ -6,8 +6,9 @@ import os from 'node:os';
 import {createHash, randomUUID} from 'node:crypto';
 import {fileURLToPath, pathToFileURL} from 'node:url';
 import {spawn} from 'node:child_process';
+import {benchmarkRunnerKind} from './manifest.mjs';
 
-const projects = ['topbench', 'native-sieve', 'whetstone'];
+const projects = ['topbench', 'native-sieve', 'whetstone', 'whetstone-validation'];
 const variants = ['8086', '80186', '80286', '80386'];
 const digest = bytes => createHash('sha256').update(bytes).digest('hex');
 export const usage = 'usage: ensure.mjs --project NAME --media-ref FULL_SHA [--cache DIR] [--run --board DIR --variant CPU --max N]';
@@ -46,8 +47,8 @@ export function parseEnsureArgs(args, env = process.env) {
   options.board ||= env.BW_BOARD_DIR;
   if (options.run) {
     validateRun(options.board, options.variant, options.max);
-    if (options.project === 'native-sieve' && options.variant !== '80386')
-      throw Error('native-sieve requires the native 80386 runner');
+    if (['native-sieve', 'whetstone-validation'].includes(options.project) && options.variant !== '80386')
+      throw Error(options.project + ' requires the native 80386 runner');
   }
   return options;
 }
@@ -115,17 +116,11 @@ export async function createBenchmarkRunPlan({projectDirectory, board, variant =
   projectDirectory = path.resolve(projectDirectory);
   board = path.resolve(board);
   const manifest = JSON.parse(await fs.readFile(path.join(projectDirectory, 'brickwright-media.json'), 'utf8'));
-  const raw = manifest.kind === 'native-i80386-raw';
-  if (raw && (manifest.machine !== 'i80386-experimental' || manifest.format !== 'raw32' || manifest.fpu !== 'absent'))
-    throw Error('unsupported native benchmark manifest');
-  if (raw && variant !== '80386') throw Error('raw native i80386 image cannot run on the DOS path');
-  if (!raw && (manifest.program?.kind !== 'dos' || manifest.program?.tool !== 'run-dos'))
-    throw Error('unsupported benchmark consumer manifest');
-  if (raw && runtimeBuild) throw Error('raw native images do not use the DOS build path');
+  const runnerKind = benchmarkRunnerKind(manifest, variant, runtimeBuild);
   const target = variant === '80386' ? '8086' : variant;
   const directory = runtimeBuild ? path.join(projectDirectory, '.build', target + '-absent') : projectDirectory;
   return {
-    runnerKind: raw ? 'native-i80386-raw' : variant === '80386' ? 'native-i80386-dos-shim' : 'dos',
+    runnerKind,
     variant, fpu: 'absent',
     build: runtimeBuild ? {command: 'sh', args: [path.join(projectDirectory, relativeFile(runtimeBuild.script)), target, 'absent', directory]} : null,
     run: {command: process.execPath, args: [fileURLToPath(new URL('./run.mjs', import.meta.url)),
