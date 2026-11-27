@@ -57,14 +57,19 @@ output then shows only in the Debug instrument). The CLI ignores the field. See
 
 For the x86 CLI, GUI, disk formats and debugger limits, use the [board user paths](https://github.com/CrispStrobe/bw-board/blob/master/docs/X86-USER-PATHS.md) and [Lite user paths](https://github.com/CrispStrobe/brickwright-lite/blob/main/docs/X86-USER-PATHS.md). Project manifests and fetched files do not establish installed-app qualification, automatic DOSBox ZIP extraction or ISO/CD support. Each project's proof and stated limits remain separate.
 
-## Proven combinations
+## Projects and documented evidence
+
+The rows below describe different stages: fetched, booted, interactive, or a
+completed activity. Each project's README and proof own its precise boundary.
+For the next learner-facing activities and their priorities, start with
+[Learning experiences](docs/LEARNING-EXPERIENCES.md).
 
 | Project | Machine | Status |
 |---|---|---|
 | ben-eater-bad-apple | eater6502 @5 MHz + sdcard(CA2 clock) + framebuffer | **Plays** — verified machine-side (bw-board `scripts/badapple-proof.mjs`) |
 | tron-0xf | zx48 | **Plays** — the 48K acceptance title |
 | blinkenrocket-firmware | attiny88 + 788AS matrix | **Boots** — pixel-identical boot glyph under emulation |
-| steamboat-willie | eater6502 (same rig as Bad Apple) | Encoded data is GPL over a public-domain 1928 film — the cleanest demo of the set |
+| steamboat-willie | eater6502 (same rig as Bad Apple) | Fetchable data and player source; the specific decoder/data pairing has not yet been proved on this machine. See the project README for provenance. |
 | ms-basic-6502 | eater6502 (W65C51 ACIA console @ $5000) | **Boots to interactive BASIC** — MIT Microsoft BASIC V1.1, ca65-built ROM; prints the banner + `OK` and runs programs over the ACIA (`projects/ms-basic-6502/proof.mjs`). ROM reproduces byte-for-byte from the pinned source (`fetch.sh`) |
 | [ACE KIM](projects/ace-kim) | 65C02 + KC keypad + 16×2 LCD | MIT firmware, verified boot and keypad editing |
 | [KIM-1 expansion demos](projects/kim1-expansion-demos) | KIM-4 + K-1008 + programmable memory | Original paper tapes, map and sector image |
@@ -78,8 +83,8 @@ For the x86 CLI, GUI, disk formats and debugger limits, use the [board user path
 | opengem | i80386 + DOS + VGA/mouse | **Fetchable GPL desktop** — OpenGEM 7 RC3 (FreeGEM, GPL-2+): the graphical DOS GUI; delivered fetchable + licensed, full run-proof needs a framebuffer + mouse (not the text-scrape harness) |
 | f83 | i8086 DOS layer | **Runs** — public-domain Forth-83; prints its banner and enters the interpreter (bw-board `run-dos.mjs`) |
 | small-c | i8086 DOS layer | **Runs** — public-domain K&R C compiler; `cc.exe` compiles and emits 8086 assembly on the machine (bw-board `run-dos.mjs`) |
-| fe-dos | i8086 DOS layer | **Runs** — MIT fe (rxi), a tiny Lisp (lambdas, closures, macros, mark-and-sweep GC); `FE.EXE` reads `PROG.FE` and prints — banner, `6 * 7 = 42`, `5! = 120` (recursive factorial), `fib(10) = 55` (recursive Fibonacci) over INT 21h (bw-board `run-dos.mjs`). Reproduces byte-for-byte from the pinned `rxi/fe` commit (`fetch.sh`). The Lisp complement to `ubasic-dos` (BASIC) and `small-c` (C) |
-| tcl-dos | i8086 DOS layer | **Runs** — MIT partcl (zserge), a minimal Tcl (`set`/`proc`/`if`/`while`, command substitution, prefix arithmetic); `TCL.EXE` reads `PROG.TCL` and prints via `puts` — banner, `[* 6 7]` = 42, a recursive `fact` proc (`120`, `720`) over INT 21h (bw-board `run-dos.mjs`). Reproduces byte-for-byte from the pinned `zserge/partcl` commit (`fetch.sh`). The Tcl entry alongside `ubasic-dos`/`small-c`/`fe-dos` |
+| fe-dos | DOS service, **80186 variant** | **Runs** — MIT fe (rxi), a tiny Lisp with closures, macros, and garbage collection. `FE.EXE` reads `PROG.FE` and produces the arithmetic/factorial/Fibonacci output documented in the project. The pinned build is reproducible; strict 8086 CPU compatibility is not claimed. |
+| tcl-dos | DOS service, **80186 variant** | **Runs** — MIT partcl, with command substitution and procedures; the project records arithmetic and recursive factorial output and a reproducible build. |
 | volksforth | i8086 DOS layer | **Runs** — BSD-2 Forth-83; prints its banner and the Forth `ok` (bw-board `run-dos.mjs`) |
 | freedoom-fastdoom | i80386 + FreeDOS + VGA | GPL-2 engine source + BSD-3 game data; the selected prebuilt engine's component review and guest execution remain pending. See the [project status](projects/freedoom-fastdoom/README.md#what-runs-and-where). |
 | ack | i8086 DOS layer | **Runs** — BSD-3 Amsterdam Compiler Kit cross-compiles Pascal / C / Modula-2 → 8086 `.COM`; the compiled programs print correct output on the machine (bw-board `run-dos.mjs`). Libre Pascal for our 8086 |
@@ -87,7 +92,9 @@ For the x86 CLI, GUI, disk formats and debugger limits, use the [board user path
 | bbc-basic-z80 | z80 CP/M layer | **Runs** — zlib R.T. Russell BBC BASIC (Z80) v5.00, the generic CP/M `.COM`, shipped unmodified from rtrussell/BBCZ80. Boots interactively via `runMediaBundle` over the BDOS console shim (`com` slot at 0x0100): prints its `BBC BASIC (Z80) Version 5.00 / (C) Copyright R.T.Russell` banner, computes `PRINT 2+2` → `4`, runs a stored FOR/NEXT loop. Boot proven by `projects/bbc-basic-z80/proof.mjs`; `fetch.sh` verifies the binary byte-for-byte against the pinned upstream. The interpreter lite boots as its built-in BASIC default |
 | alice-pascal | i80386 free-BIOS + FreeDOS | **Runs** — Artistic-1.0 ALICE: The Personal Pascal (1985); on booted FreeDOS it reaches its main menu / editor (needs a real DOS for the PSP `.suf`-overlay path, which `run-dos` lacks) |
 | riscv32-linux | riscv32 (RV32IMAC, Sv32, SBI, PLIC, 16550A; 64 MiB) | **Interactive Linux** — Linux 6.1.188 + BusyBox boot to a shell prompt and answer `uname -a` over the UART (bw-board `runRiscvLinuxBundle`, `test/linux-riscv/lesson.mjs`). The binaries are mirrored on branch `media/riscv32-linux-v1` with their complete corresponding source as assets of release `riscv32-linux-v1` |
-| picobb-rp2040 | rp2040 (rp2040js; UART0 PL011 console @ 0x40034000) | **Boots to interactive BASIC** — Zlib PicoBB (BBC BASIC for the Pico), stock-RP2040 UART-console build; boots on bw-board's rp2040js via `createRp2040jsAdapter` (**not** `runMediaBundle` — it has no rp2040 machine factory), prints its banner + `>` prompt and runs `PRINT 2+2`→`4` and a `FOR` loop (squares `1 4 9`) over the UART (`projects/picobb-rp2040/proof.mjs`). The UF2 reproduces byte-for-byte from the pinned Pico-SDK build (`fetch.sh`, `SOURCE_DATE_EPOCH` + `-ffile-prefix-map`). Needs `SOUND=NONE`: the default build launches core1, which the single-core rp2040js adapter cannot service |
+| picobb-rp2040 | rp2040 (rp2040js; UART0 PL011 console @ 0x40034000) | **Interactive BASIC** — Zlib PicoBB via the canonical `runRp2040Bundle` runner. The project proof defines the accepted UART sessions and storage scope. The pinned firmware build is reproducible. `SOUND=NONE` keeps execution on the supported core0 path. |
+| ubasic-dos | DOS service, **80186 variant** | BSD-3-Clause uBASIC; the project records the selected arithmetic/control-flow programs and reproducible build. |
+| forth-dos / forth-cpm | DOS **80186 variant** / Z80 CP/M | Separate native Forth packages with their own manifests and I/O proofs; see each project for the accepted input and peripheral operations. |
 
 ## Machine Manager (design)
 
@@ -99,25 +106,32 @@ For the x86 CLI, GUI, disk formats and debugger limits, use the [board user path
 on the command line (bw-board's `elks-shell.mjs` / `run-dos.mjs` /
 `run-i80386-free-bios-freedos.mjs`) and in the browser (lite's debug panel:
 load a floppy OS into the i8086 machine's Floppy slot and steer it live).
-**CLI reaches everything; the GUI now reaches the 8086 tier (boot + steer),
-the 386 tier (boots on the free LGPL BIOS, renders to the Widgets pane — drop
-a fetched 386 image into the slot for a live OS prompt), and the Z80 CP/M tier
-(interactive `.COM`s).**
+The project-specific proofs distinguish CLI execution, browser/app integration,
+input, and persistence. A fetched image or booted firmware does not establish
+that every guest works. The Linux RV32 and KIM projects have their own routes;
+the real CP/M 2.2 browser disk workflow remains a documented integration task.
 
 ## The matrix
 
 [`docs/MATRIX.md`](docs/MATRIX.md) is the one-page overview — every emulated CPU
-× the OSs that boot on it × the compilers that target it, plus the two planned
-axes (an emulated RISC-V core, and a soft RISC-V SoC on the real Tang Nano 20K).
+× documented OS/program execution × compiler host/target distinctions. The
+emulated RV32 Linux machine is implemented; the Tang Nano soft-core hardware
+plan remains a separate substrate with separate proof requirements.
 
 ## Candidates & roadmap
 
 [`docs/CANDIDATES.md`](docs/CANDIDATES.md) is the full ledger — every free OS,
 language and firmware evaluated, with its license, CPU tier, and honest status
-(runs here / packaged / build-required / cross-only / blocked). The dividing
-line is the BIOS: the 8086/XT tier is fully free (`buildBios`), while the
-286/386 tier runs real AT firmware today (a free-BIOS path via SeaBIOS is
-tracked there).
+(runs here / packaged / build-required / cross-only / blocked). The 8086/XT
+uses `buildBios`; the documented free x86 AT route uses Bochs legacy BIOS and
+VGABios. SeaBIOS is a distinct compatibility candidate, not a prerequisite for
+the already working free-AT route.
+
+[`docs/LEARNING-EXPERIENCES.md`](docs/LEARNING-EXPERIENCES.md) turns that inventory
+into a delivery plan: original 6502 animation, live Tali Forth, a complete CP/M
+programming workflow with Cowgol, CHIP-8, storage fault experiments, interactive
+fiction, and kernel/scheduling lessons. Every proposal includes an observable
+activity and an explicit next unproven dependency.
 
 ## Adding a project
 
