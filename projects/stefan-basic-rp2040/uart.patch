@@ -1,0 +1,40 @@
+--- a/hardware.h
++++ b/hardware.h
+@@ -83 +83 @@
+-#define PREDEFINEDBOARD "boards/avrlcd.h"
++#undef PREDEFINEDBOARD
+@@ -87 +87 @@
+-#define HARDWAREHEURISTICS
++#undef HARDWAREHEURISTICS
+@@ -149 +149 @@
+-// #define ALTSERIAL Serial
++#define ALTSERIAL Serial1
+@@ -159 +159 @@
+-#define MEMSIZE 0
++#define MEMSIZE 32768
+@@ -266 +266 @@
+-#define BREAKCHAR '#'
++#define BREAKCHAR 3
+--- a/runtime.h
++++ b/runtime.h
+@@ -422 +422 @@
+-#if !(defined(ARDUINO_ARCH_MBED_RP2040) || defined(ARDUINO_ARCH_MBED_NANO) || \
++#if !(defined(ARDUINO_ARCH_RP2040) || defined(ARDUINO_ARCH_MBED_RP2040) || defined(ARDUINO_ARCH_MBED_NANO) || \
+--- a/runtime.cpp
++++ b/runtime.cpp
+@@ -901,0 +902 @@
++  static bool ignore_serial_lf = false;
+@@ -907,0 +909,11 @@
++      if (id == ISERIAL) {
++        if (ignore_serial_lf) {
++          ignore_serial_lf = false;
++          if (c == '\n') continue;
++        }
++        if (c == '\r' || c == '\n') {
++          ignore_serial_lf = c == '\r';
++          outch('\n');
++          break;
++        }
++      }
+@@ -5390,0 +5403 @@
++  if (c == '\n') SERIALPORT.write('\r');

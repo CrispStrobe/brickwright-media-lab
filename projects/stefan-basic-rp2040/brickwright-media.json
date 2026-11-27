@@ -1,0 +1,31 @@
+{
+  "title": "Stefan's BASIC (RP2040 UART console)",
+  "machine": "rp2040js",
+  "boot": true,
+  "license": "BSD-3-Clause AND LGPL-2.1-or-later",
+  "program": {
+    "kind": "uf2",
+    "console": "uart0",
+    "basicConsole": "stefan",
+    "bootMs": 2000
+  },
+  "slots": {
+    "flash": {
+      "file": "stefan_basic_uart.uf2",
+      "url": "stefan_basic_uart.uf2",
+      "sha256": "86343f53953f958d3aa3cc29b4035d15cbf05b336b5cb1e787dfc8b15be72a73"
+    }
+  },
+  "expect": [
+    "Stefan's Basic 2.0 Memory 32768",
+    "IO: 0 1 \r\n> "
+  ],
+  "components": [
+    {
+      "file": "stefan_basic_uart.uf2",
+      "license": "BSD-3-Clause (Stefan Lenz), LGPL-2.1-or-later (Arduino-Pico)",
+      "sha256": "86343f53953f958d3aa3cc29b4035d15cbf05b336b5cb1e787dfc8b15be72a73",
+      "source": "fetch.sh with Stefan’s BASIC at 86ec458ca3dac9d156ce23bfa28a99f1f39ca656 and Arduino-Pico 3.9.5"
+    }
+  ]
+}
