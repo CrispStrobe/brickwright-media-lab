@@ -34,6 +34,9 @@ working tree:
 - `feat/learning-lab-20261127`: first executable lesson checkpoint
   `046e38094781d7f17f6b4748e5d1f5c71f6164f9`; later checkpoints contain the
   interactive runners, complete instructions, CI setup and integration record.
+  [Lesson PR #41](https://github.com/CrispStrobe/brickwright-media-lab/pull/41)
+  merged checkpoint `c0d3760231e23f52a30b56c3557fc750fb1ad043` to main as
+  `25fe63096a92ed8079cbf14e8187014e9201e8a9`.
 - `lane/native386-benchmark-gui-assets-20261115`: route correction
   `a3edfed7a459f18e2555c7f3683638d55b4c8ae7` and retained validation record
   `99ddd23c93e1c84585f056e906f2dbea1fbc9caf`; merged in PR #37 as
