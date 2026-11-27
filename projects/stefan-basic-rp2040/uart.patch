@@ -1,0 +1,148 @@
+--- a/hardware.h
++++ b/hardware.h
+@@ -83 +83 @@
+-#define PREDEFINEDBOARD "boards/avrlcd.h"
++#undef PREDEFINEDBOARD
+@@ -87 +87 @@
+-#define HARDWAREHEURISTICS
++#undef HARDWAREHEURISTICS
+@@ -149 +149,2 @@
+-// #define ALTSERIAL Serial
++#define ALTSERIAL Serial1
++#define PICO_NATIVE_LITTLEFS
+@@ -159 +160 @@
+-#define MEMSIZE 0
++#define MEMSIZE 32768
+@@ -266 +267 @@
+-#define BREAKCHAR '#'
++#define BREAKCHAR 3
+@@ -625,0 +627,4 @@
++#define FILESYSTEMDRIVER
++#endif
++
++#ifdef PICO_NATIVE_LITTLEFS
+--- a/runtime.h
++++ b/runtime.h
+@@ -422 +422 @@
+-#if !(defined(ARDUINO_ARCH_MBED_RP2040) || defined(ARDUINO_ARCH_MBED_NANO) || \
++#if !(defined(ARDUINO_ARCH_RP2040) || defined(ARDUINO_ARCH_MBED_RP2040) || defined(ARDUINO_ARCH_MBED_NANO) || \
+--- a/runtime.cpp
++++ b/runtime.cpp
+@@ -438,0 +439,16 @@
++#ifdef PICO_NATIVE_LITTLEFS
++#include <LittleFS.h>
++
++extern uint8_t _FS_start, _FS_end;
++
++static bool picoFilesystemBlank() {
++  const auto start = reinterpret_cast<uintptr_t>(&_FS_start);
++  const auto end = reinterpret_cast<uintptr_t>(&_FS_end);
++  if (end <= start) return false;
++  for (auto address = start; address < end; ++address) {
++    if (*reinterpret_cast<const uint8_t*>(address) != 0xff) return false;
++  }
++  return true;
++}
++#endif
++
+@@ -901,0 +918 @@
++  static bool ignore_serial_lf = false;
+@@ -907,0 +925,11 @@
++      if (id == ISERIAL) {
++        if (ignore_serial_lf) {
++          ignore_serial_lf = false;
++          if (c == '\n') continue;
++        }
++        if (c == '\r' || c == '\n') {
++          ignore_serial_lf = c == '\r';
++          outch('\n');
++          break;
++        }
++      }
+@@ -4438,0 +4467,7 @@
++
++#ifdef PICO_NATIVE_LITTLEFS
++static File ifile, ofile;
++static Dir picoRoot;
++static String picoFileName;
++const char rootfsprefix[] = "";
++#endif
+@@ -4526 +4561 @@
+-#if defined(RP2040LITTLEFS) || defined(ESPSPIFFS) || defined(ESP32FAT) || defined(ARDUINOSD) || defined(GIGAUSBFS) || defined(ESPSDMMC)
++#if defined(RP2040LITTLEFS) || defined(ESPSPIFFS) || defined(ESP32FAT) || defined(ARDUINOSD) || defined(GIGAUSBFS) || defined(ESPSDMMC) || defined(PICO_NATIVE_LITTLEFS)
+@@ -4561,0 +4597,7 @@
++#ifdef PICO_NATIVE_LITTLEFS
++  LittleFS.setConfig(LittleFSConfig(false));
++  fsstart = LittleFS.begin();
++  if (!fsstart && picoFilesystemBlank()) {
++    fsstart = LittleFS.format() && LittleFS.begin();
++  }
++#endif
+@@ -4665,0 +4708,4 @@
++#ifdef PICO_NATIVE_LITTLEFS
++  if (!ofile || ofile.write(static_cast<uint8_t>(c)) != 1) ioer = 1;
++  return;
++#endif
+@@ -4693 +4739 @@
+-#if defined(ARDUINOSD) || defined(ESPSPIFFS)||defined(ESP32FAT)||defined(STM32SDIO) || defined(ESPSDMMC)
++#if defined(ARDUINOSD) || defined(ESPSPIFFS)||defined(ESP32FAT)||defined(STM32SDIO) || defined(ESPSDMMC) || defined(PICO_NATIVE_LITTLEFS)
+@@ -4720 +4766 @@
+-#if defined(ARDUINOSD) || defined(ESPSPIFFS) || defined(ESP32FAT) || defined(STM32SDIO) || defined(ESPSDMMC)
++#if defined(ARDUINOSD) || defined(ESPSPIFFS) || defined(ESP32FAT) || defined(STM32SDIO) || defined(ESPSDMMC) || defined(PICO_NATIVE_LITTLEFS)
+@@ -4788,0 +4835,4 @@
++#ifdef PICO_NATIVE_LITTLEFS
++  ifile = LittleFS.open(mkfilename(filename), "r");
++  return static_cast<bool>(ifile);
++#endif
+@@ -4810 +4860 @@
+-#if defined(ARDUINOSD) || defined(ESPSPIFFS) || defined(ESP32FAT) || defined(STM32SDIO) || defined(ESPSDMMC)
++#if defined(ARDUINOSD) || defined(ESPSPIFFS) || defined(ESP32FAT) || defined(STM32SDIO) || defined(ESPSDMMC) || defined(PICO_NATIVE_LITTLEFS)
+@@ -4863,0 +4914,4 @@
++#ifdef PICO_NATIVE_LITTLEFS
++  ofile = LittleFS.open(mkfilename(filename), m);
++  return static_cast<bool>(ofile);
++#endif
+@@ -4885 +4939 @@
+-#if defined(ARDUINOSD) || defined(ESPSPIFFS)||defined(ESP32FAT)|| defined(STM32SDIO) || defined(ESPSDMMC)
++#if defined(ARDUINOSD) || defined(ESPSPIFFS)||defined(ESP32FAT)|| defined(STM32SDIO) || defined(ESPSDMMC) || defined(PICO_NATIVE_LITTLEFS)
+@@ -4932,0 +4987,3 @@
++#ifdef PICO_NATIVE_LITTLEFS
++  picoRoot = LittleFS.openDir("/");
++#endif
+@@ -4981,0 +5039,3 @@
++#ifdef PICO_NATIVE_LITTLEFS
++  return picoRoot.next();
++#endif
+@@ -5014,0 +5075,3 @@
++#ifdef PICO_NATIVE_LITTLEFS
++  return picoRoot.isFile();
++#endif
+@@ -5055,0 +5119,4 @@
++#ifdef PICO_NATIVE_LITTLEFS
++  picoFileName = picoRoot.fileName();
++  return picoFileName.c_str();
++#endif
+@@ -5081,0 +5149,3 @@
++#endif
++#ifdef PICO_NATIVE_LITTLEFS
++  return picoRoot.fileSize();
+@@ -5103,0 +5174,3 @@
++#ifdef PICO_NATIVE_LITTLEFS
++  picoRoot = Dir();
++#endif
+@@ -5151,0 +5225,4 @@
++#ifdef PICO_NATIVE_LITTLEFS
++  if (!fsstart || !LittleFS.remove(mkfilename(filename))) ioer = 1;
++  return;
++#endif
+@@ -5176,0 +5254,8 @@
++#ifdef PICO_NATIVE_LITTLEFS
++  if (ifile) ifile.close();
++  if (ofile) ofile.close();
++  picoRoot = Dir();
++  LittleFS.end();
++  fsstart = LittleFS.format() && LittleFS.begin();
++  if (!fsstart) ioer = 1;
++#endif
+@@ -5390,0 +5476 @@
++  if (c == '\n') SERIALPORT.write('\r');
