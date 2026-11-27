@@ -50,6 +50,20 @@ jobs:
         run: npm ci
         working-directory: bw-board
 
+      - name: Build pinned 64tass for reproducible lesson ROMs
+        working-directory: media-lab
+        run: |
+          assembler="$(scripts/prepare-64tass.sh "$RUNNER_TEMP/brickwright-64tass")"
+          printf 'TASS64=%s\n' "$assembler" >> "$GITHUB_ENV"
+
+      - name: Reproduce Tali Forth ROM from pinned source
+        run: projects/tali-forth-65c02/fetch.sh
+        working-directory: media-lab
+
+      - name: Review benchmark manifests, assets and retained evidence
+        run: sh projects/x86-benchmarks/review.sh
+        working-directory: media-lab
+
       # --fetch runs each fetch-only project's fetch.sh (sha-verified) so the
       # prebuilt upstream binaries (f83/small-c/volksforth) are exercised too,
       # without this repo re-hosting them. A download that verifies wrong fails.

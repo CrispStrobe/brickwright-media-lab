@@ -1,0 +1,32 @@
+{
+  "title": "Original animation on the 6502",
+  "machine": "eater6502",
+  "machineConfig": {
+    "clockHz": 1000000,
+    "regions": [
+      { "kind": "ram", "start": 0, "end": 16383 },
+      { "kind": "rom", "start": 32768, "end": 65535 }
+    ],
+    "chips": [
+      { "kind": "framebuffer", "name": "vga", "at": 8192, "size": 8192 }
+    ]
+  },
+  "slots": { "rom": "animation.rom" },
+  "license": "MIT",
+  "components": [
+    {
+      "file": "animation.rom",
+      "license": "MIT",
+      "source": "src/player.asm + src/animation.json, encoded by encode.mjs and assembled by build.mjs",
+      "sha256": "45504aefefd3adc676028013b568332289876da79afc3f682045d6052e41c396"
+    }
+  ],
+  "observation": {
+    "frameCount": 4,
+    "framebuffer": { "address": 8192, "bytes": 8192, "width": 100, "height": 64, "stride": 128 },
+    "frameSerialAddress": 512,
+    "shownFrameAddress": 513,
+    "publication": "The guest increments frameSerialAddress after all visible pixels of shownFrameAddress have been written."
+  },
+  "notes": "Original MIT source and artwork. The real guest CPU copies ROM-resident raw frames to the shared-RAM framebuffer. CLI proof/export is qualified independently; no SD streaming, compression, guest save operation, or installed-browser authoring UI is claimed."
+}

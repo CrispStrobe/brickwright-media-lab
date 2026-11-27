@@ -6,10 +6,14 @@ understandable computers: change a program or a machine setting, observe a
 consequence, and explain it. A working prompt is the start of an experience;
 the useful outcome is something the learner can make, investigate, or repair.
 
-Status review: **2026-11-27**. Existing capabilities below are grounded in the
-linked project documentation and engine evidence. This document does not add
-execution evidence. All proposed adapters, lesson interfaces, sample programs,
-and fault-injection facilities remain work to implement and verify.
+Status review: **2026-11-27**. The first implementation pass now supplies
+[original 6502 animation](../projects/6502-animation/README.md),
+[Tali Forth on the 65C02](../projects/tali-forth-65c02/README.md), and
+[PicoBB saved-program readback on a fresh machine](../projects/picobb-rp2040/README.md).
+Their project proofs establish the exact CLI/engine stages described below.
+Other proposed adapters, installed-app journeys, and fault-injection facilities
+remain work to implement and verify. See the
+[integration record](INTEGRATION-2026-11-27.md) for branch and test evidence.
 
 The first recommendations are **6502 animation, Tali Forth, real CP/M plus
 Cowgol, CHIP-8, and a littlefs experiment**. Interactive fiction adds a strong
@@ -61,11 +65,11 @@ they are not estimates of implementation time.
 
 | Priority | Experience | Starting position | First meaningful milestone |
 |---|---|---|---|
-| **First** | [Make a movie on a 6502](#3-make-a-movie-on-a-6502) | Existing player, SD path, framebuffer. | An original editable animation plays, and one change visibly alters its output or data size. |
-| **First** | [Tali Forth on the 65C02](#4-tali-forth-on-the-65c02) | New guest adapter on an existing CPU family. | Define a word, run it, and inspect its stack effect. |
+| **Delivered first slice** | [Make a movie on a 6502](#3-make-a-movie-on-a-6502) | Original ROM player, editable source, real framebuffer capture/replay. | Implemented: changed input frame changes precisely the expected guest frame. Compression and SD streaming are follow-ups. |
+| **Delivered first slice** | [Tali Forth on the 65C02](#4-tali-forth-on-the-65c02) | Pinned ROM/platform, interactive/script CLI and memory/output samples. | Implemented: define/redefine a word, store a variable, draw pixels and change a VIA port through guest code. |
 | **First** | [A CP/M computer and Cowgol](#5-a-cpm-computer-and-cowgol) | Real CP/M CLI boot exists; Cowgol is a new candidate. | Edit, compile, and execute a small program in the selected guest workflow. |
 | **First** | [CHIP-8 and Octo](#6-chip-8-and-octo) | New VM/guest integration, existing creative tools upstream. | Change a sprite and input behavior in an authored program. |
-| **First** | [A filesystem that survives interruption](#7-a-filesystem-that-survives-interruption) | littlefs already appears in PicoBB. | Save/load first; then a separately verified interrupted-write experiment. |
+| **Storage foundation delivered** | [A filesystem that survives interruption](#7-a-filesystem-that-survives-interruption) | PicoBB formatted flash; completed-save readback in a fresh machine. | Implemented: retained-flash readback plus pristine-image negative control. Next: separately verified interrupted writes. |
 | **Creative** | [Interactive fiction](#8-interactive-fiction-with-inform-6-and-punyinform) | New story/toolchain/interpreter bundle. | A learner changes a puzzle and plays the changed story. |
 | **Reuse** | [One program in several languages](#9-one-program-in-several-languages) | Existing language bundles and sample programs. | Compare equivalent programs and explain one meaningful implementation difference. |
 | **Reuse** | [Repair a computer that will not boot](#10-repair-a-computer-that-will-not-boot) | Existing machines, boot paths, configurable media. | Diagnose and repair one deliberately introduced fault. |
@@ -90,6 +94,15 @@ good example of a hardware feature changing software performance. The separate
 decoder/data pairing is not yet proven; its availability is not equivalent
 evidence. Use original or explicitly licensed lesson imagery.
 
+**Implemented first slice.** [6502 animation](../projects/6502-animation/README.md)
+ships an original four-frame diamond animation, a validating JSON encoder and a
+6502 assembly player. The player reads raw frame bytes from its 32 KiB ROM and
+writes the actual framebuffer. The proof checks two complete loops, a changed
+second frame, and a clean reset against independent geometric expectations:
+16 complete 8192-byte framebuffer comparisons. The CLI also runs arbitrary
+edited bundles and exports captured frames and a pause/seek HTML replay.
+This source-edit/build/run route is usable now; it does not depend on SD media.
+
 **Make and observe.** Begin with a short original animation: a bouncing ball,
 rotating shape, or learner-drawn sprite. Supply its editable source and a small
 encoder for one explicitly documented player format. Change the sprite or frame
@@ -98,10 +111,10 @@ framebuffer locations, and measured guest work where supported.
 
 **Runnable milestones:**
 
-1. Fetch/build the pinned player and an original minimal animation; play a known
-   first and last frame through the existing machine path.
-2. Change one input frame, rebuild, and verify a corresponding framebuffer
-   difference. The lesson is now an activity, not just a media demo.
+1. **Delivered:** reproducibly build the original player and starter animation;
+   capture complete frames through the actual guest machine path.
+2. **Delivered:** change one input frame, rebuild, and verify the corresponding
+   framebuffer difference. Export the captured playback to inspect it.
 3. Add a comparison such as full-frame versus changed-region encoding, if the
    selected format supports it or a second decoder is implemented.
 4. Introduce a controlled bandwidth or work budget and explain the visible
@@ -119,13 +132,16 @@ than implying that the guest saves them.
 the same small space. Defining a new word and immediately using it creates a
 short route from language idea to machine effect.
 
-**Candidate.** [Tali Forth 2](https://github.com/SamCoVT/TaliForth2/tree/master-64tass)
+**Implemented package.** [Tali Forth 2](../projects/tali-forth-65c02/README.md)
+pins [upstream](https://github.com/SamCoVT/TaliForth2/tree/68079b0341d809d3f2bbf38fce1f70e934bf6731), which
 has a public-domain grant in its
 [COPYING.txt](https://github.com/SamCoVT/TaliForth2/blob/master-64tass/COPYING.txt).
 Its [platform notes](https://github.com/SamCoVT/TaliForth2/blob/master-64tass/platform/README.md)
-describe the platform adaptation points. This is a **65C02** candidate: do not
-silently select an NMOS 6502 configuration or assume that a suitable console and
-memory map already match.
+describe the platform adaptation points. The package supplies that adaptation:
+an explicit **65C02**, W65C51 ACIA at `$5000`, 32 KiB ROM, and Tali allocation
+below `$3000`. The separate 64×32 framebuffer occupies `$3000`–`$37FF`, keeping
+the lesson's pixel stores out of the Forth dictionary. VIA output is at `$6000`.
+Use the supplied configuration when reproducing these results.
 
 **Make and observe.** Start with `: SQUARE DUP * ;`, execute `7 SQUARE .`, and
 display or inspect the stack before and after each word. Then define a word that
@@ -133,10 +149,13 @@ changes a safe, explicitly mapped output byte. A graphics or LED extension
 should follow a proven memory/console adapter, not be a prerequisite for a
 working interpreter.
 
-**Runnable milestones:** pin and build the source; provide the platform I/O and
-memory configuration; boot to a prompt; feed a definition through the real
-console path; check both its result and return to the prompt. Only then add a
-memory-output exercise and a bounded stack-error exercise.
+**Delivered milestones:** pinned source and byte-identical ROM build; real ACIA
+console and prompt; `square` definition/redefinition yielding 49 then 50;
+variable storage yielding 42; all 2048 framebuffer bytes checked after guest
+stores; VIA output changing from 85 to 170; and fresh-machine isolation.
+The interactive/script CLI accepts learner-authored Forth and can export actual
+guest pixels. A bounded stack-error exercise and persistent dictionary/block
+storage remain separate extensions.
 
 **Reset:** cold-start the interpreter or reload a known dictionary image.
 **Challenge:** compose a new word from the starter words and explain its stack
@@ -233,12 +252,17 @@ describes power-loss resilience and the role of sync/close in committing file
 updates. [PicoBB](../projects/picobb-rp2040/README.md) already includes littlefs;
 the new work is an experiment and its evidence, not introducing this dependency.
 
-**Two steps.** First prove an ordinary PicoBB program-save and program-load cycle
-through its actual flash path. Then build a controlled littlefs block-device
-exercise that can interrupt a selected operation, remount the resulting bytes,
-and report what survived. The second exercise needs its own harness and defined
-failure model; resetting the CPU after a completed write is not a simulated
-power cut during a write.
+**First step delivered.** PicoBB now includes reproducible formatted LittleFS
+media. Its proof saves a BASIC program, clears/reloads/runs it, retains only the
+flash prefix, and boots a fresh SoC that loads and runs the saved program.
+The untouched starter image is a negative control: it boots normally, reports
+the file absent, and cannot produce the saved program's standalone output.
+Both current and existing CI-pinned engines pass this check.
+
+**Next step.** Build a controlled littlefs block-device exercise that can
+interrupt a selected operation, remount the resulting bytes, and report what
+survived. It needs its own harness and defined failure model. Fresh-machine
+readback after a completed save does not model power loss during a write.
 
 **Make and observe.** Change a saved counter or text file. Display the
 application's attempted update, the commit point, the backing storage result,
@@ -250,10 +274,10 @@ the exported or retained flash image; one deterministic interrupted operation;
 remount/readback with a stated expected result; then a small collection of
 operation boundaries. Preserve the original image so every trial is repeatable.
 
-**Reset:** restore a pristine flash image. **Challenge:** change when the program
-syncs or closes its file and predict which value will survive. A PicoBB branch
-or prototype does not change the baseline status until it is merged and its
-exact proof is linked from the project.
+**Reset:** restore the pristine formatted flash image. **Next challenge:** in
+the future interruption harness, change when the program syncs or closes its
+file and predict which value will survive. Browser storage/export behavior and
+physical flash durability require their own evidence.
 
 ## 8. Interactive fiction with Inform 6 and PunyInform
 

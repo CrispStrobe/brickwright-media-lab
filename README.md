@@ -71,6 +71,8 @@ For the next learner-facing activities and their priorities, start with
 | blinkenrocket-firmware | attiny88 + 788AS matrix | **Boots** — pixel-identical boot glyph under emulation |
 | steamboat-willie | eater6502 (same rig as Bad Apple) | Fetchable data and player source; the specific decoder/data pairing has not yet been proved on this machine. See the project README for provenance. |
 | ms-basic-6502 | eater6502 (W65C51 ACIA console @ $5000) | **Boots to interactive BASIC** — MIT Microsoft BASIC V1.1, ca65-built ROM; prints the banner + `OK` and runs programs over the ACIA (`projects/ms-basic-6502/proof.mjs`). ROM reproduces byte-for-byte from the pinned source (`fetch.sh`) |
+| [6502 animation workshop](projects/6502-animation) | Eater 6502; 100×64 framebuffer, 128-byte rows | **Editable activity** — original animation source, encoder, guest ROM player, and complete-frame checks. Editing a frame changes actual guest pixels. This first package reads its animation from ROM. |
+| [Tali Forth 65C02](projects/tali-forth-65c02) | 65C02; ACIA $5000, VIA $6000, reserved framebuffer $3000 | **Interactive Forth** — define and redefine words, inspect variables, draw through real guest stores, and change an output port. Pinned public-domain upstream, reproducible ROM, interactive/script CLI, and bounded proof. |
 | [ACE KIM](projects/ace-kim) | 65C02 + KC keypad + 16×2 LCD | MIT firmware, verified boot and keypad editing |
 | [KIM-1 expansion demos](projects/kim1-expansion-demos) | KIM-4 + K-1008 + programmable memory | Original paper tapes, map and sector image |
 | [CP/M-65 on KIM-1](projects/kim1-cpm65) | SPI SD, Corsham DSK or K-1013 IMD | Verified upstream downloads and real boot to the CP/M prompt |
@@ -92,7 +94,8 @@ For the next learner-facing activities and their priorities, start with
 | bbc-basic-z80 | z80 CP/M layer | **Runs** — zlib R.T. Russell BBC BASIC (Z80) v5.00, the generic CP/M `.COM`, shipped unmodified from rtrussell/BBCZ80. Boots interactively via `runMediaBundle` over the BDOS console shim (`com` slot at 0x0100): prints its `BBC BASIC (Z80) Version 5.00 / (C) Copyright R.T.Russell` banner, computes `PRINT 2+2` → `4`, runs a stored FOR/NEXT loop. Boot proven by `projects/bbc-basic-z80/proof.mjs`; `fetch.sh` verifies the binary byte-for-byte against the pinned upstream. The interpreter lite boots as its built-in BASIC default |
 | alice-pascal | i80386 free-BIOS + FreeDOS | **Runs** — Artistic-1.0 ALICE: The Personal Pascal (1985); on booted FreeDOS it reaches its main menu / editor (needs a real DOS for the PSP `.suf`-overlay path, which `run-dos` lacks) |
 | riscv32-linux | riscv32 (RV32IMAC, Sv32, SBI, PLIC, 16550A; 64 MiB) | **Interactive Linux** — Linux 6.1.188 + BusyBox boot to a shell prompt and answer `uname -a` over the UART (bw-board `runRiscvLinuxBundle`, `test/linux-riscv/lesson.mjs`). The binaries are mirrored on branch `media/riscv32-linux-v1` with their complete corresponding source as assets of release `riscv32-linux-v1` |
-| picobb-rp2040 | rp2040 (rp2040js; UART0 PL011 console @ 0x40034000) | **Interactive BASIC** — Zlib PicoBB via the canonical `runRp2040Bundle` runner. The project proof defines the accepted UART sessions and storage scope. The pinned firmware build is reproducible. `SOUND=NONE` keeps execution on the supported core0 path. |
+| picobb-rp2040 | rp2040 (rp2040js; UART0 PL011 console @ 0x40034000) | **Interactive BASIC and saved-program readback** — canonical `runRp2040Bundle`, reproducible formatted LittleFS image, and SAVE/LOAD/RUN in a fresh machine retaining only flash. A clean-image negative control confirms the file is absent initially. `SOUND=NONE` keeps execution on core0. |
+| [Whetstone validation](projects/x86-benchmarks/whetstone-validation) | Native experimental i80386 DOS shim; software floating point | **Validated execution** — exact pinned executable completes all ten numeric modules, exits 0, and reports no unsupported services. Manifest and consumer select the qualified native route; retained results are functional emulator evidence. |
 | ubasic-dos | DOS service, **80186 variant** | BSD-3-Clause uBASIC; the project records the selected arithmetic/control-flow programs and reproducible build. |
 | forth-dos / forth-cpm | DOS **80186 variant** / Z80 CP/M | Separate native Forth packages with their own manifests and I/O proofs; see each project for the accepted input and peripheral operations. |
 
@@ -130,8 +133,11 @@ the already working free-AT route.
 [`docs/LEARNING-EXPERIENCES.md`](docs/LEARNING-EXPERIENCES.md) turns that inventory
 into a delivery plan: original 6502 animation, live Tali Forth, a complete CP/M
 programming workflow with Cowgol, CHIP-8, storage fault experiments, interactive
-fiction, and kernel/scheduling lessons. Every proposal includes an observable
-activity and an explicit next unproven dependency.
+fiction, and kernel/scheduling lessons. The animation and Tali activities are
+implemented CLI packages, and PicoBB now proves fresh-machine saved-program
+readback. The document distinguishes these delivered stages from the remaining
+proposals. [The integration record](docs/INTEGRATION-2026-11-27.md) records the
+branch decisions and validation for this delivery.
 
 ## Adding a project
 
