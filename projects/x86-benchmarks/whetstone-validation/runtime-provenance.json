@@ -1,0 +1,106 @@
+{
+  "schema": "brickwright.whetstone-validation-runtime.v1",
+  "binarySha256": "f7003e37da058b1a41b8520b010c9791aafa10fa8a9cb11a4c0998055936b8ac",
+  "binaryBytes": 83776,
+  "sourceSha256": "333e4ceca042c146f63eec605573d16ae8b07166cbc44a17bec1ea97c6f1efbf",
+  "qualifiedRecord": "https://github.com/CrispStrobe/brickwright-media-lab/blob/01d06fb63d5bdd4c0ede48e811e8fc1f6971d2ce/projects/x86-benchmarks/results/v3/whetstone-native-candidate.json",
+  "qualificationScope": "Already qualified exact software-FP PRINTOUT validation executable; no new build or benchmark run.",
+  "compiler": {
+    "name": "ia16-elf-gcc (GCC) 6.3.0",
+    "options": [
+      "-mcmodel=medium",
+      "-march=i8086",
+      "-O2",
+      "-fno-builtin",
+      "-mno-newlib-autofloat-stdio",
+      "-DPRINTOUT"
+    ],
+    "link": [
+      "-lm"
+    ],
+    "eligibleCompilationBasis": "Existing build recipe invokes GCC directly on unmodified C source with ordinary assembler/linker and no non-GPL intermediate-code optimizer. GCC Runtime Library Exception 3.1 applies to the mapped libgcc compilation units through their explicit source or common included header notices."
+  },
+  "packages": {
+    "gcc-ia16-elf": "6.3.0-20260612.00-ppa260612104~noble",
+    "libnewlib-ia16-elf": "2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22-ppa260612104~noble"
+  },
+  "sourceArchives": [
+    {
+      "name": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "url": "https://ppa.launchpadcontent.net/tkchia/build-ia16/ubuntu/pool/main/libn/libnewlib-ia16-elf/libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22.orig.tar.xz",
+      "bytes": 7263256,
+      "sha256": "e9b64801b0eb73e7e36ee9bec81e82dd07878e761f90768b9cfc407a4533bb3f"
+    },
+    {
+      "name": "libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22-ppa260612104~noble.debian.tar.xz",
+      "url": "https://ppa.launchpadcontent.net/tkchia/build-ia16/ubuntu/pool/main/libn/libnewlib-ia16-elf/libnewlib-ia16-elf_2.4.0-20260316.15-stage1gcc6.3.0-20260612.00-binutils2.39-20260423.22-ppa260612104~noble.debian.tar.xz",
+      "bytes": 2140,
+      "sha256": "99dd2f57c59d745566e7d8afb4555dfeca156267a2bd778663515ab72fcefa55"
+    },
+    {
+      "name": "gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "url": "https://ppa.launchpadcontent.net/tkchia/build-ia16/ubuntu/pool/main/g/gcc-ia16-elf/gcc-ia16-elf_6.3.0-20260612.00.orig.tar.xz",
+      "bytes": 61019916,
+      "sha256": "1669a3e30518a769d2bb8db82441957c4f1527134500bdc1e544c0e5d9e4f084"
+    },
+    {
+      "name": "gcc-ia16-elf_6.3.0-20260612.00-ppa260612104~noble.debian.tar.xz",
+      "url": "https://ppa.launchpadcontent.net/tkchia/build-ia16/ubuntu/pool/main/g/gcc-ia16-elf/gcc-ia16-elf_6.3.0-20260612.00-ppa260612104~noble.debian.tar.xz",
+      "bytes": 2420,
+      "sha256": "be024e7ae21f4f9558147a5c6b0e6cab3d4aad87d47f7dc3f702d59ecc62d698"
+    }
+  ],
+  "installedArchives": [
+    {
+      "package": "libnewlib-ia16-elf",
+      "packagePath": "usr/ia16-elf/lib/medium/gprtf-fw.a",
+      "sha256": "5d8e14474ee0111981f6320958927a99408a046bde131680aa66658153b3e4c9",
+      "installedPackageMd5Verified": true
+    },
+    {
+      "package": "libnewlib-ia16-elf",
+      "packagePath": "usr/ia16-elf/lib/medium/libc.a",
+      "sha256": "b51208e596f27c36cb2b3f4b2c175b724dc7c8b1c21a4d77ba2492abb22f7b7b",
+      "installedPackageMd5Verified": true
+    },
+    {
+      "package": "libnewlib-ia16-elf",
+      "packagePath": "usr/ia16-elf/lib/medium/libdos-m.a",
+      "sha256": "1764658121b21cb165135b0111532c1897924377838193ffcd2370f78c376c32",
+      "installedPackageMd5Verified": true
+    },
+    {
+      "package": "libnewlib-ia16-elf",
+      "packagePath": "usr/ia16-elf/lib/medium/libm.a",
+      "sha256": "cb0d600dfc6a4877fd0354c2e5bdc1bba72795ad8a51b49d911a7be7ca214c80",
+      "installedPackageMd5Verified": true
+    },
+    {
+      "package": "libnewlib-ia16-elf",
+      "packagePath": "usr/ia16-elf/lib/medium/tprtf-fw.a",
+      "sha256": "d8ecdff35edaef143f88439edcaa568d7750fb103335900300d7270444dc4831",
+      "installedPackageMd5Verified": true
+    },
+    {
+      "package": "gcc-ia16-elf",
+      "packagePath": "usr/lib/x86_64-linux-gnu/gcc/ia16-elf/6.3.0/medium/libgcc.a",
+      "sha256": "ef12e1201be10dcadcb7e6c9f3ba6672105597613805e50b3af15d3e05d06b6c",
+      "installedPackageMd5Verified": true
+    }
+  ],
+  "linkedMemberCount": 139,
+  "memberInventory": "runtime-members.json",
+  "notices": [
+    "LICENSE",
+    "RUNTIME-NOTICES.txt",
+    "licenses/COPYING.NEWLIB",
+    "licenses/COPYING.LIBGLOSS",
+    "licenses/COPYING.RUNTIME",
+    "licenses/COPYING3"
+  ],
+  "limits": [
+    "Original build receipt did not record build-time runtime-archive SHA-256 hashes. Current installed-package archive hashes and source/member mappings do not establish bit-identical historical runtime archives.",
+    "Retained package chronology contained no matching install/upgrade/removal events; it neither contradicts the mapping nor proves a complete installation history.",
+    "No blanket license clearance, compiler reproducibility, physical timing, hardware FPU, legacy CPU or new benchmark result is claimed."
+  ]
+}

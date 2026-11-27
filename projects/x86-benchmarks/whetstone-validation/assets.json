@@ -1,0 +1,82 @@
+{
+  "version": "C Whetstone 1.2, 22 March 1998",
+  "sourceUrl": "https://www.netlib.org/benchmark/whetstone.c",
+  "sourceSha256": "333e4ceca042c146f63eec605573d16ae8b07166cbc44a17bec1ea97c6f1efbf",
+  "sourceCommit": null,
+  "sourceIdentity": "Netlib immutable content hash; upstream is not versioned by Git",
+  "compiler": {
+    "name": "ia16-elf-gcc (GCC) 6.3.0",
+    "options": [
+      "-mcmodel=medium",
+      "-march=i8086",
+      "-O2",
+      "-fno-builtin",
+      "-mno-newlib-autofloat-stdio",
+      "-DPRINTOUT"
+    ],
+    "link": [
+      "-lm"
+    ],
+    "fpu": "absent; software floating point",
+    "purpose": "Exact already-qualified software-FP PRINTOUT validation executable; runtime redistribution notices and member/source mapping included",
+    "binarySha256": "f7003e37da058b1a41b8520b010c9791aafa10fa8a9cb11a4c0998055936b8ac"
+  },
+  "fpuPresent": {
+    "status": "blocked",
+    "reason": "No executing x87 backend in native i80386; hardware-float build not claimed."
+  },
+  "files": {
+    "LICENSE": {
+      "bytes": 1638,
+      "sha256": "fbbd2c86b33ce4747212e78163e36257d2d5027ad8aa13daf6653442f543bb02"
+    },
+    "RUNTIME-NOTICES.txt": {
+      "bytes": 35348,
+      "sha256": "fb0c11a5176f96d2be5a6203e4bae6daba0bd3f0e934f84a0fb4146494166d47"
+    },
+    "WHT.EXE": {
+      "bytes": 83776,
+      "sha256": "f7003e37da058b1a41b8520b010c9791aafa10fa8a9cb11a4c0998055936b8ac"
+    },
+    "brickwright-media.json": {
+      "bytes": 838,
+      "sha256": "98d3aa765365389adc7af3ab90624a51caf494c567ab3be1a6382c497e4ee04a"
+    },
+    "compiler.txt": {
+      "bytes": 227,
+      "sha256": "afb098330d323e207469a4c5aa3688ad1f3a3d42fba39419c214b222cf091974"
+    },
+    "licenses/COPYING.LIBGLOSS": {
+      "bytes": 20896,
+      "sha256": "b6080f61e7bb33cf9c4f1eceddd2b9a3cf919711413ef5b0873b5cb08c0823df"
+    },
+    "licenses/COPYING.NEWLIB": {
+      "bytes": 50155,
+      "sha256": "992848088cfd1a1a7807828dd8623385713aeba2e3c49f81d1bcefcb23645399"
+    },
+    "licenses/COPYING.RUNTIME": {
+      "bytes": 3324,
+      "sha256": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74"
+    },
+    "licenses/COPYING3": {
+      "bytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    "runtime-members.json": {
+      "bytes": 165462,
+      "sha256": "c17d4f78fdae440aec9bcc75657856f004ca0d4f64538b429c1a67465bcd9008"
+    },
+    "runtime-provenance.json": {
+      "bytes": 5252,
+      "sha256": "6a920e245ae8571773154f1ba4f56625def1ca08bee37ca6d90a3af7259b4a99"
+    },
+    "source/whetstone.c": {
+      "bytes": 8121,
+      "sha256": "333e4ceca042c146f63eec605573d16ae8b07166cbc44a17bec1ea97c6f1efbf"
+    },
+    "README.md": {
+      "bytes": 4623,
+      "sha256": "f2a7a780929d4f6704cc682f47e0124c40d917521a85443df3403eb2b7901bbd"
+    }
+  }
+}

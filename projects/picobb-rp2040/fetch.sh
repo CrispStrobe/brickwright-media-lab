@@ -106,6 +106,10 @@ else
 	echo "proof.mjs (behaviour) remains the authoritative check." >&2
 	exit 1
 fi
+formatted="$work/bbcbasic_console_pico_filesystem.uf2"
+"$here/prepare-filesystem.sh" "$work/PicoBB" "$built_uf2" "$formatted"
+cmp "$formatted" "$here/bbcbasic_console_pico_filesystem.uf2"
+echo "OK — formatted flash is byte-identical."
 cat <<EOF
 
 Run it on the emulated RP2040 (bw-board's rp2040js machine):
