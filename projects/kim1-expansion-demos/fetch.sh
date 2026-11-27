@@ -8,7 +8,7 @@ cat > "$work/kim.cfg" <<'CFG'
 MEMORY { RAM: start = $0200, size = $1500, file = %O; }
 SEGMENTS { CODE: load = RAM, type = ro; }
 CFG
-for program in ram-check video; do
+for program in ram-check video memory-map sd-read corsham-read; do
   ca65 "$program.s" -o "$work/$program.o"
   ld65 -C "$work/kim.cfg" "$work/$program.o" -o "$work/$program.bin"
 done

@@ -16,7 +16,7 @@ function tape(file) {
   writeFileSync(file + '.ptp', lines.join('\n') + '\n');
 }
 tape('ram-check');
-tape('video');
+tape('video');tape('memory-map');tape('sd-read');tape('corsham-read');
 
 const map = Buffer.alloc(131072);
 for (let address = 0; address <= 0xffff; address++) {

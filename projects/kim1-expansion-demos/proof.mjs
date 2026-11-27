@@ -34,3 +34,17 @@ for (let row = 0; row < 200; row++) {
   }
 }
 console.log('K-1008 checkerboard');
+
+const memory = exercise('memory-map.ptp', 'setMemoryCard', read('expanded-ram.raw'));
+assert.equal(peekKim1Byte(memory, 0x300), 0x5a);
+assert.equal(peekKim1Byte(memory, 0x400), 0x34);
+assert.equal(peekKim1Byte(memory, 0xfff9), 0xa7);
+console.log('Memory card $0400 = $34, $FFF9 = $A7');
+
+const disk = read('sectors.img');
+for (const [tape, mount] of [['sd-read.ptp', 'mountSD'], ['corsham-read.ptp', 'mountCorshamDisk']]) {
+  const machine = exercise(tape, mount, disk);
+  assert.equal(peekKim1Byte(machine, 0x300), 0x5a);
+  assert.deepEqual(machine.ram.slice(0x310, 0x320), Uint8Array.from(disk.subarray(512, 528)));
+  console.log(tape + ' copied the first 16 bytes of block 1 to $0310');
+}

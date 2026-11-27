@@ -6,9 +6,10 @@
   "programs": [
     {"title": "KIM-4 RAM check", "slots": {"program": "ram-check.ptp"}},
     {"title": "K-1008 checkerboard", "slots": {"program": "video.ptp"}},
-    {"title": "Expanded programmable RAM map", "slots": {"memory-card": "expanded-ram.raw"}},
-    {"title": "SPI and Corsham sector test image", "slots": {"sd-image": "sectors.img"}}
+    {"title": "Programmable memory card", "slots": {"program": "memory-map.ptp", "memory-card": "expanded-ram.raw"}},
+    {"title": "SPI SD block read", "slots": {"program": "sd-read.ptp", "sd-image": "sectors.img"}},
+    {"title": "Corsham disk block read", "slots": {"program": "corsham-read.ptp", "disk": "sectors.img"}}
   ],
   "license": "MIT",
-  "expect": ["RAM check $0300 = $5A", "K-1008 checkerboard"]
+  "expect": ["RAM check $0300 = $5A", "K-1008 checkerboard", "Memory card $0400 = $34, $FFF9 = $A7", "Read block 1 prefix through SPI and Corsham"]
 }
