@@ -25,7 +25,7 @@ endings and uses Ctrl+C as the break key.
 
 The interpreter's [upstream license](LICENSE) is BSD-3-Clause. The
 [Arduino-Pico core license](LICENSE.arduino-pico) and
-[Pico SDK license](LICENSE.pico-sdk) also accompany the image. The
+[Pico SDK license](LICENSE.pico-sdk) and [LittleFS license](LICENSE.littlefs) also accompany the image. The
 [Arduino-Pico release source and build platform](https://github.com/earlephilhower/arduino-pico/tree/3.9.5)
 and [its pinned cross-toolchain](https://github.com/earlephilhower/pico-quick-toolchain)
 are available separately. The build directory retains the interpreter
