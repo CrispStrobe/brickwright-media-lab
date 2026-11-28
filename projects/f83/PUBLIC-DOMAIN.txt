@@ -1,0 +1,7 @@
+F83.COM is the Forth-83 implementation by Henry Laxen and Michael Perry.
+
+The distribution's readme.1st identifies F83.COM as “a public domain
+implementation of FORTH-83.” The notice and executable are available
+from the same reviewed source revision.
+
+https://github.com/ForthHub/F83/blob/8d1080bb7eb08b3112600539a8db0624c74d536c/readme.1st

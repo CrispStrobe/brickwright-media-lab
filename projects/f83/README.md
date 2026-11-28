@@ -32,6 +32,8 @@ the public domain; `fetch.sh` pulls that notice alongside the binary.
 
 ## Provenance (pinned in `fetch.sh`)
 
+Upstream commit `8d1080bb7eb08b3112600539a8db0624c74d536c`.
+
 - Upstream: `github.com/ForthHub/F83`
 - Artifact: `f83.com`, sha256 `e808ce6f4c348c2de86de3e963d71b4d0c31b2e11ea36d18f9ac87ac6d92610f`, 26,368 bytes
 - Runs on: `i8086` DOS layer (`run-dos.mjs`, `xt` preset) — public domain
@@ -44,3 +46,13 @@ the public domain; `fetch.sh` pulls that notice alongside the binary.
 
 Then run `f83.com` on the 8086 DOS tier. Fetched from upstream, not
 re-hosted (public domain, so re-hosting is permitted too).
+
+In Brickwright, choose this interpreter from **File → Machines → 8086**.
+Use the DOS Console in Controller. Enter these lines separately.
+
+```forth
+: SQUARE DUP * ;
+7 SQUARE .
+```
+
+The interpreter prints `49`. The word you defined belongs to the current session.

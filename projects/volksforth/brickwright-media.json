@@ -1,8 +1,23 @@
 {
   "title": "VolksForth-83 (8086 DOS)",
   "machine": "i8086",
-  "program": { "kind": "dos", "tool": "run-dos", "preset": "xt", "max": 4000000 },
-  "slots": { "com": "volks4th.com" },
-  "expect": ["volksFORTH-83", "ok"],
-  "notes": "BSD-2 Forth-83; upstream 8086/msdos tree names 8086/186/286. Loads on the 8086 DOS service layer (bw-board run-dos.mjs). Proven: prints banner + Forth 'ok'."
+  "program": {
+    "kind": "dos",
+    "tool": "run-dos",
+    "preset": "xt",
+    "max": 4000000,
+    "variant": "8086"
+  },
+  "slots": {
+    "com": {
+      "url": "https://raw.githubusercontent.com/forth-ev/VolksForth/9fbb463e88837eac53fadf8b7748d0170819ff4c/8086/msdos/volks4th.com",
+      "sha256": "847367d29b297614c1b5d068885e5ad26fa20452d079e1f3870294bf4c50c0a8"
+    }
+  },
+  "expect": [
+    "volksFORTH-83",
+    "ok"
+  ],
+  "notes": "BSD-2 Forth-83; upstream 8086/msdos tree names 8086/186/286. Loads on the 8086 DOS service layer (bw-board run-dos.mjs). Proven: prints banner + Forth 'ok'.",
+  "license": "BSD-2-Clause"
 }
