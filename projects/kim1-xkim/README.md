@@ -11,13 +11,14 @@ locally built ROM. Under storage, choose **Loose files** for individual 8.3
 files or **FAT image** for a FAT12, FAT16 or FAT32 image up to 128 MiB. A raw
 volume or an MBR disk with one primary FAT partition is supported. The image
 supplies root files with short names made of ASCII letters, digits, hyphens or
-underscores. Run opens Controller. Enter `D` to list the files. Enter `T` and give a filename to
-display its contents. Enter `S`, supply the start and end addresses, then enter
-a filename to save Intel HEX. Use `L` to reload it. **Export files** saves the
-session files as a ZIP. Guest writes update session copies. The original host
-files and disk images remain intact. The session accepts up to 64 files, 64 KiB per file and
-2 MiB total.
+underscores. Run opens Controller. Enter `C` to read the guest clock in UTC,
+`D` to list the files or `T` and a filename to display its contents. Enter
+`S`, supply the start and end addresses, then enter a filename to save Intel
+HEX. Use `L` to reload it. **Export files** saves the session files as a ZIP. Guest writes update session copies. The original host
+files and disk images remain intact. The session accepts up to 64 files,
+64 KiB per file and 2 MiB total.
 
 Upstream declares GPLv3 and credits borrowed code in the assembly. Build the
-ROM locally. Exporting a modified disk image and the Corsham RTC require
-further work.
+ROM locally. The RTC starts at the host's UTC time. Software using the Corsham
+parallel protocol can set it for the current session. FAT image writeback
+and Corsham timer interrupts remain pending.
