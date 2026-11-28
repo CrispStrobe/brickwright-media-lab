@@ -31,5 +31,10 @@ for (const [kind, imageFile, verb] of [['corsham', 'corsham.dsk', 'mountCorshamD
   controlKim1Machine(machine, 'sendTty', '0200 G');
   run(23_000_000, /A>/);
   assert.match(machine.ttyOutput, /CP\/M-65 for the KIM-1[\s\S]*A>/, kind);
-  console.log(`${kind}: CP/M-65 for the KIM-1 reached A> in ${machine.cpu.cycles} cycles`);
+  const bootCycles = machine.cpu.cycles;
+  controlKim1Machine(machine, 'sendTty', 'DIR\r');
+  const listing = /A>DIR[\s\S]*HELLO +ASM[\s\S]*A>\s*$/i;
+  run(bootCycles + 80_000_000, listing);
+  assert.match(machine.ttyOutput, listing, kind);
+  console.log(`${kind}: booted in ${bootCycles} cycles and DIR returned to A> at ${machine.cpu.cycles} cycles`);
 }
