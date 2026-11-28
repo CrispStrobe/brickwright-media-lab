@@ -3,6 +3,6 @@
   "machine": "kim-1",
   "program": {"kind": "source"},
   "license": "GPL-3.0-only",
-  "expect": ["Extended KIM Monitor v1.8", "UTC date and time with C", "Corsham directory", "Read a named file from loose files or a FAT image", "Save and reload Intel HEX"],
+  "expect": ["Extended KIM Monitor v1.8", "UTC date and time with C", "Corsham directory", "Read a named file from loose files or a FAT image", "Save and reload Intel HEX", "Save and remount an updated FAT image"],
   "notes": "Pinned upstream source. Build the local extension ROM with build.sh. Machines uses the onboard Brickwright ROM, expanded RAM and a writable session-local loose-file Corsham profile."
 }
