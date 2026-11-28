@@ -3,5 +3,6 @@
   "machine": "kim-1",
   "program": {"kind": "source"},
   "license": "GPL-3.0-only",
-  "notes": "Pinned source kit. Build the extension ROM with the upstream make.bat and assembler. The optional FAT file commands require more of the Corsham protocol than the standard sector interface."
+  "expect": ["Extended KIM Monitor v1.8", "Read-only Corsham directory", "Read a named file"],
+  "notes": "Pinned upstream source. Build the local extension ROM with build.sh. Machines uses the onboard Brickwright ROM, expanded RAM and a read-only loose-file Corsham profile."
 }
