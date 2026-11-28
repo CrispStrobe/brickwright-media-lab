@@ -7,13 +7,17 @@ and produces an 8 KiB `xKIM.bin`. The qualified build used
 and produced SHA-256 `e10ea3d5fc57eb6293a540fa8b7d16ab8297146517b72c2158876279dee917c2`.
 
 In Brickwright, open **File → Machines → KIM-1 → Corsham xKIM**. Choose the
-locally built ROM and optionally select files with 8.3 names. Run opens
-Controller. Enter `D` to list the files. Enter `T` and give a filename to
+locally built ROM. Under storage, choose **Loose files** for individual 8.3
+files or **FAT image** for a FAT12, FAT16 or FAT32 image up to 128 MiB. A raw
+volume or an MBR disk with one primary FAT partition is supported. The image
+supplies root files with short names made of ASCII letters, digits, hyphens or
+underscores. Run opens Controller. Enter `D` to list the files. Enter `T` and give a filename to
 display its contents. Enter `S`, supply the start and end addresses, then enter
 a filename to save Intel HEX. Use `L` to reload it. **Export files** saves the
 session files as a ZIP. Guest writes update session copies. The original host
-files remain intact. The session accepts up to 64 files, 64 KiB per file and
+files and disk images remain intact. The session accepts up to 64 files, 64 KiB per file and
 2 MiB total.
 
 Upstream declares GPLv3 and credits borrowed code in the assembly. Build the
-ROM locally. FAT disk images and the Corsham RTC require further work.
+ROM locally. Exporting a modified disk image and the Corsham RTC require
+further work.
