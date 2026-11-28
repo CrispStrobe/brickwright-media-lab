@@ -23,5 +23,18 @@ The original host files and disk images remain intact. The session accepts up to
 
 Upstream declares GPLv3 and credits borrowed code in the assembly. Build the
 ROM locally. The RTC starts at the host's UTC time. Software using the Corsham
-parallel protocol can set it for the current session. Corsham timer
-interrupts remain pending.
+parallel protocol can set it for the current session.
+
+### Check the shield interval timer
+
+Run `./build-timer.sh` with cc65 and Python 3 installed. In Machines, include
+`TIMER.HEX` as a loose file and choose **Timer → IRQ** or **Timer → NMI**
+before Run. In Controller, send `L`, then `TIMER.HEX`. Send `J` and `0200`
+to run the guest program. It enables a 10 ms timer, waits for three interrupts,
+disables the timer and prints `TIMER OK`. With **Timer unwired** the same
+program prints `NO TIMER INTERRUPT`.
+
+The model uses simulated time at the KIM-1's 1 MHz clock. The timer intervals
+span 10 ms to 1 s and the active-low pulse is modeled as four clock cycles.
+The wiring represents the shield’s TIMER_OUT connection to the CPU expansion
+connector. [Corsham shield firmware](https://github.com/CorshamTech/SD-drive/blob/master/SD-drive.ino)
