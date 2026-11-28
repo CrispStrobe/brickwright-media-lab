@@ -1,9 +1,33 @@
 {
-  "title": "Small-C 2.5 — native 8086 C compiler (DOS)",
+  "title": "Small-C 2.5 (DOS)",
   "machine": "i8086",
-  "program": { "kind": "dos", "tool": "run-dos", "preset": "xt", "max": 3000000 },
-  "slots": { "exe": "cc.exe" },
-  "toolchain": { "compiler": "cc.exe", "assembler": "asm.exe", "linker": "ylink.exe" },
-  "expect": ["Small C, Version 2.5", "J. E. Hendrix"],
-  "notes": "Public-domain K&R-subset C compiler that runs on the 8086 DOS service layer (bw-board run-dos.mjs). Proven: cc.exe prints its banner and emits 8086 assembly. Full build is cc->asm->ylink sharing a DOS filesystem; run-dos runs one program at a time, so compile->assemble->link->run end-to-end needs a persistent-FS DOS session (tracked)."
+  "license": "LicenseRef-Public-Domain",
+  "program": {
+    "kind": "dos",
+    "variant": "8086"
+  },
+  "slots": {
+    "exe": {
+      "url": "https://raw.githubusercontent.com/ZaneDubya/Small-C/dfd563f56c35633ba61b7a2ab1dea3c5097ed7ef/code/bin/cc.exe",
+      "sha256": "9694a5815da3c808309a4270fd235e1f9bb2434a158a704558df198f4164e11d"
+    }
+  },
+  "mount": {
+    "ASM.EXE": {
+      "url": "https://raw.githubusercontent.com/ZaneDubya/Small-C/dfd563f56c35633ba61b7a2ab1dea3c5097ed7ef/code/bin/asm.exe",
+      "sha256": "5944b382cf88ac121cfd2719e1bf737f402f6b425c7de22b0a1eb1185e81f6ad"
+    },
+    "YLINK.EXE": {
+      "url": "https://raw.githubusercontent.com/ZaneDubya/Small-C/dfd563f56c35633ba61b7a2ab1dea3c5097ed7ef/code/bin/ylink.exe",
+      "sha256": "8d34609ab49dc359d5098eb5a39b4a1dd7271951a840702016b82bd6a2f6744a"
+    },
+    "CLIB.LIB": {
+      "url": "https://raw.githubusercontent.com/ZaneDubya/Small-C/dfd563f56c35633ba61b7a2ab1dea3c5097ed7ef/code/smalllib/clib.lib",
+      "sha256": "ceee80eb55fba1db014fde7caaf1dab1555462ffc1c577f7f9b6396af045fe9a"
+    },
+    "STDIO.H": {
+      "url": "https://raw.githubusercontent.com/ZaneDubya/Small-C/dfd563f56c35633ba61b7a2ab1dea3c5097ed7ef/code/bin/stdio.h",
+      "sha256": "c6d6527672c200585be30bea448a267b095d3b27c87b2e22272fc832ad6f1cc7"
+    }
+  }
 }
